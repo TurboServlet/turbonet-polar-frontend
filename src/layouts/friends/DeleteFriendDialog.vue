@@ -37,6 +37,9 @@ const deleteFriend = async () => {
 <template>
   <dialog id="deleteDialog" class="modal modal-bottom sm:modal-middle">
     <div class="modal-box">
+      <form method="dialog">
+        <button @click="closeDialogModal('deleteDialog')" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+      </form>
       <h3 class="text-lg font-bold">确认删除</h3>
       <p class="pt-4">你确定要删除 {{ friend }} 的好友吗？</p>
       <p class="text-warning pb-4">在好友关系中，若任一方删除了对方，该好友在双方的视角中均将消失。</p>

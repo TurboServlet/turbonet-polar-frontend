@@ -50,7 +50,6 @@ onMounted(() => {
     <div class="breadcrumbs text-sm">
       <ul>
         <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-        <li>网络状态</li>
         <li>服务器请求统计</li>
       </ul>
     </div>

@@ -22,10 +22,11 @@ const turboName = toRef(props, 'turboName')
 
 <template>
   <div class="drawer lg:drawer-open">
-    <input id="my-drawer-2" type="checkbox" class="drawer-toggle"/>
+    <input id="my-drawer-2" class="drawer-toggle" type="checkbox"/>
     <div class="drawer-side" style="height: unset; top: unset">
-      <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
-      <ul class="menu max-sm:rounded-tl-none max-sm:rounded-bl-none bg-base-200 rounded-box w-56 menu-height overflow-auto" style="flex: unset !important;">
+      <label aria-label="close sidebar" class="drawer-overlay" for="my-drawer-2"></label>
+      <ul class="menu max-sm:rounded-tl-none max-sm:rounded-bl-none bg-base-200 rounded-box w-56 menu-height overflow-auto"
+          style="flex: unset !important;">
         <li>
           <router-link to="/panel">
             <i class="fa-solid fa-bullhorn text-orange-500"></i> 讯息
@@ -42,7 +43,25 @@ const turboName = toRef(props, 'turboName')
           </router-link>
         </li>
         <li>
-          <router-link to="/arcadeInfo"><i class="fa-solid fa-sitemap text-pink-500"></i> 机厅信息</router-link>
+          <router-link to="/serverRequests">
+            <i class="fa-solid fa-server text-lime-500"></i> 服务器请求统计
+          </router-link>
+        </li>
+        <li>
+          <details open>
+            <summary><i class="fa-solid fa-rectangle-list text-pink-500"></i> 机厅相关</summary>
+            <ul>
+              <li>
+                <router-link to="/arcadeInfo"><i class="fa-solid fa-sitemap"></i> 机厅信息</router-link>
+              </li>
+              <li>
+                <router-link to="/arcadeSettings"><i class="fa-solid fa-table"></i> 机厅简称</router-link>
+              </li>
+              <li>
+                <router-link to="/networkStatus"><i class="fa-solid fa-ethernet"></i> 机厅网络状态</router-link>
+              </li>
+            </ul>
+          </details>
         </li>
         <li>
           <details open>
@@ -102,19 +121,19 @@ const turboName = toRef(props, 'turboName')
               <li>
                 <router-link to="/qrCommand"><i class="fa-solid fa-qrcode"></i> 指令二维码</router-link>
               </li>
-<!--              <li>-->
-<!--                <details open>-->
-<!--                  <summary><i class="fa-solid fa-upload"></i> 查分器上传</summary>-->
-<!--                  <ul>-->
-<!--                    <li>-->
-<!--                      <router-link to="/DivingFishUpload">水鱼查分器上传</router-link>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                      <router-link to="/LxnsUpload">落雪查分器上传</router-link>-->
-<!--                    </li>-->
-<!--                  </ul>-->
-<!--                </details>-->
-<!--              </li>-->
+              <!--              <li>-->
+              <!--                <details open>-->
+              <!--                  <summary><i class="fa-solid fa-upload"></i> 查分器上传</summary>-->
+              <!--                  <ul>-->
+              <!--                    <li>-->
+              <!--                      <router-link to="/DivingFishUpload">水鱼查分器上传</router-link>-->
+              <!--                    </li>-->
+              <!--                    <li>-->
+              <!--                      <router-link to="/LxnsUpload">落雪查分器上传</router-link>-->
+              <!--                    </li>-->
+              <!--                  </ul>-->
+              <!--                </details>-->
+              <!--              </li>-->
             </ul>
           </details>
         </li>
@@ -127,19 +146,6 @@ const turboName = toRef(props, 'turboName')
               </li>
               <li>
                 <router-link to="/addFriends"><i class="fa-solid fa-user-plus"></i> 添加好友</router-link>
-              </li>
-            </ul>
-          </details>
-        </li>
-        <li>
-          <details open>
-            <summary><i class="fa-solid fa-globe text-lime-500"></i> 网络状态</summary>
-            <ul>
-              <li>
-                <router-link to="/networkStatus"><i class="fa-solid fa-ethernet"></i> 机厅网络状态</router-link>
-              </li>
-              <li>
-                <router-link to="/serverRequests"><i class="fa-solid fa-server"></i> 服务器请求统计</router-link>
               </li>
             </ul>
           </details>

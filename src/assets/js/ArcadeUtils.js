@@ -25,3 +25,12 @@ export const ArcadeFunctionTypeStringToEnum = (functionType) => {
             return "PING 机台";
     }
 }
+
+export const ArcadeTypeEnumToString = (arcadeType) => {
+    switch (arcadeType) {
+        case "TURBO":
+            return "Turbo";
+        case "SPECIAL_TYPE_ONE":
+            return "2077"
+    }
+}

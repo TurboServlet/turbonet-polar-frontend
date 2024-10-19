@@ -54,7 +54,7 @@ onMounted(() => {
     <div class="breadcrumbs text-sm">
       <ul>
         <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-        <li>网络状态</li>
+        <li>机厅相关</li>
         <li>机厅网络状态</li>
       </ul>
     </div>

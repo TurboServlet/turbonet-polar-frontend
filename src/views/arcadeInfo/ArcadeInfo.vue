@@ -2,7 +2,7 @@
 
 import {sendGetRequest} from "@/assets/js/RequestHandler.js";
 import {onMounted, ref} from "vue";
-import {ArcadeSettingEnumToString} from "@/assets/js/ArcadeUtils.js";
+import {ArcadeSettingEnumToString, ArcadeTypeEnumToString} from "@/assets/js/ArcadeUtils.js";
 import ArcadeInfoDetailDialog from "@/layouts/arcadeInfo/ArcadeInfoDetailDialog.vue";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
 
@@ -59,6 +59,7 @@ const showDetail = (arcadeName) => {
     <div class="breadcrumbs text-sm">
       <ul>
         <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
+        <li>机厅相关</li>
         <li>机厅信息</li>
       </ul>
     </div>
@@ -83,14 +84,16 @@ const showDetail = (arcadeName) => {
     <div class="mt-2"></div>
     <div class="flex-col">
       <div v-for="arcade in responseData" @click="showDetail(arcade.arcadeName)" class="bg-base-100 p-8 rounded-box mb-4 arcade-info">
-        <div class="flex-wrap gap-1.5 flex items-center">
-          <div class="badge badge-primary gap-2 font-bold"><i class="fa-solid fa-wifi"></i>{{ arcade.arcadeType }}</div>
+        <div class="flex-wrap gap-1.5 mb-1 flex items-center">
+          <div class="badge badge-primary gap-2 font-bold"><i class="fa-solid fa-wifi"></i>{{ ArcadeTypeEnumToString(arcade.arcadeType) }}</div>
           <div class="font-bold">{{ arcade.arcadeName }}</div>
         </div>
         <div class="mt-4"/>
+        <div v-if="arcade.arcadeType === 'TURBO'">
         当日内总发送请求 <span class="font-bold">{{ arcade.arcadeRequested }}</span> 次。缓存击中 <span class="font-bold">{{ arcade.arcadeCachedRequest }}</span> 次，修复了 <span
           class="font-bold">{{ arcade.arcadeFixedRequest }}</span> 次错误，缓存击中率 <span class="font-bold">{{ (arcade.arcadeCachedHitRate * 100).toFixed(2) }}</span> %
-        <div class="mt-4"/>
+        </div>
+          <div class="mt-4"/>
         <div class="mt-4" v-for="info in arcade.singleArcadeInfo">
           {{ arcade.singleArcadeInfo.length > 1 ? info.singleName : ''}}
           <div class="flex flex-wrap gap-2">
@@ -121,6 +124,11 @@ const showDetail = (arcadeName) => {
 
 .arcade-info:hover {
   transform: translateY(-5px);
-  background-color: oklch(var(--n))
+  background-color: oklch(var(--b3));
+}
+
+.alias-badge {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
 }
 </style>

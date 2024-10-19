@@ -10,12 +10,17 @@ const isSuccess = ref(false)
 
 const responseData = ref()
 
+const unbindBtnLoadingStates = ref({});
+
 const getBindList = async () => {
   await sendGetRequest('/bot/bindList', true).then((response) => {
     if (response.statusCode === 200) {
       isLoading.value = false
       isSuccess.value = true
       responseData.value = response.data
+      responseData.value.forEach(bot => {
+        unbindBtnLoadingStates.value[bot.botId] = false
+      });
     } else {
       isLoading.value = false
       isSuccess.value = false
@@ -29,6 +34,7 @@ const getBindList = async () => {
 }
 
 const unbind = async (botId) => {
+  unbindBtnLoadingStates.value[botId] = true
   const payload = {
     "token": localStorage.getItem('token'),
     "botId": botId,
@@ -36,20 +42,38 @@ const unbind = async (botId) => {
   await sendPostRequest('/bot/unbind', payload, false).then((response) => {
     if (response.statusCode === 200) {
       toast.success('取消授权成功')
+      unbindBtnLoadingStates.value[botId] = false
       isSuccess.value = false
       isLoading.value = true
       getBindList()
     } else {
+      unbindBtnLoadingStates.value[botId] = false
       toast.error(response.data)
     }
   })
 }
 
-
 const botToken = ref('')
 
+const botTokenIsLoading = ref(true)
+
+const showBotToken = async () => {
+  await sendGetRequest('/bot/showBotToken', true).then((response) => {
+    if (response.statusCode === 200) {
+      botTokenIsLoading.value = false
+      botToken.value = response.data
+    } else {
+      botTokenIsLoading.value = false
+      botToken.value = response.data
+    }
+  }).catch(() => {
+    botTokenIsLoading.value = false
+    botToken.value = '加载 BotToken 失败，请重新登录。'
+  })
+}
+
 onMounted(() => {
-  botToken.value = localStorage.getItem('botToken')
+  showBotToken()
   getBindList()
 })
 
@@ -87,7 +111,8 @@ const copyToClipboard = () => {
       <div class="rounded-box bg-primary text-primary-content">
         <div class="stat">
           <div>BOT TOKEN</div>
-          <div class="font-bold text-2xl"><i class="fa-solid fa-key"></i> {{ botToken }}</div>
+          <div class="font-bold text-2xl" v-if="botTokenIsLoading"><i class="fa-solid fa-key"></i> 加载中 ...</div>
+          <div class="font-bold text-2xl" v-else><i class="fa-solid fa-key"></i> {{ botToken }}</div>
           <div class="stat-actions">
             <button class="btn btn-sm btn-success" @click="copyToClipboard">复制到剪贴板</button>
           </div>
@@ -120,9 +145,9 @@ const copyToClipboard = () => {
             </div>
           </td>
           <td>
-            <button @click="unbind(bot.botId)" class="btn btn-xs gap-1.5 btn-error">
-              <i class="fa-solid fa-user-slash"></i>
-              取消
+            <button @click="unbind(bot.botId)" class="btn btn-xs gap-1.5 btn-error" :disabled="unbindBtnLoadingStates[bot.botId]">
+              <i v-if="unbindBtnLoadingStates[bot.botId]" class="loading loading-spinner size-4"></i>
+              <i v-else class="fa-solid fa-user-slash"></i> 取消
             </button>
           </td>
         </tr>

@@ -34,7 +34,7 @@ const resetTurboName = async () => {
   const token = await executeRecaptcha('resetTurboName')
   const payload = {
     "turboName": newTurboName.value,
-    "sessionId": sessionId,
+    "sessionId": sessionId.value,
     "captchaToken": token
   }
   await sendPostRequest('/support/resetTurboName', payload, false).then((response) => {

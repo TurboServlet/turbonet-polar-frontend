@@ -1,12 +1,14 @@
 <script setup>
-import {onMounted, ref, watch} from "vue";
-import {themeChange} from "theme-change";
+import { onMounted, ref, watch } from "vue";
+import { themeChange } from "theme-change";
+
+const initialTheme = localStorage.getItem('theme') === 'dark';
+const themeChanger = ref(initialTheme);
 
 onMounted(() => {
-  themeChange(false)
-})
-
-const themeChanger = ref(localStorage.getItem('theme') === 'dark');
+  themeChange(false);
+  document.documentElement.setAttribute('data-theme', initialTheme ? 'dark' : 'light');
+});
 
 watch(themeChanger, (newValue) => {
   const theme = newValue ? 'dark' : 'light';
@@ -14,6 +16,7 @@ watch(themeChanger, (newValue) => {
   localStorage.setItem('theme', theme);
 });
 </script>
+
 
 <template>
   <label class="swap swap-rotate theme-btn">

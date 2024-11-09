@@ -69,7 +69,7 @@ onMounted(() => {
       <div v-else>
         <div class="flex flex-col items-center text-center">
           <div
-              v-if="qrCommandVal.functionType === 'LOGIN' || qrCommandVal.functionType === 'KASTANJ_LOGIN' || qrCommandVal.functionType === 'PING'"
+              v-if="qrCommandVal.functionType === 'LOGIN' || qrCommandVal.functionType === 'KASTANJ_LOGIN' || qrCommandVal.functionType === 'PING' || qrCommandVal.functionType === 'SPECIAL_TYPE_ONE_LOGIN'"
               class="font-bold text-2xl">
             {{ ArcadeFunctionTypeStringToEnum(qrCommandVal.functionType) }}
           </div>
@@ -78,7 +78,7 @@ onMounted(() => {
           </div>
           <div class="mt-1">
             请将下图二维码对准机台扫描处<br>
-            该二维码仅适用于Turbo加速盒子机台
+            该二维码仅适用于Turbo加速盒子及其他对接机台
           </div>
           <div class="p-4 my-4 bg-white rounded-box shadow">
             <qrcode-vue :size="220" :value="responseData.qrData"/>

@@ -21,6 +21,8 @@ export const ArcadeFunctionTypeStringToEnum = (functionType) => {
             return "加速盒子机台登入";
         case "KASTANJ_LOGIN":
             return "加速盒子机台 Kastanj 服务登入";
+        case "SPECIAL_TYPE_ONE_LOGIN":
+            return "2077 服务机台登入";
         case "PING":
             return "PING 机台";
     }

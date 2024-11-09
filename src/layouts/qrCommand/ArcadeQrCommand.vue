@@ -30,11 +30,11 @@ const commands = toRef(props, 'commands')
       </div>
     </div>
     <div class="mt-4"></div>
-    <div class="flex mb-2 p-4 bg-base-200 rounded-box shadow items-center justify-between max-sm:flex-col">
+    <div class="flex mb-4 p-4 bg-base-200 rounded-box shadow items-center justify-between max-sm:flex-col max-sm:gap-4">
       <div class="font-bold">PING 机台</div>
       <button @click="submit('PING', 'NONE')" class="btn btn-sm btn-primary"><i class="fa-solid fa-qrcode"></i> 生成二维码</button>
     </div>
-    <div v-for="command in commands" class="flex mb-2 p-4 bg-base-200 rounded-box shadow items-center justify-between max-sm:flex-col">
+    <div v-for="command in commands" class="flex mb-4 p-4 bg-base-200 rounded-box shadow items-center justify-between max-sm:flex-col max-sm:gap-4">
       <div class="font-bold">{{ ArcadeSettingEnumToString(command.setting) }}</div>
       <button @click="submit(command.functionType, command.setting)" class="btn btn-sm btn-primary"><i class="fa-solid fa-qrcode"></i> 生成二维码</button>
     </div>

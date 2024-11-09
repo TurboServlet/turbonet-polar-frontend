@@ -6,13 +6,13 @@ import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
 
 const props = defineProps({
-  arcadeSettingsDialog: {
+  arcadeAliasDialog: {
     type: Object,
     required: true
   }
 })
 
-const arcadeSettingsDialog = toRef(props, 'arcadeSettingsDialog')
+const arcadeAliasDialog = toRef(props, 'arcadeAliasDialog')
 
 const newAlias = ref('')
 const aliasLength = ref(0)
@@ -26,7 +26,7 @@ const isBtnLoading = ref(false)
 const addArcadeAlias = async () => {
   isBtnLoading.value = true
   const payload = {
-    "arcadeName": arcadeSettingsDialog.value.arcadeName,
+    "arcadeName": arcadeAliasDialog.value.arcadeName,
     "arcadeAlias": newAlias.value
   }
   await sendPostRequest('/web/addArcadeAlias', payload, true).then((response) => {
@@ -43,13 +43,13 @@ const addArcadeAlias = async () => {
 
 const closeDialog = () => {
   newAlias.value = ''
-  closeDialogModal('arcadeSettingsAliasDialog')
+  closeDialogModal('arcadeAliasDialog')
 }
 
 </script>
 
 <template>
-  <dialog id="arcadeSettingsAliasDialog" class="modal modal-bottom sm:modal-middle">
+  <dialog id="arcadeAliasDialog" class="modal modal-bottom sm:modal-middle">
     <div class="modal-box">
       <form method="dialog">
         <button @click="closeDialog" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
@@ -63,14 +63,14 @@ const closeDialog = () => {
         </div>
       </div>
       <div class="flex-wrap mt-4 mb-2 gap-1.5 flex items-center">
-        <div class="badge badge-primary gap-2 font-bold"><i class="fa-solid fa-wifi"></i>{{ ArcadeTypeEnumToString(arcadeSettingsDialog.arcadeType) }}</div>
-        <div class="font-bold">{{ arcadeSettingsDialog.arcadeName }}</div>
+        <div class="badge badge-primary gap-2 font-bold"><i class="fa-solid fa-wifi"></i>{{ ArcadeTypeEnumToString(arcadeAliasDialog.arcadeType) }}</div>
+        <div class="font-bold">{{ arcadeAliasDialog.arcadeName }}</div>
       </div>
       <div class="flex-wrap mb-4 gap-1.5 flex items-center">
-        <div class="badge badge-outline gap-2 font-bold"><i class="fa-solid fa-comment"></i>{{ arcadeSettingsDialog.arcadeAlias.length }}/3</div>
+        <div class="badge badge-outline gap-2 font-bold"><i class="fa-solid fa-comment"></i>{{ arcadeAliasDialog.arcadeAlias.length }}/3</div>
         <div class="gap-1.5 flex">
-          <div v-for="alias in arcadeSettingsDialog.arcadeAlias">{{ alias }}</div>
-          <div v-if="arcadeSettingsDialog.arcadeAlias.length === 0" class="opacity-60">暂无简称</div>
+          <div v-for="alias in arcadeAliasDialog.arcadeAlias">{{ alias }}</div>
+          <div v-if="arcadeAliasDialog.arcadeAlias.length === 0" class="opacity-60">暂无简称</div>
         </div>
       </div>
       <label class="input max-sm:input-sm input-bordered flex mt-4 mb-8 items-center gap-2">

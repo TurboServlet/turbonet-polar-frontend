@@ -1,6 +1,6 @@
 <script setup>
 import {openDialogModal} from "@/assets/js/DialogManager.js";
-import ArcadeSettingsAliasDialog from "@/layouts/arcadeSettings/ArcadeSettingsAliasDialog.vue";
+import ArcadeAliasDialog from "@/layouts/arcadeAlias/ArcadeAliasDialog.vue";
 import {onMounted, ref} from "vue";
 import {sendGetRequest} from "@/assets/js/RequestHandler.js";
 import {ArcadeTypeEnumToString} from "../../assets/js/ArcadeUtils.js";
@@ -8,14 +8,14 @@ import {ArcadeTypeEnumToString} from "../../assets/js/ArcadeUtils.js";
 const isLoading = ref(true);
 const isSuccess = ref(false);
 const responseData = ref();
-const arcadeSettingsDialog = ref({
+const arcadeAliasDialog = ref({
   arcadeAlias: '',
   arcadeName: '',
   arcadeType: ''
 });
 
-const showArcadeSettings = async () => {
-  await sendGetRequest('/web/showArcadeSettings', true).then((response) => {
+const showArcadeAlias = async () => {
+  await sendGetRequest('/web/showArcadeAlias', true).then((response) => {
     if (response.statusCode === 200) {
       isLoading.value = false;
       isSuccess.value = true;
@@ -33,12 +33,12 @@ const showArcadeSettings = async () => {
 };
 
 const openDialog = (arcade) => {
-  arcadeSettingsDialog.value = arcade
-  openDialogModal('arcadeSettingsAliasDialog');
+  arcadeAliasDialog.value = arcade
+  openDialogModal('arcadeAliasDialog');
 }
 
 onMounted(() => {
-  showArcadeSettings();
+  showArcadeAlias();
 });
 
 </script>
@@ -88,7 +88,7 @@ onMounted(() => {
       <a class="text-primary" href="/tos" target="_blank">使用条款</a> 对您采取措施。
     </div>
   </div>
-  <ArcadeSettingsAliasDialog :arcade-settings-dialog="arcadeSettingsDialog"/>
+  <ArcadeAliasDialog :arcade-alias-dialog="arcadeAliasDialog"/>
 </template>
 
 <style scoped>

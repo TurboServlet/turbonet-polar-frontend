@@ -55,7 +55,7 @@ const turboName = toRef(props, 'turboName')
                 <router-link to="/arcadeInfo"><i class="fa-solid fa-sitemap"></i> 机厅信息</router-link>
               </li>
               <li>
-                <router-link to="/arcadeSettings"><i class="fa-solid fa-table"></i> 机厅简称</router-link>
+                <router-link to="/arcadeAlias"><i class="fa-solid fa-table"></i> 机厅简称</router-link>
               </li>
               <li>
                 <router-link to="/networkStatus"><i class="fa-solid fa-ethernet"></i> 机厅网络状态</router-link>

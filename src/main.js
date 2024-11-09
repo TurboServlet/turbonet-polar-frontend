@@ -33,7 +33,7 @@ import SupportSession from "@/views/support/SupportSession.vue";
 import ResetEmailVerify from "@/views/support/ResetEmailVerify.vue";
 import NotFound from "@/views/NotFound.vue";
 import QrCommand from "@/views/qrCommand/QrCommand.vue";
-import ArcadeSettings from "@/views/arcadeSettings/ArcadeSettings.vue";
+import ArcadeAlias from "@/views/arcadeAlias/ArcadeAlias.vue";
 
 const routes = [
     {path: '/', component: Index, name: '主页'},
@@ -56,8 +56,8 @@ const routes = [
             {path: '', name: '面板', component: Panel},
             {path: '/turboPermission', name: '用户权限', component: TurboPermission},
             {path: '/botManager', name: 'BOT管理', component: BotManager},
-            {path: '/arcadeInfo', name: '机台信息', component: ArcadeInfo},
-            {path: '/arcadeSettings', name: '机台设置', component: ArcadeSettings},
+            {path: '/arcadeInfo', name: '机厅信息', component: ArcadeInfo},
+            {path: '/arcadeAlias', name: '机厅简称', component: ArcadeAlias},
             {path: '/photos', name: '相片', component: Photos},
             {path: '/records', name: '游戏记录', component: Records},
             {path: '/changeMaimaiName', name: '更改舞萌名称', component: ChangeTurboName},

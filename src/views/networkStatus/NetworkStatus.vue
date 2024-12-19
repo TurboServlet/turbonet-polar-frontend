@@ -2,6 +2,7 @@
 
 import {onMounted, onUnmounted, ref} from "vue";
 import {sendGetRequest} from "@/assets/js/RequestHandler.js";
+import {ArcadeTypeEnumToString} from "@/assets/js/ArcadeUtils.js";
 
 const isLoading = ref(true);
 const isSuccess = ref(false)
@@ -21,6 +22,40 @@ const showNetworkStatus = async () => {
   }).catch(() => {
     return '验证失败，请重新登录。'
   })
+}
+
+const heartbeatColor = (heartbeat) => {
+  if (heartbeat === "WORKING") {
+    return 'bg-success'
+  } else if (heartbeat === "WARNING") {
+    return 'bg-warning'
+  } else if (heartbeat === "ERROR") {
+    return 'bg-error'
+  }
+}
+
+const textColor = (workingStatus) => {
+  if (workingStatus === "WORKING") {
+    return 'text-success'
+  } else if (workingStatus === "WARNING") {
+    return 'text-warning'
+  } else if (workingStatus === "ERROR") {
+    return 'text-error'
+  } else {
+    return ''
+  }
+}
+
+const workingText = (workingStatus) => {
+  if (workingStatus === "WORKING") {
+    return 'Turbo 运行中'
+  } else if (workingStatus === "WARNING") {
+    return 'Turbo 网络异常'
+  } else if (workingStatus === "ERROR") {
+    return 'Turbo 已离线'
+  } else {
+    return 'Turbo 状态未知'
+  }
 }
 
 onMounted(() => {
@@ -59,19 +94,42 @@ onMounted(() => {
       </ul>
     </div>
     <div class="mt-2"/>
-    <div v-for="arcade in responseData" class="bg-base-100 p-8 rounded-box mb-4">
-      <div class="flex-wrap gap-1.5 flex items-center">
-        <div class="badge badge-primary gap-2 font-bold"><i class="fa-solid fa-wifi"></i>{{ arcade.arcadeType }}</div>
-        <div class="font-bold">{{ arcade.arcadeName }}</div>
+    <div v-for="arcade in responseData">
+      <div v-if="arcade.arcadeType === 'TURBO'" class="bg-base-100 p-8 rounded-box mb-4">
+        <div class="flex-wrap gap-1.5 flex items-center">
+          <div class="badge badge-primary gap-2 font-bold"><i
+              class="fa-solid fa-wifi"></i>{{ ArcadeTypeEnumToString(arcade.arcadeType) }}
+          </div>
+          <div class="font-bold">{{ arcade.arcadeName }}</div>
+        </div>
+        <div class="mt-4"/>
+        <div :class="textColor(arcade.workingStatus)" class="flex flex-wrap gap-2">
+          <span class="loading loading-bars"></span>
+          <span class="font-bold">{{ workingText(arcade.workingStatus) }}</span>
+          距离上一次心跳包 {{ arcade.lastHeartbeatSecond }}
+        </div>
+        <div class="mt-3 flex">
+          <div v-for="heartbeat in arcade.heartbeatMap" :class="heartbeatColor(heartbeat)"
+               class="tick w-full rounded-[1px] last:rounded-r-[4px] mr-[1px] block first:rounded-l-[4px] h-8"></div>
+        </div>
       </div>
-      <div class="mt-4"/>
-      <div class="flex flex-wrap gap-2 text-green-400">
-        <span class="loading loading-bars"></span>
-        <span class="font-bold">Turbo运行中</span>
-        距离上一次心跳包 {{ arcade.lastHeartbeatSecond }} 秒
-      </div>
-      <div class="mt-3 flex">
-        <div v-for="i in arcade.heartbeatMap" class="tick w-full rounded-[1px] last:rounded-r-[4px] mr-[1px] bg-success block first:rounded-l-[4px] h-8"></div>
+      <div v-else class="bg-base-100 p-8 rounded-box mb-4">
+        <div class="flex-wrap gap-1.5 flex items-center">
+          <div class="badge badge-primary gap-2 font-bold"><i
+              class="fa-solid fa-wifi"></i>{{ ArcadeTypeEnumToString(arcade.arcadeType) }}
+          </div>
+          <div class="font-bold">{{ arcade.arcadeName }}</div>
+        </div>
+        <div class="mt-4"/>
+        <div class="flex flex-wrap gap-2 text-gray-500">
+          <span class="loading loading-bars"></span>
+          <span class="font-bold">{{ ArcadeTypeEnumToString(arcade.arcadeType) }}</span>
+          距离上一次心跳包 {{ arcade.lastHeartbeatSecond }}
+        </div>
+        <div class="mt-3 flex">
+          <div v-for="heartbeat in arcade.heartbeatMap" :class="heartbeatColor(heartbeat)"
+               class="tick w-full rounded-[1px] last:rounded-r-[4px] mr-[1px] block first:rounded-l-[4px] h-8"></div>
+        </div>
       </div>
     </div>
   </div>

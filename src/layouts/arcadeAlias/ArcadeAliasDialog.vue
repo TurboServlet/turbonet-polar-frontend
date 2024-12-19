@@ -67,7 +67,7 @@ const closeDialog = () => {
         <div class="font-bold">{{ arcadeAliasDialog.arcadeName }}</div>
       </div>
       <div class="flex-wrap mb-4 gap-1.5 flex items-center">
-        <div class="badge badge-outline gap-2 font-bold"><i class="fa-solid fa-comment"></i>{{ arcadeAliasDialog.arcadeAlias.length }}/3</div>
+        <div class="badge badge-outline gap-2 font-bold"><i class="fa-solid fa-comment"></i>{{ arcadeAliasDialog.arcadeAlias.length }}/5</div>
         <div class="gap-1.5 flex">
           <div v-for="alias in arcadeAliasDialog.arcadeAlias">{{ alias }}</div>
           <div v-if="arcadeAliasDialog.arcadeAlias.length === 0" class="opacity-60">暂无简称</div>

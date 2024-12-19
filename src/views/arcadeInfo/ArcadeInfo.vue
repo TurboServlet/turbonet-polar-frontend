@@ -1,21 +1,40 @@
 <script setup>
 
 import {sendGetRequest} from "@/assets/js/RequestHandler.js";
-import {onMounted, ref} from "vue";
+import {defineProps, onMounted, ref, toRef} from "vue";
 import {ArcadeSettingEnumToString, ArcadeTypeEnumToString} from "@/assets/js/ArcadeUtils.js";
 import ArcadeInfoDetailDialog from "@/layouts/arcadeInfo/ArcadeInfoDetailDialog.vue";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
+import NewArcadeDialog from "@/layouts/arcadeInfo/NewArcadeDialog.vue";
 
 const isLoading = ref(true);
 const isSuccess = ref(false)
 const responseData = ref()
+const permission = ref('')
+
+const showPermission = async () => {
+  await sendGetRequest('/permission/showPermission', true).then((response) => {
+    if (response.statusCode === 200) {
+      isLoading.value = false
+      isSuccess.value = true
+      permission.value = response.data
+    } else {
+      isLoading.value = false
+      isSuccess.value = false
+      responseData.value = response.data
+    }
+  }).catch(() => {
+    isLoading.value = false
+    isSuccess.value = false
+    responseData.value = '验证失败，请重新登录。'
+  })
+}
 
 const arcadeInfo = async () => {
   await sendGetRequest('/web/arcadeInfo', true).then((response) => {
     if (response.statusCode === 200) {
-      isLoading.value = false
-      isSuccess.value = true
       responseData.value = response.data
+      showPermission()
     } else {
       isLoading.value = false
       isSuccess.value = false
@@ -81,8 +100,13 @@ const showDetail = (arcadeName) => {
         <div class="text-xs">机厅信息会随着你去过更多的Turbo机厅自动增加并可看哦</div>
       </div>
     </div>
-    <div class="mt-2"></div>
+    <div class="mt-4"></div>
     <div class="flex-col">
+      <div v-if="permission === 'ADMIN'" @click="openDialogModal('newArcadeDialog')" class="p-8 rounded-box outline-dashed mb-4 arcade-info">
+        <div class="flex text-center justify-center items-center">
+          <div class="font-bold"><i class="fa-solid fa-square-plus"></i> 机厅入库</div>
+        </div>
+      </div>
       <div v-for="arcade in responseData" @click="showDetail(arcade.arcadeName)" class="bg-base-100 p-8 rounded-box mb-4 arcade-info">
         <div class="flex-wrap gap-1.5 mb-1 flex items-center">
           <div class="badge badge-primary gap-2 font-bold"><i class="fa-solid fa-wifi"></i>{{ ArcadeTypeEnumToString(arcade.arcadeType) }}</div>
@@ -114,6 +138,7 @@ const showDetail = (arcadeName) => {
     </div>
   </div>
   <ArcadeInfoDetailDialog :arcade-name="selectedArcadeName"/>
+  <NewArcadeDialog/>
 </template>
 
 <style scoped>

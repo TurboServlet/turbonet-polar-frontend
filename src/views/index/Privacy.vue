@@ -11,10 +11,8 @@ import Footer from "@/layouts/Footer.vue";
       <h1>隐私政策</h1>
       <p>Turbo
         为了提供服务，我们不得不经常收集、存储和传输个人信息。我们持续努力使这个过程尽可能透明化。</p>
-      <p> 在使用我们的服务前，您必须确认您已阅读并理解 <a href="/tos"
-                                                         class="">使用条款</a>
-        和隐私政策，包括我们如何以及为何使用您的信息，且您使用服务的行为均受到 <a href="/tos"
-                                                                                class="">使用条款</a> 和隐私政策约束。
+      <p> 在使用我们的服务前，您必须确认您已阅读并理解 <router-link to="/tos">使用条款</router-link>
+        和隐私政策，包括我们如何以及为何使用您的信息，且您使用服务的行为均受到 <router-link to="/tos">使用条款</router-link> 和隐私政策约束。
       </p>
       <h2>我们收集的信息</h2>
       <h3>游玩</h3>
@@ -55,10 +53,9 @@ import Footer from "@/layouts/Footer.vue";
         <li>您的用户名、注册和登录时间、游玩时间、账号信息、游玩歌曲成绩、游玩记录（均可以在网页选择是否披露）。</li>
         <li>您明确表达愿意披露的信息。</li>
         <li>根据法律的有关规定或行政或司法机构的要求，需要向第三方或者行政、司法机构披露</li>
-        <li> 您出现违反中国有关法律、法规或者 Turbo <a href="/tos"
-                                                      class="">使用条款</a> 或相关规则的情况，需要向第三方披露
+        <li> 您出现违反中国有关法律、法规或者 Turbo <router-link to="/tos">使用条款</router-link> 或相关规则的情况，需要向第三方披露
         </li>
-        <li> 其他为执行 <a href="/tos" class="">使用条款</a> 而需要披露的信息。
+        <li> 其他为执行 <router-link to="/tos">使用条款</router-link> 而需要披露的信息。
         </li>
       </ol>
       <h2>Cookies</h2>

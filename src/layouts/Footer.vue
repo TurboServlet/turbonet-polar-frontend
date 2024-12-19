@@ -18,15 +18,12 @@
         <a target="_blank" href="https://github.com/TurboServlet">
           Github <i class="fa-brands fa-github"></i>
         </a>
-        <a target="_blank" href="/tos">
+        <router-link to="/tos" target="_blank">
           使用条款
-        </a>
-        <a target="_blank" href="/privacy">
+        </router-link>
+        <router-link to="/privacy" target="_blank">
           隐私政策
-        </a>
-        <div>
-          ICP备20240897号
-        </div>
+        </router-link>
       </div>
     </nav>
   </footer>

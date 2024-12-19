@@ -100,10 +100,10 @@ onMounted(() => {
             <tbody>
             <tr v-for="player in responseData.playerList">
               <td>
-                <a v-if="player.turboName !== ''" :href="`/u/${player.turboName}`" class="flex flex-row items-center gap-2 group">
+                <router-link v-if="player.turboName !== ''" :to="`/u/${player.turboName}`" class="flex flex-row items-center gap-2 group">
                                   <span
                                       class="text-[#ff7043] group-hover:link truncate max-w-[150px] lg:max-w-[300px] overflow-hidden text-ellipsis whitespace-nowrap">{{ player.maimaiName }}</span>
-                </a>
+                </router-link>
                 <span v-else
                       class="flex flex-row items-center gap-2 truncate max-w-[150px] lg:max-w-[300px] overflow-hidden text-ellipsis whitespace-nowrap">{{ player.maimaiName }}</span>
               </td>

@@ -139,7 +139,7 @@ const changeStep = () => {
     </button>
     <div class="mt-3"></div>
     <div class="text-right text-xs opacity-60">
-      提交注册并注册完成即代表您同意 <a class="text-primary" target="_blank" href="/tos">使用条款</a> 和 <a class="text-primary" target="_blank" href="/privacy">隐私政策</a>
+      提交注册并注册完成即代表您同意 <router-link class="text-primary" target="_blank" to="/tos">使用条款</router-link> 和 <router-link class="text-primary" target="_blank" to="/privacy">隐私政策</router-link>
     </div>
   </div>
 </template>

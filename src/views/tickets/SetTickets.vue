@@ -246,7 +246,7 @@ watch(selectedTicketType, (newValue) => {
         <div class="text-center text-xs opacity-60 w-5/6 mx-auto">
           请在使用权限之前慎重考虑。您的一切操作都将被记录，您后续行为所引发的所有后果以及舆论影响将由您负责。TurboServlet
           有权根据
-          <a class="text-primary" target="_blank" href="/tos">使用条款</a> 对您采取措施。
+          <router-link class="text-primary" target="_blank" to="/tos">使用条款</router-link> 对您采取措施。
         </div>
       </div>
     </div>

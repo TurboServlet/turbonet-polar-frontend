@@ -14,7 +14,7 @@ import Footer from "@/layouts/Footer.vue";
                               href="https://mai-turbo.net">https://mai-turbo.net</a>）、
         客户端以及任何关联服务（以下统称“<b>Turbo</b>”）即代表您确认您完全遵守此处列出的条款和条件，且保证您不会将
         TurboServlet 提供服务的任何内容（包括本网站与本网站提供的内容）用于任何违法或被条款禁止的目的。 </p>
-      <p>在该份条款之外，您还需要确保接受我们的 <a href="/privacy" class="">隐私政策</a>。
+      <p>在该份条款之外，您还需要确保接受我们的 <router-link to="/privacy" class="">隐私政策</router-link>。
       </p>
       <h2>服务描述</h2>
       <p>Turbo 在法律允许的范围内向用户提供在线服务。若用户未经某公司授权向某地区提供非法的在线服务，Turbo
@@ -67,7 +67,7 @@ import Footer from "@/layouts/Footer.vue";
         有权力删除或进一步维权。 </p>
       <p>Turbo 保留在没有事先通知的情况下删除内容和用户提交内容、使用账号的权利。</p>
       <h2>隐私保护与信息收集政策</h2>
-      <p>参见 <a href="/privacy" class="">隐私政策</a>。</p>
+      <p>参见 <router-link to="/privacy" class="">隐私政策</router-link>。</p>
       <h2>内容的专有权利</h2>
       <p> 您应承认，Turbo
         所提供的内容，包括但不限于文本、软件、音乐、声音、照片、视频、图形、名称引用或其他通过服务向用户提供或用户访问的材料（“内容”），受版权、商标、服务标志、专利或其他专有权利和法律的保护；因此，用户只有在获得明确授权的情况下才能使用此内容。 </p>

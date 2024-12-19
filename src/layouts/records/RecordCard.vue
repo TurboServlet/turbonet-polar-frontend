@@ -27,7 +27,7 @@ const diffFix = (musicId, diff) => {
     <div class="grid grid-cols-1 items-center gap-4 sm:grid-flow-dense sm:grid-cols-12 sm:gap-6">
       <div class="min-w-84 card flex max-h-60 flex-col bg-base-100 h-48 sm:col-span-7 sm:h-full">
         <!---->
-        <a :href="`/musicRanking/${record.musicId}/${diffFix(record.musicId ,record.musicDiff)}`" class="flex flex-1">
+        <router-link :to="`/musicRanking/${record.musicId}/${diffFix(record.musicId ,record.musicDiff)}`" class="flex flex-1">
         <div class="base-card bg-image-loading w-full flex-1">
           <div class="card absolute flex size-full overflow-hidden">
             <div class="base-card-bg flex-1 bg-cover bg-center transition-all"
@@ -69,7 +69,7 @@ const diffFix = (musicId, diff) => {
             </div>
           </div>
         </div>
-        </a></div>
+        </router-link></div>
       <div class="flex flex-col gap-2 sm:col-span-5">
         <div class="flex flex-col gap-2">
           <div class="flex flex-col gap-2"><p class="w-fit text-2xl font-light lg:text-4xl">{{ record.achievement.toFixed(4) }}%</p>

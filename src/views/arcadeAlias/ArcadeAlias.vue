@@ -73,7 +73,7 @@ onMounted(() => {
       </div>
       <div class="mt-2"></div>
       <div class="flex-wrap gap-1.5 flex items-center">
-        <div class="badge badge-outline gap-2 font-bold"><i class="fa-solid fa-comment"></i>{{ arcade.arcadeAlias.length }}/3</div>
+        <div class="badge badge-outline gap-2 font-bold"><i class="fa-solid fa-comment"></i>{{ arcade.arcadeAlias.length }}/5</div>
         <div class="gap-1.5 flex">
           <div v-for="alias in arcade.arcadeAlias">{{ alias }}</div>
           <div v-if="arcade.arcadeAlias.length === 0" class="opacity-60">暂无简称</div>
@@ -85,7 +85,7 @@ onMounted(() => {
     <div class="mt-6"></div>
     <div class="text-center text-xs opacity-60 w-5/6 mx-auto">
       请在使用权限之前慎重考虑。您的一切操作都将被记录，您将对行为所引发的所有后果以及舆论影响负责。TurboServlet 有权根据
-      <a class="text-primary" href="/tos" target="_blank">使用条款</a> 对您采取措施。
+      <router-link class="text-primary" to="/tos" target="_blank">使用条款</router-link> 对您采取措施。
     </div>
   </div>
   <ArcadeAliasDialog :arcade-alias-dialog="arcadeAliasDialog"/>

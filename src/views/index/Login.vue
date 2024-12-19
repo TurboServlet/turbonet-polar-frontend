@@ -4,6 +4,9 @@ import {toast} from "vue-sonner";
 import {useReCaptcha} from "vue-recaptcha-v3";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {closeDialogModal} from "@/assets/js/DialogManager.js";
+import {useRouter} from "vue-router";
+
+const router = useRouter()
 
 const {executeRecaptcha} = useReCaptcha()
 
@@ -29,7 +32,7 @@ const getToken = async () => {
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('refreshToken', response.data.refreshToken);
       localStorage.setItem('botToken', response.data.botToken);
-      window.location.href = '/panel';
+      router.push('/panel')
     } else {
       toast.error(response.data)
     }
@@ -85,7 +88,7 @@ const getToken = async () => {
       </form>
       <div class="mt-3"></div>
       <div class="text-right text-xs opacity-60">
-        登录或注册完成即代表您同意 <a class="text-primary" target="_blank" href="/tos">使用条款</a> 和 <a class="text-primary" target="_blank" href="/privacy">隐私政策</a>
+        登录或注册完成即代表您同意 <router-link class="text-primary" target="_blank" to="/tos">使用条款</router-link> 和 <router-link class="text-primary" target="_blank" to="/privacy">隐私政策</router-link>
       </div>
     </div>
     <div @click="closeDialogModal('login')" class="modal-backdrop">

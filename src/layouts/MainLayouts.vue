@@ -41,29 +41,26 @@ onMounted(() => {
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-else>
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 验证失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.validateError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
-        {{ message }} <router-link class="text-primary" to="/">返回主页</router-link>
+        {{ message }} <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
 
-  <div v-if="isSuccess" class="header-container">
+  <div v-if="isSuccess">
     <Header/>
   </div>
   <div v-if="isSuccess" class="body-container">
     <div class="menu-container">
       <Menu :turbo-name="turboName"/>
     </div>
-    <div class="main-container bg-base-200 rounded-box">
+    <div class="main-container bg-base-100 rounded-box">
       <router-view/>
     </div>
   </div>
-  <a v-if="isSuccess" class="footer-container" target="_blank" href="https://github.com/TurboServlet">
-    ©2024 TurboServlet&nbsp;<i class="fa-brands fa-github"></i>
-  </a>
 </template>
 
 <style scoped>

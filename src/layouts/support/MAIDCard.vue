@@ -4,10 +4,10 @@ import {ref} from "vue";
 import MAIDHelpDialog from "@/layouts/register/MAIDHelpDialog.vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
-import {useReCaptcha} from "vue-recaptcha-v3";
+import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
 import {useRouter} from "vue-router";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
-const {executeRecaptcha} = useReCaptcha()
+
 
 const isShowInner = ref(false)
 const changeShow = () => {
@@ -21,10 +21,11 @@ const router = useRouter()
 
 const weChatIDVerify = async () => {
   isBtnLoading.value = true
-  const token = await executeRecaptcha('weChatIDVerify')
+  const {token, a} = await executeRecaptcha('weChatIDVerify')
   const payload = {
     "weChatID": weChatID.value,
-    "captchaToken": token
+    "captchaToken": token,
+    "a": a,
   }
   await sendPostRequest('/support/weChatIDVerify', payload, false).then((response) => {
     if (response.statusCode === 200) {

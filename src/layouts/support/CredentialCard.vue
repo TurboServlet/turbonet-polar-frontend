@@ -2,10 +2,10 @@
 import {ref} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
-import {useReCaptcha} from "vue-recaptcha-v3";
+import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
 import {useRouter} from "vue-router";
 
-const {executeRecaptcha} = useReCaptcha()
+
 
 const isShowInner = ref(false)
 const changeShow = () => {
@@ -20,11 +20,12 @@ const router = useRouter()
 
 const credentialVerify = async () => {
   isBtnLoading.value = true
-  const token = await executeRecaptcha('credentialVerify')
+  const {token, a} = await executeRecaptcha('credentialVerify')
   const payload = {
     "username": username.value,
     "password": password.value,
-    "captchaToken": token
+    "captchaToken": token,
+    "a": a,
   }
   await sendPostRequest('/support/credentialVerify', payload, false).then((response) => {
     if (response.statusCode === 200) {

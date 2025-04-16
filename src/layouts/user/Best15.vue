@@ -42,7 +42,7 @@ const sortedBest15 = computed(() => {
         </div>
       </div>
     </div>
-    <div v-else class="text-center mt-20 mb-20">该用户设置了权限或数据不足</div>
+    <div v-else class="text-center mt-20 mb-20">{{ $t('user.private') }}</div>
   </div>
 </template>
 
@@ -55,7 +55,7 @@ const sortedBest15 = computed(() => {
 }
 
 .map-detail-container {
-  background-color: oklch(var(--b3));
+  background-color: oklch(var(--b2));
   border-radius: 12px;
   overflow: hidden;
 }

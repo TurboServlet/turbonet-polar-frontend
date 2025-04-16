@@ -17,22 +17,22 @@ const recentScores = toRef(props, 'recentScores');
 
 <template>
   <div class="recent">
-    <h2 class="text-2xl mt-3.5 mb-3.5"> 最近游玩记录</h2>
+    <h2 class="text-2xl mt-3.5 mb-3.5"> {{ $t('user.recentScores.title') }}</h2>
     <div v-if="recentScores.length > 0" class="scores">
       <div
           v-for="(music, index) in recentScores"
           :key="music.musicId"
-          :class="['scores-single', { 'alt': index % 2 === 0 }]"
+          :class="['scores-single', { 'bg-base-200 alt': index % 2 === 0 }]"
       ><img :src="`https://assets.lxns.net/maimai/jacket/${fixIcon(music.musicId)}.png!webp`" alt="" class="score-image" loading="lazy">
         <div class="info">
           <div class="song-title">{{ music.musicName }}</div>
-          <div class="whitespace-nowrap"><span class="lv" :class="levelColor(music.diff)">{{ music.level }}</span> <span :class="rankColor(music.achievement.toFixed(0))"><span
+          <div class="whitespace-nowrap"><span class="lv" :class="levelColor(music.diff)">{{ music.level.toFixed(1) }}</span> <span :class="rankColor(music.achievement.toFixed(0))"><span
               class="rank-text">{{ music.scoreRank }}</span> <span class="rank-num">{{ music.achievement.toFixed(2) }}%</span></span> <span
               class="dx-change text-green-500">{{ music.score === 0 ? '-' : music.score }}</span></div>
         </div>
       </div>
     </div>
-    <div v-else class="text-center mt-20 mb-20">该用户设置了权限或数据不足</div>
+    <div v-else class="text-center mt-20 mb-20">{{ $t('user.private') }}</div>
   </div>
 </template>
 
@@ -148,7 +148,6 @@ const recentScores = toRef(props, 'recentScores');
 }
 
 .alt {
-  background-color: #ffffff08;
   border-radius: 12px;
 }
 

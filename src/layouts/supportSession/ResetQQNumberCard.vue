@@ -2,9 +2,9 @@
 import {ref, toRef} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
-import {useReCaptcha} from "vue-recaptcha-v3";
+import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
 
-const {executeRecaptcha} = useReCaptcha()
+
 
 const isShowInner = ref(false)
 const changeShow = () => {
@@ -31,11 +31,12 @@ const newQQNumber = ref('')
 
 const resetQQNumber = async () => {
   isBtnLoading.value = true
-  const token = await executeRecaptcha('resetQQNumber')
+  const {token, a} = await executeRecaptcha('resetQQNumber')
   const payload = {
     "qqNumber": newQQNumber.value,
     "sessionId": sessionId.value,
-    "captchaToken": token
+    "captchaToken": token,
+    "a": a,
   }
   await sendPostRequest('/support/resetQQNumber', payload, false).then((response) => {
     if (response.statusCode === 200) {

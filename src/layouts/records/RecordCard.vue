@@ -23,7 +23,7 @@ const diffFix = (musicId, diff) => {
 </script>
 
 <template>
-  <div class="card-body bg-base-300 rounded-box">
+  <div class="card-body border-2 border-base-200 rounded-box">
     <div class="grid grid-cols-1 items-center gap-4 sm:grid-flow-dense sm:grid-cols-12 sm:gap-6">
       <div class="min-w-84 card flex max-h-60 flex-col bg-base-100 h-48 sm:col-span-7 sm:h-full">
         <!---->
@@ -74,7 +74,7 @@ const diffFix = (musicId, diff) => {
         <div class="flex flex-col gap-2">
           <div class="flex flex-col gap-2"><p class="w-fit text-2xl font-light lg:text-4xl">{{ record.achievement.toFixed(4) }}%</p>
             <div class="flex flex-wrap-reverse items-center gap-x-2 gap-y-1">
-              <div class="badge badge-warning flex-nowrap" v-if="record.isNewRecord"> 新纪录</div>
+              <div class="badge badge-warning flex-nowrap" v-if="record.isNewRecord"> {{ $t('records.newRecord') }}</div>
               <div class="badge badge-neutral flex-nowrap" v-if="record.addRating === 0"> Rating +0</div>
               <div class="badge badge-success flex-nowrap" v-else> Rating +{{record.addRating}}</div>
             </div>

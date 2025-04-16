@@ -10,13 +10,13 @@ import RequstFriendList from "@/layouts/friends/RequstFriendList.vue";
     <div class="breadcrumbs text-sm">
       <ul>
         <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-        <li>NET好友</li>
-        <li>添加好友</li>
+        <li>{{ $t('menu.friends.title') }}</li>
+        <li>{{ $t('menu.friends.addFriends') }}</li>
       </ul>
     </div>
     <div class="mt-2"/>
     <div role="tablist" class="tabs tabs-lifted">
-      <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="添加好友" checked="checked"/>
+      <input type="radio" name="my_tabs_2" role="tab" class="tab" :aria-label="$t('addFriends.requestFriend.title')" checked="checked"/>
       <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
         <RequestFriend/>
       </div>
@@ -26,7 +26,7 @@ import RequstFriendList from "@/layouts/friends/RequstFriendList.vue";
           name="my_tabs_2"
           role="tab"
           class="tab"
-          aria-label="申请列表"
+          :aria-label="$t('addFriends.requestFriendList.title')"
       />
       <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
         <RequstFriendList/>

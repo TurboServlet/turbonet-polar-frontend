@@ -60,10 +60,10 @@ watchEffect(async () => {
       </h1>
     <div class="mt-3"></div>
     <p v-if="isSuccess">
-      已验证完成，将在三秒后返回至主页。 <router-link class="text-primary" to="/">返回主页</router-link>
+      已验证完成，将在三秒后返回至主页。 <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
     </p>
     <p v-else>
-      {{ message }} <router-link class="text-primary" to="/">返回主页</router-link>
+      {{ message }} <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
     </p>
     </div>
   </div>

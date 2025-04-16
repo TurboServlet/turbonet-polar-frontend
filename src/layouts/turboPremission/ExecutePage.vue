@@ -6,11 +6,11 @@ import {ref, toRef} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
-import {useReCaptcha} from "vue-recaptcha-v3";
+import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
 import ExecuteRecordDialog from "@/layouts/turboPremission/ExecuteRecordDialog.vue";
 import ExecuteRecordBadge from "@/components/ExecuteRecordBadge.vue";
 
-const {executeRecaptcha} = useReCaptcha()
+
 
 const turboName = ref('')
 const selectedType = ref('WARNING')
@@ -42,12 +42,13 @@ const execute = async () => {
     isBtnLoading.value = false
     return
   }
-  const token = await executeRecaptcha('execute')
+  const {token, a} = await executeRecaptcha('execute')
   if (selectedType.value === 'WARNING') {
     const payload = {
       "turboName": turboName.value,
       "reason": reason.value,
       "captchaToken": token,
+      "a": a,
     }
     await sendPostRequest('/permission/warnUser', payload, true).then((response) => {
       if (response.statusCode === 200) {
@@ -66,6 +67,7 @@ const execute = async () => {
       "isPermanent": selectedTime.value === '6',
       "endHours": selectedTimeToHour(),
       "captchaToken": token,
+      "a": a,
     }
     await sendPostRequest('/permission/banUser', payload, true).then((response) => {
       if (response.statusCode === 200) {
@@ -89,13 +91,13 @@ const execute = async () => {
         <input
             type="text"
             class="grow"
-            placeholder="Turbo用户名"
+            :placeholder="$t('turboPermission.executePage.turboName')"
             v-model="turboName"
             autocomplete="current-username"
             required/>
       </label>
       <div class="mt-4"></div>
-      <textarea v-model="reason" class="textarea max-sm:textarea-sm textarea-bordered" placeholder="理由"></textarea>
+      <textarea v-model="reason" class="textarea max-sm:textarea-sm textarea-bordered" :placeholder="$t('turboPermission.executePage.reason')"></textarea>
       <div class="mt-4"></div>
       <div class="form-control">
         <label class="label cursor-pointer">
@@ -117,27 +119,27 @@ const execute = async () => {
       </div>
       <input type="range" min="1" max="6" value="1" class="range max-sm:range-sm range-primary mt-4" v-model="selectedTime" v-if="selectedType === 'BANNED'" />
       <div class="flex w-full justify-between px-2 text-xs mt-0.5" v-if="selectedType === 'BANNED'">
-        <span>1小时</span>
-        <span>24小时</span>
-        <span>7天</span>
-        <span>30天</span>
-        <span>365天</span>
-        <span>永久</span>
+        <span>{{ $t('turboPermission.executePage.banTime.1hr') }}</span>
+        <span>{{ $t('turboPermission.executePage.banTime.24hrs') }}</span>
+        <span>{{ $t('turboPermission.executePage.banTime.7days') }}</span>
+        <span>{{ $t('turboPermission.executePage.banTime.30days') }}</span>
+        <span>{{ $t('turboPermission.executePage.banTime.365days') }}</span>
+        <span>{{ $t('turboPermission.executePage.banTime.permanent') }}</span>
       </div>
       <div class="mt-8"></div>
       <button class="btn max-sm:btn-sm w-2/3 mx-auto" :disabled="isBtnLoading">
         <span v-if="isBtnLoading" class="loading loading-spinner"></span>
-        执行
+        {{ $t('turboPermission.executePage.execute') }}
       </button>
     </form>
     <div class="mt-2"></div>
     <button class="btn max-sm:btn-sm w-2/3 mx-auto" @click="openDialogModal('executeRecordDialog')">
-      <i class="fa-solid fa-clock-rotate-left"></i> 历史执行管理
+      <i class="fa-solid fa-clock-rotate-left"></i> {{ $t('turboPermission.executePage.executeLog') }}
     </button>
     <div class="mt-6"></div>
     <div class="text-center text-xs opacity-60 w-5/6 mx-auto">
-      请在使用权限之前慎重考虑。您的一切操作都将被记录，该用户后续行为所引发的所有后果以及舆论影响将由您负责。TurboServlet 有权根据
-      <router-link class="text-primary" target="_blank" to="/tos">使用条款</router-link> 对您采取措施。
+      {{ $t('turboPermission.executePage.executeNotice.1') }}
+      <router-link class="text-primary" target="_blank" to="/tos">{{ $t('termsofservice.title') }}</router-link> {{ $t('turboPermission.executePage.executeNotice.2') }}
     </div>
   </div>
   <ExecuteRecordDialog/>

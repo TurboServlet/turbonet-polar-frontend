@@ -90,11 +90,11 @@ const copyToClipboard = () => {
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 加载失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
-        {{ responseData }} <router-link class="text-primary" to="/">返回主页</router-link>
+        {{ responseData }} <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
@@ -102,7 +102,7 @@ const copyToClipboard = () => {
     <div class="breadcrumbs text-sm">
       <ul>
         <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-        <li>BOT管理</li>
+        <li>{{ $t('menu.botManager') }}</li>
       </ul>
     </div>
     <div class="mt-2"/>
@@ -111,43 +111,43 @@ const copyToClipboard = () => {
       <div class="rounded-box bg-primary text-primary-content">
         <div class="stat">
           <div>BOT TOKEN</div>
-          <div class="font-bold text-2xl" v-if="botTokenIsLoading"><i class="fa-solid fa-key"></i> 加载中 ...</div>
+          <div class="font-bold text-2xl" v-if="botTokenIsLoading"><i class="fa-solid fa-key"></i> {{ $t('botManager.loading') }}</div>
           <div class="font-bold text-2xl" v-else><i class="fa-solid fa-key"></i> {{ botToken }}</div>
           <div class="stat-actions">
-            <button class="btn btn-sm btn-success" @click="copyToClipboard">复制到剪贴板</button>
+            <button class="btn btn-sm btn-success" @click="copyToClipboard">{{ $t('botManager.copyToClipboard') }}</button>
           </div>
         </div>
       </div>
     </div>
     <div class="mt-2"/>
     <div v-if="responseData.length === 0" class="opacity-60 mt-10 main-container-center">
-      你还没有授权任何BOT呢
+      {{ $t('botManager.noData') }}
     </div>
     <div v-else class="overflow-x-auto">
       <table class="table table-zebra">
         <!-- head -->
         <thead>
         <tr>
-          <th>BOT名称</th>
-          <th>被调用次数及授权时间</th>
-          <th>操作</th>
+          <th>{{ $t('botManager.table.botName') }}</th>
+          <th>{{ $t('botManager.table.info') }}</th>
+          <th>{{ $t('botManager.table.operate') }}</th>
         </tr>
         </thead>
         <tbody>
         <tr v-for="bot in responseData">
           <td><i class="fa-solid fa-robot"></i> {{ bot.botName }}</td>
           <td>
-            <div class="tooltip" :data-tip="`(ID: ${bot.botId}) 授权于: ${bot.bindDate}`">
+            <div class="tooltip" :data-tip="`(ID: ${bot.botId}) - ${bot.bindDate}`">
               <div class="badge gap-1.5 font-bold badge-neutral">
                 <i class="fa-solid fa-user-clock"></i>
-                {{ bot.useCount }} 次
+                {{ bot.useCount }} {{ $t('botManager.table.times') }}
               </div>
             </div>
           </td>
           <td>
             <button @click="unbind(bot.botId)" class="btn btn-xs gap-1.5 btn-error" :disabled="unbindBtnLoadingStates[bot.botId]">
               <i v-if="unbindBtnLoadingStates[bot.botId]" class="loading loading-spinner size-4"></i>
-              <i v-else class="fa-solid fa-user-slash"></i> 取消
+              <i v-else class="fa-solid fa-user-slash"></i> {{ $t('botManager.table.cancel') }}
             </button>
           </td>
         </tr>

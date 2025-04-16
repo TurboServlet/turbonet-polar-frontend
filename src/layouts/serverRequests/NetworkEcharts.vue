@@ -1,5 +1,5 @@
 <script setup>
-import {onMounted, onUnmounted, ref, toRef} from "vue";
+import {onMounted, onUnmounted, ref} from "vue";
 import * as echarts from "echarts/core";
 import {GridComponent, LegendComponent, TitleComponent, TooltipComponent} from "echarts/components";
 import {ScatterChart} from "echarts/charts";
@@ -70,8 +70,8 @@ const serverRequestsEcharts = async () => {
       isSuccess.value = true
       option.value.xAxis.min = response.data.startTimeStamp
       option.value.xAxis.max = response.data.endTimeStamp
-      option.value.series[0].data = response.data.cachedLatency
-      option.value.series[1].data = response.data.unCachedLatency
+      option.value.series[0].data = removeTop5Percent(response.data.cachedLatency)
+      option.value.series[1].data = removeTop5Percent(response.data.unCachedLatency)
       myChart.setOption(option.value);
     } else {
       isLoading.value = false
@@ -84,6 +84,12 @@ const serverRequestsEcharts = async () => {
     responseData.data = '验证失败，请重新登录。'
   })
 }
+
+const removeTop5Percent = (dataList) => {
+  const sortedList = dataList.sort((a, b) => b[1] - a[1]);
+  const removeCount = Math.ceil(sortedList.length * 0.05);
+  return sortedList.slice(removeCount);
+};
 
 let myChart = null;
 

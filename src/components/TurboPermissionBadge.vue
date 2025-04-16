@@ -1,5 +1,7 @@
 <script setup>
 import {defineProps, toRef} from 'vue'
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 
 const props = defineProps({
   turboPermission: {
@@ -28,15 +30,15 @@ const badgeColor = () => {
 const badgeName = () => {
   switch (turboPermission.value) {
     case 'ADMIN':
-      return '全权管理员'
+      return t('turboPermissionBadge.admin')
     case 'BUILDER':
-      return '技术实施员'
+      return t('turboPermissionBadge.builder')
     case 'AUTHORIZER':
-      return '许可用户'
+      return t('turboPermissionBadge.authorizer')
     case 'USER':
-      return '标准用户'
+      return t('turboPermissionBadge.user')
     default:
-      return '未知'
+      return t('turboPermissionBadge.unknown')
   }
 }
 

@@ -37,12 +37,12 @@ onMounted(() => {
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 加载失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
         {{ responseData }}
-        <router-link class="text-primary" to="/">返回主页</router-link>
+        <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
@@ -50,43 +50,43 @@ onMounted(() => {
     <div class="breadcrumbs text-sm">
       <ul>
         <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-        <li>服务器请求统计</li>
+        <li>{{ $t('menu.serverRequests') }}</li>
       </ul>
     </div>
     <div class="mt-2"/>
     <div class="grid">
-      <div class="stats-vertical bg-base-100 rounded-box mb-2 p-3">
+      <div class="stats-vertical border-2 border-base-200 rounded-box mb-2 p-3">
         <div class="p-4">
-          <h1 class="font-bold text-3xl">服务器请求统计</h1>
+          <h1 class="font-bold text-3xl">{{ $t('serverRequests.title') }}</h1>
           <p class="text-sm text-gray-500">
-            响应数据的「Z-LIB」压缩跳过率与请求重试次数可以反应当前网络情况。<br>
-            压缩跳过率超过「>3%」时，可能会出现网络不稳定现象。<br>
-            请求重试率和失败率较高时，网络或服务器可能存在问题。</p>
+            {{ $t('serverRequests.contact.1') }}<br>
+            {{ $t('serverRequests.contact.2') }}<br>
+            {{ $t('serverRequests.contact.3') }}</p>
         </div>
       </div>
-      <div class="stats stats-vertical lg:stats-horizontal lg:w-full shadow">
+      <div class="stats stats-vertical lg:stats-horizontal lg:w-full border-2 border-base-200">
         <div class="stat">
-          <div class="stat-title">一小时内总包数</div>
+          <div class="stat-title">{{ $t('serverRequests.totalRequests') }}</div>
           <div class="stat-value">{{ responseData.requestsCount.toLocaleString() }}</div>
-          <div class="stat-desc">缓存内 {{ responseData.cachedRequestsCount.toLocaleString() }}</div>
+          <div class="stat-desc">{{ $t('serverRequests.inCache') }} {{ responseData.cachedRequestsCount.toLocaleString() }}</div>
         </div>
 
         <div class="stat">
-          <div class="stat-title">一小时内总异常包数</div>
+          <div class="stat-title">{{ $t('serverRequests.totalException') }}</div>
           <div class="stat-value">{{ responseData.exceptionRequestsCount.toLocaleString() }}</div>
-          <div class="stat-desc">缓存内 {{ responseData.exceptionRequestsCachedCount.toLocaleString() }}</div>
+          <div class="stat-desc">{{ $t('serverRequests.inCache') }} {{ responseData.exceptionRequestsCachedCount.toLocaleString() }}</div>
         </div>
 
         <div class="stat">
-          <div class="stat-title">一小时内异常包数占比</div>
+          <div class="stat-title">{{ $t('serverRequests.totalExceptionRate') }}</div>
           <div class="stat-value">{{ responseData.exceptionRequestsRate.toFixed(2) }}%</div>
-          <div class="stat-desc">缓存内 {{ responseData.exceptionRequestsCachedRate.toFixed(2) }} %, 缓存外 {{ responseData.exceptionRequestsUnCachedRate.toFixed(2) }} %</div>
+          <div class="stat-desc">{{ $t('serverRequests.inCache') }} {{ responseData.exceptionRequestsCachedRate.toFixed(2) }} %, {{ $t('serverRequests.unCache') }} {{ responseData.exceptionRequestsUnCachedRate.toFixed(2) }} %</div>
         </div>
       </div>
 
-      <div class="stats stats-vertical mt-2 lg:stats-horizontal lg:w-full shadow">
+      <div class="stats stats-vertical mt-2 lg:stats-horizontal lg:w-full border-2 border-base-200">
         <div class="stat">
-          <div class="stat-title">Z-LIB压缩跳过数量</div>
+          <div class="stat-title">{{ $t('serverRequests.totalZlibSkipped') }}</div>
           <div class="stat-value">{{ responseData.zlibSkippedRequestsCount.toLocaleString() }}</div>
 
           <div :class="{
@@ -104,7 +104,7 @@ onMounted(() => {
         </div>
 
         <div class="stat">
-          <div class="stat-title">尝试重试数量</div>
+          <div class="stat-title">{{ $t('serverRequests.totalRetry') }}</div>
           <div class="stat-value">{{ responseData.retryRequestsCount.toLocaleString() }}</div>
           <div :class="{
       'text-success': responseData.retryRequestsRateThanBefore > 0,
@@ -121,7 +121,7 @@ onMounted(() => {
         </div>
 
         <div class="stat">
-          <div class="stat-title">尝试失败数量</div>
+          <div class="stat-title">{{ $t('serverRequests.totalPanic') }}</div>
           <div class="stat-value">{{ responseData.panicRequestsCount.toLocaleString() }}</div>
           <div :class="{
       'text-success': responseData.panicRequestsRateThanBefore > 0,
@@ -138,7 +138,7 @@ onMounted(() => {
         </div>
       </div>
 
-      <div class="mt-2 bg-base-100 p-4 rounded-box">
+      <div class="mt-2 p-4 rounded-box border-2 border-base-200 mb-8">
         <NetworkEcharts/>
       </div>
     </div>

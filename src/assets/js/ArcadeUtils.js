@@ -1,30 +1,33 @@
+import i18n from './i18n.js'
+const { t } = i18n.global
+
 export const ArcadeSettingEnumToString = (setting) => {
     switch (setting) {
         case "MASK_USERNAME":
-            return "遮挡用户名";
+            return t('arcadeSettingEnum.maskUsername');
         case "UDEMAE_SHOW_ACHIEVEMENT":
-            return "友人对战显示完成度";
+            return t('arcadeSettingEnum.udemaeShowAchievement');
         case "DISABLE_TICKET":
-            return "禁用 Turbo 功能票";
+            return t('arcadeSettingEnum.disableTicket');
         case "DISABLE_CUSTOM_NAME":
-            return "禁用自定义名称";
+            return t('arcadeSettingEnum.disableCustomName');
         case "DISABLE_CUSTOM_AVATAR":
-            return "禁用自定义头像";
+            return t('arcadeSettingEnum.disableCustomAvatar');
         default:
-            return "未知设置"
+            return t('arcadeSettingEnum.unknown');
     }
 }
 
 export const ArcadeFunctionTypeStringToEnum = (functionType) => {
     switch (functionType) {
         case "LOGIN":
-            return "加速盒子机台登入";
+            return t('arcadeFunctionType.login');
         case "KASTANJ_LOGIN":
-            return "加速盒子机台 Kastanj 服务登入";
+            return t('arcadeFunctionType.kastanjLogin');
         case "SPECIAL_TYPE_ONE_LOGIN":
-            return "2077 服务机台登入";
+            return t('arcadeFunctionType.specialTypeOneLogin');
         case "PING":
-            return "PING 机台";
+            return t('arcadeFunctionType.ping');
     }
 }
 

@@ -1,11 +1,11 @@
 <script setup>
 
 import {onMounted, onUnmounted, ref, defineProps} from "vue";
-import {useReCaptcha} from "vue-recaptcha-v3";
+import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
 
-const { executeRecaptcha } = useReCaptcha()
+
 
 const minutes = ref(9);
 const seconds = ref(30);
@@ -64,13 +64,14 @@ const register = async () => {
     toast.error('两次输入的密码不一致')
     return
   }
-  const token = await executeRecaptcha('register')
+  const {token, a} = await executeRecaptcha('register')
   const payload = {
     "username": username.value,
     "password": password.value,
     "email": email.value,
     "qqNumber": qqNumber.value,
     "captchaToken": token,
+    "a": a,
     "registerToken": registerToken.value
   }
   await sendPostRequest('/auth/register', payload, false).then((response) => {

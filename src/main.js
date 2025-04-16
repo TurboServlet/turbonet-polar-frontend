@@ -1,6 +1,7 @@
 import './assets/css/base.css'
 import {createApp} from 'vue'
 import App from './App.vue'
+import i18n from '@/assets/js/i18n.js'
 
 import {createRouter, createWebHistory} from 'vue-router'
 import Index from "@/views/index/Index.vue";
@@ -91,5 +92,6 @@ app.use(VueReCaptcha, {
     }
 })
 
+app.use(i18n)
 app.use(router)
 app.mount('#app')

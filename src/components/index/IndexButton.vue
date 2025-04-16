@@ -6,6 +6,9 @@ import {toast} from "vue-sonner";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
 const isLogin = ref(false)
 
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+
 onMounted(() => {
   if (localStorage.getItem('token')) {
     verify()
@@ -26,7 +29,7 @@ const verify = async () => {
 
 const logout = () => {
   clearToken();
-  toast.success('已退出登录');
+  toast.success(t('indexbutton-js-logout'));
   isLogin.value = false
 }
 
@@ -35,14 +38,14 @@ const logout = () => {
 <template>
   <div class="button" v-if="isLogin">
     <div class="btn-body">
-      <router-link to="/panel" class="block-btn btn">进入控制页</router-link>
+      <router-link to="/panel" class="block-btn btn">{{ $t('indexButton.member') }}</router-link>
       <button @click="logout" class="btn btn-circle ml-5" style="height: 62px; width: 62px">
         <i class="fa-solid fa-right-from-bracket" style="font-size: 17px"></i>
       </button>
     </div>
   </div>
   <div class="button" v-else>
-    <div @click="openDialogModal('login')" class="btn-body btn">注册或登录</div>
+    <div @click="openDialogModal('login')" class="btn-body btn">{{ $t('indexButton.guest') }}</div>
   </div>
 </template>
 

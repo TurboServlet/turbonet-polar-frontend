@@ -61,12 +61,12 @@ const closeDialog = () => {
       <form method="dialog">
         <button @click="closeDialog" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
       </form>
-      <h3 class="text-lg font-bold">机厅入库</h3>
+      <h3 class="text-lg font-bold">{{ $t('arcadeInfo.newArcadeDialog.title') }}</h3>
       <div class="mt-5"></div>
       <div class="flex flex-col gap-4">
         <div class="flex items-center flex-between">
           <div class="w-full">
-            机厅类型
+            {{ $t('arcadeInfo.newArcadeDialog.arcadeType') }}
           </div>
           <select v-model="arcadeType" class="select select-bordered">
             <option value="TURBO">Turbo</option>
@@ -75,7 +75,7 @@ const closeDialog = () => {
         </div>
         <div class="flex items-center flex-between">
           <div class="w-full">
-            机台数量
+            {{ $t('arcadeInfo.newArcadeDialog.arcadeNums') }}
           </div>
           <select v-model="arcadeNums" class="select select-bordered">
             <option v-for="num in 8" :value="num" :key="num">{{ num }}</option>
@@ -83,29 +83,29 @@ const closeDialog = () => {
         </div>
         <div class="flex items-center flex-between">
           <div class="w-full">
-            机厅全称
+            {{ $t('arcadeInfo.newArcadeDialog.arcadeName') }}
           </div>
-          <input type="text" v-model="arcadeName" placeholder="入库机厅全称" class="input input-bordered w-full" />
+          <input type="text" v-model="arcadeName" :placeholder="$t('arcadeInfo.newArcadeDialog.arcadeNamePlaceholder')" class="input input-bordered w-full" />
         </div>
         <div v-for="n in arcadeNums" v-if="arcadeType === 'TURBO'" :key="n" class="flex items-center flex-between">
           <div class="w-full">
-            第{{ n }}台 KeyChipID (短)
+            {{ $t('arcadeInfo.newArcadeDialog.turboKeychip', { n: n }) }}
           </div>
           <input type="text" v-model="keychipIdList[n - 1]" placeholder="A63E01E0000" class="input input-bordered w-full" />
         </div>
         <div v-else v-for="ne in arcadeNums" :key="ne" class="flex items-center flex-between">
           <div class="w-full">
-            第{{ ne }}台 KeyChipID (长)
+            {{ $t('arcadeInfo.newArcadeDialog.2077Keychip', { n: ne }) }}
           </div>
           <input type="text" v-model="keychipIdList[ne - 1]" placeholder="A63E-01E00000000" class="input input-bordered w-full" />
         </div>
       </div>
       <div class="mt-5"></div>
       <div class="flex justify-end gap-2">
-        <button @click="closeDialog" class="btn max-sm:btn-sm btn-neutral">取消</button>
+        <button @click="closeDialog" class="btn max-sm:btn-sm btn-neutral">{{ $t('arcadeInfo.newArcadeDialog.cancel') }}</button>
         <button @click="addArcadeAlias" class="btn max-sm:btn-sm btn-primary" :disabled="isBtnLoading">
           <span v-if="isBtnLoading" class="loading loading-spinner"/>
-          机厅入库</button>
+          {{ $t('arcadeInfo.newArcadeDialog.submit') }}</button>
       </div>
     </div>
     <div @click="closeDialog" class="modal-backdrop">

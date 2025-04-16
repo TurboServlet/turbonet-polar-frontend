@@ -62,12 +62,12 @@ onMounted(() => {
   <span v-if="isLoading" class="loading loading-spinner size-8"/>
   <div v-if="!isLoading && !isSuccess">
     <h1 class="font-bold text-3xl">
-      <i class="fa-regular fa-circle-xmark"></i> 加载失败
+      <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
     </h1>
     <div class="mt-3"></div>
     <p>
       {{ responseData }}
-      <router-link class="text-primary" to="/">返回主页</router-link>
+      <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
     </p>
   </div>
 </div>
@@ -76,15 +76,15 @@ onMounted(() => {
     <div class="breadcrumbs text-sm">
       <ul>
         <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-        <li>舞萌相关</li>
-        <li>游戏记录</li>
+        <li>{{ $t('menu.maimai') }}</li>
+        <li>{{ $t('menu.records') }}</li>
       </ul>
     </div>
     <div class="mt-2"/>
-    <div v-if="responseData.totalPages > 1" class="flex mb-2 justify-center">
+    <div v-if="responseData.totalPages > 1" class="flex mb-4 justify-center">
       <div class="join">
         <button class="join-item btn" @click="previousPage">«</button>
-        <button class="join-item btn">第 {{ page }} 页</button>
+        <button class="join-item btn">{{ $t('records.page', { page: page }) }}</button>
         <button class="join-item btn" @click="nextPage">»</button>
       </div>
     </div>
@@ -99,7 +99,7 @@ onMounted(() => {
     <div v-if="responseData.totalPages > 1" class="flex justify-center mt-4">
       <div class="join">
         <button class="join-item btn" @click="previousPage">«</button>
-        <button class="join-item btn">第 {{ page }} 页</button>
+        <button class="join-item btn">{{ $t('records.page', { page: page }) }}</button>
         <button class="join-item btn" @click="nextPage">»</button>
       </div>
     </div>

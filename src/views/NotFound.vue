@@ -13,10 +13,10 @@
       </pre>
       </div>
       <div class="main">
-        啊哦！该页面被吃掉啦！
+        {{ $t('notFound.title') }}
       </div>
       <div class="divider"></div>
-      <button class="btn" @click="$router.push('/')">返回到主页</button>
+      <button class="btn" @click="$router.push('/')">{{ $t('notFound.back') }}</button>
     </div>
   </div>
 </template>

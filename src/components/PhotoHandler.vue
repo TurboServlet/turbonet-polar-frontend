@@ -43,12 +43,12 @@ onMounted(() => {
     <span v-if="isLoading" class="loading loading-spinner size-8 mt-20 mb-20"/>
     <div class="mt-10 mb-10" v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 加载失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
         {{ responseData }}
-        <router-link class="text-primary" to="/">返回主页</router-link>
+        <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>

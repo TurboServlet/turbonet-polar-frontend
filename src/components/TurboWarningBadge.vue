@@ -1,5 +1,7 @@
 <script setup>
 import {defineProps, toRef} from 'vue'
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 
 const props = defineProps({
   times: {
@@ -12,9 +14,9 @@ const times = toRef(props, 'times')
 
 const badgeName = () => {
   if (times.value === 0) {
-    return '无警告记录'
+    return t('turboWarningBadge.noWarning')
   } else {
-    return '被警告' + times.value + '次'
+    return t('turboWarningBadge.warned') + times.value + t('turboWarningBadge.times')
   }
 }
 

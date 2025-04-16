@@ -52,11 +52,11 @@ onMounted(() => {
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 加载失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
-        {{ responseData }} <router-link class="text-primary" to="/">返回主页</router-link>
+        {{ responseData }} <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
@@ -82,7 +82,7 @@ onMounted(() => {
     <!-- head -->
     <thead>
     <tr>
-      <th>鉴权功能</th>
+      <th>{{ $t('turboPermission.showTurboPermission.permissions') }}</th>
       <th>
         <TurboPermissionBadge :turbo-permission="turboPermissionInfo.permission" />
       </th>
@@ -92,7 +92,7 @@ onMounted(() => {
     <tr v-for="permission in responseData">
       <td>{{ permission.permissionDescription }}</td>
       <td>
-        <div class="badge" :class="badgeColor(permission.isGranted)">{{ permission.isGranted ? '已授权' : '未授权' }}</div>
+        <div class="badge" :class="badgeColor(permission.isGranted)">{{ permission.isGranted ? $t('turboPermission.showTurboPermission.granted') : $t('turboPermission.showTurboPermission.notGranted') }}</div>
       </td>
     </tr>
     </tbody>

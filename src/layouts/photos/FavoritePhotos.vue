@@ -77,12 +77,12 @@ onMounted(() => {
     <span v-if="isLoading" class="mt-10 loading loading-spinner size-8"/>
     <div v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 加载失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
         {{ responseData }}
-        <router-link class="text-primary" to="/">返回主页</router-link>
+        <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
@@ -90,32 +90,31 @@ onMounted(() => {
     <div class="main-container-center" v-if="responseData.content.length === 0">
       <div class="mt-10"></div>
       <p>
-        你还没有任何收藏的相片呢
+        {{ $t('photos.noData') }}
       </p>
     </div>
     <div v-if="responseData.totalPages > 1" class="flex mb-2 justify-center">
       <div class="join">
         <button class="join-item btn" @click="previousPage">«</button>
-        <button class="join-item btn">第 {{ page }} 页</button>
+        <button class="join-item btn">{{ $t('photos.page', { page: page }) }}</button>
         <button class="join-item btn" @click="nextPage">»</button>
       </div>
     </div>
-    <div v-for="photo in responseData.content" class="rounded-box bg-primary text-primary-content">
+    <div v-for="photo in responseData.content" class="rounded-box bg-base-300">
       <div class="relative flex flex-col">
         <PhotoHandler :photo-id="photo"/>
       </div>
       <div class="mb-4 flex justify-between">
         <div class="mt-1 mb-1 flex justify-between">
           <div class="ml-5 flex flex-col">
-          <span class="font-bold">TurboNET Polar <i
-              class="fa-solid fa-meteor"></i></span>
+            <span class="font-bold">{{ $t('photos.favoritePhotos') }}</span>
             <span class="text-xs">@2024 TurboServlet</span>
           </div>
         </div>
         <div class="flex items-center">
           <button @click="removeFavorite(photo)" class="mr-5 btn btn-sm btn-success" :disabled="loadingFavorites[photo]">
             <i v-if="loadingFavorites[photo]" class="loading loading-spinner"></i>
-            <i v-else class="fa-solid fa-star"></i> 已收藏
+            <i v-else class="fa-solid fa-star"></i> {{ $t('photos.favorite.enable') }}
           </button>
         </div>
       </div>
@@ -123,7 +122,7 @@ onMounted(() => {
     <div v-if="responseData.totalPages > 1" class="flex justify-center mt-4">
       <div class="join">
         <button class="join-item btn" @click="previousPage">«</button>
-        <button class="join-item btn">第 {{ page }} 页</button>
+        <button class="join-item btn">{{ $t('photos.page', { page: page }) }}</button>
         <button class="join-item btn" @click="nextPage">»</button>
       </div>
     </div>

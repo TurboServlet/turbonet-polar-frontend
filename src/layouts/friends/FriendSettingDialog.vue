@@ -4,7 +4,7 @@ import {onMounted, ref, watch} from "vue";
 import {sendGetRequest, sendPostRequest} from "@/assets/js/RequestHandler.js";
 import TurboPermissionBadge from "@/components/TurboPermissionBadge.vue";
 import {toast} from "vue-sonner";
-import {useReCaptcha} from "vue-recaptcha-v3";
+import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
 import {closeDialogModal} from "@/assets/js/DialogManager.js";
 
 const isLoading = ref(true);
@@ -54,29 +54,29 @@ onMounted(() => {
       <form method="dialog">
         <button @click="closeDialogModal('friendSettingDialog')" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
       </form>
-      <h3 class="text-lg font-bold">好友政策设置</h3>
+      <h3 class="text-lg font-bold">{{ $t('friends.dialog.title') }}</h3>
       <div class="mt-5"></div>
       <div v-if="isLoading || !isSuccess" class="main-container-center">
         <span v-if="isLoading" class="loading loading-spinner size-8"/>
         <div v-if="!isLoading && !isSuccess">
           <h1 class="font-bold text-3xl">
-            <i class="fa-regular fa-circle-xmark"></i> 加载失败
+            <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
           </h1>
           <div class="mt-3"></div>
           <p>
-            {{ responseData }} <router-link class="text-primary" to="/">返回主页</router-link>
+            {{ responseData }} <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
           </p>
         </div>
       </div>
       <div v-else class="flex items-center flex-between">
         <div class="w-full">
-          当前策略
+          {{ $t('friends.dialog.option.title') }}
         </div>
         <select v-model="responseData" @change="setFriendSearchPolicy" class="select select-bordered w-full">
-          <option value="AUTO_ACCEPT">自动同意申请</option>
-          <option value="MANUAL">手动同意申请</option>
-          <option value="FRIENDS_OF_FRIENDS">仅允许有共同好友申请</option>
-          <option value="NOBODY">不允许申请</option>
+          <option value="AUTO_ACCEPT">{{ $t('friends.dialog.option.value.autoAccept') }}</option>
+          <option value="MANUAL">{{ $t('friends.dialog.option.value.manual') }}</option>
+          <option value="FRIENDS_OF_FRIENDS">{{ $t('friends.dialog.option.value.friendsOfFriends') }}</option>
+          <option value="NOBODY">{{ $t('friends.dialog.option.value.nobody') }}</option>
         </select>
       </div>
     </div>

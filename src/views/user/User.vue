@@ -14,6 +14,8 @@ import TurboWarningBadge from "@/components/TurboWarningBadge.vue";
 import UserSettingDialog from "@/layouts/user/UserSettingDialog.vue";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
 import {toast} from "vue-sonner";
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 
 const route = useRoute();
 const router = useRouter();
@@ -102,22 +104,22 @@ const addFriend = async () => {
 </script>
 
 <template>
-  <div v-if="isBanned" class="account_banned">封禁中</div>
+  <div v-if="isBanned" class="account_banned">{{ $t('user.htmlBanned') }}</div>
   <Header :have-list="false"/>
   <div v-if="isLoading || !isSuccess" class="body flex align-middle" style="height: calc(100vh - 64px)">
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 访问失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.enterError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
         {{ message }}
-        <router-link class="text-primary" to="/">返回主页</router-link>
+        <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
-  <div v-else class="body-container bg-base-200">
+  <div v-else class="body-container bg-base-100">
     <div class="user-info">
       <img v-if="responseData.avatar === ''" alt="" class="user-image" src="/img/avatar.jpg">
       <img v-else :src="`data:image/png;base64,${responseData.avatar}`" alt="" class="user-image">
@@ -125,19 +127,19 @@ const addFriend = async () => {
         <div class="m-0 whitespace-nowrap font-bold overflow-hidden text-ellipsis" style="font-size: 1.5rem">
           {{ responseData.maimaiName }}
         </div>
-        <a v-if="isMe" @click="userSetting" class="clickable inside"><i class="fa-solid fa-sliders"></i> 我的设置</a>
+        <a v-if="isMe" @click="userSetting" class="clickable inside"><i class="fa-solid fa-sliders"></i> {{ $t('user.mySettings') }}</a>
         <a v-else @click="addFriend" class="clickable inside" :disabled="isFriendBtnLoading">
           <span v-if="isFriendBtnLoading" class="loading loading-spinner size-4"></span>
-          <i v-else class="fa-solid fa-user-plus"></i> 添加好友
+          <i v-else class="fa-solid fa-user-plus"></i> {{ $t('user.addFriend') }}
         </a>
       </div>
       <nav class="small-text">
-        <a v-if="isMe" @click="userSetting" class="clickable outside"><i class="fa-solid fa-sliders"></i> 我的设置</a>
+        <a v-if="isMe" @click="userSetting" class="clickable outside"><i class="fa-solid fa-sliders"></i> {{ $t('user.mySettings') }}</a>
         <a v-else @click="addFriend" class="clickable outside" :disabled="isFriendBtnLoading">
           <span v-if="isFriendBtnLoading" class="loading loading-spinner size-4"></span>
-          <i v-else class="fa-solid fa-user-plus"></i> 添加好友
+          <i v-else class="fa-solid fa-user-plus"></i> {{ $t('user.addFriend') }}
         </a>
-        <a class="active clickable" @click="router.go(-1)"><i class="fa-solid fa-rotate-left"></i> 返回上一页</a>
+        <a class="active clickable" @click="router.go(-1)"><i class="fa-solid fa-rotate-left"></i> {{ $t('user.return') }}</a>
       </nav>
     </div>
     <div>
@@ -146,22 +148,40 @@ const addFriend = async () => {
         <TurboPermissionBadge v-if="!responseData.isBanned" :turbo-permission="responseData.permission"/>
         <div v-else class="badge gap-1.5 font-bold badge-error">
           <i class="fa-solid fa-user-slash"></i>
-          TurboNET封禁
+          {{ $t('user.bannedBadge') }}
         </div>
         <TurboWarningBadge :times="responseData.warningTimes"/>
       </div>
-      <div v-for="(msg, index) in parseMessages(responseData.bannedMessage)" :key="index"
-           class="mt-2 text-xs font-bold text-error">
-        <i class="fa-solid fa-user-slash"></i> 在 {{ msg.date }} 被 {{ msg.executorName }}
-        {{ msg.isPermanent ? '永久' : '临时' }}封禁 {{
-          msg.isPermanent ? '' : msg.endHours + ' 小时'
-        }}，理由：{{ msg.reason }}
+      <div
+          v-for="(msg, index) in parseMessages(responseData.bannedMessage)"
+          :key="index"
+          class="mt-2 text-xs font-bold text-error"
+      >
+        <i class="fa-solid fa-user-slash"></i>
+        {{ t('user.banMessage', {
+        date: msg.date,
+        executorName: msg.executorName,
+        banType: msg.isPermanent
+            ? t('user.banType.permanent')
+            : t('user.banType.temporary'),
+        banDuration: msg.isPermanent
+            ? ''
+            : ` ${msg.endHours}${t('user.hourSuffix')}`,
+        reason: msg.reason
+      }) }}
       </div>
-      <div v-for="(msg, index) in parseMessages(responseData.warningMessage)" :key="index"
-           class="mt-2 text-xs text-warning">
-        <i class="fa-solid fa-triangle-exclamation"></i> 第 {{ index + 1 }} 次在 {{ msg.date }} 被 {{
-          msg.executorName
-        }} 警告，理由：{{ msg.reason }}
+      <div
+          v-for="(msg, index) in parseMessages(responseData.warningMessage)"
+          :key="index"
+          class="mt-2 text-xs text-warning"
+      >
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        {{ t('user.warningMessage', {
+        warningIndex: index + 1,
+        date: msg.date,
+        executorName: msg.executorName,
+        reason: msg.reason
+      }) }}
       </div>
     </div>
     <div class="mt-2"></div>
@@ -172,9 +192,9 @@ const addFriend = async () => {
     <RecentScores :recent-scores="responseData.recentScores"/>
     <div class="mt-2"></div>
     <div class="announcement-content text-xs">
-      <p>根据 Creative Commons Public Licenses 4.0,</p>
-      <p>该页面参考 <a href="https://github.com/hykilpikonna/AquaDX" target="_blank">hykilpikonna/AquaDX <i
-          class="fa-brands fa-github"></i></a> 并 <span class="text-pink-500"> 进行了修改 </span>, 本页面开源于
+      <p>{{ $t('user.notice.1') }}</p>
+      <p>{{ $t('user.notice.2') }} <a href="https://github.com/hykilpikonna/AquaDX" target="_blank">hykilpikonna/AquaDX <i
+          class="fa-brands fa-github"></i></a> {{ $t('user.notice.3') }} <span class="text-pink-500"> {{ $t('user.notice.4') }} </span>{{ $t('user.notice.5') }}
         <a href="https://github.com/TurboServlet/turbonet-polar-userpage" target="_blank">TurboServlet/turbonet-polar-userpage
           <i
               class="fa-brands fa-github"></i></a></p>

@@ -3,6 +3,8 @@
 import {onMounted, onUnmounted, ref} from "vue";
 import {sendGetRequest} from "@/assets/js/RequestHandler.js";
 import {ArcadeTypeEnumToString} from "@/assets/js/ArcadeUtils.js";
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 
 const isLoading = ref(true);
 const isSuccess = ref(false)
@@ -48,13 +50,13 @@ const textColor = (workingStatus) => {
 
 const workingText = (workingStatus) => {
   if (workingStatus === "WORKING") {
-    return 'Turbo 运行中'
+    return t('networkStatus.workingText.working')
   } else if (workingStatus === "WARNING") {
-    return 'Turbo 网络异常'
+    return t('networkStatus.workingText.warning')
   } else if (workingStatus === "ERROR") {
-    return 'Turbo 已离线'
+    return t('networkStatus.workingText.error')
   } else {
-    return 'Turbo 状态未知'
+    return t('networkStatus.workingText.unknown')
   }
 }
 
@@ -76,12 +78,12 @@ onMounted(() => {
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 加载失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
         {{ responseData }}
-        <router-link class="text-primary" to="/">返回主页</router-link>
+        <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
@@ -89,13 +91,13 @@ onMounted(() => {
     <div class="breadcrumbs text-sm">
       <ul>
         <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-        <li>机厅相关</li>
-        <li>机厅网络状态</li>
+        <li>{{ $t('menu.arcade.title') }}</li>
+        <li>{{ $t('menu.arcade.networkStatus') }}</li>
       </ul>
     </div>
     <div class="mt-2"/>
     <div v-for="arcade in responseData">
-      <div v-if="arcade.arcadeType === 'TURBO'" class="bg-base-100 p-8 rounded-box mb-4">
+      <div v-if="arcade.arcadeType === 'TURBO'" class="border-2 border-base-200 p-8 rounded-box mb-4">
         <div class="flex-wrap gap-1.5 flex items-center">
           <div class="badge badge-primary gap-2 font-bold"><i
               class="fa-solid fa-wifi"></i>{{ ArcadeTypeEnumToString(arcade.arcadeType) }}
@@ -103,17 +105,22 @@ onMounted(() => {
           <div class="font-bold">{{ arcade.arcadeName }}</div>
         </div>
         <div class="mt-4"/>
-        <div :class="textColor(arcade.workingStatus)" class="flex flex-wrap gap-2">
+        <div v-if="arcade.lastHeartbeatSecond !== '未知'" :class="textColor(arcade.workingStatus)" class="flex flex-wrap gap-2">
           <span class="loading loading-bars"></span>
           <span class="font-bold">{{ workingText(arcade.workingStatus) }}</span>
-          距离上一次心跳包 {{ arcade.lastHeartbeatSecond }}
+          {{ $t('networkStatus.lastBeat', { time: arcade.lastHeartbeatSecond }) }}
+        </div>
+        <div v-else :class="textColor(arcade.workingStatus)" class="flex flex-wrap gap-2">
+          <span class="loading loading-bars"></span>
+          <span class="font-bold">{{ workingText(arcade.workingStatus) }}</span>
+          {{ $t('networkStatus.longTimeOffline') }}
         </div>
         <div class="mt-3 flex">
           <div v-for="heartbeat in arcade.heartbeatMap" :class="heartbeatColor(heartbeat)"
                class="tick w-full rounded-[1px] last:rounded-r-[4px] mr-[1px] block first:rounded-l-[4px] h-8"></div>
         </div>
       </div>
-      <div v-else class="bg-base-100 p-8 rounded-box mb-4">
+      <div v-else class="border-2 border-base-200 p-8 rounded-box mb-4">
         <div class="flex-wrap gap-1.5 flex items-center">
           <div class="badge badge-primary gap-2 font-bold"><i
               class="fa-solid fa-wifi"></i>{{ ArcadeTypeEnumToString(arcade.arcadeType) }}
@@ -124,7 +131,7 @@ onMounted(() => {
         <div class="flex flex-wrap gap-2 text-gray-500">
           <span class="loading loading-bars"></span>
           <span class="font-bold">{{ ArcadeTypeEnumToString(arcade.arcadeType) }}</span>
-          距离上一次心跳包 {{ arcade.lastHeartbeatSecond }}
+          {{ $t('networkStatus.notSupport') }}
         </div>
         <div class="mt-3 flex">
           <div v-for="heartbeat in arcade.heartbeatMap" :class="heartbeatColor(heartbeat)"

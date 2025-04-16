@@ -46,12 +46,12 @@ const friendSetting = () => {
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 加载失败
+        <i class="fa-regular fa-circle-xmark"></i> {{  $t }}
       </h1>
       <div class="mt-3"></div>
       <p>
         {{ responseData }}
-        <router-link class="text-primary" to="/">返回主页</router-link>
+        <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
@@ -59,25 +59,25 @@ const friendSetting = () => {
     <div class="breadcrumbs text-sm">
       <ul>
         <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-        <li>NET好友</li>
-        <li>我的好友</li>
+        <li>{{ $t('menu.friends.title') }}</li>
+        <li>{{ $t('menu.friends.friends') }}</li>
       </ul>
     </div>
     <div class="mt-2"/>
     <div class="flex w-full mx-auto indicator">
       <span @click="friendSetting" class="absolute btn gap-1.5" style="inset-inline-end: 0; border-bottom-right-radius: unset !important; border-top-left-radius: unset !important;">
-        <i class="fa-solid fa-gear"></i> 设置
+        <i class="fa-solid fa-gear"></i> {{ $t('friends.setting') }}
       </span>
-      <div class="flex bg-base-100 py-4 rounded-box flex-col w-full shadow">
+      <div class="flex border-2 border-base-200 py-4 rounded-box flex-col w-full">
         <div class="flex flex-col place-items-center">
-          <div class="stat-title">好友数</div>
+          <div class="stat-title">{{ $t('friends.friendCount') }}</div>
           <div class="stat-value">{{ responseData.totalElements }}/50</div>
         </div>
       </div>
     </div>
     <div class="mt-2"/>
     <div class="text-center my-10" v-if="responseData.totalElements === 0">
-      你还没有任何好友呢
+      {{ $t('friends.noData') }}
     </div>
     <SingleFriend :friends="responseData.content"/>
   </div>

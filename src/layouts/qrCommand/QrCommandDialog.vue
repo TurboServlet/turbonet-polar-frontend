@@ -51,18 +51,18 @@ onMounted(() => {
                 @click="closeDialogModal('qrCommandDialog')">✕
         </button>
       </form>
-      <h3 class="text-lg font-bold">二维码</h3>
+      <h3 class="text-lg font-bold">{{ $t('qrCommand.dialog.title') }}</h3>
       <div class="mt-4"/>
       <div v-if="isLoading || !isSuccess" class="main-container-center">
         <span v-if="isLoading" class="loading loading-spinner size-8"/>
         <div v-if="!isLoading && !isSuccess">
           <h1 class="font-bold text-3xl">
-            <i class="fa-regular fa-circle-xmark"></i> 加载失败
+            <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
           </h1>
           <div class="mt-3"></div>
           <p>
             {{ responseData }}
-            <router-link class="text-primary" to="/">返回主页</router-link>
+            <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
           </p>
         </div>
       </div>
@@ -77,13 +77,13 @@ onMounted(() => {
             {{ ArcadeSettingEnumToString(qrCommandVal.setting) }}
           </div>
           <div class="mt-1">
-            请将下图二维码对准机台扫描处<br>
-            该二维码仅适用于Turbo加速盒子及其他对接机台
+            {{ $t('qrCommand.dialog.content.1') }}<br>
+            {{ $t('qrCommand.dialog.content.2') }}
           </div>
           <div class="p-4 my-4 bg-white rounded-box shadow">
             <qrcode-vue :size="220" :value="responseData.qrData"/>
           </div>
-          <div class="qr-code-footer">有效期限截止：{{ responseData.valid }}</div>
+          <div class="qr-code-footer">{{ $t('qrCommand.dialog.expireTime', { time: responseData.valid }) }}</div>
         </div>
       </div>
     </div>

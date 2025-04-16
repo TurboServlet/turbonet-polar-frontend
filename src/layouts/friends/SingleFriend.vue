@@ -24,7 +24,7 @@ const deleteFriend = (friend) => {
 </script>
 
 <template>
-  <div v-for="friend in friends" class="bg-base-100 rounded-box mb-4 p-4 flex flex-col">
+  <div v-for="friend in friends" class="border-2 border-base-200 rounded-box mb-4 p-4 flex flex-col">
     <div class="avatar-info flex">
       <div class="avatar">
         <div class="w-24 h-24 rounded">
@@ -35,10 +35,10 @@ const deleteFriend = (friend) => {
       <div class="flex flex-col ml-4 truncate">
         <div class="font-bold text-2xl truncate">{{ friend.turboName }}</div>
         <div v-if="friend.lastPlayHour === '0'" class="flex text-success text-sm flex-wrap whitespace-normal break-all gap-1.5 items-center">
-          {{ friend.lastPlayPlace }} (正在游玩)
+          {{ friend.lastPlayPlace }} ({{ $t('friends.friendCard.playing') }})
         </div>
         <div v-else class="flex text-success text-sm flex-wrap whitespace-normal break-all gap-1.5 items-center">
-          {{ friend.lastPlayPlace }} ({{ friend.lastPlayHour }}小时前)
+          {{ friend.lastPlayPlace }} ({{ $t('friends.friendCard.lastPlayTime', { hour: friend.lastPlayHour }) }})
         </div>
         <div class="status">
           <TurboPermissionBadge :turbo-permission="friend.permission" />
@@ -48,8 +48,8 @@ const deleteFriend = (friend) => {
     </div>
     <div class="divider mb-0"></div>
     <div class="mt-4 flex flex-wrap gap-2 justify-end">
-      <router-link :to="`/u/${friend.turboName}`" class="btn btn-primary btn-sm"><i class="fa-solid fa-user"></i> 用户主页</router-link>
-      <button @click="deleteFriend(friend.turboName)" class="btn btn-error btn-sm"><i class="fa-solid fa-user-slash"></i> 删除好友</button>
+      <router-link :to="`/u/${friend.turboName}`" class="btn btn-primary btn-sm"><i class="fa-solid fa-user"></i> {{ $t('friends.friendCard.userPage') }}</router-link>
+      <button @click="deleteFriend(friend.turboName)" class="btn btn-error btn-sm"><i class="fa-solid fa-user-slash"></i> {{ $t('friends.friendCard.removeFriend') }}</button>
     </div>
   </div>
   <DeleteFriendDialog :friend="selectedFriend"/>

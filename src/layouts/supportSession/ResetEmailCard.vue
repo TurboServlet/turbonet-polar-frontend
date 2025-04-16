@@ -2,9 +2,9 @@
 import {ref, toRef} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
-import {useReCaptcha} from "vue-recaptcha-v3";
+import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
 
-const {executeRecaptcha} = useReCaptcha()
+
 
 const isShowInner = ref(false)
 const changeShow = () => {
@@ -31,10 +31,11 @@ const newEmail = ref('')
 
 const resetEmail = async () => {
   isBtnLoading.value = true
-  const token = await executeRecaptcha('resetEmail')
+  const {token, a} = await executeRecaptcha('resetEmail')
   const payload = {
     "email": newEmail.value,
     "captchaToken": token,
+    "a": a,
     "sessionId": sessionId.value
   }
   await sendPostRequest('/support/resetEmail', payload, false).then((response) => {

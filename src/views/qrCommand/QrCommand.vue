@@ -58,12 +58,12 @@ const showDialog = (qrCommandVal) => {
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 加载失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
         {{ responseData }}
-        <router-link class="text-primary" to="/">返回主页</router-link>
+        <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
@@ -71,19 +71,19 @@ const showDialog = (qrCommandVal) => {
     <div class="breadcrumbs text-sm">
       <ul>
         <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-        <li>加速盒子功能</li>
-        <li>指令二维码</li>
+        <li>{{ $t('menu.turbo.title') }}</li>
+        <li>{{ $t('menu.qrCommand') }}</li>
       </ul>
     </div>
     <div class="mt-2"/>
     <div class="tabs tabs-lifted" role="tablist">
-      <input aria-label="用户二维码" checked="checked" class="tab" name="my_tabs_2" role="tab" type="radio"/>
+      <input :aria-label="$t('qrCommand.userQrCommand')" checked="checked" class="tab" name="my_tabs_2" role="tab" type="radio"/>
       <div class="tab-content bg-base-100 border-base-300 rounded-box p-6" role="tabpanel">
         <UserQrCommand @qr-command-val="showDialog"/>
       </div>
 
       <input
-          aria-label="机台二维码"
+          :aria-label="$t('qrCommand.arcadeQrCommand')"
           class="tab"
           name="my_tabs_2"
           role="tab"

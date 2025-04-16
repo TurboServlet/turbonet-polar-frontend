@@ -4,12 +4,12 @@
       <form method="dialog">
         <button @click="closeDialog" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
       </form>
-      <h3 class="text-lg font-bold">上传头像</h3>
+      <h3 class="text-lg font-bold">{{ $t('changeAvatar.dialogTitle') }}</h3>
       <div class="avatar-container">
         <div v-show="!options.img">
           <div class="flex flex-col items-center">
             <!-- 自定义上传按钮 -->
-            <button class="btn max-sm:btn-sm btn-primary" @click="triggerFileUpload">选择图片</button>
+            <button class="btn max-sm:btn-sm btn-primary" @click="triggerFileUpload">{{ $t('changeAvatar.selectPhoto') }}</button>
 
             <!-- 隐藏的 input 文件上传 -->
             <input
@@ -40,10 +40,10 @@
         </div>
       </div>
       <div class="modal-action flex">
-        <button class="btn max-sm:btn-sm btn-active" @click="closeDialog">取消</button>
+        <button class="btn max-sm:btn-sm btn-active" @click="closeDialog">{{ $t('changeAvatar.button.cancel') }}</button>
         <button class="btn max-sm:btn-sm btn-active flex-1 btn-primary" @click="getCrop" :disabled="isSetBtnLoading">
           <span v-if="isSetBtnLoading" class="loading loading-spinner"/>
-          确定</button>
+          {{ $t('changeAvatar.button.submit') }}</button>
       </div>
     </div>
     <div @click="closeDialog" class="modal-backdrop">

@@ -11,7 +11,6 @@
 
 <script lang="ts" setup>
 import {onMounted, ref} from "vue";
-
 import {Toaster, toast} from 'vue-sonner'
 
 const isHovered = ref(false);

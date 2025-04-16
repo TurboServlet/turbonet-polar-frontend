@@ -151,19 +151,19 @@ const toMaxPage = () => {
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 访问失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.enterError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
         {{ message }}
-        <router-link class="text-primary" to="/">返回主页</router-link>
+        <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
   <div v-else>
     <div class="-mt-28 illustration w-full h-screen bg-fixed bg-blend-overlay bg-cover bg-center bg-img-color"
          :style="`background-image: url(https://assets.lxns.net/maimai/jacket/${fixIcon(musicData.musicId)}.png!webp); transition: background-color 0.5s;`"></div>
-    <div class="w-full h-48 -mt-48 bg-gradient-to-b from-transparent to-base-100"></div>
+    <div class="w-full h-48 -mt-48 bg-gradient-to-b from-transparent to-base-200"></div>
     <div class="w-full mt-10">
       <div class="relative">
         <div class="flex flex-col items-center -mt-[35vh] mb-24">
@@ -176,17 +176,17 @@ const toMaxPage = () => {
               </div>
               <div v-else class="max-h-8 badge diff-badge space-x-2 badge-lg mt-4 h-8 diff-badge-buddies">
                 <span class="truncate">宴</span><span>{{ musicData.musicLevel.toFixed(1) }}</span></div>
-              <a @click="router.go(-1)" class="active clickable text-right pr-10"><i class="fa-solid fa-rotate-left"></i> 返回上一页</a>
+              <a @click="router.go(-1)" class="active clickable text-right pr-10"><i class="fa-solid fa-rotate-left"></i> {{ $t('ranking.return') }}</a>
               <div class="mt-16 flex flex-col lg:flex-row-reverse gap-8">
                 <div class="grow -mt-8 lg:w-3/4">
                   <div class="card bg-base-100 shadow-xl p-4 rounded-box">
                     <div class="flex flex-col">
                       <div class="flex flex-row justify-between gap-3">
                         <div class="mt-2 ml-4">
-                          <div class="text-2xl font-black">乐曲排行榜</div>
+                          <div class="text-2xl font-black">{{ $t('ranking.musicRanking.title') }}</div>
                         </div>
-                        <button v-if="!onlyTurbo" @click="turboChanger" class="btn btn-ghost"><i class="fa-solid fa-repeat"></i>全国加速盒子玩家排名</button>
-                        <button v-else @click="turboChanger" class="btn btn-ghost"><i class="fa-solid fa-repeat"></i>TurboNET注册玩家排名</button>
+                        <button v-if="!onlyTurbo" @click="turboChanger" class="btn btn-ghost"><i class="fa-solid fa-repeat"></i>{{ $t('ranking.button.global') }}</button>
+                        <button v-else @click="turboChanger" class="btn btn-ghost"><i class="fa-solid fa-repeat"></i>{{ $t('ranking.button.turbo') }}</button>
                       </div>
                       <div v-if="rankingIsLoading" class="body flex align-middle" style="height: calc(100vh - 64px)">
                         <span class="loading loading-spinner size-8"/>
@@ -196,10 +196,10 @@ const toMaxPage = () => {
                           <table class="table">
                             <thead>
                             <tr>
-                              <th>排名</th>
-                              <th>玩家</th>
-                              <th>完成度</th>
-                              <th>DX分数</th>
+                              <th>{{ $t('ranking.musicRanking.table.ranking') }}</th>
+                              <th>{{ $t('ranking.musicRanking.table.username') }}</th>
+                              <th>{{ $t('ranking.musicRanking.table.achievement') }}</th>
+                              <th>{{ $t('ranking.musicRanking.table.dxScore') }}</th>
                             </tr>
                             </thead>
                             <tbody>

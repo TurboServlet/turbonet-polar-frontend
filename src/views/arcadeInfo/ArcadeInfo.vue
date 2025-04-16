@@ -65,12 +65,12 @@ const showDetail = (arcadeName) => {
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 加载失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
         {{ responseData }}
-        <router-link class="text-primary" to="/">返回主页</router-link>
+        <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
@@ -78,17 +78,17 @@ const showDetail = (arcadeName) => {
     <div class="breadcrumbs text-sm">
       <ul>
         <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-        <li>机厅相关</li>
-        <li>机厅信息</li>
+        <li>{{ $t('menu.arcade.title') }}</li>
+        <li>{{ $t('menu.arcade.info') }}</li>
       </ul>
     </div>
     <div class="mt-2"/>
-    <div role="alert" class="alert bg-base-100 shadow-lg">
+    <div role="alert" class="alert alert-info">
       <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          class="stroke-info h-6 w-6 shrink-0">
+          class="h-6 w-6 shrink-0 stroke-current">
         <path
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -96,37 +96,37 @@ const showDetail = (arcadeName) => {
             d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
       </svg>
       <div>
-        <h3 class="font-bold">注意</h3>
-        <div class="text-xs">机厅信息会随着你去过更多的Turbo机厅自动增加并可看哦</div>
+        <h3 class="font-bold">{{ $t('arcadeInfo.notice.title') }}</h3>
+        <div class="text-xs">{{ $t('arcadeInfo.notice.contact') }}</div>
       </div>
     </div>
     <div class="mt-4"></div>
     <div class="flex-col">
       <div v-if="permission === 'ADMIN'" @click="openDialogModal('newArcadeDialog')" class="p-8 rounded-box outline-dashed mb-4 arcade-info">
         <div class="flex text-center justify-center items-center">
-          <div class="font-bold"><i class="fa-solid fa-square-plus"></i> 机厅入库</div>
+          <div class="font-bold"><i class="fa-solid fa-square-plus"></i> {{ $t('arcadeInfo.newArcade') }}</div>
         </div>
       </div>
-      <div v-for="arcade in responseData" @click="showDetail(arcade.arcadeName)" class="bg-base-100 p-8 rounded-box mb-4 arcade-info">
+      <div v-for="arcade in responseData" @click="showDetail(arcade.arcadeName)" class="border-2 border-base-200 p-8 rounded-box mb-4 arcade-info">
         <div class="flex-wrap gap-1.5 mb-1 flex items-center">
           <div class="badge badge-primary gap-2 font-bold"><i class="fa-solid fa-wifi"></i>{{ ArcadeTypeEnumToString(arcade.arcadeType) }}</div>
           <div class="font-bold">{{ arcade.arcadeName }}</div>
         </div>
         <div class="mt-4"/>
         <div v-if="arcade.arcadeType === 'TURBO'">
-        当日内总发送请求 <span class="font-bold">{{ arcade.arcadeRequested }}</span> 次。缓存击中 <span class="font-bold">{{ arcade.arcadeCachedRequest }}</span> 次，修复了 <span
-          class="font-bold">{{ arcade.arcadeFixedRequest }}</span> 次错误，缓存击中率 <span class="font-bold">{{ (arcade.arcadeCachedHitRate * 100).toFixed(2) }}</span> %
+          {{ $t('arcadeInfo.arcadeContact.1') }} <span class="font-bold">{{ arcade.arcadeRequested }}</span> {{ $t('arcadeInfo.arcadeContact.2') }} <span class="font-bold">{{ arcade.arcadeCachedRequest }}</span> {{ $t('arcadeInfo.arcadeContact.3') }} <span
+          class="font-bold">{{ arcade.arcadeFixedRequest }}</span> {{ $t('arcadeInfo.arcadeContact.4') }} <span class="font-bold">{{ (arcade.arcadeCachedHitRate * 100).toFixed(2) }}</span> %
         </div>
           <div class="mt-4"/>
         <div class="mt-4" v-for="info in arcade.singleArcadeInfo">
           {{ arcade.singleArcadeInfo.length > 1 ? info.singleName : ''}}
           <div class="flex flex-wrap gap-2">
-            <div v-if="info.isEnableCustomName" class="badge badge-success gap-2 font-bold"><i class="fa-regular fa-circle-check"></i>允许自定义名称</div>
-            <div v-else class="badge badge-error gap-2 font-bold"><i class="fa-regular fa-circle-xmark"></i>不允许自定义名称</div>
-            <div v-if="info.isEnableCustomAvatar" class="badge badge-success gap-2 font-bold"><i class="fa-regular fa-circle-check"></i>允许自定义头像</div>
-            <div v-else class="badge badge-error gap-2 font-bold"><i class="fa-regular fa-circle-xmark"></i>不允许自定义头像</div>
-            <div v-if="info.isEnableTurboTicket" class="badge badge-success gap-2 font-bold"><i class="fa-regular fa-circle-check"></i>允许Turbo功能票</div>
-            <div v-else class="badge badge-error gap-2 font-bold"><i class="fa-regular fa-circle-xmark"></i>不允许Turbo功能票</div>
+            <div v-if="info.isEnableCustomName" class="badge badge-success gap-2 font-bold"><i class="fa-regular fa-circle-check"></i>{{ $t('arcadeInfo.enable') }}{{ $t('arcadeInfo.arcadeFeature.CustomName') }}</div>
+            <div v-else class="badge badge-error gap-2 font-bold"><i class="fa-regular fa-circle-xmark"></i>{{ $t('arcadeInfo.disable') }}{{ $t('arcadeInfo.arcadeFeature.CustomName') }}</div>
+            <div v-if="info.isEnableCustomAvatar" class="badge badge-success gap-2 font-bold"><i class="fa-regular fa-circle-check"></i>{{ $t('arcadeInfo.enable') }}{{ $t('arcadeInfo.arcadeFeature.CustomAvatar') }}</div>
+            <div v-else class="badge badge-error gap-2 font-bold"><i class="fa-regular fa-circle-xmark"></i>{{ $t('arcadeInfo.disable') }}{{ $t('arcadeInfo.arcadeFeature.CustomAvatar') }}</div>
+            <div v-if="info.isEnableTurboTicket" class="badge badge-success gap-2 font-bold"><i class="fa-regular fa-circle-check"></i>{{ $t('arcadeInfo.enable') }}{{ $t('arcadeInfo.arcadeFeature.TurboTicket') }}</div>
+            <div v-else class="badge badge-error gap-2 font-bold"><i class="fa-regular fa-circle-xmark"></i>{{ $t('arcadeInfo.disable') }}{{ $t('arcadeInfo.arcadeFeature.TurboTicket') }}</div>
           </div>
           <div class="mt-2"/>
           <div v-for="setting in info.arcadeEnableSetting" class="badge badge-accent gap-2 font-bold"><i class="fa-solid fa-gear"></i>{{ ArcadeSettingEnumToString(setting) }}</div>
@@ -134,7 +134,7 @@ const showDetail = (arcadeName) => {
       </div>
     </div>
     <div class="text-center text-xs opacity-60 w-5/6 mx-auto">
-      没有您的机厅? 请联系管理组对机厅进行入库与绑定。
+      {{ $t('arcadeInfo.noData') }}
     </div>
   </div>
   <ArcadeInfoDetailDialog :arcade-name="selectedArcadeName"/>

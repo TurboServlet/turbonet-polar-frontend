@@ -1,6 +1,9 @@
 <script setup>
 import {defineProps, toRef} from 'vue'
 
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+
 const props = defineProps({
   executeType: {
     type: String,
@@ -24,11 +27,11 @@ const badgeColor = () => {
 const badgeName = () => {
   switch (executeType.value) {
     case 'WARNING':
-      return '警告一次'
+      return t('executeRecordBadge.warning')
     case 'BANNED':
-      return '封禁'
+      return t('executeRecordBadge.ban')
     default:
-      return '未知'
+      return t('executeRecordBadge.unknown')
   }
 }
 

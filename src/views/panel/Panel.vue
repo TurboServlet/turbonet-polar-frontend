@@ -37,29 +37,29 @@ onMounted(() => {
     <span v-if="isLoading" class="loading loading-spinner size-8 mt-20 mb-20"/>
     <div class="mt-10 mb-10" v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 加载失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
         {{ responseData }}
-        <router-link class="text-primary" to="/">返回主页</router-link>
+        <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
   <div v-else class="breadcrumbs text-sm">
     <ul>
       <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-      <li>讯息</li>
+      <li>{{ $t('menu.panel') }}</li>
     </ul>
   </div>
   <div class="mt-2"/>
   <div v-for="announce in responseData" >
-    <div role="alert" v-if="announce.type === 'info'" class="alert shadow-lg">
+    <div role="alert" v-if="announce.type === 'info'" class="alert alert-info">
       <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          class="stroke-info h-6 w-6 shrink-0">
+          class="h-6 w-6 shrink-0 stroke-current">
         <path
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -71,11 +71,11 @@ onMounted(() => {
         <div class="text-xs">{{ announce.description }}</div>
       </div>
     </div>
-    <div role="alert" v-if="announce.type === 'warning'" class="alert shadow-lg alert-warning">
+    <div role="alert" v-if="announce.type === 'warning'" class="alert alert-warning">
       <i class="fa-solid fa-triangle-exclamation"></i>
       <div>
         <h3 class="font-bold">{{ announce.title }}</h3>
-        <div class="text-xs">原因：{{ announce.description }}</div>
+        <div class="text-xs">{{ $t('panel.reason') }}：{{ announce.description }}</div>
       </div>
     </div>
     <div class="mt-4"/>

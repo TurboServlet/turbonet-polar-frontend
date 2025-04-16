@@ -1,7 +1,7 @@
 <script setup>
 
 import {toRef} from "vue";
-import {ArcadeSettingEnumToString} from "@/assets/js/ArcadeUtils.js";
+import {ArcadeFunctionTypeStringToEnum, ArcadeSettingEnumToString} from "@/assets/js/ArcadeUtils.js";
 
 const props = defineProps({
   commands: {
@@ -25,23 +25,23 @@ const commands = toRef(props, 'commands')
     <div role="alert" class="alert shadow-lg alert-warning">
       <i class="fa-solid fa-triangle-exclamation"></i>
       <div>
-        <h3 class="font-bold">注意</h3>
-        <div class="text-xs">该部分功能较为高危，您在机台上应用的设置将作用于全部玩家，请谨慎使用。</div>
+        <h3 class="font-bold">{{ $t('qrCommand.arcadeNotice.title') }}</h3>
+        <div class="text-xs">{{ $t('qrCommand.arcadeNotice.content') }}</div>
       </div>
     </div>
     <div class="mt-4"></div>
     <div class="flex mb-4 p-4 bg-base-200 rounded-box shadow items-center justify-between max-sm:flex-col max-sm:gap-4">
-      <div class="font-bold">PING 机台</div>
-      <button @click="submit('PING', 'NONE')" class="btn btn-sm btn-primary"><i class="fa-solid fa-qrcode"></i> 生成二维码</button>
+      <div class="font-bold">{{ ArcadeFunctionTypeStringToEnum('PING') }}</div>
+      <button @click="submit('PING', 'NONE')" class="btn btn-sm btn-primary"><i class="fa-solid fa-qrcode"></i> {{ $t('qrCommand.generateQrCode') }}</button>
     </div>
     <div v-for="command in commands" class="flex mb-4 p-4 bg-base-200 rounded-box shadow items-center justify-between max-sm:flex-col max-sm:gap-4">
       <div class="font-bold">{{ ArcadeSettingEnumToString(command.setting) }}</div>
-      <button @click="submit(command.functionType, command.setting)" class="btn btn-sm btn-primary"><i class="fa-solid fa-qrcode"></i> 生成二维码</button>
+      <button @click="submit(command.functionType, command.setting)" class="btn btn-sm btn-primary"><i class="fa-solid fa-qrcode"></i> {{ $t('qrCommand.generateQrCode') }}</button>
     </div>
     <div class="mt-4"></div>
     <div class="text-center text-xs opacity-60 w-5/6 mx-auto">
-      请在使用权限之前慎重考虑。您的一切操作都将被记录，您的操作所引发的所有后果以及舆论影响将由您负责。TurboServlet 有权根据
-      <router-link class="text-primary" target="_blank" to="/tos">使用条款</router-link> 对您采取措施。
+      {{ $t('qrCommand.useNotice.1') }}
+      <router-link class="text-primary" target="_blank" to="/tos">{{ $t('termsofservice.title') }}</router-link> {{ $t('qrCommand.useNotice.2') }}
     </div>
   </div>
 </template>

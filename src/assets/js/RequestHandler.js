@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = "https://api.mai-turbo.net"
+const baseUrl = "https://api.sys-allnet.com"
 
 // const baseUrl = "http://localhost:25566"
 
@@ -64,6 +64,7 @@ export const sendGetRequest = async (endpoint, flagged = true, times = 0) => {
                     data: "与服务器连接超时，请检查网络连接"
                 };
             }
+
             let statusCode = error.response.status;
             if (flagged) {
                 // token expired or invalid

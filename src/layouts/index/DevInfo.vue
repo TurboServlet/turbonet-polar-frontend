@@ -33,12 +33,12 @@ function scrollToRight() {
 
 <template>
   <div class="card home-self-intro shadow-2xl"><br>
-    <div class="card-title home-intro-title mb-1">我们是谁？</div>
+    <div class="card-title home-intro-title mb-1">{{ $t('devInfo.title') }}</div>
     <div class="card-body home-intro-content">TurboNET
       <span class="font-bold" style="color: oklch(var(--p))">Polar <i class="fa-solid fa-meteor"></i></span>
-      是在非盈利、非商业的前提下进行创作的。<br>
-      在 Coding 路上不断学习、不断前行的身影，时时映在我们身上。<br>
-      在不畏难、不退缩、勇于创新和敢于行动的精神驱动下，塑造了这个非凡的创作。
+      {{ $t('devInfo.context.1') }}<br>
+      {{ $t('devInfo.context.2') }}<br>
+      {{ $t('devInfo.context.3') }}
     </div>
     <div class="scroll-container">
       <div class="members" ref="membersContainer">
@@ -47,7 +47,7 @@ function scrollToRight() {
                                  alt="Ctrlcvs">
           <div class="member-name"><a class="contributor-link" href="https://github.com/CtrlcvsNya">Ctrlcvs🧊&nbsp;<i
               class="fa-brands fa-github"></i></a></div>
-          <div class="member-role">全栈总开发 / 总设计</div>
+          <div class="member-role">{{ $t('devInfo.devContext.ctrlcvs') }}</div>
         </div>
         <div class="member"><img class="member-image"
                                  src="https://q.qlogo.cn/headimg_dl?dst_uin=1034868772&amp;spec=640&amp;img_type=jpg"
@@ -55,40 +55,40 @@ function scrollToRight() {
           <div class="member-name"><a class="contributor-link" href="https://github.com/moeKiwiSAMA">🥝 Kiwi is not
             tasty.&nbsp;<i
                 class="fa-brands fa-github"></i></a></div>
-          <div class="member-role">DBA / 解决方案工程师</div>
+          <div class="member-role">{{ $t('devInfo.devContext.kiwi') }}</div>
         </div>
         <div class="member"><img class="member-image"
                                  src="https://avatars.githubusercontent.com/u/49825304?v=4"
                                  alt="404">
           <div class="member-name"><a class="contributor-link" href="https://github.com/Shaped404">Shaped404&nbsp;<i
               class="fa-brands fa-github"></i></a></div>
-          <div class="member-role">手机APP开发</div>
+          <div class="member-role">{{ $t('devInfo.devContext.404') }}</div>
         </div>
         <div class="member"><img class="member-image"
                                  src="https://q.qlogo.cn/headimg_dl?dst_uin=3034582021&amp;spec=640&amp;img_type=jpg"
                                  alt="apple">
           <div class="member-name"><a class="contributor-link" href="https://github.com/Apple-QAQ">Apple.catwaii()&nbsp;<i
               class="fa-brands fa-github"></i></a></div>
-          <div class="member-role">提供情绪价值</div>
+          <div class="member-role">{{ $t('devInfo.devContext.apple') }}</div>
         </div>
         <div class="member"><img class="member-image"
                                  src="https://q.qlogo.cn/headimg_dl?dst_uin=953743075&amp;spec=640&amp;img_type=jpg"
                                  alt="taojiu">
           <div class="member-name"><a class="contributor-link" href="https://github.com/luoyeye001">桃玖不酒 <i
               class="fa-brands fa-github"></i></a></div>
-          <div class="member-role">接口文档维护</div>
+          <div class="member-role">{{ $t('devInfo.devContext.taojiu') }}</div>
         </div>
         <div class="member"><img class="member-image"
                                  src="https://q.qlogo.cn/headimg_dl?dst_uin=3501007365&amp;spec=640&amp;img_type=jpg"
                                  alt="yuuluo">
           <div class="member-name"><a class="contributor-link" href="https://github.com/YuuLuo">雨落 <i
               class="fa-brands fa-github"></i></a></div>
-          <div class="member-role">NONE BOT开发</div>
+          <div class="member-role">{{ $t('devInfo.devContext.yuuluo') }}</div>
         </div>
         <div class="member"><div class="member-image" style="background-color: white;"/>
           <div class="member-name"><a class="contributor-link" href="https://github.com/LovelyHaochi">好吃 <i
               class="fa-brands fa-github"></i></a></div>
-          <div class="member-role">服务器对接</div>
+          <div class="member-role">{{ $t('devInfo.devContext.haochi') }}</div>
         </div>
       </div>
     </div>

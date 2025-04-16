@@ -38,12 +38,12 @@ onMounted(() => {
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 加载失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
         {{ responseData }}
-        <router-link class="text-primary" to="/">返回主页</router-link>
+        <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
@@ -51,25 +51,25 @@ onMounted(() => {
     <div class="breadcrumbs text-sm">
       <ul>
         <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-        <li>加速盒子功能</li>
-        <li>功能票</li>
-        <li>当前持有的功能票</li>
+        <li>{{ $t('menu.turbo.title') }}</li>
+        <li>{{ $t('menu.tickets.title') }}</li>
+        <li>{{ $t('menu.tickets.currentTickets') }}</li>
       </ul>
     </div>
     <div class="mt-2"/>
     <div role="alert" class="alert shadow-lg alert-warning">
       <i class="fa-solid fa-triangle-exclamation"></i>
       <div>
-        <h3 class="font-bold">注意</h3>
-        <div class="text-xs">Turbo功能票优先级高于官方功能票，当Turbo功能票启用时不能使用官方功能票。</div>
+        <h3 class="font-bold">{{ $t('currentTickets.notice.title') }}</h3>
+        <div class="text-xs">{{ $t('currentTickets.notice.content') }}</div>
       </div>
     </div>
     <div class="mt-4"/>
     <div class="indicator" style="width: unset; display: unset">
-      <span class="indicator-item badge badge-warning"><i class="fa-solid fa-thumbtack"></i></span>
-      <div class="rounded-box bg-primary text-primary-content">
+      <span class="indicator-item badge badge-primary"><i class="fa-solid fa-thumbtack"></i></span>
+      <div class="rounded-box border-2 border-primary">
         <div class="stat">
-          <div class="mb-2 font-bold">Turbo功能票</div>
+          <div class="mb-2 font-bold text-primary">{{ $t('currentTickets.title') }}</div>
           <div class="flex align-middle">
             <img :src="ticketIdToImg(responseData.turboTicket.ticketId)" class="size-20">
             <div class="flex flex-col justify-center mx-8">
@@ -78,10 +78,10 @@ onMounted(() => {
               </div>
 
               <div class="text-green-500" v-if="responseData.turboTicket.isEnable">
-                <i class="fa-solid fa-circle-check"></i> Turbo功能票已开启
+                <i class="fa-solid fa-circle-check"></i> {{ $t('currentTickets.turboTicket.enable') }}
               </div>
               <div class="text-red-500" v-else>
-                <i class="fa-solid fa-circle-xmark"></i> Turbo功能票未开启
+                <i class="fa-solid fa-circle-xmark"></i> {{ $t('currentTickets.turboTicket.disable') }}
               </div>
             </div>
           </div>
@@ -89,14 +89,14 @@ onMounted(() => {
       </div>
     </div>
 
-    <div v-for="ticket in responseData.maimaiTickets" class="mt-4 rounded-box bg-primary text-primary-content">
+    <div v-for="ticket in responseData.maimaiTickets" class="mt-4 rounded-box border-2 border-base-200">
       <div class="stat">
-        <div class="mb-2 font-bold">官方功能票</div>
+        <div class="mb-2 font-bold">{{ $t('currentTickets.officialTicket') }}</div>
         <div class="flex align-middle">
           <img :src="ticketIdToImg(ticket.ticketId)" class="size-20">
           <div class="flex flex-col justify-center mx-8">
             <div>
-              {{ ticketIdToName(ticket.ticketId) }} {{ ticket.stock }}
+              {{ ticketIdToName(ticket.ticketId) }} x{{ ticket.stock }}
             </div>
           </div>
         </div>

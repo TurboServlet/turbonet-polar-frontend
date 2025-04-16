@@ -73,18 +73,18 @@ onMounted(() => {
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 加载失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
         {{ responseData }}
-        <router-link class="text-primary" to="/">返回主页</router-link>
+        <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
   <div v-else>
     <div class="flex text-center justify-center my-10" v-if="responseData.length === 0">
-      你还没有任何待处理的申请呢
+      {{ $t('addFriends.requestFriendList.noData') }}
     </div>
     <div v-for="friend in responseData" :key="friend.turboName" class="bg-base-200 rounded-box mb-4 p-4 flex flex-col">
       <div class="avatar-info flex">
@@ -101,7 +101,7 @@ onMounted(() => {
             <TurboWarningBadge :times="friend.warningTimes"/>
           </div>
           <div class="flex mt-2 text-sm flex-wrap whitespace-normal break-all items-center">
-            申请时间: {{ friend.requestTime }}
+            {{ $t('addFriends.requestFriendList.requestTime', { time: friend.requestTime }) }}
           </div>
         </div>
       </div>
@@ -110,12 +110,12 @@ onMounted(() => {
         <button @click="acceptFriend(friend.turboName)" class="btn btn-success btn-sm"
                 :disabled="loadingStates[friend.turboName]?.accept">
           <span v-if="loadingStates[friend.turboName]?.accept" class="loading loading-spinner"></span>
-          <i v-else class="fa-solid fa-user-plus"></i> 通过申请
+          <i v-else class="fa-solid fa-user-plus"></i> {{ $t('addFriends.requestFriendList.button.accept') }}
         </button>
         <button @click="denyFriend(friend.turboName)" class="btn btn-error btn-sm"
                 :disabled="loadingStates[friend.turboName]?.deny">
           <span v-if="loadingStates[friend.turboName]?.deny" class="loading loading-spinner"></span>
-          <i v-else class="fa-solid fa-user-slash"></i> 拒绝申请
+          <i v-else class="fa-solid fa-user-slash"></i> {{ $t('addFriends.requestFriendList.button.deny') }}
         </button>
       </div>
     </div>

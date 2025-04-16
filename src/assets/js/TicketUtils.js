@@ -1,42 +1,9 @@
-export const ticketIdToName = (ticketId) => {
-    switch (ticketId) {
-        case 0:
-            return "没有票";
-        case 2:
-            return "付费2倍票";
-        case 3:
-            return "付费3倍票";
-        case 4:
-            return "付费4倍票";
-        case 5:
-            return "付费5倍票";
-        case 6:
-            return "付费6倍票";
-        case 10005:
-            return "活动5倍票 (类型1)";
-        case 10105:
-            return "活动5倍票 (类型2)";
-        case 10205:
-            return "活动5倍票 (类型3)";
-        case 11001:
-            return "免费1.5倍票";
-        case 11002:
-            return "免费2倍票";
-        case 11003:
-            return "免费3倍票";
-        case 11005:
-            return "免费5倍票";
-        case 20010:
-            return "免费10倍票 (已失效)";
-        case 20020:
-            return "免费20倍票 (已失效)";
-        case 30001:
-            return "特殊2倍票";
-        default:
-            return "其他"
-    }
-}
+import i18n from './i18n.js'
+const { t } = i18n.global
 
+export const ticketIdToName = (ticketId) => {
+    return t(`ticketUtils.ticketIdToName.${ticketId}`, t('ticketUtils.ticketIdToName.unknown'));
+};
 export const ticketIdToImg = (ticketId) => {
     switch (ticketId) {
         case 0:

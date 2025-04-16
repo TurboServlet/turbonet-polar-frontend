@@ -50,40 +50,41 @@ onMounted(() => {
                 @click="closeDialogModal('arcadeInfoDetailDialog')">✕
         </button>
       </form>
-      <h3 class="text-lg font-bold">机厅详细信息</h3>
+      <h3 class="text-lg font-bold">{{ $t('arcadeInfo.detailDialog.title') }}</h3>
       <div class="mt-4"/>
       <div v-if="isLoading || !isSuccess" class="main-container-center">
         <span v-if="isLoading" class="loading loading-spinner size-8"/>
         <div v-if="!isLoading && !isSuccess">
           <h1 class="font-bold text-3xl">
-            <i class="fa-regular fa-circle-xmark"></i> 加载失败
+            <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
           </h1>
           <div class="mt-3"></div>
           <p>
-            {{ responseData }} <router-link class="text-primary" to="/">返回主页</router-link>
+            {{ responseData }}
+            <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
           </p>
         </div>
       </div>
       <div v-else>
         <div class="shadow bg-base-200 rounded-box">
-          <div class="font-bold justify-center text-center py-3">机厅人数</div>
+          <div class="font-bold justify-center text-center py-3">{{ $t('arcadeInfo.detailDialog.contact') }}</div>
           <div class="stats bg-base-200 w-full">
             <div class="stat place-items-center">
-              <div class="stat-title">30 分钟内</div>
+              <div class="stat-title">{{ $t('arcadeInfo.detailDialog.status.30minutes') }}</div>
               <div class="stat-value">{{ responseData.thirtyMinutesPlayer }}</div>
-              <div class="stat-desc">共 {{ responseData.thirtyMinutesPlayCount }}pc</div>
+              <div class="stat-desc">{{ $t('arcadeInfo.detailDialog.total') }} {{ responseData.thirtyMinutesPlayCount }} pc</div>
             </div>
 
             <div class="stat place-items-center">
-              <div class="stat-title">60 分钟内</div>
+              <div class="stat-title">{{ $t('arcadeInfo.detailDialog.status.60minutes') }}</div>
               <div class="stat-value">{{ responseData.oneHourPlayer }}</div>
-              <div class="stat-desc">共 {{ responseData.oneHourPlayCount }}pc</div>
+              <div class="stat-desc">{{ $t('arcadeInfo.detailDialog.total') }} {{ responseData.oneHourPlayCount }} pc</div>
             </div>
 
             <div class="stat place-items-center">
-              <div class="stat-title">120 分钟内</div>
+              <div class="stat-title">{{ $t('arcadeInfo.detailDialog.status.120minutes') }}</div>
               <div class="stat-value">{{ responseData.twoHoursPlayer }}</div>
-              <div class="stat-desc">共 {{ responseData.twoHoursPlayCount }}pc</div>
+              <div class="stat-desc">{{ $t('arcadeInfo.detailDialog.total') }} {{ responseData.twoHoursPlayCount }} pc</div>
             </div>
           </div>
         </div>
@@ -93,19 +94,35 @@ onMounted(() => {
             <!-- head -->
             <thead>
             <tr>
-              <th>游戏名</th>
-              <th>下机时间</th>
+              <th>{{ $t('arcadeInfo.detailDialog.table.username') }}</th>
+              <th>{{ $t('arcadeInfo.detailDialog.table.endTime') }}</th>
             </tr>
             </thead>
             <tbody>
             <tr v-for="player in responseData.playerList">
               <td>
-                <router-link v-if="player.turboName !== ''" :to="`/u/${player.turboName}`" class="flex flex-row items-center gap-2 group">
-                                  <span
-                                      class="text-[#ff7043] group-hover:link truncate max-w-[150px] lg:max-w-[300px] overflow-hidden text-ellipsis whitespace-nowrap">{{ player.maimaiName }}</span>
-                </router-link>
-                <span v-else
-                      class="flex flex-row items-center gap-2 truncate max-w-[150px] lg:max-w-[300px] overflow-hidden text-ellipsis whitespace-nowrap">{{ player.maimaiName }}</span>
+                <template v-if="player.isTurboAdmin">
+                  <router-link :to="`/u/${player.turboName}`" class="flex flex-row items-center gap-2 group">
+      <span
+          class="text-[#ff4343] group-hover:link truncate max-w-[150px] lg:max-w-[300px] overflow-hidden text-ellipsis whitespace-nowrap">
+        {{ player.maimaiName }}
+      </span>
+                  </router-link>
+                </template>
+                <template v-else-if="player.turboName !== ''">
+                  <router-link :to="`/u/${player.turboName}`" class="flex flex-row items-center gap-2 group">
+      <span
+          class="text-[#ff7043] group-hover:link truncate max-w-[150px] lg:max-w-[300px] overflow-hidden text-ellipsis whitespace-nowrap">
+        {{ player.maimaiName }}
+      </span>
+                  </router-link>
+                </template>
+                <template v-else>
+    <span
+        class="flex flex-row items-center gap-2 truncate max-w-[150px] lg:max-w-[300px] overflow-hidden text-ellipsis whitespace-nowrap">
+      {{ player.maimaiName }}
+    </span>
+                </template>
               </td>
               <td>{{ player.playdate }}</td>
             </tr>
@@ -114,7 +131,7 @@ onMounted(() => {
         </div>
         <div v-else class="main-container-center p-4">
           <p>
-            该机厅还没有人，快去霸机！
+            {{ $t('arcadeInfo.detailDialog.noData') }}
           </p>
         </div>
       </div>

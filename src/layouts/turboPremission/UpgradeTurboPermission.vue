@@ -6,10 +6,10 @@ import {ref, toRef} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
 
-import {useReCaptcha} from "vue-recaptcha-v3";
+import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
 
-const {executeRecaptcha} = useReCaptcha()
+
 
 const turboName = ref('')
 const selectedPermission = ref('AUTHORIZER')
@@ -26,11 +26,12 @@ const turboPermission = toRef(props, 'turboPermission')
 
 const upgradeTurboPermission = async () => {
   isBtnLoading.value = true
-  const token = await executeRecaptcha('upgradePermission')
+  const {token, a} = await executeRecaptcha('upgradePermission')
   const payload = {
     "turboName": turboName.value,
     "permission": selectedPermission.value,
     "captchaToken": token,
+    "a": a,
   }
   await sendPostRequest('/permission/upgradePermission', payload, true).then((response) => {
     if (response.statusCode === 200) {
@@ -53,7 +54,7 @@ const upgradeTurboPermission = async () => {
         <input
             type="text"
             class="grow"
-            placeholder="Turbo用户名"
+            :placeholder="$t('turboPermission.upgradeTurboPermission.turboName')"
             v-model="turboName"
             autocomplete="current-username"
             required/>
@@ -80,17 +81,18 @@ const upgradeTurboPermission = async () => {
       <div class="mt-8"></div>
       <button class="btn max-sm:btn-sm w-2/3 mx-auto" :disabled="isBtnLoading">
         <span v-if="isBtnLoading" class="loading loading-spinner"></span>
-        授权
+        {{ $t('turboPermission.upgradeTurboPermission.upgrade') }}
       </button>
     </form>
     <div class="mt-2"></div>
     <button class="btn max-sm:btn-sm w-2/3 mx-auto" @click="openDialogModal('upgradeDialog')">
-      <i class="fa-solid fa-clock-rotate-left"></i> 历史授权管理
+      <i class="fa-solid fa-clock-rotate-left"></i> {{ $t('turboPermission.upgradeTurboPermission.upgradeLog') }}
     </button>
     <div class="mt-6"></div>
     <div class="text-center text-xs opacity-60 w-5/6 mx-auto">
-      请在授予授权之前慎重考虑。您的一切操作都将被记录，该用户后续行为所引发的所有后果以及舆论影响将由您负责。我们有权根据
-      <router-link class="text-primary" target="_blank" to="/tos">使用条款</router-link> 对您以及该用户的账号采取措施。
+      {{ $t('turboPermission.upgradeTurboPermission.upgradeNotice.1') }}
+      <router-link class="text-primary" target="_blank" to="/tos">{{ $t('termsofservice.title') }}</router-link>
+      {{ $t('turboPermission.upgradeTurboPermission.upgradeNotice.2') }}
     </div>
   </div>
   <UpgradeDialog/>

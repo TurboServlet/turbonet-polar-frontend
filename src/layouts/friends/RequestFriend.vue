@@ -29,13 +29,13 @@ const addFriend = async () => {
   <div class="flex flex-col">
     <form class="flex flex-col" @submit.prevent="addFriend">
       <label class="input max-sm:input-sm input-bordered flex items-center gap-2 mt-4 mb-1">
-        <input v-model="turboName" type="text" class="grow" placeholder="TurboNET用户名" required/>
+        <input v-model="turboName" type="text" class="grow" :placeholder="$t('addFriends.requestFriend.placeholder')" required/>
       </label>
       <button class="btn max-sm:btn-sm my-4" @click="addFriend" :disabled="isBtnLoading">
-        <span v-if="isBtnLoading" class="loading loading-spinner"/>申请好友</button>
+        <span v-if="isBtnLoading" class="loading loading-spinner"/>{{ $t('addFriends.requestFriend.requestButton') }}</button>
     </form>
     <div class="text-center text-xs opacity-60 w-5/6 mx-auto">
-      因安全原因不提供搜索用户的功能，当您点击申请好友即向对应用户发送请求。
+      {{ $t('addFriends.requestFriend.notice') }}
     </div>
   </div>
 </template>

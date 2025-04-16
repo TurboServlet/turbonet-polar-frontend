@@ -25,40 +25,40 @@ const turboName = toRef(props, 'turboName')
     <input id="my-drawer-2" class="drawer-toggle" type="checkbox"/>
     <div class="drawer-side" style="height: unset; top: unset">
       <label aria-label="close sidebar" class="drawer-overlay" for="my-drawer-2"></label>
-      <ul class="menu max-sm:rounded-tl-none max-sm:rounded-bl-none bg-base-200 rounded-box w-56 menu-height overflow-auto"
+      <ul class="menu max-sm:rounded-tl-none max-sm:rounded-bl-none bg-base-100 rounded-box w-56 menu-height overflow-auto"
           style="flex: unset !important;">
         <li>
           <router-link to="/panel">
-            <i class="fa-solid fa-bullhorn text-orange-500"></i> 讯息
+            <i class="fa-solid fa-bullhorn text-orange-500"></i> {{ $t('menu.panel') }}
           </router-link>
         </li>
         <li>
           <router-link to="/turboPermission">
-            <i class="fa-solid fa-user-gear text-red-500"></i> 用户权限
+            <i class="fa-solid fa-user-gear text-red-500"></i> {{ $t('menu.turboPermission') }}
           </router-link>
         </li>
         <li>
           <router-link to="/botManager">
-            <i class="fa-solid fa-robot text-blue-500"></i> BOT管理
+            <i class="fa-solid fa-robot text-blue-500"></i> {{ $t('menu.botManager') }}
           </router-link>
         </li>
         <li>
           <router-link to="/serverRequests">
-            <i class="fa-solid fa-server text-lime-500"></i> 服务器请求统计
+            <i class="fa-solid fa-server text-lime-500"></i> {{ $t('menu.serverRequests') }}
           </router-link>
         </li>
         <li>
           <details open>
-            <summary><i class="fa-solid fa-rectangle-list text-pink-500"></i> 机厅相关</summary>
+            <summary><i class="fa-solid fa-rectangle-list text-pink-500"></i> {{ $t('menu.arcade.title') }}</summary>
             <ul>
               <li>
-                <router-link to="/arcadeInfo"><i class="fa-solid fa-sitemap"></i> 机厅信息</router-link>
+                <router-link to="/arcadeInfo"><i class="fa-solid fa-sitemap"></i> {{ $t('menu.arcade.info') }}</router-link>
               </li>
               <li>
-                <router-link to="/arcadeAlias"><i class="fa-solid fa-table"></i> 机厅简称</router-link>
+                <router-link to="/arcadeAlias"><i class="fa-solid fa-table"></i> {{ $t('menu.arcade.alias') }}</router-link>
               </li>
               <li>
-                <router-link to="/networkStatus"><i class="fa-solid fa-ethernet"></i> 机厅网络状态</router-link>
+                <router-link to="/networkStatus"><i class="fa-solid fa-ethernet"></i> {{ $t('menu.arcade.networkStatus') }}</router-link>
               </li>
             </ul>
           </details>
@@ -66,7 +66,7 @@ const turboName = toRef(props, 'turboName')
         <li>
           <details open>
             <summary>
-              <i class="fa-solid fa-gamepad text-fuchsia-500"></i> 舞萌相关
+              <i class="fa-solid fa-gamepad text-fuchsia-500"></i> {{ $t('menu.maimai.title') }}
             </summary>
             <ul>
               <li>
@@ -74,20 +74,20 @@ const turboName = toRef(props, 'turboName')
                     class="overflow-hidden text-ellipsis whitespace-nowrap">{{ turboName }}</span></router-link>
               </li>
               <li>
-                <router-link to="/photos"><i class="fa-solid fa-camera-retro"></i> 相片</router-link>
+                <router-link to="/photos"><i class="fa-solid fa-camera-retro"></i> {{ $t('menu.maimai.photos') }}</router-link>
               </li>
               <li>
-                <router-link to="/records"><i class="fa-regular fa-file-lines"></i> 游戏记录</router-link>
+                <router-link to="/records"><i class="fa-regular fa-file-lines"></i> {{ $t('menu.maimai.records') }}</router-link>
               </li>
               <li>
                 <details open>
-                  <summary><i class="fa-solid fa-medal"></i> 排行榜</summary>
+                  <summary><i class="fa-solid fa-medal"></i> {{ $t('menu.ranking.title') }}</summary>
                   <ul>
                     <li>
-                      <router-link to="/dxRatingRanking">DX RATING排行榜</router-link>
+                      <router-link to="/dxRatingRanking">{{ $t('menu.ranking.dxRatingRanking') }}</router-link>
                     </li>
                     <li>
-                      <router-link to="/achievementRanking">总分数排行榜</router-link>
+                      <router-link to="/achievementRanking">{{ $t('menu.ranking.achievementRanking') }}</router-link>
                     </li>
                   </ul>
                 </details>
@@ -97,29 +97,29 @@ const turboName = toRef(props, 'turboName')
         </li>
         <li>
           <details open>
-            <summary><i class="fa-solid fa-toolbox text-teal-500"></i> 加速盒子功能</summary>
+            <summary><i class="fa-solid fa-toolbox text-teal-500"></i> {{ $t('menu.turbo.title') }}</summary>
             <ul>
               <li>
-                <router-link to="/changeMaimaiName"><i class="fa-solid fa-pen-to-square"></i> 更改舞萌名称</router-link>
+                <router-link to="/changeMaimaiName"><i class="fa-solid fa-pen-to-square"></i> {{ $t('menu.turbo.changeMaimaiName') }}</router-link>
               </li>
               <li>
-                <router-link to="/changeAvatar"><i class="fa-regular fa-id-card"></i> 更改头像</router-link>
+                <router-link to="/changeAvatar"><i class="fa-regular fa-id-card"></i> {{ $t('menu.turbo.changeAvatar') }}</router-link>
               </li>
               <li>
                 <details open>
-                  <summary><i class="fa-solid fa-ticket"></i> 功能票</summary>
+                  <summary><i class="fa-solid fa-ticket"></i> {{ $t('menu.tickets.title') }}</summary>
                   <ul>
                     <li>
-                      <router-link to="/currentTickets">当前持有的功能票</router-link>
+                      <router-link to="/currentTickets">{{ $t('menu.tickets.currentTickets') }}</router-link>
                     </li>
                     <li>
-                      <router-link to="/setTickets">设置功能票</router-link>
+                      <router-link to="/setTickets">{{ $t('menu.tickets.setTickets') }}</router-link>
                     </li>
                   </ul>
                 </details>
               </li>
               <li>
-                <router-link to="/qrCommand"><i class="fa-solid fa-qrcode"></i> 指令二维码</router-link>
+                <router-link to="/qrCommand"><i class="fa-solid fa-qrcode"></i> {{ $t('menu.qrCommand') }}</router-link>
               </li>
               <!--              <li>-->
               <!--                <details open>-->
@@ -139,13 +139,13 @@ const turboName = toRef(props, 'turboName')
         </li>
         <li>
           <details open>
-            <summary><i class="fa-solid fa-user-group text-sky-500"></i> NET好友</summary>
+            <summary><i class="fa-solid fa-user-group text-sky-500"></i> {{ $t('menu.friends.title') }}</summary>
             <ul>
               <li>
-                <router-link to="/friends"><i class="fa-solid fa-address-book"></i> 我的好友</router-link>
+                <router-link to="/friends"><i class="fa-solid fa-address-book"></i> {{ $t('menu.friends.friends') }}</router-link>
               </li>
               <li>
-                <router-link to="/addFriends"><i class="fa-solid fa-user-plus"></i> 添加好友</router-link>
+                <router-link to="/addFriends"><i class="fa-solid fa-user-plus"></i> {{ $t('menu.friends.addFriends') }}</router-link>
               </li>
             </ul>
           </details>

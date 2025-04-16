@@ -54,12 +54,12 @@ const closeDialog = () => {
       <form method="dialog">
         <button @click="closeDialog" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
       </form>
-      <h3 class="text-lg font-bold">编辑简称</h3>
+      <h3 class="text-lg font-bold">{{ $t('arcadeAlias.dialog.title') }}</h3>
       <div role="alert" class="mt-4 alert shadow-lg alert-warning">
         <i class="fa-solid fa-triangle-exclamation"></i>
         <div>
-          <h3 class="font-bold">注意</h3>
-          <div class="text-xs">机厅简称添加后如需删除请联系管理员处理，您的行为将会被记录，请谨慎操作。</div>
+          <h3 class="font-bold">{{ $t('arcadeAlias.dialog.notice.title') }}</h3>
+          <div class="text-xs">{{ $t('arcadeAlias.dialog.notice.content') }}</div>
         </div>
       </div>
       <div class="flex-wrap mt-4 mb-2 gap-1.5 flex items-center">
@@ -70,16 +70,16 @@ const closeDialog = () => {
         <div class="badge badge-outline gap-2 font-bold"><i class="fa-solid fa-comment"></i>{{ arcadeAliasDialog.arcadeAlias.length }}/5</div>
         <div class="gap-1.5 flex">
           <div v-for="alias in arcadeAliasDialog.arcadeAlias">{{ alias }}</div>
-          <div v-if="arcadeAliasDialog.arcadeAlias.length === 0" class="opacity-60">暂无简称</div>
+          <div v-if="arcadeAliasDialog.arcadeAlias.length === 0" class="opacity-60">{{ $t('arcadeAlias.noData') }}</div>
         </div>
       </div>
       <label class="input max-sm:input-sm input-bordered flex mt-4 mb-8 items-center gap-2">
-        <input type="text" maxlength="6" v-model="newAlias" class="grow" placeholder="新简称" required/>
+        <input type="text" maxlength="6" v-model="newAlias" class="grow" :placeholder="$t('arcadeAlias.dialog.placeholder')" required/>
         <span>{{ aliasLength }}/6</span>
       </label>
       <div class="flex justify-end gap-2">
-          <button @click="closeDialog" class="btn max-sm:btn-sm btn-neutral">取消</button>
-          <button @click="addArcadeAlias" class="btn max-sm:btn-sm btn-primary">添加新简称</button>
+          <button @click="closeDialog" class="btn max-sm:btn-sm btn-neutral">{{ $t('arcadeAlias.dialog.cancel') }}</button>
+          <button @click="addArcadeAlias" class="btn max-sm:btn-sm btn-primary">{{ $t('arcadeAlias.dialog.submit') }}</button>
       </div>
     </div>
     <div @click="closeDialog" class="modal-backdrop">

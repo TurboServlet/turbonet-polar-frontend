@@ -122,18 +122,18 @@ onMounted(() => {
 </script>
 
 <template>
-  <div><h2 class="text-2xl mt-3.5 mb-3.5"><i class="fa-solid fa-bolt"></i> 游玩活跃度</h2>
+  <div><h2 class="text-2xl mt-3.5 mb-3.5"><i class="fa-solid fa-bolt"></i> {{ $t('user.playActivity.title') }}</h2>
     <div class="activity-info">
       <div class="hide-scrollbar heatmap" id="cal-heatmap"></div>
       <div class="info-bottom">
-        <div class="plays"><span class="font-title">游玩次数</span> <span>{{ playActivity.playCount }}</span>
+        <div class="plays"><span class="font-title">{{ $t('user.playActivity.playCount') }}</span> <span>{{ playActivity.playCount }}</span>
         </div>
-        <div class="time"><span class="font-title">累计游玩时长</span> <span>{{ playActivity.playTime.toFixed(1) }} hr</span></div>
-        <div class="first-play"><span class="font-title">第一次游玩</span> <span>{{ playActivity.firstPlay }}</span>
+        <div class="time"><span class="font-title">{{ $t('user.playActivity.totalPlayTime') }}</span> <span>{{ playActivity.playTime.toFixed(1) }} hr</span></div>
+        <div class="first-play"><span class="font-title">{{ $t('user.playActivity.firstPlay') }}</span> <span>{{ playActivity.firstPlay }}</span>
         </div>
-        <div class="last-play"><span class="font-title">最后一次游玩</span> <span>{{ playActivity.lastPlay }}</span>
+        <div class="last-play"><span class="font-title">{{ $t('user.playActivity.lastPlay') }}</span> <span>{{ playActivity.lastPlay }}</span>
         </div>
-        <div class="last-version"><span class="font-title">游玩版本</span> <span>{{ playActivity.playVersion }}</span></div>
+        <div class="last-version"><span class="font-title">{{ $t('user.playActivity.playVersion') }}</span> <span>{{ playActivity.playVersion }}</span></div>
       </div>
     </div>
   </div>
@@ -157,19 +157,19 @@ onMounted(() => {
 }
 
 .ch-domain-bg {
-  fill: #f2f2f2;
+  fill: #ffffff;
 }
 
 [data-theme=dark] .ch-domain-bg {
-  fill: #191e24;
+  fill: #1d232a;
 }
 
 .ch-container {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 [data-theme=dark] .ch-container {
-  background-color: #191e24;
+  background-color: #1d232a;
 }
 
 #ch-tooltip[data-theme=dark] {

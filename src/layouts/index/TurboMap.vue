@@ -159,7 +159,7 @@ let option = ref({
         },
         {
           name: "贵州省",
-          value: 0,
+          value: 1,
         },
         {
           name: "广东省",
@@ -210,7 +210,7 @@ let myChart = null;
 
 const initChart = (theme) => {
   myChart = echarts.init(document.getElementById('echarts'), theme);
-  fetch('https://r2.mai-turbo.net/china.json')
+  fetch('https://r2.sys-allnet.com/china.json')
       .then(response => response.json())
       .then(geoJson => {
         echarts.registerMap('china', geoJson);
@@ -235,9 +235,9 @@ onUnmounted(() => {
 
 <template>
   <div class="card home-product-intro shadow-2xl"><br>
-    <div class="card-title product-intro-title">妙手生花，创意无限</div>
+    <div class="card-title product-intro-title">{{ $t('turboMap.title') }}</div>
     <div class="card-body product-intro-content">
-      我们勇于创新，不断追求卓越，各种创意设计与新颖想法是我们执手的利刃，我们已经在以下地区开展了服务。
+      {{ $t('turboMap.context.1') }}
     </div>
     <div class="home-product-container">
       <div class="home-product-view">

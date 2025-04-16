@@ -38,11 +38,11 @@ onMounted(() => {
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 加载失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
       </h1>
       <div class="mt-3"></div>
       <p>
-        {{ responseData }} <router-link class="text-primary" to="/">返回主页</router-link>
+        {{ responseData }} <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
       </p>
     </div>
   </div>
@@ -50,12 +50,12 @@ onMounted(() => {
     <div class="breadcrumbs text-sm">
       <ul>
         <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-        <li>用户权限</li>
+        <li>{{ $t('menu.turboPermission') }}</li>
       </ul>
     </div>
     <div class="mt-2"/>
     <div role="tablist" class="tabs tabs-lifted">
-      <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label="我的权限" checked="checked"/>
+      <input type="radio" name="my_tabs_2" role="tab" class="tab" :aria-label="$t('turboPermission.myPermission')" checked="checked"/>
       <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
         <ShowUserPermission :turbo-permission-info="responseData"/>
       </div>
@@ -65,7 +65,7 @@ onMounted(() => {
           name="my_tabs_2"
           role="tab"
           class="tab"
-          aria-label="用户提权"
+          :aria-label="$t('turboPermission.upgradePermission')"
           :disabled="responseData.permission !== 'BUILDER' && responseData.permission !== 'ADMIN'"
       />
       <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">
@@ -77,7 +77,7 @@ onMounted(() => {
           name="my_tabs_2"
           role="tab"
           class="tab"
-          aria-label="警告&封禁"
+          :aria-label="$t('turboPermission.warningAndBan')"
           :disabled="responseData.permission !== 'ADMIN'"
       />
       <div role="tabpanel" class="tab-content bg-base-100 border-base-300 rounded-box p-6">

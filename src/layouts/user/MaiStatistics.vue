@@ -30,8 +30,8 @@ const dataFormatter = (value) => {
 const option = ref({
   color: ['#7480ff'],
   grid: {
-    top: '0',
-    bottom: '0',
+    top: '10%',
+    bottom: '10%',
     left: '0',
     right: '0'
   },
@@ -42,6 +42,8 @@ const option = ref({
   },
   yAxis: {
     type: 'value',
+    min: Math.min(...ratings) - 100,
+    max: Math.max(...ratings) + 100,
     show: false
   },
   tooltip: {
@@ -55,7 +57,16 @@ const option = ref({
       data: ratings,
       type: 'line',
       smooth: true,
-      showSymbol: false
+      showSymbol: false,
+      lineStyle: {
+        width: 2 // 线条宽度
+      },
+      animation: true, // 启用动画
+      animationDuration: 2000, // 动画时长（2秒）
+      animationEasing: 'cubicInOut', // 动画缓动效果
+      animationDelay: function (idx) {
+        return idx * 100; // 每个数据点的动画延迟
+      }
     }
   ]
 });
@@ -100,19 +111,19 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div><h2 class="text-2xl mt-3.5 mb-3.5"><i class="fa-solid fa-square-poll-vertical"></i> maimai 统计资料</h2>
+  <div><h2 class="text-2xl mt-3.5 mb-3.5"><i class="fa-solid fa-square-poll-vertical"></i> {{ $t('user.maiStatistics.title') }}</h2>
     <div class="scoring-info">
       <div class="chart">
         <div class="info-top">
           <div class="rating"><span class="font-title">DX Rating</span> <span class="font-top-text">{{ maiStatistics.deluxRating }}</span>
           </div>
-          <div class="rank"><span class="font-title">服务器排名</span> <span
+          <div class="rank"><span class="font-title">{{ $t('user.maiStatistics.serverRanking') }}</span> <span
               class="font-top-text">#{{ maiStatistics.serverRanking }}</span>
           </div>
         </div>
         <div class="trend">
           <div class="chartjs-box-reference" id="chart">
-            <div v-if="maiStatistics.echartsLine === ''">当前数据不足呢，快去出勤吧！</div>
+            <div v-if="maiStatistics.echartsLine === ''">{{ $t('user.maiStatistics.noData') }}</div>
           </div>
         </div>
         <div class="info-bottom">
@@ -126,13 +137,13 @@ onUnmounted(() => {
         </div>
       </div>
       <div class="other-info">
-        <div class="accuracy"><span class="font-title">平均完成度</span> <span>{{ maiStatistics.averageAccuracy.toFixed(2) }}%</span>
+        <div class="accuracy"><span class="font-title">{{ $t('user.maiStatistics.averageAchievement') }}</span> <span>{{ maiStatistics.averageAccuracy.toFixed(2) }}%</span>
         </div>
-        <div class="max-combo"><span class="font-title">最多连击数</span> <span>{{ maiStatistics.maxCombo }}</span>
+        <div class="max-combo"><span class="font-title">{{ $t('user.maiStatistics.maxCombo') }}</span> <span>{{ maiStatistics.maxCombo }}</span>
         </div>
-        <div class="full-combo"><span class="font-title">全连次数</span> <span>{{ maiStatistics.fullCombo }}</span></div>
-        <div class="all-perfect"><span class="font-title">收歌次数</span> <span>{{ maiStatistics.allPerfect }}</span></div>
-        <div class="total-dx-score"><span class="font-title">累计完成分数</span> <span>{{ maiStatistics.totalScores.toFixed(0) }} %</span></div>
+        <div class="full-combo"><span class="font-title">{{ $t('user.maiStatistics.fullComboCount') }}</span> <span>{{ maiStatistics.fullCombo }}</span></div>
+        <div class="all-perfect"><span class="font-title">{{ $t('user.maiStatistics.AllPerfectCount') }}</span> <span>{{ maiStatistics.allPerfect }}</span></div>
+        <div class="total-dx-score"><span class="font-title">{{ $t('user.maiStatistics.totalAchievement') }}</span> <span>{{ maiStatistics.totalScores.toLocaleString() }} %</span></div>
       </div>
     </div>
   </div>

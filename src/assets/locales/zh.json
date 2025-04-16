@@ -1,0 +1,737 @@
+{
+  "index": {
+    "title": "一款游戏的控制面板。"
+  },
+  "indexButton": {
+    "member": "进入控制页",
+    "guest": "注册或登录",
+    "jsLogout": "已退出登录"
+  },
+  "devInfo": {
+    "title": "我们是谁？",
+    "context": {
+      "1": "是在非盈利、非商业的前提下进行创作的。",
+      "2": "在 Coding 路上不断学习、不断前行的身影，时时映在我们身上。",
+      "3": "在不畏难、不退缩、勇于创新和敢于行动的精神驱动下，塑造了这个非凡的创作。"
+    },
+    "devContext": {
+      "ctrlcvs": "全栈总开发 / 总设计",
+      "kiwi": "DBA / 解决方案工程师",
+      "404": "手机APP开发",
+      "apple": "提供情绪价值",
+      "taojiu": "接口文档维护",
+      "yuuluo": "NONE BOT开发",
+      "haochi": "服务器对接"
+    }
+  },
+  "cooperatorInfo": {
+    "title": "开放，包容",
+    "context": {
+      "1": "我们重视个人开发者、团队、组织的创意和贡献。",
+      "2": "我们为开发者提供了齐全的接口文档，助力他们在技术探索与创新的道路上勇往直前。",
+      "3": "开发者可通过",
+      "4": "与",
+      "5": "了解更多信息，感谢合作伙伴的对接与贡献，你们的努力成就了今天的非凡旅程。"
+    },
+    "partner": "合作伙伴"
+  },
+  "turboMap": {
+    "title": "妙手生花，创意无限",
+    "context": {
+      "1": "我们勇于创新，不断追求卓越，各种创意设计与新颖想法是我们执手的利刃，我们已经在以下地区开展了服务。"
+    }
+  },
+  "footer": {
+    "contact": "© TurboServlet 2024。保留所有权利。网站上显示的所有商标、标识和服务标记如若侵权，请联系我们 ctrlcvs@uwu.cat。",
+    "privacy": "隐私政策",
+    "tos": "使用条款"
+  },
+  "login": {
+    "title": "欢迎回来！",
+    "fields": {
+      "username": "用户名",
+      "password": "用户密码"
+    },
+    "support": "需要帮助?",
+    "register": "注册",
+    "button": "登录",
+    "notice": {
+      "1": "登录或注册完成即代表您同意",
+      "2": "和"
+    }
+  },
+  "termsofservice": {
+    "title": "使用条款",
+    "introduction": {
+      "p1": "使用 TurboServlet 提供的服务之前，您必须接受以下内容。",
+      "p2": "访问与使用此网站（https://sys-allnet.com）、客户端以及任何关联服务（以下统称“Turbo”）即代表您确认您完全遵守此处列出的条款和条件，且保证您不会将 TurboServlet 提供服务的任何内容（包括本网站与本网站提供的内容）用于任何违法或被条款禁止的目的。",
+      "p3": "在该份条款之外，您还需要确保接受我们的"
+    },
+    "serviceDescription": {
+      "title": "服务描述",
+      "p1": "Turbo 在法律允许的范围内向用户提供在线服务。若用户未经某公司授权向某地区提供非法的在线服务，Turbo 不对该行为承担任何责任。然而，在法律框架内，Turbo 可以协助提供相关数据或其他法律支持。用户由此行为产生的任何后果，Turbo 概不负责。",
+      "p2": "Turbo 网页中提供托管用户上传内容的服务，使其他用户能够访问这些内容。对于用户上传的内容，无论该内容是否被视为令人反感、政治敏感、违法、侵犯知识产权或其他不当内容，TurboNET 具有自主判断权，并有权对相关账号采取封禁等处理措施。然而，Turbo 不对及时清除用户上传的违规内容作出任何保证，也不保证用户拥有发布或分发已上传内容的合法权利。对于因用户上传或分发内容所引发的任何法律后果，TurboNET 概不承担责任。"
+    },
+    "modification": {
+      "title": "使用条款的修改",
+      "p1": "Turbo 保留自由修改使用条款的权利。",
+      "p2": "使用条款以最新版为准。未遵守可能导致您被禁用 Turbo 的服务。"
+    },
+    "serviceModification": {
+      "title": "服务的修改",
+      "p1": "Turbo 保留修改或终止服务而不向用户通知的权利。",
+      "p2": "Turbo 在行使修改或终止服务权利时，不对任何用户或第三方承担责任。"
+    },
+    "disclaimer": {
+      "title": "免责声明",
+      "p1": "本文材料均以“现状”提供。Turbo 不提供任何明示或暗示的保证，且在此声明并否认所有其他保证，包括但不限于对适销性、特定用途适用性或知识产权的非侵权性或其他权利的侵犯的暗示保证或条件。",
+      "p2": "此外，Turbo 不保证或作出任何关于材料使用的准确性、可能结果或可靠性的陈述，或与此类材料相关的其他陈述。",
+      "p3": "最后，Turbo 没有义务（明示或暗示）为其服务提供任何维护、技术支持或其他支持。"
+    },
+    "liability": {
+      "title": "赔偿责任",
+      "p1": "若由于：",
+      "p2": "(i) 您对 Turbo 的使用和访问；",
+      "p3": "(ii) 您违反这些使用条款的任何条件；",
+      "p4": "(iii) 您侵犯任何第三方权利，包括但不限于任何版权、财产或隐私权；",
+      "p5": "(iv) 您上传的内容对第三方造成了损害；",
+      "p6": "(v) 其它您应承担责任的情形。",
+      "p7": "导致了 Turbo 可能面临损失。您同意主动解决争端并作出必要赔偿，使 TurboServlet 免受任何索赔、损害、损失或债务以及开支（包括但不限于律师费）等负面影响。",
+      "p8": "此责任将在这些使用条款和您使用 Turbo 之后继续存在。"
+    },
+    "clientInstallation": {
+      "title": "您对 Turbo 客户端的安装与使用",
+      "p1": "Turbo 的运作方式为基于路由器的智能数据中转与分发、通信增强以及流量优化管理。Turbo 仅允许用户在经过某公司授权的前提下，出于测试及开发目的进行合法安装和使用。用户一旦安装并部署或在已经安装客户端上游玩，即视为确认并同意上述条款具有法律效力。若用户提供虚假信息或行为导致第三方追究法律责任，Turbo 概不承担任何责任。因此，严禁用户在未经某公司授权的情况下，向任何地区提供非法的在线服务。并且在法律允许的范围内，Turbo 可协助第三方提供相关数据或法律支持。"
+    },
+    "siteContent": {
+      "title": "您对 Turbo 网页内容的使用",
+      "p1": "您应理解以下内容：在使用 Turbo 网页的过程中，您将会接触来自各种来源的用户上传内容，且 Turbo 对这些用户上传内容的准确性、实用性、安全性或知识产权不负责。此外，你理解并承认，您可能会接触到不准确、冒犯、淫秽或令人反感的用户上传内容，并且您同意放弃在此方面可能拥有的法律或公平权利或救济措施，同意在法律允许的最大范围内，就与您使用该网站相关的所有事项，对 TurboServlet、其所有者/运营者或许可方免责。"
+    },
+    "userContent": {
+      "title": "用户上传内容和内容删除",
+      "p1": "您对您自己的用户上传内容及其发布或发表的后果负完全责任。关于用户上传内容，您确认、声明或保证：您拥有或具备必要的许可、权利、同意和权限，以便使用并授权 Turbo 使用一切专利、商标、商业秘密、版权或其他专有权利，以便按照网站和这些使用条款的规定的方式包含和使用所有用户提交内容。关于用户提交内容，您同意不会提交受版权保护、受商业秘密保护或受第三方专有权利（包括隐私和公众形象权）约束的材料，除非您是这些权利的所有者，或者已获得其合法所有者的许可来发布此材料，并授权 Turbo 拥有在此授予的所有许可权利。",
+      "p2": "内容上传在 Turbo 在线社区不代表 Turbo 对其认可，也不代表 Turbo 认可其中表达的任何观点、建议或意见。Turbo 明确否认与用户提交内容相关的任何和所有责任。Turbo 不允许在其网站上进行侵犯版权的活动和侵犯知识产权的行为，如果得到适当的通知表明此类内容或用户提交内容侵犯了他人的知识产权，Turbo 有权力删除或进一步维权。",
+      "p3": "Turbo 保留在没有事先通知的情况下删除内容和用户提交内容、使用账号的权利。"
+    },
+    "privacyPolicy": {
+      "title": "隐私保护与信息收集政策",
+      "p1": "参见"
+    },
+    "proprietaryRights": {
+      "title": "内容的专有权利",
+      "p1": "您应承认，Turbo 所提供的内容，包括但不限于文本、软件、音乐、声音、照片、视频、图形、名称引用或其他通过服务向用户提供或用户访问的材料（“内容”），受版权、商标、服务标志、专利或其他专有权利和法律的保护；因此，用户只有在获得明确授权的情况下才能使用此内容。",
+      "p2": "用户不得未经法律授权，对内容进行任何可能侵害版权方利益的行为，包括从这些内容中创建衍生作品。Turbo 保留追责的权利。"
+    },
+    "links": {
+      "title": "链接",
+      "p1": "Turbo 可能提供其他网站或资源的链接。您可能在电子邮件等处中接收到这些链接。",
+      "p2": "您应接受 Turbo 不对这些外部网站或资源的负责，并且不代表 Turbo 认可其中的内容。Turbo 不对这些网站或资源上或可用的任何内容、广告、产品或其他材料负责或承担任何责任。",
+      "p3": "您应同意 Turbo 不会直接或间接地对因使用或依赖这些外部网站或资源上的任何内容、商品或服务而引起或声称引起的任何损害或损失负责或承担任何责任。"
+    },
+    "governingLaw": {
+      "title": "适用法律",
+      "p1": "本内容所涉及条款受中华人民共和国法律管辖并根据其进行解释。"
+    },
+    "acknowledgement": {
+      "title": "归属",
+      "p1": "本文部分内容基于“osu! 服务条款”和“Terms of Service - Cytoid”，并已通过 CC-BY-NC 4.0 获得许可。"
+    }
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "intro-1": "Turbo 为了提供服务，我们不得不经常收集、存储和传输个人信息。我们持续努力使这个过程尽可能透明化。",
+    "intro-2": {
+      "beforeLink": "在使用我们的服务前，您必须确认您已阅读并理解 ",
+      "betweenLink": " 和隐私政策，包括我们如何以及为何使用您的信息，且您使用服务的行为均受到 ",
+      "afterLink": " 和隐私政策约束。"
+    },
+    "collect-info": {
+      "title": "我们收集的信息",
+      "play": {
+        "title": "游玩",
+        "desc": "在您游玩时，由于缓存的需要，我们会收集并储存您的：",
+        "list": {
+          "1": "用户ID",
+          "2": "游玩时间",
+          "3": "账号信息",
+          "4": "游玩歌曲成绩",
+          "5": "账号流速及其他设置",
+          "6": "账号背包",
+          "7": "区域完成进度",
+          "8": "集章情况",
+          "9": "游玩记录",
+          "10": "上传日志"
+        },
+        "note": "您的用户ID永远不会向任何人可见，上传日志、集章情况、账号流速及其他设置将不会被公开，游玩时间、账号信息、游玩歌曲成绩、账号背包、区域完成进度、游玩记录会根据你的意愿决定可能用于网站内容的更新与展示，以提升用户体验和系统功能。"
+      },
+      "register": {
+        "title": "注册网页",
+        "desc": "在您注册账号时，我们将会收集并储存您的：",
+        "list": {
+          "1": "用户ID",
+          "2": "用户名",
+          "3": "邮箱地址",
+          "4": "密码（使用 SHA256 SALT 不可逆加密储存）",
+          "5": "注册时间"
+        },
+        "note": "您的用户ID永远不会向任何人可见，只有您的用户名会被公开。我们不会将您的邮箱地址售卖给第三方。"
+      },
+      "login": {
+        "title": "登录",
+        "desc": "在您登录时，我们会收集并储存您的：",
+        "list": {
+          "1": "IP 地址"
+        },
+        "note": "您的 IP 永远不会向任何人可见。"
+      }
+    },
+    "disclosure": {
+      "title": "关于您隐私的披露",
+      "desc": "我们不会在未经您允许的情况下披露您的隐私，但以下内容除外：",
+      "list": {
+        "1": "您的用户名、注册和登录时间、游玩时间、账号信息、游玩歌曲成绩、游玩记录（均可以在网页选择是否披露）。",
+        "2": "您明确表达愿意披露的信息。",
+        "3": "根据法律的有关规定或行政或司法机构的要求，需要向第三方或者行政、司法机构披露",
+        "4": {
+          "beforeLink": "您出现违反中国有关法律、法规或者 Turbo ",
+          "afterLink": " 或相关规则的情况，需要向第三方披露"
+        },
+        "5": {
+          "beforeLink": "其他为执行 ",
+          "afterLink": " 而需要披露的信息。"
+        }
+      }
+    },
+    "cookies": {
+      "title": "Cookies",
+      "desc": "我们不使用 cookies 来追踪您的在线活动。"
+    },
+    "data-security": {
+      "title": "数据安全",
+      "desc": "我们致力于保证您的信息安全，然而任何系统均不可能保证不可被攻击。即使出现不可抗因素导致 Turbo 被攻击，我们也会尽全力防止您的信息泄露。"
+    },
+    "policy-update": {
+      "title": "政策更新",
+      "desc": "我们保留更新此隐私政策的权利。若有更新，我们将会在网站和应用上通知。"
+    }
+  },
+  "notFound": {
+    "title": "啊哦！该页面被吃掉啦！",
+    "back": "返回到主页"
+  },
+  "menu": {
+    "panel": "讯息",
+    "turboPermission": "用户权限",
+    "botManager": "BOT管理",
+    "serverRequests": "服务器请求统计",
+    "arcade": {
+      "title": "机厅相关",
+      "info": "机厅信息",
+      "alias": "机厅简称",
+      "networkStatus": "机厅网络状态"
+    },
+    "maimai": {
+      "title": "舞萌相关",
+      "photos": "相片",
+      "records": "游戏记录"
+    },
+    "ranking": {
+      "title": "排行榜",
+      "dxRatingRanking": "DX RATING排行榜",
+      "achievementRanking": "总分数排行榜"
+    },
+    "turbo": {
+      "title": "加速盒子功能",
+      "changeMaimaiName": "更改舞萌名称",
+      "changeAvatar": "更改头像"
+    },
+    "tickets": {
+      "title": "功能票",
+      "currentTickets": "当前持有的功能票",
+      "setTickets": "设置功能票"
+    },
+    "qrCommand": "指令二维码",
+    "friends": {
+      "title": "NET好友",
+      "friends": "我的好友",
+      "addFriends": "添加好友"
+    }
+  },
+  "error": {
+    "jsError": "验证失败，请重新登录。",
+    "loadingError": "加载失败",
+    "validateError": "验证失败",
+    "enterError": "访问失败",
+    "back": "返回主页"
+  },
+  "panel": {
+    "reason": "原因"
+  },
+  "turboPermission": {
+    "myPermission": "我的权限",
+    "upgradePermission": "用户提权",
+    "warningAndBan": "警告&封禁",
+    "showTurboPermission": {
+      "permissions": "鉴权功能",
+      "granted": "已授权",
+      "notGranted": "未授权"
+    },
+    "upgradeTurboPermission": {
+      "turboName": "Turbo用户名",
+      "upgradeLog": "历史授权管理",
+      "upgrade": "授权",
+      "upgradeNotice": {
+        "1": "请在授予授权之前慎重考虑。您的一切操作都将被记录，该用户后续行为所引发的所有后果以及舆论影响将由您负责。我们有权根据",
+        "2": "对您以及该用户的账号采取措施。"
+      }
+    },
+    "upgradeDialog": {
+      "title": "历史授权管理",
+      "noData": {
+        "title": "暂无数据",
+        "content": "你还没有授权过人呢，快去试试吧！"
+      },
+      "table": {
+        "turboName": "Turbo用户名",
+        "upgradeAfter": "授权后",
+        "operate": "操作",
+        "cancel": "撤销"
+      }
+    },
+    "executePage": {
+      "turboName": "Turbo用户名",
+      "executeLog": "历史执行管理",
+      "reason": "理由",
+      "banTime": {
+        "1hr": "1小时",
+        "24hrs": "24小时",
+        "7days": "7天",
+        "30days": "30天",
+        "365days": "365天",
+        "permanent": "永久"
+      },
+      "execute": "执行",
+      "executeNotice": {
+        "1": "请在使用权限之前慎重考虑。您的一切操作都将被记录，该用户后续行为所引发的所有后果以及舆论影响将由您负责。TurboServlet 有权根据",
+        "2": "对您采取措施。"
+      }
+    },
+    "executeRecordDialog": {
+      "title": "历史执行管理",
+      "noData": {
+        "title": "暂无数据",
+        "content": "你没有使用过任何权限"
+      },
+      "table": {
+        "turboName": "Turbo用户名",
+        "execute": "执行内容",
+        "operate": "操作",
+        "cancel": "撤销"
+      }
+    }
+  },
+  "executeRecordBadge": {
+    "ban": "封禁",
+    "warning": "警告一次",
+    "unknown": "未知"
+  },
+  "turboPermissionBadge": {
+    "admin": "全权管理员",
+    "builder": "技术实施员",
+    "authorizer": "许可用户",
+    "user": "标准用户",
+    "unknown": "未知"
+  },
+  "turboWarningBadge": {
+    "noWarning": "无警告记录",
+    "warned": "被警告",
+    "times": "次"
+  },
+  "botManager": {
+    "loading": "加载中 ...",
+    "copyToClipboard": "复制到剪贴板",
+    "noData": "你还没有授权任何BOT呢",
+    "table": {
+      "botName": "BOT名称",
+      "info": "被调用次数及授权时间",
+      "operate": "操作",
+      "cancel": "撤销",
+      "times": "次"
+    }
+  },
+  "serverRequests": {
+    "title": "服务器请求统计",
+    "contact": {
+      "1": "响应数据的「Z-LIB」压缩跳过率与请求重试次数可以反应当前网络情况。",
+      "2": "压缩跳过率超过「>3%」时，可能会出现网络不稳定现象。",
+      "3": "请求重试率和失败率较高时，网络或服务器可能存在问题。"
+    },
+    "totalRequests": "一小时内总包数",
+    "totalException": "一小时内总异常包数",
+    "totalExceptionRate": "一小时内异常包数占比",
+    "totalZlibSkipped": "Z-LIB压缩跳过数量",
+    "totalRetry": "尝试重试数量",
+    "totalPanic": "尝试失败数量",
+    "inCache": "缓存内",
+    "unCache": "缓存外"
+  },
+  "arcadeInfo": {
+    "notice": {
+      "title": "注意",
+      "contact": "机厅信息会随着你去过更多的Turbo机厅自动增加并可看哦"
+    },
+    "newArcade": "机厅入库",
+    "arcadeContact": {
+      "1": "当日内总发送请求",
+      "2": "次。缓存击中",
+      "3": "次，修复了",
+      "4": "次错误，缓存击中率"
+    },
+    "arcadeFeature": {
+      "CustomName": "自定义名称",
+      "CustomAvatar": "允许自定义头像",
+      "TurboTicket": "Turbo功能票"
+    },
+    "enable": "允许",
+    "disable": "不允许",
+    "noData": "没有您的机厅? 请联系管理组对机厅进行入库与绑定。",
+    "detailDialog": {
+      "title": "机厅详细信息",
+      "contact": "机厅人数",
+      "total": "共",
+      "status": {
+        "30minutes": "30 分钟内",
+        "60minutes": "60 分钟内",
+        "120minutes": "120 分钟内"
+      },
+      "table": {
+        "username": "游戏名",
+        "endTime": "下机时间"
+      },
+      "noData": "该机厅还没有人，快去霸机！"
+    },
+    "newArcadeDialog": {
+      "title": "机厅入库",
+      "arcadeType": "机厅类型",
+      "arcadeNums": "机厅数量",
+      "arcadeName": "机厅全称",
+      "arcadeNamePlaceholder": "入库机厅全称",
+      "turboKeychip": "第{ n }台 KeyChipID (短)",
+      "2077Keychip": "第{ n }台 KeyChipID (长)",
+      "cancel": "取消",
+      "submit": "机厅入库"
+    }
+  },
+  "arcadeSettingEnum": {
+    "maskUsername": "遮挡用户名",
+    "udemaeShowAchievement": "友人对战显示完成度",
+    "disableTicket": "禁用 Turbo 功能票",
+    "disableCustomName": "禁用自定义名称",
+    "disableCustomAvatar": "禁用自定义头像",
+    "unknown": "未知设置"
+  },
+  "arcadeFunctionType": {
+    "login": "加速盒子机台登入",
+    "kastanjLogin": "加速盒子机台 Kastanj 服务登入",
+    "specialTypeOneLogin": "2077 服务机台登入",
+    "ping": "PING 机台"
+  },
+  "arcadeAlias": {
+    "noData": "暂无简称",
+    "notice": {
+      "1": "请在使用权限之前慎重考虑。您的一切操作都将被记录，您将对行为所引发的所有后果以及舆论影响负责。TurboServlet 有权根据",
+      "2": "对您采取措施。"
+    },
+    "dialog": {
+      "title": "编辑简称",
+      "notice": {
+        "title": "注意",
+        "content": "机厅简称添加后如需删除请联系管理员处理，您的行为将会被记录，请谨慎操作。"
+      },
+      "placeholder": "新简称",
+      "cancel": "取消",
+      "submit": "添加新简称"
+    }
+  },
+  "networkStatus": {
+    "lastBeat": "距离上一次心跳包 {time}",
+    "workingText": {
+      "working": "Turbo 运行中",
+      "warning": "Turbo 网络异常",
+      "error": "Turbo 已离线",
+      "unknown": "Turbo 状态未知"
+    },
+    "longTimeOffline": "请检查连接状态，该机器已经很久没有上线了",
+    "notSupport": "该机器暂时不支持查询网络状态"
+  },
+  "user": {
+    "htmlBanned": "封禁中",
+    "bannedBadge": "TurboNET封禁",
+    "mySettings": "我的设置",
+    "settingDialog": {
+      "title": "我的设置",
+      "userPage": "查看我的用户页",
+      "best35": "查看我的B35",
+      "best15": "查看我的B15",
+      "recentScores": "查看我的最近游玩记录",
+      "option": {
+        "everyone": "所有人",
+        "onlyFriends": "仅限好友",
+        "onlyMe": "仅我自己"
+      }
+    },
+    "addFriend": "添加好友",
+    "return": "返回上一页",
+    "banMessage": "在 {date} 被 {executorName} {banType}封禁{banDuration}，理由：{reason}",
+    "warningMessage": "第 {warningIndex} 次在 {date} 被 {executorName} 警告，理由：{reason}",
+    "banType": {
+      "permanent": "永久",
+      "temporary": "临时"
+    },
+    "hourSuffix": " 小时",
+    "maiStatistics": {
+      "title": "maimai 统计资料",
+      "serverRanking": "服务器排名",
+      "noData": "60天内出勤数据不足呢，快去出勤吧！",
+      "averageAchievement": "平均完成度",
+      "maxCombo": "最多连击数",
+      "fullComboCount": "全连歌曲",
+      "AllPerfectCount": "完美歌曲",
+      "totalAchievement": "累计完成分数"
+    },
+    "playActivity": {
+      "title": "游玩活跃度",
+      "playCount": "出勤次数",
+      "totalPlayTime": "累计游玩时长",
+      "firstPlay": "发现新大陆",
+      "lastPlay": "上次出勤",
+      "playVersion": "游戏版本"
+    },
+    "recentScores": {
+      "title": "最近游玩记录"
+    },
+    "private": "该用户设置了权限或数据不足",
+    "notice": {
+      "1": "根据 Creative Commons Public Licenses 4.0,",
+      "2": "该界面参考",
+      "3": "并",
+      "4": "进行了修改",
+      "5": ", 本页面开源于"
+    }
+  },
+  "photos": {
+    "historyPhotos": "历史相片",
+    "favoritePhotos": "我的收藏",
+    "notice": {
+      "title": "注意",
+      "content": "服务器相片缓存将会在7日后删除，如需保存请添加至收藏或右键长按下载。该相片功能仅适用于Turbo加速盒子机台。"
+    },
+    "noData": "你还没有任何相片呢",
+    "favorite": {
+      "enable": "已收藏",
+      "disable": "收藏"
+    },
+    "page": "第 {page} 页"
+  },
+  "records": {
+    "page": "第 {page} 页",
+    "newRecord": "新纪录"
+  },
+  "ranking": {
+    "title": "排行榜",
+    "button": {
+      "global": "全国加速盒子玩家排名",
+      "turbo": "TurboNET注册玩家排名"
+    },
+    "return": "返回上一页",
+    "achievementRanking": {
+      "title": "总分数",
+      "table": {
+        "ranking": "排名",
+        "username": "玩家",
+        "totalAchievement": "总完成分数"
+      }
+    },
+    "dxRatingRanking": {
+      "title": "DX RATING",
+      "table": {
+        "ranking": "排名",
+        "username": "玩家",
+        "dxRating": "DX RATING"
+      }
+    },
+    "musicRanking": {
+      "title": "乐曲排行榜",
+      "table": {
+        "ranking": "排名",
+        "username": "玩家",
+        "achievement": "完成度",
+        "dxScore": "DX分数"
+      }
+    }
+  },
+  "changeMaimaiName": {
+    "title": "更改舞萌名称",
+    "noPermission": {
+      "title": "注意",
+      "content": "您的权限不足，暂无法使用此功能。"
+    },
+    "notice": "新输入为全角",
+    "placeholder": "新用户名",
+    "button": {
+      "submit": "更新用户名",
+      "toDefault": "使用舞萌用户名"
+    },
+    "changeNotice": {
+      "1": "请在使用权限之前慎重考虑。您的一切操作都将被记录，您后续行为所引发的所有后果以及舆论影响将由您负责。TurboServlet 有权根据",
+      "2": "对您采取措施。"
+    }
+  },
+  "changeAvatar": {
+    "title": "更改头像",
+    "dialogTitle": "上传头像",
+    "selectPhoto": "选择图片",
+    "noPermission": {
+      "title": "注意",
+      "content": "您的权限不足，暂无法使用此功能。"
+    },
+    "button": {
+      "toDefault": "使用舞萌头像",
+      "cancel": "取消",
+      "submit": "确定"
+    },
+    "changeNotice": {
+      "1": "请在使用权限之前慎重考虑。您的一切操作都将被记录，您后续行为所引发的所有后果以及舆论影响将由您负责。TurboServlet 有权根据",
+      "2": "对您采取措施。"
+    }
+  },
+  "currentTickets": {
+    "title": "Turbo功能票",
+    "notice": {
+      "title": "注意",
+      "content": "Turbo功能票优先级高于官方功能票，当Turbo功能票启用时不能使用官方功能票。"
+    },
+    "turboTicket": {
+      "enable": "Turbo功能票已开启",
+      "disable": "Turbo功能票未开启"
+    },
+    "officialTicket": "官方功能票"
+  },
+  "ticketUtils": {
+    "ticketIdToName": {
+      "0": "没有票",
+      "2": "付费2倍票",
+      "3": "付费3倍票",
+      "4": "付费4倍票",
+      "5": "付费5倍票",
+      "6": "付费6倍票",
+      "10005": "活动5倍票 (类型1)",
+      "10105": "活动5倍票 (类型2)",
+      "10205": "活动5倍票 (类型3)",
+      "11001": "免费1.5倍票",
+      "11002": "免费2倍票",
+      "11003": "免费3倍票",
+      "11005": "免费5倍票",
+      "20010": "免费10倍票 (已失效)",
+      "20020": "免费20倍票 (已失效)",
+      "30001": "特殊2倍票",
+      "unknown": "其他"
+    }
+  },
+  "setTickets": {
+    "title": "设置功能票",
+    "ticketType": {
+      "title": "功能票类型",
+      "paid": "请选择需要的付费功能票",
+      "event": "请选择需要的活动功能票",
+      "free": "请选择需要的免费功能票",
+      "special": "请选择需要的特殊功能票"
+    },
+    "lock": "锁定保持1枚",
+    "button": {
+      "submit": "锁定功能票",
+      "toDefault": "取消锁定"
+    },
+    "noPermission": {
+      "title": "注意",
+      "content": "您的权限不足，暂无法使用此功能。"
+    },
+    "ticketTypeList": {
+      "paid": "付费类功能票",
+      "event": "活动类功能票",
+      "free": "免费类功能票",
+      "special": "特殊类功能票"
+    },
+    "setNotice": {
+      "1": "请在使用权限之前慎重考虑。您的一切操作都将被记录，您后续行为所引发的所有后果以及舆论影响将由您负责。TurboServlet 有权根据",
+      "2": "对您采取措施。"
+    }
+  },
+  "qrCommand": {
+    "userQrCommand": "用户二维码",
+    "arcadeQrCommand": "机台二维码",
+    "generateQrCode": "生成二维码",
+    "arcadeNotice": {
+      "title": "注意",
+      "content": "该部分功能较为高危，您在机台上应用的设置将作用于全部玩家，请谨慎使用。"
+    },
+    "useNotice": {
+      "1": "请在使用权限之前慎重考虑。您的一切操作都将被记录，您后续行为所引发的所有后果以及舆论影响将由您负责。TurboServlet 有权根据",
+      "2": "对您采取措施。"
+    },
+    "dialog": {
+      "title": "二维码",
+      "content": {
+        "1": "请将下图二维码对准机台扫描处",
+        "2": "该二维码仅适用于Turbo加速盒子及其他对接机台"
+      },
+      "expireTime": "有效期限截止：{time}"
+    }
+  },
+  "friends": {
+    "setting": "设置",
+    "friendCount": "好友数",
+    "noData": "你还没有任何好友呢",
+    "dialog": {
+      "title": "好友政策设置",
+      "option": {
+        "title": "当前策略",
+        "value": {
+          "autoAccept": "自动同意申请",
+          "manual": "手动同意申请",
+          "friendsOfFriends": "仅允许有共同好友申请",
+          "nobody": "不允许申请"
+        }
+      }
+    },
+    "friendCard": {
+      "playing": "正在游玩",
+      "lastPlayTime": "{hour}小时前",
+      "userPage": "用户主页",
+      "removeFriend": "删除好友"
+    },
+    "removeFriendDialog": {
+      "content": "你确定要删除 {friend} 的好友吗？",
+      "notice": "在好友关系中，若任一方删除了对方，该好友在双方的视角中均将消失。",
+      "cancel": "取消删除",
+      "submit": "确认删除"
+    }
+  },
+  "addFriends": {
+    "requestFriend": {
+      "title": "申请好友",
+      "placeholder": "TurboNET用户名",
+      "requestButton": "申请好友",
+      "notice": "因安全原因不提供搜索用户的功能，当您点击申请好友即向对应用户发送请求。"
+    },
+    "requestFriendList": {
+      "title": "申请列表",
+      "noData": "你还没有任何待处理的申请呢",
+      "requestTime": "申请时间: {time}",
+      "button": {
+        "accept": "通过申请",
+        "deny": "拒绝申请"
+      }
+    }
+  }
+}

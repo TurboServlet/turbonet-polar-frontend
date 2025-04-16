@@ -6,9 +6,9 @@ import TurboPermissionBadge from "@/components/TurboPermissionBadge.vue";
 import ExecuteRecordBadge from "@/components/ExecuteRecordBadge.vue";
 import {closeDialogModal} from "@/assets/js/DialogManager.js";
 import {toast} from "vue-sonner";
-import {useReCaptcha} from "vue-recaptcha-v3";
+import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
 
-const { executeRecaptcha } = useReCaptcha()
+
 
 const isLoading = ref(true);
 const isSuccess = ref(false)
@@ -38,10 +38,11 @@ const executeRecordList = async () => {
 
 const forgiveUser = async (recordId) => {
   forgiveStates.value[recordId].btnLoading = true
-  const token = await executeRecaptcha('forgiveUser')
+  const {token, a} = await executeRecaptcha('forgiveUser')
   const payload = {
     "recordId": recordId,
     "captchaToken": token,
+    "a": a,
   }
   await sendPostRequest('/permission/forgiveUser', payload, true).then((response) => {
     if (response.statusCode === 200) {
@@ -67,37 +68,37 @@ onMounted(() => {
       <form method="dialog">
         <button @click="closeDialogModal('executeRecordDialog')" class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
       </form>
-      <h3 class="text-lg font-bold">历史执行管理</h3>
+      <h3 class="text-lg font-bold">{{ $t('turboPermission.executeRecordDialog.title') }}</h3>
       <div class="mt-5"></div>
       <div v-if="isLoading || !isSuccess" class="main-container-center">
         <span v-if="isLoading" class="loading loading-spinner size-8"/>
         <div v-if="!isLoading && !isSuccess">
           <h1 class="font-bold text-3xl">
-            <i class="fa-regular fa-circle-xmark"></i> 加载失败
+            <i class="fa-regular fa-circle-xmark"></i> {{ $t('error.loadingError') }}
           </h1>
           <div class="mt-3"></div>
           <p>
-            {{ responseData }} <router-link class="text-primary" to="/">返回主页</router-link>
+            {{ responseData }} <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
           </p>
         </div>
       </div>
       <div v-else class="overflow-x-auto">
         <div v-if="responseData.length === 0" class="main-container-center">
           <h1 class="font-bold text-3xl">
-            暂无数据
+            {{ $t('turboPermission.executeRecordDialog.noData.title') }}
           </h1>
           <div class="mt-3"></div>
           <p>
-            你没有使用过任何权限
+            {{ $t('turboPermission.executeRecordDialog.noData.content') }}
           </p>
         </div>
         <table v-else class="table table-zebra">
           <!-- head -->
           <thead>
           <tr>
-            <th>用户名</th>
-            <th>执行内容</th>
-            <th>操作</th>
+            <th>{{ $t('turboPermission.executeRecordDialog.table.turboName') }}</th>
+            <th>{{ $t('turboPermission.executeRecordDialog.table.execute') }}</th>
+            <th>{{ $t('turboPermission.executeRecordDialog.table.operate') }}</th>
           </tr>
           </thead>
           <tbody>
@@ -110,7 +111,7 @@ onMounted(() => {
               <button @click="forgiveUser(user.recordId)" class="btn btn-xs gap-1.5 btn-error" :disabled="forgiveStates[user.recordId].btnLoading">
                 <span v-if="forgiveStates[user.recordId].btnLoading" class="loading loading-spinner size-4"></span>
                 <i v-else class="fa-solid fa-rotate-left"></i>
-                撤销
+                {{ $t('turboPermission.executeRecordDialog.table.cancel') }}
               </button>
             </td>
           </tr>

@@ -2,9 +2,9 @@
 import {ref} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
-import {useReCaptcha} from "vue-recaptcha-v3";
+import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
-const { executeRecaptcha } = useReCaptcha()
+
 
 const weChatID = ref('');
 
@@ -22,10 +22,11 @@ const step1 = async () => {
 }
 
 const getRegisterToken = async () => {
-  const token = await executeRecaptcha('getRegisterToken')
+  const {token, a} = await executeRecaptcha('getRegisterToken')
   const payload = {
     "weChatID": weChatID.value,
     "captchaToken": token,
+    "a": a,
   }
   await sendPostRequest('/auth/weChatIDCheck', payload, false).then((response) => {
     if (response.statusCode === 200) {
@@ -68,7 +69,7 @@ const changeStep = () => {
     <div class="mt-3"></div>
     <div class="text-right text-xs opacity-60">
       已经拥有帐号了?
-      <router-link class="text-primary" to="/">返回主页</router-link>
+      <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
     </div>
   </div>
 </template>

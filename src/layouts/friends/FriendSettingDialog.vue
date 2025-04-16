@@ -6,6 +6,9 @@ import TurboPermissionBadge from "@/components/TurboPermissionBadge.vue";
 import {toast} from "vue-sonner";
 import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
 import {closeDialogModal} from "@/assets/js/DialogManager.js";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n()
 
 const isLoading = ref(true);
 const isSuccess = ref(false);
@@ -25,7 +28,7 @@ const showFriendSearchPolicy = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 
@@ -35,7 +38,7 @@ const setFriendSearchPolicy = async () => {
   }
   await sendPostRequest('/web/setFriendSearchPolicy', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('调整成功')
+      toast.success(t('friends.dialog.option.toast.success'));
     } else {
       toast.error(response.data)
     }

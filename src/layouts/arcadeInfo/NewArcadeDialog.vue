@@ -3,6 +3,9 @@ import {closeDialogModal} from "@/assets/js/DialogManager.js";
 import {ref, toRef, watch} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n()
 
 const newAlias = ref('')
 
@@ -35,7 +38,7 @@ const addArcadeAlias = async () => {
   }
   await sendPostRequest('/web/addNewArcade', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('添加机厅成功')
+      toast.success(t('arcadeInfo.newArcadeDialog.toast.success'))
       isBtnLoading.value = false
       location.reload()
     } else {

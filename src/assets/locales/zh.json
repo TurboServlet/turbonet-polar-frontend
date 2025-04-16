@@ -21,7 +21,8 @@
       "apple": "提供情绪价值",
       "taojiu": "接口文档维护",
       "yuuluo": "NONE BOT开发",
-      "haochi": "服务器对接"
+      "haochi": "服务器对接",
+      "tenshi": "打黑工的"
     }
   },
   "cooperatorInfo": {
@@ -39,6 +40,51 @@
     "title": "妙手生花，创意无限",
     "context": {
       "1": "我们勇于创新，不断追求卓越，各种创意设计与新颖想法是我们执手的利刃，我们已经在以下地区开展了服务。"
+    },
+    "mapSource": "地图来源 阿里云 DataV",
+    "visualMap": {
+      "intensive": "密集",
+      "sparse": "稀疏"
+    },
+    "series": {
+      "name": "Turbo加速盒子安装机台数",
+      "regions": {
+        "Beijing": "北京市",
+        "Tianjin": "天津市",
+        "Shanghai": "上海市",
+        "Chongqing": "重庆市",
+        "Hebei": "河北省",
+        "Henan": "河南省",
+        "Yunnan": "云南省",
+        "Liaoning": "辽宁省",
+        "Heilongjiang": "黑龙江省",
+        "Hunan": "湖南省",
+        "Anhui": "安徽省",
+        "Shandong": "山东省",
+        "Xinjiang": "新疆维吾尔自治区",
+        "Jiangsu": "江苏省",
+        "Zhejiang": "浙江省",
+        "Jiangxi": "江西省",
+        "Hubei": "湖北省",
+        "Guangxi": "广西壮族自治区",
+        "Gansu": "甘肃省",
+        "Shan1xi": "山西省",
+        "Neimenggu": "内蒙古自治区",
+        "Shan3xi": "陕西省",
+        "Jilin": "吉林省",
+        "Fujian": "福建省",
+        "Guizhou": "贵州省",
+        "Guangdong": "广东省",
+        "Qinghai": "青海省",
+        "Xizang": "西藏自治区",
+        "Sichuan": "四川省",
+        "Ningxia": "宁夏回族自治区",
+        "Hainan": "海南省",
+        "Taiwan": "台湾省",
+        "Xianggang": "香港特别行政区",
+        "Aomen": "澳门特别行政区",
+        "Nanhaizhudao": "南海诸岛"
+      }
     }
   },
   "footer": {
@@ -419,7 +465,10 @@
       "turboKeychip": "第{ n }台 KeyChipID (短)",
       "2077Keychip": "第{ n }台 KeyChipID (长)",
       "cancel": "取消",
-      "submit": "机厅入库"
+      "submit": "机厅入库",
+      "toast": {
+        "success": "添加机厅成功"
+      }
     }
   },
   "arcadeSettingEnum": {
@@ -450,7 +499,10 @@
       },
       "placeholder": "新简称",
       "cancel": "取消",
-      "submit": "添加新简称"
+      "submit": "添加新简称",
+      "toast": {
+        "success": "添加简称成功"
+      }
     }
   },
   "networkStatus": {
@@ -701,6 +753,9 @@
           "manual": "手动同意申请",
           "friendsOfFriends": "仅允许有共同好友申请",
           "nobody": "不允许申请"
+        },
+        "toast": {
+          "success": "调整成功"
         }
       }
     },
@@ -714,7 +769,10 @@
       "content": "你确定要删除 {friend} 的好友吗？",
       "notice": "在好友关系中，若任一方删除了对方，该好友在双方的视角中均将消失。",
       "cancel": "取消删除",
-      "submit": "确认删除"
+      "submit": "确认删除",
+      "toast": {
+        "success": "删除好友成功"
+      }
     }
   },
   "addFriends": {
@@ -722,7 +780,10 @@
       "title": "申请好友",
       "placeholder": "TurboNET用户名",
       "requestButton": "申请好友",
-      "notice": "因安全原因不提供搜索用户的功能，当您点击申请好友即向对应用户发送请求。"
+      "notice": "因安全原因不提供搜索用户的功能，当您点击申请好友即向对应用户发送请求。",
+      "toast": {
+        "success": "已发送申请"
+      }
     },
     "requestFriendList": {
       "title": "申请列表",
@@ -731,6 +792,10 @@
       "button": {
         "accept": "通过申请",
         "deny": "拒绝申请"
+      },
+      "toast": {
+        "accept": "已同意好友申请",
+        "deny": "已拒绝好友申请"
       }
     }
   }

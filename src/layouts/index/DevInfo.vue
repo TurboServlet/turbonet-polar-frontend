@@ -90,6 +90,13 @@ function scrollToRight() {
               class="fa-brands fa-github"></i></a></div>
           <div class="member-role">{{ $t('devInfo.devContext.haochi') }}</div>
         </div>
+        <div class="member"><img class="member-image"
+                                 src="https://q.qlogo.cn/headimg_dl?dst_uin=1148850688&amp;spec=640&amp;img_type=jpg"
+                                 alt="tenshi">
+          <div class="member-name"><a class="contributor-link" href="https://x.com/Strelexia">申必名居天子 <i
+              class="fa-brands fa-github"></i></a></div>
+          <div class="member-role">{{ $t('devInfo.devContext.tenshi') }}</div>
+        </div>
       </div>
     </div>
   </div>

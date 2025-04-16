@@ -5,6 +5,9 @@ import {ArcadeSettingEnumToString} from "@/assets/js/ArcadeUtils.js";
 import {onMounted, ref, toRef, watch} from "vue";
 import {sendGetRequest} from "@/assets/js/RequestHandler.js";
 
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n()
+
 const props = defineProps({
   arcadeName: {
     type: String,
@@ -35,7 +38,7 @@ onMounted(() => {
     }).catch(() => {
       isLoading.value = false
       isSuccess.value = false
-      responseData.value = '验证失败，请重新登录。'
+      responseData.value = t('error.jsError')
     })
   })
 })

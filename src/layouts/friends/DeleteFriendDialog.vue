@@ -4,6 +4,9 @@ import {ref, toRef} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
 import {closeDialogModal} from "@/assets/js/DialogManager.js";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n()
 
 const props = defineProps({
   friend: {
@@ -22,7 +25,7 @@ const deleteFriend = async () => {
   }
   await sendPostRequest('/web/removeFriend', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('删除好友成功')
+      toast.success(t('friends.removeFriendDialog.toast.success'))
       isDeleteBtnLoading.value = false
       location.reload()
     } else {

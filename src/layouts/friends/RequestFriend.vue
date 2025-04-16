@@ -3,6 +3,9 @@
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {ref} from "vue";
 import {toast} from "vue-sonner";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n()
 
 const isBtnLoading = ref(false)
 const turboName = ref('')
@@ -14,7 +17,7 @@ const addFriend = async () => {
   }
   await sendPostRequest('/web/addFriend', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('已发送申请')
+      toast.success(t('addFriends.requestFriend.toast.success'))
       isBtnLoading.value = false
     } else {
       toast.error(response.data)

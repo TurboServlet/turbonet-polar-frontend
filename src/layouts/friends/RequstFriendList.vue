@@ -4,6 +4,9 @@ import TurboPermissionBadge from "@/components/TurboPermissionBadge.vue";
 import {onMounted, ref} from "vue";
 import {sendGetRequest, sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n()
 
 const isLoading = ref(true);
 const isSuccess = ref(false);
@@ -27,7 +30,7 @@ const showFriendRequests = async () => {
   }).catch(() => {
     isLoading.value = false;
     isSuccess.value = false;
-    responseData.value = '验证失败，请重新登录。';
+    responseData.value = t('error.jsError');
   });
 };
 
@@ -39,7 +42,7 @@ const acceptFriend = async (turboName) => {
   await sendPostRequest('/web/acceptFriend', payload, true).then((response) => {
     loadingStates.value[turboName].accept = false;
     if (response.statusCode === 200) {
-      toast.success('已同意好友申请');
+      toast.success(t('addFriends.requestFriendList.toast.accept'));
       showFriendRequests();
     } else {
       toast.error(response.data);
@@ -55,7 +58,7 @@ const denyFriend = async (turboName) => {
   await sendPostRequest('/web/denyFriend', payload, true).then((response) => {
     loadingStates.value[turboName].deny = false;
     if (response.statusCode === 200) {
-      toast.success('已拒绝好友申请');
+      toast.success(t('addFriends.requestFriendList.toast.deny'));
       showFriendRequests();
     } else {
       toast.error(response.data);

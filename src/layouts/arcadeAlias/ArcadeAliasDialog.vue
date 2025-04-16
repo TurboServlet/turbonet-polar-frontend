@@ -4,6 +4,9 @@ import {ref, toRef, watch} from "vue";
 import {ArcadeTypeEnumToString} from "../../assets/js/ArcadeUtils.js";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 
 const props = defineProps({
   arcadeAliasDialog: {
@@ -31,7 +34,7 @@ const addArcadeAlias = async () => {
   }
   await sendPostRequest('/web/addArcadeAlias', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('添加简称成功')
+      toast.success(t('arcadeAlias.dialog.toast.success'))
       isBtnLoading.value = false
       location.reload()
     } else {

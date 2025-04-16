@@ -11,6 +11,9 @@ import {
 import {MapChart} from 'echarts/charts';
 import {CanvasRenderer} from 'echarts/renderers';
 import {onMounted, onUnmounted, ref} from "vue";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n()
 
 echarts.use([
   TitleComponent,
@@ -24,7 +27,7 @@ echarts.use([
 
 let option = ref({
   title: {
-    subtext: '地图来源 阿里云 DataV',
+    subtext: t('turboMap.mapSource'),
     sublink:
         'https://datav.aliyun.com/'
   },
@@ -45,7 +48,7 @@ let option = ref({
   visualMap: {
     min: 0,
     max: 8,
-    text: ['密集', '稀疏'],
+    text: [t('turboMap.visualMap.intensive'), t('turboMap.visualMap.sparse')],
     realtime: false,
     calculable: false,
     inRange: {
@@ -54,7 +57,7 @@ let option = ref({
   },
   series: [
     {
-      name: 'Turbo加速盒子安装机台数',
+      name: t('turboMap.series.name'),
       type: 'map',
       map: 'china',
       label: {
@@ -62,15 +65,15 @@ let option = ref({
       },
       data: [
         {
-          name: "北京市",
+          name: t('turboMap.series.regions.Beijing'),
           value: 2,
         },
         {
-          name: "天津市",
+          name: t('turboMap.series.regions.Tianjin'),
           value: 0,
         },
         {
-          name: "上海市",
+          name: t('turboMap.series.regions.Shanghai'),
           value: 18,
         },
         {

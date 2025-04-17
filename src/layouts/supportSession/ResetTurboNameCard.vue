@@ -57,7 +57,7 @@ const resetTurboName = async () => {
     <div v-if="!isShowInner" class="h-full flex items-center justify-between">
       <div>
         <div class="font-bold text-xl">{{ $t('supportSession.resetTurboName.title') }}</div>
-        <div class="opacity-60">{{ $t('supportSession.resetTurboName.oldTurboName') }}</div>
+        <div class="opacity-60">{{ $t('supportSession.resetTurboName.oldTurboName',{turboName: turboName}) }}</div>
       </div>
       <button class="btn btn-primary gap-4" @click="changeShow">{{ $t('supportSession.choose') }}</button>
     </div>

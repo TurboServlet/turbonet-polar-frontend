@@ -85,11 +85,6 @@ function scrollToRight() {
               class="fa-brands fa-github"></i></a></div>
           <div class="member-role">{{ $t('devInfo.devContext.yuuluo') }}</div>
         </div>
-        <div class="member"><div class="member-image" style="background-color: white;"/>
-          <div class="member-name"><a class="contributor-link" href="https://github.com/LovelyHaochi">好吃 <i
-              class="fa-brands fa-github"></i></a></div>
-          <div class="member-role">{{ $t('devInfo.devContext.haochi') }}</div>
-        </div>
         <div class="member"><img class="member-image"
                                  src="https://q.qlogo.cn/headimg_dl?dst_uin=1148850688&amp;spec=640&amp;img_type=jpg"
                                  alt="tenshi">

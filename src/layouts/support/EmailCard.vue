@@ -68,7 +68,7 @@ const emailSendVerify = async () => {
   <div v-else class="bg-base-100 rounded-box p-6 h-full flex flex-col">
     <div class="font-bold text-xl">{{ $t('support.emailCard.success') }}</div>
     <div class="mt-2"></div>
-    <div>{{ $t('support.emailCard.notice') }}</div>
+    <div>{{ $t('support.emailCard.notice', {email: email}) }}</div>
   </div>
 </template>
 

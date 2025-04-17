@@ -100,8 +100,8 @@ const closeSession = async () => {
       TurboNET {{ $t('supportSession.page.title') }}
     </div>
     <div class="mt-6"></div>
-    <div class="font-bold text-xl">{{ $t('supportSession.page.sessionId') }}</div>
-    <div v-if="!isClosed">{{ $t('supportSession.page.countDown') }}</div>
+    <div class="font-bold text-xl">{{ $t('supportSession.page.sessionId', {sessionId: sessionId}) }}</div>
+    <div v-if="!isClosed">{{ $t('supportSession.page.countDown', {seconds: seconds}) }}</div>
     <div v-else>{{ $t('supportSession.page.eliminated') }}</div>
     <div class="mt-6"></div>
     <div class="flex justify-between flex-col">
@@ -128,7 +128,7 @@ const closeSession = async () => {
         </div>
         <button v-if="!isClosed" class="btn btn-error gap-4 mt-4" @click="closeSession" :disabled="isBtnLoading">
           <span v-if="isBtnLoading" class="loading loading-spinner"></span>
-          {{ $t('supportSession.page.closeSession.countdown') }}
+          {{ $t('supportSession.page.closeSession.countdown', {seconds: seconds}) }}
         </button>
         <button v-else class="btn btn-neutral gap-4 mt-4" disabled>{{ $t('supportSession.page.closeSession.eliminated') }}</button>
       </div>

@@ -3,8 +3,9 @@ import en from '@/assets/locales/en.json'
 import zh from '@/assets/locales/zh.json'
 import zht from '@/assets/locales/zht.json'
 import ja from '@/assets/locales/ja.json'
+import ko from '@/assets/locales/ko.json'
 
-const messages = { zh, en, zht, ja }
+const messages = { zh, en, zht, ja, ko }
 
 const i18n = createI18n({
     legacy: false,

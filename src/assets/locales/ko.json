@@ -1,0 +1,1070 @@
+{
+  "index": {
+    "title": "게임 컨트롤 패널입니다."
+  },
+  "indexButton": {
+    "member": "컨트롤 페이지로 이동",
+    "guest": "회원가입 또는 로그인",
+    "jsLogout": "로그아웃되었습니다"
+  },
+  "devInfo": {
+    "title": "우리는 누구인가?",
+    "context": {
+      "1": "비영리, 비상업적 전제하에 창작하고 있습니다.",
+      "2": "Coding의 길에서 끊임없이 배우고 전진하는 모습이 언제나 우리에게 투영되어 있습니다.",
+      "3": "어려움을 두려워하지 않고, 물러서지 않으며, 혁신적 사고와 과감한 행동을 통해 이 비범한 창작물을 탄생시켰습니다."
+    },
+    "devContext": {
+      "ctrlcvs": "풀스택 총괄 개발 / 총괄 디자인",
+      "kiwi": "DBA / 솔루션 엔지니어",
+      "404": "모바일 APP 개발",
+      "apple": "정서적 가치를 제공",
+      "taojiu": "인터페이스 문서 유지",
+      "yuuluo": "NONE BOT 개발",
+      "haochi": "서버 연동",
+      "tenshi": "제품 엔지니어링 / 인터랙션 아키텍처"
+    }
+  },
+  "cooperatorInfo": {
+    "title": "개방과 포용",
+    "context": {
+      "1": "우리는 개인 개발자, 팀, 조직의 창의성과 기여를 중시합니다.",
+      "2": "우리는 개발자에게 풍부한 인터페이스 문서를 제공하여, 그들이 기술 탐색과 혁신의 길에서 두려움 없이 전진할 수 있도록 돕습니다.",
+      "3": "개발자는",
+      "4": "과",
+      "5": "를 통해 더 많은 정보를 확인할 수 있습니다. 협력 파트너의 연계와 기여에 감사드리며, 여러분의 노력이 오늘의 비범한 여정을 이루었습니다."
+    },
+    "partner": "협력 파트너"
+  },
+  "turboMap": {
+    "title": "묘수로 꽃을 피우고, 창의는 무한합니다",
+    "context": {
+      "1": "우리는 끊임없이 혁신하며 탁월함을 추구합니다. 다양한 창의적 디자인과 새로운 아이디어는 우리가 사용하는 예리한 도구입니다. 이미 아래 지역에서 서비스를 제공합니다."
+    },
+    "mapSource": "지도 출처 阿里云 DataV",
+    "visualMap": {
+      "intensive": "밀집",
+      "sparse": "희박"
+    },
+    "series": {
+      "name": "Turbo가속 박스 설치 기기 수",
+      "regions": {
+        "Beijing": "北京市",
+        "Tianjin": "天津市",
+        "Shanghai": "上海市",
+        "Chongqing": "重庆市",
+        "Hebei": "河北省",
+        "Henan": "河南省",
+        "Yunnan": "云南省",
+        "Liaoning": "辽宁省",
+        "Heilongjiang": "黑龙江省",
+        "Hunan": "湖南省",
+        "Anhui": "安徽省",
+        "Shandong": "山东省",
+        "Xinjiang": "新疆维吾尔自治区",
+        "Jiangsu": "江苏省",
+        "Zhejiang": "浙江省",
+        "Jiangxi": "江西省",
+        "Hubei": "湖北省",
+        "Guangxi": "广西壮族自治区",
+        "Gansu": "甘肃省",
+        "Shan1xi": "山西省",
+        "Neimenggu": "内蒙古自治区",
+        "Shan3xi": "陕西省",
+        "Jilin": "吉林省",
+        "Fujian": "福建省",
+        "Guizhou": "贵州省",
+        "Guangdong": "广东省",
+        "Qinghai": "青海省",
+        "Xizang": "西藏自治区",
+        "Sichuan": "四川省",
+        "Ningxia": "宁夏回族自治区",
+        "Hainan": "海南省",
+        "Taiwan": "台湾省",
+        "Xianggang": "香港特别行政区",
+        "Aomen": "澳门特别行政区",
+        "Nanhaizhudao": "南海诸岛"
+      }
+    }
+  },
+  "footer": {
+    "contact": "© TurboServlet 2024. 모든 권리 보유. 웹사이트에 표시된 모든 상표, 로고 및 서비스 마크가 침해에 해당한다면 {email}로 문의해 주세요.",
+    "privacy": "개인정보처리방침",
+    "tos": "이용 약관"
+  },
+  "login": {
+    "title": "다시 오신 것을 환영합니다!",
+    "fields": {
+      "username": "사용자 이름",
+      "password": "사용자 비밀번호"
+    },
+    "support": "도움이 필요하신가요?",
+    "register": "회원가입",
+    "button": "로그인",
+    "notice": {
+      "1": "로그인 또는 회원가입을 완료하면, 귀하는",
+      "2": "및"
+    }
+  },
+  "termsofservice": {
+    "title": "이용 약관",
+    "introduction": {
+      "p1": "TurboServlet에서 제공하는 서비스를 사용하기 전에, 아래 내용을 수락해야 합니다.",
+      "p2": "이 웹사이트(https://sys-allnet.com), 클라이언트 및 어떠한 관련 서비스(이하 “Turbo”라 통칭)를 이용하고 접속함으로써 귀하는 본 약관 및 조건을 완전히 준수함을 확인하며, TurboServlet이 제공하는 서비스의 어떠한 콘텐츠(본 웹사이트 및 본 웹사이트에서 제공되는 콘텐츠 포함)도 불법적이거나 본 약관에서 금지하는 목적으로 사용하지 않을 것을 보장합니다.",
+      "p3": "본 약관 외에도, 귀하는 우리의"
+    },
+    "serviceDescription": {
+      "title": "서비스 설명",
+      "p1": "Turbo는 법이 허용하는 범위 내에서 사용자에게 온라인 서비스를 제공합니다. 만약 사용자가 어떤 회사의 허가 없이 특정 지역에 불법 온라인 서비스를 제공했다면, Turbo는 해당 행위에 대해 책임지지 않습니다. 그러나 법적 테두리 안에서 Turbo는 관련 데이터 또는 기타 법적 지원을 제공할 수 있습니다. 이러한 행위로 인해 발생하는 모든 결과에 대해 Turbo는 어떠한 책임도 지지 않습니다.",
+      "p2": "Turbo 웹페이지는 사용자가 업로드한 콘텐츠를 호스팅하여, 다른 사용자가 이 콘텐츠에 접근할 수 있도록 합니다. 사용자 업로드 콘텐츠가 불쾌하거나, 정치적으로 민감하거나, 불법이거나, 지식 재산권을 침해하거나 기타 부적절한 내용일 경우, TurboNET은 독자적 판단을 통해 관련 계정에 대해 차단 등의 조치를 취할 수 있습니다. 다만 Turbo는 사용자가 업로드한 위반 콘텐츠를 즉시 제거할 것을 보장하지 않으며, 사용자가 업로드하거나 배포한 콘텐츠에 대한 합법적인 권리를 반드시 보유하고 있음을 보증하지도 않습니다. 사용자 업로드 또는 배포된 콘텐츠로 인해 발생하는 모든 법적 결과에 대해 TurboNET은 책임을 지지 않습니다."
+    },
+    "modification": {
+      "title": "이용 약관의 수정",
+      "p1": "Turbo는 이 이용 약관을 자유롭게 수정할 권리를 보유합니다.",
+      "p2": "이용 약관은 최신 버전을 기준으로 합니다. 이를 준수하지 않을 경우 Turbo 서비스 사용이 제한될 수 있습니다."
+    },
+    "serviceModification": {
+      "title": "서비스 변경",
+      "p1": "Turbo는 사용자에게 사전 통지 없이 서비스를 수정하거나 중단할 권리를 보유합니다.",
+      "p2": "Turbo는 이러한 수정 또는 중단 권리를 행사함으로 인해 어떠한 사용자나 제3자에게도 책임을 지지 않습니다."
+    },
+    "disclaimer": {
+      "title": "면책 조항",
+      "p1": "본 문서의 모든 자료는 “현재 상태 그대로” 제공됩니다. Turbo는 명시적 또는 묵시적인 어떠한 보증도 제공하지 않으며, 상품성, 특정 목적 적합성, 지식 재산권 비침해 또는 기타 권리 침해 등에 대한 묵시적 보증이나 조건을 포함한 모든 다른 보증을 명시적으로 부인합니다.",
+      "p2": "또한 Turbo는 자료 사용의 정확성, 사용으로 인한 결과, 신뢰성 등에 관한 보증이나 그 밖의 진술을 하지 않습니다.",
+      "p3": "마지막으로 Turbo는 서비스에 대해 어떠한 유지보수, 기술 지원 또는 기타 지원을 제공해야 할 의무(명시적 또는 묵시적)도 없습니다."
+    },
+    "liability": {
+      "title": "배상 책임",
+      "p1": "만약 다음과 같은 사유로:",
+      "p2": "(i) 귀하의 Turbo 사용 및 접속;",
+      "p3": "(ii) 본 이용 약관의 어떤 조건이라도 귀하가 위반한 경우;",
+      "p4": "(iii) 귀하가 제3자의 권리를 침해하는 경우(저작권, 재산권, 사생활권 등 포함);",
+      "p5": "(iv) 귀하가 업로드한 콘텐츠로 인해 제3자에게 피해가 발생한 경우;",
+      "p6": "(v) 귀하가 책임을 져야 하는 기타 상황;",
+      "p7": "Turbo에 손실이 발생할 가능성이 있다면, 귀하는 분쟁을 적극 해결하고 필요한 배상을 하여 TurboServlet이 어떠한 청구, 손해, 손실, 부채 및 비용(변호사 비용 포함)으로부터도 피해를 입지 않도록 해야 합니다.",
+      "p8": "이 책임은 본 이용 약관 및 귀하의 Turbo 사용 이후에도 계속 유효합니다."
+    },
+    "clientInstallation": {
+      "title": "Turbo 클라이언트 설치 및 사용에 대해",
+      "p1": "Turbo는 라우터 기반의 지능형 데이터 중계 및 분배, 통신 강화 및 트래픽 최적화 관리를 바탕으로 동작합니다. Turbo는 사용자에게 특정 회사의 허가를 받은 후, 테스트 및 개발 목적에 한해 합법적으로 설치 및 사용하도록 허용합니다. 사용자가 클라이언트를 설치하고 배포하거나 이미 설치된 클라이언트에서 플레이를 진행하는 즉시, 상기 조항에 법적 효력이 있음을 확인하고 동의한 것으로 간주합니다. 만약 사용자가 허위 정보를 제공하거나 행동하여 제3자가 법적 책임을 묻는 경우, Turbo는 그에 대해 어떠한 책임도 지지 않습니다. 따라서 어떤 회사의 허가 없이 어떠한 지역에 불법 온라인 서비스를 제공하는 행위는 엄격히 금지됩니다. 법이 허용하는 범위 내에서 Turbo는 제3자에게 관련 데이터 또는 법적 지원을 제공할 수 있습니다."
+    },
+    "siteContent": {
+      "title": "Turbo 웹페이지 콘텐츠 사용에 대하여",
+      "p1": "귀하는 Turbo 웹페이지를 사용하는 과정에서 다양한 출처로부터 사용자가 업로드한 콘텐츠에 접하게 되며, Turbo는 해당 사용자 업로드 콘텐츠의 정확성, 유용성, 안전성 또는 지식재산권에 대해 책임지지 않는다는 점을 이해해야 합니다. 또한 귀하는 부정확하거나, 모욕적이거나, 외설적이거나, 불쾌한 사용자 업로드 콘텐츠를 접할 수 있음을 인정하고, 이에 대해 가질 수 있는 모든 법적 또는 형평성상의 권리나 구제책을 포기하며, TurboServlet, 그 소유자/운영자 또는 라이선스 제공자에 대해 법이 허용하는 최대 범위 내에서 면책에 동의합니다."
+    },
+    "userContent": {
+      "title": "사용자가 업로드한 콘텐츠 및 콘텐츠 삭제",
+      "p1": "귀하는 자신이 업로드하는 사용자 콘텐츠 및 해당 콘텐츠 게시 또는 발표로 인해 발생하는 결과에 대해 전적으로 책임을 집니다. 사용자 업로드 콘텐츠에 대하여, 귀하는 다음을 확인, 진술 또는 보증합니다: 귀하는 모든 특허, 상표, 영업비밀, 저작권 또는 기타 소유권에 대해 사이트와 본 이용 약관에 따른 방식으로 모든 사용자 제출 콘텐츠를 포함하고 사용할 수 있도록 필요한 라이선스, 권리, 동의 및 허가를 소유하거나 보유하고 있습니다. 사용자 제출 콘텐츠와 관련하여, 귀하는 귀하가 해당 권리의 소유자이거나 또는 해당 권리의 합법적 소유자로부터 해당 자료를 게시할 권한 및 Turbo가 여기 부여된 모든 라이선스 권리를 가지도록 허가를 받지 않은 이상, 저작권 보호 자료, 영업비밀로 보호되는 자료 또는 제3자의 소유권(사생활권 및 공개권 포함)을 침해하는 자료를 제출하지 않을 것에 동의합니다.",
+      "p2": "Turbo 온라인 커뮤니티에 콘텐츠가 업로드되었다고 해서 Turbo가 이를 승인한다는 의미가 아니며, Turbo가 그 안에 표현된 어떠한 견해, 제안 또는 의견을 지지한다는 것도 아닙니다. Turbo는 사용자 제출 콘텐츠와 관련하여 모든 책임을 명시적으로 부인합니다. Turbo는 저작권 침해 활동 및 지식 재산권 침해를 허용하지 않으며, 타인의 지식 재산권을 침해하는 내용 또는 사용자 제출 콘텐츠에 대한 적절한 통지를 받으면, Turbo는 이를 삭제하거나 추가 조치를 취할 권리를 보유합니다.",
+      "p3": "Turbo는 사전 통지 없이도 콘텐츠 및 사용자 제출 콘텐츠, 사용 계정을 삭제할 권리를 보유합니다."
+    },
+    "privacyPolicy": {
+      "title": "개인정보 보호 및 정보 수집 정책",
+      "p1": "자세한 내용은"
+    },
+    "proprietaryRights": {
+      "title": "콘텐츠의 소유권",
+      "p1": "귀하는 Turbo가 제공하는 텍스트, 소프트웨어, 음악, 사운드, 사진, 비디오, 그래픽, 이름 언급이나 기타 서비스를 통해 사용자에게 제공되거나 사용자가 접근할 수 있는 자료(“콘텐츠”)가 저작권, 상표, 서비스 마크, 특허 또는 기타 소유권 및 법률로 보호된다는 점을 인정합니다. 따라서 사용자는 명시적 허가를 받은 경우에만 이 콘텐츠를 사용할 수 있습니다.",
+      "p2": "사용자는 해당 콘텐츠에 대해 법적으로 허가받지 않은 경우, 이러한 콘텐츠로부터 2차적 저작물을 만드는 등 저작권자 이익을 침해하는 어떠한 행위도 할 수 없습니다. Turbo는 이에 대해 법적 대응 권리를 보유합니다."
+    },
+    "links": {
+      "title": "링크",
+      "p1": "Turbo는 다른 웹사이트나 자원의 링크를 제공할 수 있으며, 이메일 등에서 이러한 링크를 받을 수도 있습니다.",
+      "p2": "귀하는 Turbo가 이러한 외부 웹사이트나 자원에 대해 책임지지 않으며, 해당 내용이 Turbo의 지지를 의미하는 것은 아님을 수락해야 합니다. Turbo는 해당 웹사이트나 자원에 있거나 이를 통해 이용 가능한 어떠한 콘텐츠, 광고, 제품 또는 기타 자료에 대해 책임이나 의무를 지지 않습니다.",
+      "p3": "귀하는 Turbo가 이러한 외부 웹사이트나 자원에 있는 어떤 콘텐츠, 상품 또는 서비스를 사용하거나 신뢰함으로써 야기되거나 야기되었다고 주장되는 모든 손해나 손실에 대해, 직간접적으로 책임이나 의무를 지지 않음을 동의합니다."
+    },
+    "governingLaw": {
+      "title": "준거법",
+      "p1": "본 문서에 포함된 조항은 중화인민공화국 법률의 적용을 받고, 해당 법률에 따라 해석됩니다."
+    },
+    "acknowledgement": {
+      "title": "참조",
+      "p1": "본 문서 일부 내용은 “osu! 서비스 약관” 및 “Terms of Service - Cytoid”를 기반으로 하며, CC-BY-NC 4.0 라이선스로 허가받았습니다."
+    }
+  },
+  "privacy": {
+    "title": "개인정보처리방침",
+    "intro-1": "Turbo는 서비스를 제공하기 위해 종종 개인 정보를 수집, 저장 및 전송해야 합니다. 우리는 이 과정을 최대한 투명하게 유지하려고 노력합니다.",
+    "intro-2": {
+      "beforeLink": "당사 서비스를 사용하기 전, 귀하는 ",
+      "betweenLink": " 및 개인정보처리방침을 읽고 이해했음을 반드시 확인해야 하며, 귀하의 서비스 이용 행위는 ",
+      "afterLink": " 및 개인정보처리방침에 의해 규율됩니다."
+    },
+    "collect-info": {
+      "title": "우리가 수집하는 정보",
+      "play": {
+        "title": "플레이",
+        "desc": "플레이 시 캐시 필요에 의해 다음 정보를 수집 및 저장합니다:",
+        "list": {
+          "1": "사용자 ID",
+          "2": "플레이 시간",
+          "3": "계정 정보",
+          "4": "플레이 곡 성적",
+          "5": "계정 속도 및 기타 설정",
+          "6": "계정 가방",
+          "7": "영역 완료도",
+          "8": "스탬프 획득 상황",
+          "9": "플레이 기록",
+          "10": "업로드 로그"
+        },
+        "note": "귀하의 사용자 ID는 절대 공개되지 않습니다. 업로드 로그, 스탬프 획득 상황, 계정 속도 및 기타 설정은 공개되지 않습니다. 플레이 시간, 계정 정보, 플레이 곡 성적, 계정 가방, 영역 완료도, 플레이 기록은 귀하의 의사에 따라 웹사이트 콘텐츠 업데이트 및 표시 목적(사용자 경험 및 시스템 기능 향상)에 사용될 수 있습니다."
+      },
+      "register": {
+        "title": "회원가입 웹페이지",
+        "desc": "회원가입 시 다음 정보를 수집 및 저장합니다:",
+        "list": {
+          "1": "사용자 ID",
+          "2": "사용자 이름",
+          "3": "이메일 주소",
+          "4": "비밀번호(SHA256 SALT 비가역 암호화 방식으로 저장)",
+          "5": "가입 시간"
+        },
+        "note": "귀하의 사용자 ID는 절대 공개되지 않으며, 사용자 이름만 공개됩니다. 이메일 주소는 제3자에게 판매하지 않습니다."
+      },
+      "login": {
+        "title": "로그인",
+        "desc": "로그인 시 다음 정보를 수집 및 저장합니다:",
+        "list": {
+          "1": "IP 주소"
+        },
+        "note": "귀하의 IP는 절대 공개되지 않습니다."
+      }
+    },
+    "disclosure": {
+      "title": "귀하의 개인정보 공개에 관하여",
+      "desc": "귀하의 동의 없이 개인정보를 공개하지 않습니다. 단, 다음 사항은 예외입니다:",
+      "list": {
+        "1": "귀하의 사용자 이름, 가입 및 로그인 시간, 플레이 시간, 계정 정보, 플레이 곡 성적, 플레이 기록(모두 웹페이지에서 공개 여부를 선택할 수 있음).",
+        "2": "귀하가 공개에 동의한 정보.",
+        "3": "관련 법률 규정이나 행정·사법 기관 요구에 따라 제3자 또는 행정·사법 기관에 공개해야 하는 경우.",
+        "4": {
+          "beforeLink": "귀하가 중국 관련 법령 또는 Turbo ",
+          "afterLink": " 또는 관련 규칙을 위반하여, 제3자에게 공개가 필요한 경우"
+        },
+        "5": {
+          "beforeLink": "기타 ",
+          "afterLink": " 를 이행하기 위해 공개가 필요한 정보."
+        }
+      }
+    },
+    "cookies": {
+      "title": "쿠키(Cookies)",
+      "desc": "우리는 쿠키를 사용해 귀하의 온라인 활동을 추적하지 않습니다."
+    },
+    "data-security": {
+      "title": "데이터 보안",
+      "desc": "우리는 귀하의 정보 보안을 위해 노력하지만, 어떤 시스템도 완벽한 방어를 보장할 수는 없습니다. 불가항력으로 Turbo가 공격을 받더라도 귀하의 정보 유출을 방지하기 위해 최선을 다하겠습니다."
+    },
+    "policy-update": {
+      "title": "정책 업데이트",
+      "desc": "우리는 본 개인정보처리방침을 업데이트할 권리를 보유합니다. 업데이트가 있을 경우, 웹사이트 및 앱을 통해 공지하겠습니다."
+    }
+  },
+  "notFound": {
+    "title": "앗! 이 페이지는 사라졌습니다!",
+    "back": "홈으로 돌아가기"
+  },
+  "menu": {
+    "panel": "정보",
+    "turboPermission": "사용자 권한",
+    "botManager": "BOT 관리",
+    "serverRequests": "서버 요청 통계",
+    "arcade": {
+      "title": "오락실 관련",
+      "info": "오락실 정보",
+      "alias": "오락실 약칭",
+      "networkStatus": "오락실 네트워크 상태"
+    },
+    "maimai": {
+      "title": "舞萌 관련",
+      "photos": "사진",
+      "records": "게임 기록"
+    },
+    "ranking": {
+      "title": "랭킹",
+      "dxRatingRanking": "DX RATING 랭킹",
+      "achievementRanking": "총 점수 랭킹"
+    },
+    "turbo": {
+      "title": "가속 박스 기능",
+      "changeMaimaiName": "舞萌 이름 변경",
+      "changeAvatar": "아바타 변경"
+    },
+    "tickets": {
+      "title": "기능 티켓",
+      "currentTickets": "현재 보유 중인 기능 티켓",
+      "setTickets": "기능 티켓 설정"
+    },
+    "qrCommand": "명령어 QR 코드",
+    "friends": {
+      "title": "NET 친구",
+      "friends": "내 친구",
+      "addFriends": "친구 추가"
+    }
+  },
+  "error": {
+    "jsError": "검증에 실패했습니다. 다시 로그인해 주세요.",
+    "loadingError": "로딩 실패",
+    "validateError": "검증 실패",
+    "enterError": "접속 실패",
+    "back": "홈으로 돌아가기",
+    "tokenError": "BotToken 로드에 실패했습니다. 다시 로그인해 주세요.",
+    "bodyError": "요청 본문이 완전하지 않습니다. 필요한 내용을 모두 입력 후 다시 시도해주세요."
+  },
+  "panel": {
+    "reason": "사유"
+  },
+  "turboPermission": {
+    "myPermission": "내 권한",
+    "upgradePermission": "사용자 권한 상승",
+    "warningAndBan": "경고 & 차단",
+    "showTurboPermission": {
+      "permissions": "인증 기능",
+      "granted": "허가됨",
+      "notGranted": "미허가"
+    },
+    "upgradeTurboPermission": {
+      "turboName": "Turbo 사용자 이름",
+      "upgradeLog": "과거 권한 부여 관리",
+      "upgrade": "권한 부여",
+      "upgradeNotice": {
+        "1": "권한을 부여하기 전에 신중히 고려하세요. 모든 작업은 기록되며, 해당 사용자의 후속 행동에 따른 모든 결과 및 여론에 대한 책임은 귀하에게 있습니다. 우리는",
+        "2": "에 따라 귀하와 해당 사용자의 계정에 대해 조치를 취할 권리가 있습니다."
+      },
+      "toast": {
+        "success": "권한 부여 성공"
+      }
+    },
+    "upgradeDialog": {
+      "title": "과거 권한 부여 관리",
+      "noData": {
+        "title": "데이터가 없습니다",
+        "content": "아직 누구에게도 권한을 부여하지 않으셨네요. 한번 시도해보세요!"
+      },
+      "table": {
+        "turboName": "Turbo 사용자 이름",
+        "upgradeAfter": "권한 부여 후",
+        "operate": "작업",
+        "cancel": "권한 해제"
+      },
+      "toast": {
+        "success": "권한 강등 완료"
+      }
+    },
+    "executePage": {
+      "toast": {
+        "reason": "사유를 입력해 주세요.",
+        "warnSuccess": "해당 사용자를 성공적으로 경고했습니다",
+        "banSuccess": "해당 사용자를 성공적으로 차단했습니다"
+      },
+      "turboName": "Turbo 사용자 이름",
+      "executeLog": "과거 실행 관리",
+      "reason": "사유",
+      "banTime": {
+        "1hr": "1시간",
+        "24hrs": "24시간",
+        "7days": "7일",
+        "30days": "30일",
+        "365days": "365일",
+        "permanent": "영구"
+      },
+      "execute": "실행",
+      "executeNotice": {
+        "1": "권한을 사용하기 전에 신중하게 고려해 주세요. 모든 조치는 기록되며, 후속 행동에서 발생하는 모든 결과 및 여론 영향에 대한 책임은 귀하에게 있습니다. TurboServlet은",
+        "2": "에 따라 귀하에게 조치를 취할 권리가 있습니다."
+      }
+    },
+    "executeRecordDialog": {
+      "title": "과거 실행 관리",
+      "noData": {
+        "title": "데이터가 없습니다",
+        "content": "아직 권한을 사용한 적이 없습니다."
+      },
+      "table": {
+        "turboName": "Turbo 사용자 이름",
+        "execute": "실행 내용",
+        "operate": "작업",
+        "cancel": "취소"
+      },
+      "toast": {
+        "success": "철회 성공"
+      }
+    }
+  },
+  "executeRecordBadge": {
+    "ban": "차단",
+    "warning": "1회 경고",
+    "unknown": "알 수 없음"
+  },
+  "turboPermissionBadge": {
+    "admin": "전체 관리자",
+    "builder": "기술 실무자",
+    "authorizer": "권한 부여 사용자",
+    "user": "일반 사용자",
+    "unknown": "알 수 없음"
+  },
+  "turboWarningBadge": {
+    "noWarning": "경고 기록 없음",
+    "warned": "경고받음",
+    "times": "회"
+  },
+  "botManager": {
+    "loading": "로딩 중 ...",
+    "copyToClipboard": "클립보드에 복사",
+    "noData": "아직 권한을 부여한 BOT이 없습니다",
+    "table": {
+      "botName": "BOT 이름",
+      "info": "호출 횟수 및 권한 부여 시간",
+      "operate": "작업",
+      "cancel": "권한 해제",
+      "times": "회"
+    },
+    "toast": {
+      "copySuccess": "클립보드에 복사되었습니다",
+      "unbindSuccess": "권한 해제 성공"
+    }
+  },
+  "serverRequests": {
+    "title": "서버 요청 통계",
+    "contact": {
+      "1": "응답 데이터의 「Z-LIB」 압축 스킵률 및 요청 재시도 횟수를 통해 현재 네트워크 상황을 파악할 수 있습니다.",
+      "2": "압축 스킵률이 「>3%」를 초과할 경우, 네트워크 불안정 현상이 발생할 수 있습니다.",
+      "3": "요청 재시도율과 실패율이 높다면, 네트워크나 서버에 문제가 있을 수 있습니다."
+    },
+    "totalRequests": "1시간 내 전체 패킷 수",
+    "totalException": "1시간 내 전체 예외 패킷 수",
+    "totalExceptionRate": "1시간 내 예외 패킷 비율",
+    "totalZlibSkipped": "Z-LIB 압축 스킵 횟수",
+    "totalRetry": "재시도 횟수",
+    "totalPanic": "실패 횟수",
+    "inCache": "캐시 내부",
+    "unCache": "캐시 외부",
+    "echarts": {
+      "time": "시간(t)",
+      "delay": "지연(ms)",
+      "cacheDelay": "캐시 내부 지연",
+      "whalapDelay": "캐시 외부 지연"
+    }
+  },
+  "arcadeInfo": {
+    "notice": {
+      "title": "주의",
+      "contact": "오락실 정보는 더 많은 Turbo 오락실을 방문하면 자동으로 추가되고 열람할 수 있습니다."
+    },
+    "newArcade": "오락실 등록",
+    "arcadeContact": {
+      "1": "금일 총 전송 요청",
+      "2": "회. 캐시 히트",
+      "3": "회, 오류를",
+      "4": "회 복구했으며, 캐시 히트율"
+    },
+    "arcadeFeature": {
+      "CustomName": "사용자 지정 이름",
+      "CustomAvatar": "사용자 지정 아바타 허용",
+      "TurboTicket": "Turbo 기능 티켓"
+    },
+    "enable": "허용",
+    "disable": "허용 안 함",
+    "noData": "등록된 오락실이 없나요? 관리자에게 문의하여 오락실을 등록하고 바인딩해 주세요.",
+    "detailDialog": {
+      "title": "오락실 상세 정보",
+      "contact": "오락실 인원 수",
+      "total": "총",
+      "status": {
+        "30minutes": "30분 내",
+        "60minutes": "60분 내",
+        "120minutes": "120분 내"
+      },
+      "table": {
+        "username": "게임명",
+        "endTime": "퇴장 시간"
+      },
+      "noData": "이 오락실에는 아직 아무도 없네요. 얼른 선점해보세요!"
+    },
+    "newArcadeDialog": {
+      "title": "오락실 등록",
+      "arcadeType": "오락실 유형",
+      "arcadeNums": "오락실 기기 대수",
+      "arcadeName": "오락실 전체 이름",
+      "arcadeNamePlaceholder": "등록할 오락실의 전체 이름",
+      "turboKeychip": "제 {n}대 KeyChipID (짧음)",
+      "2077Keychip": "제 {n}대 KeyChipID (김)",
+      "cancel": "취소",
+      "submit": "오락실 등록",
+      "toast": {
+        "success": "오락실 추가 성공"
+      }
+    }
+  },
+  "arcadeSettingEnum": {
+    "maskUsername": "사용자 이름 가리기",
+    "udemaeShowAchievement": "친구 대결에서 달성도 표시",
+    "disableTicket": "Turbo 기능 티켓 사용 금지",
+    "disableCustomName": "사용자 지정 이름 사용 금지",
+    "disableCustomAvatar": "사용자 지정 아바타 사용 금지",
+    "unknown": "알 수 없는 설정"
+  },
+  "arcadeFunctionType": {
+    "login": "가속 박스 기기 로그인",
+    "kastanjLogin": "가속 박스 기기 Kastanj 서비스 로그인",
+    "specialTypeOneLogin": "2077 서비스 기기 로그인",
+    "ping": "기기 PING"
+  },
+  "arcadeAlias": {
+    "noData": "등록된 약칭이 없습니다",
+    "notice": {
+      "1": "권한 사용 전 신중히 고려해 주세요. 모든 작업은 기록되며, 행동으로 인한 모든 결과와 여론 영향에 대한 책임은 귀하에게 있습니다. TurboServlet은",
+      "2": "에 따라 귀하에게 조치를 취할 권리를 보유합니다."
+    },
+    "dialog": {
+      "title": "약칭 편집",
+      "notice": {
+        "title": "주의",
+        "content": "오락실 약칭을 추가한 후 삭제가 필요하면 관리자에게 문의해 주세요. 귀하의 작업은 기록되므로 신중하게 작업해 주세요."
+      },
+      "placeholder": "새 약칭",
+      "cancel": "취소",
+      "submit": "새 약칭 추가",
+      "toast": {
+        "success": "약칭 추가 성공"
+      }
+    }
+  },
+  "networkStatus": {
+    "lastBeat": "마지막 하트비트로부터 {time}",
+    "workingText": {
+      "working": "Turbo 동작 중",
+      "warning": "Turbo 네트워크 이상",
+      "error": "Turbo 오프라인",
+      "unknown": "Turbo 상태 불명"
+    },
+    "longTimeOffline": "연결 상태를 확인해 주세요. 이 기기는 오랫동안 오프라인 상태입니다",
+    "notSupport": "이 기기는 아직 네트워크 상태 조회를 지원하지 않습니다"
+  },
+  "user": {
+    "htmlBanned": "차단됨",
+    "bannedBadge": "TurboNET 차단",
+    "mySettings": "내 설정",
+    "settingDialog": {
+      "title": "내 설정",
+      "userPage": "내 사용자 페이지 보기",
+      "best35": "내 B35 보기",
+      "best15": "내 B15 보기",
+      "recentScores": "내 최근 플레이 기록",
+      "option": {
+        "everyone": "모든 사람",
+        "onlyFriends": "친구만",
+        "onlyMe": "본인만"
+      },
+      "toast": {
+        "success": "설정 완료"
+      }
+    },
+    "addFriend": "친구 추가",
+    "return": "이전 페이지로 돌아가기",
+    "banMessage": "{date}에 {executorName}에 의해 {banType} 차단 {banDuration}, 사유: {reason}",
+    "warningMessage": "{date}에 {executorName}에 의해 {warningIndex}번째 경고, 사유: {reason}",
+    "banType": {
+      "permanent": "영구",
+      "temporary": "일시"
+    },
+    "hourSuffix": " 시간",
+    "maiStatistics": {
+      "title": "maimai 통계 자료",
+      "serverRanking": "서버 랭킹",
+      "noData": "60일 내 출석 데이터가 부족합니다. 빨리 플레이해 보세요!",
+      "averageAchievement": "평균 달성도",
+      "maxCombo": "최대 콤보 수",
+      "fullComboCount": "올콤 달성 곡 수",
+      "AllPerfectCount": "퍼펙트 달성 곡 수",
+      "totalAchievement": "누적 달성 점수",
+      "daysAgo": "일 전"
+    },
+    "playActivity": {
+      "title": "플레이 활동도",
+      "playCount": "출석 횟수",
+      "totalPlayTime": "누적 플레이 시간",
+      "firstPlay": "새로운 세계를 발견했습니다",
+      "lastPlay": "마지막 출석",
+      "playVersion": "게임 버전"
+    },
+    "recentScores": {
+      "title": "최근 플레이 기록"
+    },
+    "private": "이 사용자는 권한 설정으로 인해 접근이 제한되었거나 데이터가 부족합니다",
+    "notice": {
+      "1": "Creative Commons Public Licenses 4.0에 따라,",
+      "2": "이 인터페이스는",
+      "3": "를 참고하였으며,",
+      "4": "하여 수정되었습니다",
+      "5": ", 이 페이지는 다음에서 오픈소스입니다"
+    },
+    "toast": {
+      "success": "신청이 전송되었습니다"
+    }
+  },
+  "photos": {
+    "historyPhotos": "이전 사진",
+    "favoritePhotos": "내 즐겨찾기",
+    "notice": {
+      "title": "주의",
+      "content": "서버 사진 캐시는 7일 후 삭제됩니다. 보관하려면 즐겨찾기에 추가하거나 직접 다운로드하세요. 이 사진 기능은 Turbo가속 박스 기기에만 적용됩니다."
+    },
+    "noData": "아직 어떤 사진도 없습니다",
+    "favorite": {
+      "enable": "즐겨찾기됨",
+      "disable": "즐겨찾기"
+    },
+    "toast": {
+      "lastPage": "마지막 페이지입니다.",
+      "firstPage": "첫 페이지입니다.",
+      "removeSuccess": "즐겨찾기 해제 완료",
+      "addSuccess": "즐겨찾기 추가 완료"
+    },
+    "page": "제 {page} 페이지"
+  },
+  "records": {
+    "page": "제 {page} 페이지",
+    "newRecord": "새 기록"
+  },
+  "ranking": {
+    "title": "랭킹",
+    "button": {
+      "global": "전국 가속 박스 플레이어 랭킹",
+      "turbo": "TurboNET 등록 플레이어 랭킹"
+    },
+    "return": "이전 페이지로 돌아가기",
+    "pageInfo": {
+      "first": "마지막 페이지입니다.",
+      "last": "첫 페이지입니다.",
+      "exceed": "총 페이지 수를 초과했습니다."
+    },
+    "achievementRanking": {
+      "title": "총 점수",
+      "table": {
+        "ranking": "순위",
+        "username": "플레이어",
+        "totalAchievement": "총 달성 점수"
+      }
+    },
+    "dxRatingRanking": {
+      "title": "DX RATING",
+      "table": {
+        "ranking": "순위",
+        "username": "플레이어",
+        "dxRating": "DX RATING"
+      }
+    },
+    "musicRanking": {
+      "title": "곡 랭킹",
+      "table": {
+        "ranking": "순위",
+        "username": "플레이어",
+        "achievement": "달성도",
+        "dxScore": "DX 점수"
+      }
+    }
+  },
+  "changeMaimaiName": {
+    "title": "舞萌 이름 변경",
+    "noPermission": {
+      "title": "주의",
+      "content": "현재 권한이 부족하여 이 기능을 사용할 수 없습니다."
+    },
+    "notice": "새 입력은 전각(풀와이드) 문자",
+    "placeholder": "새 사용자 이름",
+    "button": {
+      "submit": "사용자 이름 업데이트",
+      "toDefault": "舞萌 사용자 이름으로 복원"
+    },
+    "changeNotice": {
+      "1": "권한 사용 전 신중히 고려해주세요. 모든 작업은 기록되며, 후속 행동에 따른 모든 결과 및 여론 영향에 대한 책임은 귀하에게 있습니다. TurboServlet은",
+      "2": "에 따라 귀하에게 조치를 취할 권리가 있습니다."
+    },
+    "toast": {
+      "setSuccess": "업데이트 성공",
+      "resetSuccess": "재설정 성공"
+    }
+  },
+  "changeAvatar": {
+    "title": "아바타 변경",
+    "dialogTitle": "아바타 업로드",
+    "selectPhoto": "이미지 선택",
+    "noPermission": {
+      "title": "주의",
+      "content": "현재 권한이 부족하여 이 기능을 사용할 수 없습니다."
+    },
+    "button": {
+      "toDefault": "舞萌 아바타로 복원",
+      "cancel": "취소",
+      "submit": "확인"
+    },
+    "changeNotice": {
+      "1": "권한 사용 전 신중히 고려해주세요. 모든 작업은 기록되며, 후속 행동에 따른 모든 결과 및 여론 영향에 대한 책임은 귀하에게 있습니다. TurboServlet은",
+      "2": "에 따라 귀하에게 조치를 취할 권리가 있습니다."
+    },
+    "toast": {
+      "jpgWarning": "jpg 형식의 이미지를 선택해 주세요",
+      "sizeWarning": "이미지 크기는 5MB를 초과할 수 없습니다",
+      "success": "설정 성공",
+      "error": "알 수 없는 오류입니다. 다시 시도해 주세요",
+      "resetSuccess": "재설정 성공"
+    }
+  },
+  "currentTickets": {
+    "title": "Turbo 기능 티켓",
+    "notice": {
+      "title": "주의",
+      "content": "Turbo 기능 티켓은 공식 기능 티켓보다 우선순위가 높습니다. Turbo 기능 티켓이 활성화되어 있으면 공식 기능 티켓을 사용할 수 없습니다."
+    },
+    "turboTicket": {
+      "enable": "Turbo 기능 티켓이 활성화됨",
+      "disable": "Turbo 기능 티켓이 비활성화됨"
+    },
+    "officialTicket": "공식 기능 티켓"
+  },
+  "ticketUtils": {
+    "ticketIdToName": {
+      "0": "티켓 없음",
+      "2": "유료 2배 티켓",
+      "3": "유료 3배 티켓",
+      "4": "유료 4배 티켓",
+      "5": "유료 5배 티켓",
+      "6": "유료 6배 티켓",
+      "10005": "이벤트 5배 티켓 (타입1)",
+      "10105": "이벤트 5배 티켓 (타입2)",
+      "10205": "이벤트 5배 티켓 (타입3)",
+      "11001": "무료 1.5배 티켓",
+      "11002": "무료 2배 티켓",
+      "11003": "무료 3배 티켓",
+      "11005": "무료 5배 티켓",
+      "20010": "무료 10배 티켓 (만료됨)",
+      "20020": "무료 20배 티켓 (만료됨)",
+      "30001": "특수 2배 티켓",
+      "unknown": "기타"
+    }
+  },
+  "setTickets": {
+    "title": "기능 티켓 설정",
+    "ticketType": {
+      "title": "기능 티켓 유형",
+      "paid": "필요한 유료 기능 티켓을 선택해 주세요",
+      "event": "필요한 이벤트 기능 티켓을 선택해 주세요",
+      "free": "필요한 무료 기능 티켓을 선택해 주세요",
+      "special": "필요한 특수 기능 티켓을 선택해 주세요"
+    },
+    "lock": "1매로 잠금 유지",
+    "button": {
+      "submit": "기능 티켓 잠금",
+      "toDefault": "잠금 해제"
+    },
+    "noPermission": {
+      "title": "주의",
+      "content": "현재 권한이 부족하여 이 기능을 사용할 수 없습니다."
+    },
+    "ticketTypeList": {
+      "paid": "유료 기능 티켓",
+      "event": "이벤트 기능 티켓",
+      "free": "무료 기능 티켓",
+      "special": "특수 기능 티켓"
+    },
+    "setNotice": {
+      "1": "권한 사용 전 신중히 고려해주세요. 모든 작업은 기록되며, 후속 행동에 따른 모든 결과 및 여론 영향에 대한 책임은 귀하에게 있습니다. TurboServlet은",
+      "2": "에 따라 귀하에게 조치를 취할 권리가 있습니다."
+    },
+    "toast": {
+      "success": "재설정 성공"
+    }
+  },
+  "qrCommand": {
+    "userQrCommand": "사용자 QR 코드",
+    "arcadeQrCommand": "기기 QR 코드",
+    "generateQrCode": "QR 코드 생성",
+    "arcadeNotice": {
+      "title": "주의",
+      "content": "이 기능은 상당히 위험도가 높습니다. 기기에 적용한 설정은 모든 플레이어에게 영향을 미치므로 신중히 사용해 주세요."
+    },
+    "useNotice": {
+      "1": "권한 사용 전 신중히 고려해주세요. 모든 작업은 기록되며, 후속 행동에 따른 모든 결과 및 여론 영향에 대한 책임은 귀하에게 있습니다. TurboServlet은",
+      "2": "에 따라 귀하에게 조치를 취할 권리가 있습니다."
+    },
+    "dialog": {
+      "title": "QR 코드",
+      "content": {
+        "1": "아래 QR 코드를 기기의 스캐너에 보여주세요",
+        "2": "이 QR 코드는 Turbo가속 박스 및 기타 연동 기기에서만 사용 가능합니다"
+      },
+      "expireTime": "유효 기간 마감: {time}"
+    }
+  },
+  "friends": {
+    "setting": "설정",
+    "friendCount": "친구 수",
+    "noData": "아직 친구가 없습니다",
+    "dialog": {
+      "title": "친구 정책 설정",
+      "option": {
+        "title": "현재 정책",
+        "value": {
+          "autoAccept": "자동으로 신청 수락",
+          "manual": "수동으로 신청 수락",
+          "friendsOfFriends": "공통 친구가 있을 경우에만 신청 가능",
+          "nobody": "신청 불가"
+        },
+        "toast": {
+          "success": "설정 완료"
+        }
+      }
+    },
+    "friendCard": {
+      "playing": "플레이 중",
+      "lastPlayTime": "{hour}시간 전",
+      "userPage": "사용자 페이지",
+      "removeFriend": "친구 삭제"
+    },
+    "removeFriendDialog": {
+      "content": "{friend} 님과의 친구를 삭제하시겠습니까?",
+      "notice": "친구 관계에서 어느 한쪽이 상대를 삭제하면, 양측에서 해당 친구가 사라집니다.",
+      "cancel": "삭제 취소",
+      "submit": "삭제 확인",
+      "toast": {
+        "success": "친구 삭제 성공"
+      }
+    }
+  },
+  "addFriends": {
+    "requestFriend": {
+      "title": "친구 신청",
+      "placeholder": "TurboNET 사용자 이름",
+      "requestButton": "친구 신청",
+      "notice": "보안 상 이유로 사용자 검색 기능은 제공되지 않습니다. '친구 신청'을 누르면 해당 사용자에게 요청이 전송됩니다.",
+      "toast": {
+        "success": "신청이 전송되었습니다"
+      }
+    },
+    "requestFriendList": {
+      "title": "신청 목록",
+      "noData": "아직 처리할 신청이 없습니다",
+      "requestTime": "신청 시간: {time}",
+      "button": {
+        "accept": "신청 수락",
+        "deny": "신청 거절"
+      },
+      "toast": {
+        "accept": "친구 신청을 수락했습니다",
+        "deny": "친구 신청을 거절했습니다"
+      }
+    }
+  },
+  "register": {
+    "title": "계정을 등록하세요",
+    "qrHelper": {
+      "title": "획득 방법",
+      "elements": {
+        "1": "「舞萌 | 中二」 공식 계정을 엽니다",
+        "2": "플레이어 QR 코드를 얻고 클릭합니다",
+        "3": "그림 속 QR 코드를 길게 눌러 인식합니다",
+        "4": "스캔 결과를 웹사이트에 복사합니다"
+      }
+    },
+    "step1": {
+      "qrcode": "舞萌 QR 코드 ID 입력",
+      "notUnderstand": "이해가 안 됩니다",
+      "nextStep": "다음 단계",
+      "alreadyExist": "이미 계정이 있으신가요?"
+    },
+    "step2": {
+      "toast": {
+        "error": "두 비밀번호가 일치하지 않습니다"
+      },
+      "subTitle": "기본 정보 입력",
+      "detail": {
+        "userName": "사용자 이름",
+        "password": "비밀번호",
+        "confirmPassword": "비밀번호 확인",
+        "email": "이메일 주소",
+        "qqid": "QQ 번호"
+      },
+      "redo": "다시 등록",
+      "expiry": "후 만료",
+      "submit": "회원가입 신청",
+      "tosDialog": {
+        "1": "회원가입 제출 및 완료 시 귀하는",
+        "2": "이용 약관",
+        "3": "과",
+        "4": "개인정보처리방침에 동의하는 것으로 간주됩니다"
+      }
+    },
+    "step3": {
+      "subTitle": "검증 요청이 전송되었습니다",
+      "content": {
+        "1": "귀하의 이메일을 확인해 주세요. 검증 메일을 발송했습니다.",
+        "2": "이메일 시스템은 완벽하지 않으므로, 수신함에 없는 경우 스팸 메일함을 확인해 보세요."
+      }
+    },
+    "verify": {
+      "succeed": "검증 성공",
+      "failed": "검증 실패",
+      "notice": "검증이 완료되었습니다. 3초 후 홈으로 돌아갑니다."
+    }
+  },
+  "support": {
+    "back": "돌아가기",
+    "credentialCard": {
+      "title": "계정 비밀번호 검증",
+      "subTitle": "계정과 비밀번호를 알고 있는 경우, 다른 변경을 진행할 때 사용하십시오.",
+      "validation": "계정 비밀번호 검증",
+      "detail": {
+        "userName": "사용자 이름",
+        "userPassword": "사용자 비밀번호"
+      }
+    },
+    "emailCard": {
+      "toast": {
+        "success": "이메일을 보냈습니다"
+      },
+      "title": "이메일 검증",
+      "subTitle": "가입 시 사용했던 이메일을 알고 있는 경우, 다른 변경을 진행할 때 이 방법을 사용하십시오.",
+      "validation": "이메일 검증",
+      "detail": {
+        "email": "이메일 주소"
+      },
+      "success": "성공!",
+      "notice": "새로운 세션 메일을 {email} 로 발송했습니다. 이메일을 열어 후속 작업을 진행해 주세요."
+    },
+    "qrCard": {
+      "title": "舞萌 QR 코드 ID 검증",
+      "recommend": "추천 방식",
+      "subTitle": "舞萌 QR 코드 ID는 귀하의 근본적인 신분 증명 수단이므로, 본인 인증에 사용하는 것을 권장합니다.",
+      "validation": "舞萌 QR 코드 ID 검증",
+      "qrField": "舞萌 QR 코드 ID 입력",
+      "notUnderstand": "이해가 안 됩니다"
+    },
+    "toast": {
+      "error": "간편 검증에 실패했습니다. 직접 신원 확인을 진행해 주세요."
+    },
+    "page": {
+      "accessFailed": "접근 실패",
+      "title": "지원",
+      "selfService": {
+        "title": "현재 셀프 서비스 제공:",
+        "function": "비밀번호 재설정, 이메일 변경, QQ 계정 변경, Turbo 사용자 이름 변경, 문제 피드백",
+        "notice": {
+          "1": "이 지원은 TurboNET",
+          "2": "Polar",
+          "3": "회원에게 제공됩니다. 먼저 귀하가 수용 가능한 본인 인증 방식을 선택해 주세요. TurboNET Support가 보다 많은 서비스와 지원을 제공할 수 있습니다. 다른 문의 사항이 있으시면 관리자에게 문의해 주세요."
+        }
+      },
+      "or": "또는",
+      "agent": "수동 검증(관리자)",
+      "exception": "위 방식으로 본인 인증이 불가능한 경우, 관리자에게 이메일 티켓을 제출해 주세요."
+    }
+  },
+  "supportSession": {
+    "choose": "이 도움을 선택",
+    "back": "돌아가기",
+    "success": "성공!",
+    "resetEmail": {
+      "toast": {
+        "success": "이메일을 보냈습니다"
+      },
+      "title": "이메일 재설정",
+      "submit": "이메일 재설정",
+      "oldEmail": "현재 이메일: {email}",
+      "details": {
+        "newEmail": "새 이메일"
+      },
+      "notice": "새 이메일로 검증 메일을 보냈습니다. 확인해 주세요.",
+      "verify": {
+        "succeed": "검증 성공",
+        "failed": "검증 실패",
+        "notice": "이메일 변경이 완료되었습니다. 3초 후 홈으로 돌아갑니다."
+      }
+    },
+    "resetPassword": {
+      "toast": {
+        "validError": "두 비밀번호가 일치하지 않습니다. 다시 입력해 주세요",
+        "success": "비밀번호 재설정 성공"
+      },
+      "title": "비밀번호 재설정",
+      "details": {
+        "newPassword": "새 비밀번호",
+        "confirmPassword": "비밀번호 확인"
+      },
+      "submit": "비밀번호 재설정",
+      "notice": "비밀번호가 재설정되었습니다. 다시 로그인해 주세요."
+    },
+    "resetQQNumber": {
+      "toast": {
+        "success": "재설정 성공"
+      },
+      "title": "QQ 번호 재설정",
+      "oldQQ": "현재 QQ 번호: {qqNumber}",
+      "details": {
+        "newQQ": "새 QQ 번호"
+      },
+      "submit": "QQ 번호 재설정",
+      "notice": "QQ 번호가 재설정되었습니다. 다시 로그인해 주세요."
+    },
+    "resetTurboName": {
+      "toast": {
+        "success": "재설정 성공"
+      },
+      "title": "Turbo 사용자 이름 재설정",
+      "oldTurboName": "현재 사용자 이름: {turboName}",
+      "details": {
+        "newTurboName": "새 사용자 이름"
+      },
+      "submit": "사용자 이름 재설정",
+      "notice": "사용자 이름이 재설정되었습니다. 다시 로그인해 주세요."
+    },
+    "toast": {
+      "success": "세션 종료 성공"
+    },
+    "page": {
+      "accessFailed": "접근 실패",
+      "title": "지원 세션",
+      "sessionId": "귀하의 이번 세션 ID: {sessionId}",
+      "countDown": "이 세션은 {seconds}초 후에 파기되므로 필요한 조치를 신속히 완료해주세요.",
+      "eliminated": "이미 이 세션은 파기되었습니다. 다시 세션을 시작해 주세요.",
+      "feedback": {
+        "title": "문제 피드백",
+        "body": "다른 문의사항이 있으시면 관리자에게 이메일 티켓을 제출해 주세요."
+      },
+      "closeSession": {
+        "close": "세션 종료",
+        "subTitle": "모든 처리를 마친 후, 여기서 안전하게 세션을 종료해 주세요",
+        "countdown": "세션 종료 ({seconds}초 후 자동 제출)",
+        "eliminated": "이미 이 세션은 파기되었습니다."
+      }
+    }
+  },
+  "captchaSolver": {
+    "fetchError": "캡차를 가져오는 데 실패했습니다"
+  },
+  "requestHandler": {
+    "loginError": "토큰 갱신에 실패했습니다. 다시 로그인해 주세요.",
+    "timeoutError": "서버 연결 시간이 초과되었습니다. 네트워크 연결을 확인해 주세요.",
+    "badRequestError": "잘못된 요청입니다. 요청 매개변수가 존재하거나 올바른지 확인해 주세요.",
+    "permissionError": "요청이 거부되었습니다. 권한이 부족할 수 있습니다.",
+    "notFoundError": "요청한 리소스를 찾을 수 없습니다. 요청 매개변수를 확인하세요.",
+    "internalServerError": "서버 내부 오류입니다. 잠시 후 다시 시도하거나 관리자에게 문의해 주세요.",
+    "bannedError": "이 계정은 차단되었습니다. 관리자에게 문의해 주세요.",
+    "unknownError": "알 수 없는 오류입니다. 잠시 후 다시 시도해 주세요."
+  },
+  "permissionUtils": {
+    "basicReadOnlyContent": "기본 읽기 전용 콘텐츠",
+    "basicInteractiveContent": "기본 상호작용 콘텐츠",
+    "friend": "친구 기능",
+    "botManagement": "BOT 관리",
+    "changeUsername": "사용자 이름 변경",
+    "changeAvatar": "아바타 변경",
+    "turboTicket": "Turbo 기능 티켓 잠금",
+    "setAlias": "오락실 약칭 설정",
+    "changeTurboSettings": "가속 박스 기기 설정 변경",
+    "authorizeAuthorizer": "권한 부여 사용자 승인",
+    "authorizeTechnician": "기술 실무자 승인",
+    "warnAndBanUser": "사용자 경고 & 차단"
+  }
+}

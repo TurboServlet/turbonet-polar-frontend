@@ -4,7 +4,7 @@ import {ref} from 'vue';
 import DevInfo from "@/layouts/index/DevInfo.vue";
 import TurboMap from "@/layouts/index/TurboMap.vue";
 import IndexButton from "@/components/index/IndexButton.vue";
-import ThemeChanger from "@/components/themeChanger.vue";
+import HeadModule from "@/components/headModule.vue";
 import CooperatorInfo from "@/layouts/index/CooperatorInfo.vue";
 import Footer from "@/layouts/Footer.vue";
 import Login from "@/views/index/Login.vue";
@@ -46,7 +46,7 @@ const randomVideoLink = computed(() => {
         </transition>
       </div>
 
-      <themeChanger/>
+      <HeadModule/>
       <div class="header-all">
         <label class="corner swap">
           <input type="checkbox" @click="coverChanger"/>

@@ -1,6 +1,6 @@
 <script setup>
 
-import ThemeChanger from "@/components/themeChanger.vue";
+import HeadModule from "@/components/headModule.vue";
 import {defineProps, toRef} from "vue";
 
 const props = defineProps({
@@ -33,10 +33,11 @@ const haveList = toRef(props, 'haveList')
       </label>
     </div>
     <div class="flex-1">
-      <a class="btn btn-ghost text-xl">TurboNET <span style="color: oklch(var(--p))">Polar <i class="fa-solid fa-meteor"></i></span></a>
+      <a class="btn btn-ghost text-xl">TurboNET <span style="color: oklch(var(--p))">Polar <i
+          class="fa-solid fa-meteor"></i></span></a>
     </div>
-    <div class="flex-none">
-      <ThemeChanger style="top: unset"/>
+    <div class="flex-none gap-8">
+      <HeadModule style="top: unset"/>
     </div>
   </div>
 </template>

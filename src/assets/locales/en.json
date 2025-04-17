@@ -1,0 +1,1069 @@
+{
+  "index": {
+    "title": "A control panel for a game."
+  },
+  "indexButton": {
+    "member": "Go to Control Page",
+    "guest": "Register or Login",
+    "jsLogout": "You have logged out"
+  },
+  "devInfo": {
+    "title": "Who are we?",
+    "context": {
+      "1": "We create under non-profit and non-commercial conditions.",
+      "2": "The silhouette of continuous learning and progress on the Coding journey is constantly reflected in us.",
+      "3": "Driven by a spirit that does not fear challenges, does not back down, dares to innovate, and dares to act, we have shaped this extraordinary creation."
+    },
+    "devContext": {
+      "ctrlcvs": "Full-stack Engineer / Main Designer",
+      "kiwi": "DBA / solutions Engineer",
+      "404": "Mobile APP Developer",
+      "apple": "Provides emotional support",
+      "taojiu": "Documentation Maintenance",
+      "yuuluo": "NONE BOT Developer",
+      "tenshi": "Product Engineering / IA"
+    }
+  },
+  "cooperatorInfo": {
+    "title": "Open and Inclusive",
+    "context": {
+      "1": "We value the creativity and contributions of individual developers, teams, and organizations.",
+      "2": "We provide comprehensive interface documentation for developers to help them forge ahead on the path of technical exploration and innovation.",
+      "3": "Developers can learn more information through",
+      "4": "and",
+      "5": "We appreciate the contributions of our partners; your efforts have forged today’s extraordinary journey."
+    },
+    "partner": "Partners"
+  },
+  "turboMap": {
+    "title": "Ingenious Hands, Infinite Creativity",
+    "context": {
+      "1": "We dare to innovate, constantly strive for excellence, and our array of creative designs and novel ideas are the sharp tools we wield. We have already launched services in the following regions."
+    },
+    "mapSource": "Map Source: Alibaba Cloud DataV",
+    "visualMap": {
+      "intensive": "Intensive",
+      "sparse": "Sparse"
+    },
+    "series": {
+      "name": "Number of Turbo Installations",
+      "regions": {
+        "Beijing": "Beijing",
+        "Tianjin": "Tianjin",
+        "Shanghai": "Shanghai",
+        "Chongqing": "Chongqing",
+        "Hebei": "Hebei Province",
+        "Henan": "Henan Province",
+        "Yunnan": "Yunnan Province",
+        "Liaoning": "Liaoning Province",
+        "Heilongjiang": "Heilongjiang Province",
+        "Hunan": "Hunan Province",
+        "Anhui": "Anhui Province",
+        "Shandong": "Shandong Province",
+        "Xinjiang": "Xinjiang Uygur Autonomous Region",
+        "Jiangsu": "Jiangsu Province",
+        "Zhejiang": "Zhejiang Province",
+        "Jiangxi": "Jiangxi Province",
+        "Hubei": "Hubei Province",
+        "Guangxi": "Guangxi Zhuang Autonomous Region",
+        "Gansu": "Gansu Province",
+        "Shan1xi": "Shanxi Province",
+        "Neimenggu": "Inner Mongolia Autonomous Region",
+        "Shan3xi": "Shaanxi Province",
+        "Jilin": "Jilin Province",
+        "Fujian": "Fujian Province",
+        "Guizhou": "Guizhou Province",
+        "Guangdong": "Guangdong Province",
+        "Qinghai": "Qinghai Province",
+        "Xizang": "Tibet Autonomous Region",
+        "Sichuan": "Sichuan Province",
+        "Ningxia": "Ningxia Hui Autonomous Region",
+        "Hainan": "Hainan Province",
+        "Taiwan": "Taiwan Province",
+        "Xianggang": "Hong Kong Special Administrative Region",
+        "Aomen": "Macau Special Administrative Region",
+        "Nanhaizhudao": "South China Sea Islands"
+      }
+    }
+  },
+  "footer": {
+    "contact": "© TurboServlet 2024. All rights reserved. For any trademarks, logos, or service marks displayed on the website that may infringe rights, please contact us at {email}.",
+    "privacy": "Privacy Policy",
+    "tos": "Terms of Service"
+  },
+  "login": {
+    "title": "Welcome back!",
+    "fields": {
+      "username": "Username",
+      "password": "Password"
+    },
+    "support": "Need help?",
+    "register": "Register",
+    "button": "Login",
+    "notice": {
+      "1": "By logging in or registering, you agree to the",
+      "2": "and"
+    }
+  },
+  "termsofservice": {
+    "title": "Terms of Service",
+    "introduction": {
+      "p1": "Before using the services provided by TurboServlet, you must accept the following terms.",
+      "p2": "Accessing and using this website (https://sys-allnet.com), the client, and any related services (collectively “Turbo”) indicates your acknowledgment that you fully comply with the terms and conditions set forth herein, and guarantees that you will not use any content from services provided by TurboServlet (including this website and its content) for any unlawful or prohibited purpose under these terms.",
+      "p3": "In addition to these terms, you must ensure that you also accept our"
+    },
+    "serviceDescription": {
+      "title": "Service Description",
+      "p1": "Within the scope permitted by law, Turbo provides online services to users. If a user provides illegal online services to a certain region without authorization from some company, Turbo assumes no responsibility for that action. However, within the legal framework, Turbo can assist in providing relevant data or other legal support. Turbo is not responsible for any consequences arising from such user actions.",
+      "p2": "Turbo’s webpages offer hosting services for user-uploaded content, making that content accessible to other users. For user-uploaded content, whether the content is considered offensive, politically sensitive, illegal, infringing intellectual property rights, or otherwise inappropriate, TurboNET has the autonomy to judge and to take actions such as banning relevant accounts. However, Turbo does not guarantee timely removal of violating content uploaded by users, nor does it guarantee that users hold the legal rights to publish or distribute the uploaded content. TurboNET is not liable for any legal consequences arising from user-uploaded or distributed content."
+    },
+    "modification": {
+      "title": "Modifications to the Terms of Service",
+      "p1": "Turbo reserves the right to freely modify these terms.",
+      "p2": "The latest version of these terms shall prevail. Failure to comply may result in disabling your access to Turbo services."
+    },
+    "serviceModification": {
+      "title": "Modification of Services",
+      "p1": "Turbo reserves the right to modify or discontinue services without notice to users.",
+      "p2": "When exercising its rights to modify or discontinue services, Turbo shall not be liable to any user or third party."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "p1": "All materials herein are provided “as is.” Turbo makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including but not limited to implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.",
+      "p2": "Additionally, Turbo does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials, or otherwise relating to such materials or on any sites linked to this site.",
+      "p3": "Lastly, Turbo is under no obligation (express or implied) to provide any maintenance, technical support, or other support for its services."
+    },
+    "liability": {
+      "title": "Liability for Compensation",
+      "p1": "If, due to:",
+      "p2": "(i) Your use of and access to Turbo;",
+      "p3": "(ii) Your violation of any condition in these Terms of Service;",
+      "p4": "(iii) Your infringement on any third-party rights, including but not limited to copyright, property, or privacy rights;",
+      "p5": "(iv) Content you upload causing harm to any third party;",
+      "p6": "(v) Other situations where you should be liable.",
+      "p7": "Turbo may face losses. You agree to resolve disputes proactively and make necessary compensation, holding TurboServlet harmless from any claims, damages, losses, or liabilities and expenses (including but not limited to attorney fees).",
+      "p8": "This liability will survive after these Terms of Service and after you cease using Turbo."
+    },
+    "clientInstallation": {
+      "title": "Your Installation and Use of the Turbo Client",
+      "p1": "Turbo operates through router-based intelligent data relay and distribution, communication enhancements, and traffic optimization management. Turbo only permits users to install and use it legally for testing and development purposes when authorized by a certain company. Once a user installs and deploys or plays on an already installed client, it is deemed as confirmation and acceptance that the above terms are legally binding. If users provide false information or engage in actions that lead to third-party legal claims, Turbo is not liable. Therefore, it is strictly forbidden to provide illegal online services to any region without authorization from a certain company. Within the scope permitted by law, Turbo may assist third parties by providing relevant data or legal support."
+    },
+    "siteContent": {
+      "title": "Your Use of Turbo Web Content",
+      "p1": "You understand that while using Turbo’s webpages, you may encounter content uploaded by users from various sources, and Turbo is not responsible for the accuracy, utility, safety, or intellectual property of such user-uploaded content. Furthermore, you understand and acknowledge that you may come across user-uploaded content that is inaccurate, offensive, obscene, or objectionable, and you agree to waive any legal or equitable rights or remedies you may have in this regard, and agree, to the fullest extent permitted by law, to hold TurboServlet, its owners/operators, or licensees harmless from all matters relating to your use of these webpages."
+    },
+    "userContent": {
+      "title": "User-Uploaded Content and Content Removal",
+      "p1": "You assume full responsibility for your user-uploaded content and for the consequences of its posting or publication. Concerning the user-submitted content, you affirm, represent, or warrant that you own or have the necessary licenses, rights, consents, and permissions to use and to authorize Turbo to use all patents, trademarks, trade secrets, copyrights, or other proprietary rights to enable the inclusion and use of all the user-submitted content as contemplated by the website and by these Terms of Service. Regarding user-submitted content, you agree not to submit material that is protected by copyright, protected by trade secret, or subject to third-party proprietary rights (including privacy and publicity rights), unless you are the owner of such rights or have permission from the rightful owner to post the material and grant Turbo all of the license rights granted herein.",
+      "p2": "The content uploaded to Turbo’s online community does not indicate Turbo’s endorsement, nor does it represent the opinions, recommendations, or suggestions expressed therein. Turbo expressly disclaims all liability in connection with user-submitted content. Turbo does not permit copyright infringement or violations of intellectual property rights on its websites, and upon proper notification that such content or user-submitted content infringes others’ intellectual property, Turbo has the right to remove it or take further action.",
+      "p3": "Turbo reserves the right to remove any content and user-submitted content, or accounts, without prior notice."
+    },
+    "privacyPolicy": {
+      "title": "Privacy Protection and Information Collection Policy",
+      "p1": "See"
+    },
+    "proprietaryRights": {
+      "title": "Proprietary Rights to Content",
+      "p1": "You acknowledge that the content provided by Turbo—including but not limited to text, software, music, sound, photos, videos, graphics, name references, or other materials provided to users through the service—is protected by copyright, trademark, service marks, patents, or other proprietary rights and laws; thus, users may only use such content with clear authorization.",
+      "p2": "Users shall not, without legal authorization, commit any act that may infringe upon the rights of the copyright owner, including creating derivative works from said content. Turbo reserves the right to pursue legal action."
+    },
+    "links": {
+      "title": "Links",
+      "p1": "Turbo may provide links to other websites or resources. You may receive these links in emails or other locations.",
+      "p2": "You acknowledge that Turbo is not responsible for these external websites or resources, nor does Turbo represent its endorsement of their content. Turbo is not liable for any content, advertising, products, or other materials found on or available through such external websites or resources.",
+      "p3": "You agree that Turbo is not liable or responsible, directly or indirectly, for any damage or loss caused or purported to be caused by or in connection with the use of or reliance on such external websites or resources, or any content, goods, or services available from them."
+    },
+    "governingLaw": {
+      "title": "Governing Law",
+      "p1": "These terms are governed by and construed in accordance with the laws of the People’s Republic of China."
+    },
+    "acknowledgement": {
+      "title": "Acknowledgement",
+      "p1": "Portions of this document are based on the 'osu! Terms of Service' and 'Terms of Service - Cytoid,' licensed under CC-BY-NC 4.0."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro-1": "Turbo must frequently collect, store, and transmit personal information to provide its services. We strive to make this process as transparent as possible.",
+    "intro-2": {
+      "beforeLink": "Before using our services, you must confirm that you have read and understood the ",
+      "betweenLink": " and this Privacy Policy, including how and why we use your information, and your use of our services is governed by the ",
+      "afterLink": " and this Privacy Policy."
+    },
+    "collect-info": {
+      "title": "Information We Collect",
+      "play": {
+        "title": "Gameplay",
+        "desc": "When you play, we collect and store the following for caching purposes:",
+        "list": {
+          "1": "User ID",
+          "2": "Gameplay time",
+          "3": "Account information",
+          "4": "Song performance results",
+          "5": "Account speed and other settings",
+          "6": "Account inventory",
+          "7": "Area completion progress",
+          "8": "Stamp collection status",
+          "9": "Gameplay records",
+          "10": "Upload logs"
+        },
+        "note": "Your User ID will never be visible to anyone. Upload logs, stamp collection status, account speed, and other settings will not be disclosed. Your gameplay time, account information, song performance results, account inventory, area completion progress, and gameplay records may (based on your preferences) be used for website updates and display, to improve user experience and system functionality."
+      },
+      "register": {
+        "title": "Registration Page",
+        "desc": "When you register an account, we collect and store:",
+        "list": {
+          "1": "User ID",
+          "2": "Username",
+          "3": "Email address",
+          "4": "Password (stored using SHA256 SALT irreversible encryption)",
+          "5": "Registration time"
+        },
+        "note": "Your User ID will never be visible to anyone. Only your username is public. We will never sell your email address to third parties."
+      },
+      "login": {
+        "title": "Login",
+        "desc": "When you log in, we collect and store:",
+        "list": {
+          "1": "IP address"
+        },
+        "note": "Your IP address will never be visible to anyone."
+      }
+    },
+    "disclosure": {
+      "title": "Disclosure of Your Privacy",
+      "desc": "We will not disclose your private information without your permission, except in the following cases:",
+      "list": {
+        "1": "Your username, registration and login times, playtime, account information, song performance data, and play records (all of which can be optionally disclosed on the website).",
+        "2": "Information you have explicitly agreed to disclose.",
+        "3": "Information that must be disclosed to third parties or administrative/judicial authorities as required by law or legal proceedings.",
+        "4": {
+          "beforeLink": "If you are found to be in violation of applicable laws or regulations of China, or Turbo ",
+          "afterLink": " or related rules, information may need to be disclosed to third parties."
+        },
+        "5": {
+          "beforeLink": "Other information that must be disclosed in order to enforce ",
+          "afterLink": "."
+        }
+      }
+    },
+    "cookies": {
+      "title": "Cookies",
+      "desc": "We do not use cookies to track your online activities."
+    },
+    "data-security": {
+      "title": "Data Security",
+      "desc": "We are committed to ensuring the security of your information; however, no system can be guaranteed free from attack. Even if Turbo were attacked due to uncontrollable circumstances, we will do our utmost to prevent any data breach."
+    },
+    "policy-update": {
+      "title": "Policy Updates",
+      "desc": "We reserve the right to update this Privacy Policy. If it is updated, we will notify you via our website and application."
+    }
+  },
+  "notFound": {
+    "title": "Oops! This page has been eaten!",
+    "back": "Return to the homepage"
+  },
+  "menu": {
+    "panel": "Messages",
+    "turboPermission": "User Permissions",
+    "botManager": "BOT Management",
+    "serverRequests": "Server Request Statistics",
+    "arcade": {
+      "title": "Arcade",
+      "info": "Arcade Information",
+      "alias": "Arcade Nickname",
+      "networkStatus": "Arcade Network Status"
+    },
+    "maimai": {
+      "title": "Maimai",
+      "photos": "Photos",
+      "records": "Game Records"
+    },
+    "ranking": {
+      "title": "Rankings",
+      "dxRatingRanking": "DX RATING Ranking",
+      "achievementRanking": "Total Score Ranking"
+    },
+    "turbo": {
+      "title": "Turbo Features",
+      "changeMaimaiName": "Change Maimai Name",
+      "changeAvatar": "Change Avatar"
+    },
+    "tickets": {
+      "title": "Tickets",
+      "currentTickets": "Owned Tickets",
+      "setTickets": "Set Tickets"
+    },
+    "qrCommand": "Command QR Code",
+    "friends": {
+      "title": "NET Friends",
+      "friends": "My Friends",
+      "addFriends": "Add Friends"
+    }
+  },
+  "error": {
+    "jsError": "Verification failed, please log in again.",
+    "loadingError": "Loading failed",
+    "validateError": "Verification failed",
+    "enterError": "Access failed",
+    "back": "Return to Homepage",
+    "tokenError": "Failed to load BotToken. Please log in again.",
+    "bodyError": "Incomplete request body. Please complete it and try again."
+  },
+  "panel": {
+    "reason": "Reason"
+  },
+  "turboPermission": {
+    "myPermission": "My Permissions",
+    "upgradePermission": "Upgrade",
+    "warningAndBan": "Warning & Ban",
+    "showTurboPermission": {
+      "permissions": "Authentication Features",
+      "granted": "Granted",
+      "notGranted": "Not Granted"
+    },
+    "upgradeTurboPermission": {
+      "turboName": "Turbo Username",
+      "upgradeLog": "Authorization History",
+      "upgrade": "Authorize",
+      "upgradeNotice": {
+        "1": "Please consider carefully before granting authorization. All your operations will be recorded, and you will be held responsible for any consequences and public opinion impact resulting from this user's subsequent actions. We reserve the right, according to ",
+        "2": ", to take measures against both you and this user's account."
+      },
+      "toast": {
+        "success": "Authorization successful"
+      }
+    },
+    "upgradeDialog": {
+      "title": "Authorization History",
+      "noData": {
+        "title": "No Data",
+        "content": "You haven’t authorized anyone yet. Give it a try!"
+      },
+      "table": {
+        "turboName": "Turbo Username",
+        "upgradeAfter": "After Authorization",
+        "operate": "Action",
+        "cancel": "Revoke"
+      },
+      "toast": {
+        "success": "Downgrade successful"
+      }
+    },
+    "executePage": {
+      "toast": {
+        "reason": "Please provide a reason",
+        "warnSuccess": "User successfully warned",
+        "banSuccess": "User successfully banned"
+      },
+      "turboName": "Turbo Username",
+      "executeLog": "Execution History",
+      "reason": "Reason",
+      "banTime": {
+        "1hr": "1 hour",
+        "24hrs": "24 hours",
+        "7days": "7 days",
+        "30days": "30 days",
+        "365days": "365 days",
+        "permanent": "Permanent"
+      },
+      "execute": "Execute",
+      "executeNotice": {
+        "1": "Please consider carefully before using your privileges. All your operations will be recorded, and you will be held responsible for any consequences and public opinion impact resulting from this user's subsequent actions. TurboServlet reserves the right, according to ",
+        "2": ", to take measures against you."
+      }
+    },
+    "executeRecordDialog": {
+      "title": "Execution History",
+      "noData": {
+        "title": "No Data",
+        "content": "You haven’t used any privileges yet."
+      },
+      "table": {
+        "turboName": "Turbo Username",
+        "execute": "Execution Content",
+        "operate": "Action",
+        "cancel": "Revoke"
+      },
+      "toast": {
+        "success": "Revocation successful"
+      }
+    }
+  },
+  "executeRecordBadge": {
+    "ban": "Ban",
+    "warning": "Warned Once",
+    "unknown": "Unknown"
+  },
+  "turboPermissionBadge": {
+    "admin": "Administrator",
+    "builder": "Builder",
+    "authorizer": "Authorizer",
+    "user": "Standard User",
+    "unknown": "Unknown"
+  },
+  "turboWarningBadge": {
+    "noWarning": "No Warning Records",
+    "warned": "Warned",
+    "times": "times"
+  },
+  "botManager": {
+    "loading": "Loading ...",
+    "copyToClipboard": "Copy to Clipboard",
+    "noData": "You haven't authorized any BOT yet",
+    "table": {
+      "botName": "BOT Name",
+      "info": "Number of calls and authorization time",
+      "operate": "Action",
+      "cancel": "Revoke",
+      "times": "times"
+    },
+    "toast": {
+      "copySuccess": "Copied to clipboard",
+      "unbindSuccess": "Authorization successfully revoked"
+    }
+  },
+  "serverRequests": {
+    "title": "Server Request Statistics",
+    "contact": {
+      "1": "The \"Z-LIB\" compression skip rate of response data and the number of request retries can reflect the current network conditions.",
+      "2": "When the compression skip rate exceeds \"3%\", network instability may occur.",
+      "3": "When the request retry rate and failure rate are high, there may be issues with the network or server."
+    },
+    "totalRequests": "Total Requests / 1 hrs",
+    "totalException": "Total Exceptions / 1 hrs",
+    "totalExceptionRate": "Total Exceptions Rate / 1hrs",
+    "totalZlibSkipped": "Z-LIB skipped count",
+    "totalRetry": "Retry attempts",
+    "totalPanic": "Failed attempts",
+    "inCache": "In Cache",
+    "unCache": "Out of Cache",
+    "echarts": {
+      "time": "Time (t)",
+      "delay": "Delay (ms)",
+      "cacheDelay": "In-cache Delay",
+      "whalapDelay": "Out-of-cache Delay"
+    }
+  },
+  "arcadeInfo": {
+    "notice": {
+      "title": "Notice",
+      "contact": "Arcade information will automatically expand and become visible as you visit more Turbo arcades."
+    },
+    "newArcade": "Add Arcade to Database",
+    "arcadeContact": {
+      "1": "Total requests sent",
+      "2": "times today. Cache hits",
+      "3": "times, fixed",
+      "4": "errors, cache hit rate"
+    },
+    "arcadeFeature": {
+      "CustomName": " Custom Name",
+      "CustomAvatar": " Custom Avatar",
+      "TurboTicket": " Turbo Ticket"
+    },
+    "enable": "Enable",
+    "disable": "Disable",
+    "noData": "Don’t see your arcade? Please contact administrator to add and bind the arcade.",
+    "detailDialog": {
+      "title": "Arcade Details",
+      "contact": "Number of players in arcade",
+      "total": "total",
+      "status": {
+        "30minutes": "30 mins",
+        "60minutes": "60 mins",
+        "120minutes": "120 mins"
+      },
+      "table": {
+        "username": "Username",
+        "endTime": "End Time"
+      },
+      "noData": "No one is here yet. Go grab a machine!"
+    },
+    "newArcadeDialog": {
+      "title": "Add Arcade to Database",
+      "arcadeType": "Arcade Type",
+      "arcadeNums": "Number of Arcade",
+      "arcadeName": "Full Name of the Arcade",
+      "arcadeNamePlaceholder": "Full name",
+      "turboKeychip": "KeyChipID (Short) for the { n }th machine",
+      "2077Keychip": "KeyChipID (Long) for the { n }th machine",
+      "cancel": "Cancel",
+      "submit": "Add Arcade",
+      "toast": {
+        "success": "Add arcade successful"
+      }
+    }
+  },
+  "arcadeSettingEnum": {
+    "maskUsername": "Mask Username",
+    "udemaeShowAchievement": "Show Achievement in Udemae",
+    "disableTicket": "Disable Turbo Ticket",
+    "disableCustomName": "Disable Custom Name",
+    "disableCustomAvatar": "Disable Custom Avatar",
+    "unknown": "Unknown Setting"
+  },
+  "arcadeFunctionType": {
+    "login": "Turbo Arcade Login",
+    "kastanjLogin": "Turbo Arcade Kastanj Service Login",
+    "specialTypeOneLogin": "2077 Arcade Login",
+    "ping": "Ping Arcade"
+  },
+  "arcadeAlias": {
+    "noData": "No alias available",
+    "notice": {
+      "1": "Please consider carefully before using your privileges. All your actions will be recorded, and you will be held responsible for any consequences and public opinion impact resulting from these actions. TurboServlet reserves the right, according to",
+      "2": ", to take measures against you."
+    },
+    "dialog": {
+      "title": "Edit Alias",
+      "notice": {
+        "title": "Notice",
+        "content": "Once an arcade alias has been added, please contact the administrator if you need to remove it. Your actions will be recorded, so proceed with caution."
+      },
+      "placeholder": "New alias",
+      "cancel": "Cancel",
+      "submit": "Add New Alias",
+      "toast": {
+        "success": "Add new alias successful"
+      }
+    }
+  },
+  "networkStatus": {
+    "lastBeat": "Time Since Last Heartbeat {time}",
+    "workingText": {
+      "working": "Turbo Running",
+      "warning": "Turbo Network Anomaly",
+      "error": "Turbo Offline",
+      "unknown": "Turbo Status Unknown"
+    },
+    "longTimeOffline": "Please check the connection status. This arcade has not been online for a long time.",
+    "notSupport": "This Arcade does not currently support checking network status"
+  },
+  "user": {
+    "htmlBanned": "BANNED",
+    "bannedBadge": "TurboNET Banned",
+    "mySettings": "My Settings",
+    "settingDialog": {
+      "title": "My Settings",
+      "userPage": "View My Profile",
+      "best35": "View My B35",
+      "best15": "View My B15",
+      "recentScores": "View My Recent Play Records",
+      "option": {
+        "everyone": "Everyone",
+        "onlyFriends": "Friends Only",
+        "onlyMe": "Me Only"
+      },
+      "toast": {
+        "success": "Change successful"
+      }
+    },
+    "addFriend": "Add Friend",
+    "return": "Back to Previous Page",
+    "banMessage": "On {date}, were {banType} banned{banDuration} by {executorName}. Reason: {reason}",
+    "warningMessage": "This is the {warningIndex} time on {date} that were warned by {executorName}. Reason: {reason}",
+    "banType": {
+      "permanent": "Permanent",
+      "temporary": "Temporary"
+    },
+    "hourSuffix": " hours",
+    "maiStatistics": {
+      "title": "maimai Statistics",
+      "serverRanking": "Server Ranking",
+      "noData": "Insufficient attendance data in the last 60 days. Please play more!",
+      "averageAchievement": "Average Achievement",
+      "maxCombo": "Maximum Combo",
+      "fullComboCount": "Full Combo",
+      "AllPerfectCount": "All Perfect",
+      "totalAchievement": "Total Achievement",
+      "daysAgo": " ago"
+    },
+    "playActivity": {
+      "title": "Play Activity",
+      "playCount": "Play Count",
+      "totalPlayTime": "Total Play Time",
+      "firstPlay": "New Discovery",
+      "lastPlay": "Last Attendance",
+      "playVersion": "Version"
+    },
+    "recentScores": {
+      "title": "Recent Play Records"
+    },
+    "private": "This user has set privacy restrictions or there is insufficient data",
+    "notice": {
+      "1": "According to Creative Commons Public Licenses 4.0,",
+      "2": "This page references",
+      "3": "and",
+      "4": "modified",
+      "5": ", this page is open-sourced at"
+    },
+    "toast": {
+      "success": "Application sent"
+    }
+  },
+  "photos": {
+    "historyPhotos": "History Photos",
+    "favoritePhotos": "My Favorites",
+    "notice": {
+      "title": "Notice",
+      "content": "The photo cache on the server will be deleted after 7 days. If you wish to save them, please add them to Favorites or right-click and hold to download. This photo feature is only available on Turbo machines."
+    },
+    "noData": "You don't have any photos yet",
+    "favorite": {
+      "enable": "Favorited",
+      "disable": "Favorite"
+    },
+    "toast": {
+      "lastPage": "This is already the last page",
+      "firstPage": "This is already the first page",
+      "removeSuccess": "Successfully removed from favorites",
+      "addSuccess": "Successfully added to favorites"
+    },
+    "page": "Page {page}"
+  },
+  "records": {
+    "page": "Page {page}",
+    "newRecord": "New Record"
+  },
+  "ranking": {
+    "title": "Leaderboard",
+    "button": {
+      "global": "National Turbo Arcade Player Rankings",
+      "turbo": "TurboNET Registered Player Rankings"
+    },
+    "return": "Back to Previous Page",
+    "pageInfo": {
+      "first": "This is already the last page",
+      "last": "This is already the first page",
+      "exceed": "Exceeded total number of pages"
+    },
+    "achievementRanking": {
+      "title": "Total Score",
+      "table": {
+        "ranking": "Rank",
+        "username": "Player",
+        "totalAchievement": "Total Achievement"
+      }
+    },
+    "dxRatingRanking": {
+      "title": "DX RATING",
+      "table": {
+        "ranking": "Rank",
+        "username": "Player",
+        "dxRating": "DX RATING"
+      }
+    },
+    "musicRanking": {
+      "title": "Music Leaderboard",
+      "table": {
+        "ranking": "Rank",
+        "username": "Player",
+        "achievement": "Achievement",
+        "dxScore": "DX Score"
+      }
+    }
+  },
+  "changeMaimaiName": {
+    "title": "Change Maimai Name",
+    "noPermission": {
+      "title": "Notice",
+      "content": "You do not have sufficient permissions to use this feature at the moment."
+    },
+    "notice": "New input must be in full-width characters.",
+    "placeholder": "New Username",
+    "button": {
+      "submit": "Update Username",
+      "toDefault": "Use Maimai Username"
+    },
+    "changeNotice": {
+      "1": "Please consider carefully before using this permission. All your actions will be recorded, and you will be responsible for any consequences and public opinion impact caused by your future behavior. Based on",
+      "2": "TurboServlet reserves the right to take action."
+    },
+    "toast": {
+      "setSuccess": "Update successful",
+      "resetSuccess": "Reset successful"
+    }
+  },
+  "changeAvatar": {
+    "title": "Change Avatar",
+    "dialogTitle": "Upload Avatar",
+    "selectPhoto": "Select Image",
+    "noPermission": {
+      "title": "Notice",
+      "content": "You do not have sufficient permissions to use this feature at the moment."
+    },
+    "button": {
+      "toDefault": "Use Maimai Avatar",
+      "cancel": "Cancel",
+      "submit": "Confirm"
+    },
+    "changeNotice": {
+      "1": "Please consider carefully before using this permission. All your actions will be recorded, and you will be responsible for any consequences and public opinion impact caused by your future behavior. Based on",
+      "2": "TurboServlet reserves the right to take action."
+    },
+    "toast": {
+      "jpgWarning": "Please select a JPG image",
+      "sizeWarning": "Image size must not exceed 5MB",
+      "success": "Setting successful",
+      "error": "Unknown error, please try again",
+      "resetSuccess": "Reset successful"
+    }
+  },
+  "currentTickets": {
+    "title": "Turbo Feature Tickets",
+    "notice": {
+      "title": "Notice",
+      "content": "Turbo feature tickets take priority over official feature tickets. When Turbo feature tickets are enabled, official feature tickets cannot be used."
+    },
+    "turboTicket": {
+      "enable": "Turbo Feature Ticket Enabled",
+      "disable": "Turbo Feature Ticket Disabled"
+    },
+    "officialTicket": "Official Feature Ticket"
+  },
+  "ticketUtils": {
+    "ticketIdToName": {
+      "0": "No Ticket",
+      "2": "Paid 2x Ticket",
+      "3": "Paid 3x Ticket",
+      "4": "Paid 4x Ticket",
+      "5": "Paid 5x Ticket",
+      "6": "Paid 6x Ticket",
+      "10005": "Event 5x Ticket (Type 1)",
+      "10105": "Event 5x Ticket (Type 2)",
+      "10205": "Event 5x Ticket (Type 3)",
+      "11001": "Free 1.5x Ticket",
+      "11002": "Free 2x Ticket",
+      "11003": "Free 3x Ticket",
+      "11005": "Free 5x Ticket",
+      "20010": "Free 10x Ticket (Expired)",
+      "20020": "Free 20x Ticket (Expired)",
+      "30001": "Special 2x Ticket",
+      "unknown": "Other"
+    }
+  },
+  "setTickets": {
+    "title": "Set Tickets",
+    "ticketType": {
+      "title": "Ticket Type",
+      "paid": "Select the paid ticket you need",
+      "event": "Select the event ticket you need",
+      "free": "Select the free ticket you need",
+      "special": "Select the special ticket you need"
+    },
+    "lock": "Lock to keep 1 ticket",
+    "button": {
+      "submit": "Lock Ticket",
+      "toDefault": "Cancel Lock"
+    },
+    "noPermission": {
+      "title": "Notice",
+      "content": "You do not have sufficient permissions to use this feature at the moment."
+    },
+    "ticketTypeList": {
+      "paid": "Paid Tickets",
+      "event": "Event Tickets",
+      "free": "Free Tickets",
+      "special": "Special Tickets"
+    },
+    "setNotice": {
+      "1": "Please consider carefully before using this permission. All your actions will be recorded, and you will be responsible for any consequences and public opinion impact caused by your future behavior. Based on",
+      "2": "TurboServlet reserves the right to take action."
+    },
+    "toast": {
+      "success": "Reset successful"
+    }
+  },
+  "qrCommand": {
+    "userQrCommand": "User QR Code",
+    "arcadeQrCommand": "Arcade QR Code",
+    "generateQrCode": "Generate QR Code",
+    "arcadeNotice": {
+      "title": "Notice",
+      "content": "This feature is considered high risk. The settings you apply to the arcade machine will affect all players. Please use caution."
+    },
+    "useNotice": {
+      "1": "Please consider carefully before using this permission. All your actions will be recorded, and you will be responsible for any consequences and public opinion impact caused by your future behavior. Based on",
+      "2": "TurboServlet reserves the right to take action."
+    },
+    "dialog": {
+      "title": "QR Code",
+      "content": {
+        "1": "Please align the QR code below with the maimai’s scanning area.",
+        "2": "This QR code is only applicable to the Turbo and other connected machines."
+      },
+      "expireTime": "Valid until: {time}"
+    }
+  },
+  "friends": {
+    "setting": "Settings",
+    "friendCount": "Number of Friends",
+    "noData": "You have no friends yet",
+    "dialog": {
+      "title": "Friend Policy Settings",
+      "option": {
+        "title": "Current Policy",
+        "value": {
+          "autoAccept": "Automatically Accept Requests",
+          "manual": "Manually Accept Requests",
+          "friendsOfFriends": "Only Allow Requests from Friends",
+          "nobody": "Disallow All Requests"
+        },
+        "toast": {
+          "success": "change successful"
+        }
+      }
+    },
+    "friendCard": {
+      "playing": "Currently Playing",
+      "lastPlayTime": "{hour} hours ago",
+      "userPage": "User Page",
+      "removeFriend": "Remove Friend"
+    },
+    "removeFriendDialog": {
+      "content": "Are you sure you want to remove {friend} from your friends?",
+      "notice": "If either side removes the other, the friend will disappear from both perspectives.",
+      "cancel": "Cancel Removal",
+      "submit": "Confirm Removal",
+      "toast": {
+        "success": "Friend successfully removed"
+      }
+    }
+  },
+  "addFriends": {
+    "requestFriend": {
+      "title": "Send Friend Request",
+      "placeholder": "TurboNET Username",
+      "requestButton": "Send Friend Request",
+      "notice": "For security reasons, user search is not provided. When you click 'Send Friend Request,' a request will be sent to the specified user.",
+      "toast": {
+        "success": "Request sent"
+      }
+    },
+    "requestFriendList": {
+      "title": "Pending Requests",
+      "noData": "You don't have any pending requests yet",
+      "requestTime": "Request Time: {time}",
+      "button": {
+        "accept": "Accept",
+        "deny": "Deny"
+      },
+      "toast": {
+        "accept": "Friend request accepted",
+        "deny": "Friend request denied"
+      }
+    }
+  },
+  "register": {
+    "title": "Register Your Account",
+    "qrHelper": {
+      "title": "How to Obtain",
+      "elements": {
+        "1": "Open the 'Maimai | Chunithm' official WeChat account",
+        "2": "Get your player QR code and tap on it",
+        "3": "Long press to scan the QR code in the image",
+        "4": "Copy the scan result to the website"
+      }
+    },
+    "step1": {
+      "qrcode": "Enter Maimai QR Code ID",
+      "notUnderstand": "I don't understand",
+      "nextStep": "Next Step",
+      "alreadyExist": "Already have an account?"
+    },
+    "step2": {
+      "toast": {
+        "error": "The two passwords do not match"
+      },
+      "subTitle": "Fill in Basic Information",
+      "detail": {
+        "userName": "Username",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "email": "Email",
+        "qqid": "QQ ID"
+      },
+      "redo": "Please register again",
+      "expiry": "expires in",
+      "submit": "Submit Registration",
+      "tosDialog": {
+        "1": "By submitting your registration, you agree to the",
+        "2": "Terms of Service",
+        "3": "and",
+        "4": "Privacy Policy"
+      }
+    },
+    "step3": {
+      "subTitle": "Verification Request Sent",
+      "content": {
+        "1": "Please check your email. We have sent you a verification email.",
+        "2": "Email delivery may not always be reliable. If you don’t receive it, please check your spam folder."
+      }
+    },
+    "verify": {
+      "succeed": "Verification successful",
+      "failed": "Verification failed",
+      "notice": "Verification complete. You will be redirected to the homepage in 3 seconds."
+    }
+  },
+  "support": {
+    "back": "Back",
+    "credentialCard": {
+      "title": "Account Password Verification",
+      "subTitle": "This method is suitable when you know your account and password and want to make other changes.",
+      "validation": "Verify Account and Password",
+      "detail": {
+        "userName": "Username",
+        "userPassword": "User Password"
+      }
+    },
+    "emailCard": {
+      "toast": {
+        "success": "Email sent"
+      },
+      "title": "Email Verification",
+      "subTitle": "This method is suitable when you know the email used during registration and want to make other changes.",
+      "validation": "Verify Email",
+      "detail": {
+        "email": "Email"
+      },
+      "success": "Success!",
+      "notice": "We have sent a new session email to {email}. Please open the link in your email to proceed."
+    },
+    "qrCard": {
+      "title": "Maimai QR Code ID Verification",
+      "recommend": "Recommended Method",
+      "subTitle": "Your Maimai QR Code ID is your fundamental identity credential. It is recommended for identity verification.",
+      "validation": "Verify Maimai QR Code ID",
+      "qrField": "Enter Maimai QR Code ID",
+      "notUnderstand": "I don't understand"
+    },
+    "toast": {
+      "error": "Quick verification failed. Please verify your identity manually."
+    },
+    "page": {
+      "accessFailed": "Access Failed",
+      "title": "Support",
+      "selfService": {
+        "title": "Currently Available Self-Service Options:",
+        "function": "Reset password, change email, update QQ account, change Turbo username, submit feedback",
+        "notice": {
+          "1": "This support is only available to TurboNET",
+          "2": "Polar",
+          "3": "members. Please choose a verification method to allow TurboNET Support to assist you further. For other requests, please contact the administrator."
+        }
+      },
+      "or": "or",
+      "agent": "Manual Verification",
+      "exception": "If none of the above methods work, please submit an email ticket to the administrator."
+    }
+  },
+  "supportSession": {
+    "choose": "Select this help option",
+    "back": "Back",
+    "success": "Success!",
+    "resetEmail": {
+      "toast": {
+        "success": "Email sent"
+      },
+      "title": "Reset Email",
+      "submit": "Reset Email",
+      "oldEmail": "Current Email: {email}",
+      "details": {
+        "newEmail": "New Email"
+      },
+      "notice": "We have sent a verification email to your new address. Please check your inbox.",
+      "verify": {
+        "succeed": "Verification successful",
+        "failed": "Verification failed",
+        "notice": "Email successfully updated. Redirecting to homepage in 3 seconds."
+      }
+    },
+    "resetPassword": {
+      "toast": {
+        "validError": "Passwords do not match. Please try again.",
+        "success": "Password reset successful"
+      },
+      "title": "Reset Password",
+      "details": {
+        "newPassword": "New Password",
+        "confirmPassword": "Confirm Password"
+      },
+      "submit": "Reset Password",
+      "notice": "Your password has been reset. Please log in again."
+    },
+    "resetQQNumber": {
+      "toast": {
+        "success": "Reset successful"
+      },
+      "title": "Reset QQ Number",
+      "oldQQ": "Current QQ Number: {qqNumber}",
+      "details": {
+        "newQQ": "New QQ Number"
+      },
+      "submit": "Reset QQ Number",
+      "notice": "Your QQ number has been reset. Please log in again."
+    },
+    "resetTurboName": {
+      "toast": {
+        "success": "Reset successful"
+      },
+      "title": "Reset Turbo Username",
+      "oldTurboName": "Current Username: {turboName}",
+      "details": {
+        "newTurboName": "New Username"
+      },
+      "submit": "Reset Username",
+      "notice": "Your username has been reset. Please log in again."
+    },
+    "toast": {
+      "success": "Session closed successfully"
+    },
+    "page": {
+      "accessFailed": "Access failed",
+      "title": "Support Session",
+      "sessionId": "Your session ID: {sessionId}",
+      "countDown": "This session will expire in {seconds} seconds. Please complete your actions promptly.",
+      "eliminated": "This session has expired. Please initiate a new session.",
+      "feedback": {
+        "title": "Feedback",
+        "body": "If you have any questions, please submit a support ticket to the administrator."
+      },
+      "closeSession": {
+        "close": "Close Session",
+        "subTitle": "Once everything is completed, please close the session here",
+        "countdown": "Closing session (auto-submit in {seconds} seconds)",
+        "eliminated": "This session has expired"
+      }
+    }
+  },
+  "captchaSolver": {
+    "fetchError": "Failed to retrieve captcha"
+  },
+  "requestHandler": {
+    "loginError": "Failed to refresh token. Please log in again.",
+    "timeoutError": "Connection to the server timed out. Please check your network.",
+    "badRequestError": "Bad request. Please check if the request parameters are valid.",
+    "permissionError": "Request denied. You may not have sufficient permissions.",
+    "notFoundError": "Requested resource not found. Please check the request parameters.",
+    "internalServerError": "Internal server error. Please try again later or contact the administrator.",
+    "bannedError": "This account has been banned. Please contact the administrator.",
+    "unknownError": "Unknown error. Please try again later."
+  },
+  "permissionUtils": {
+    "basicReadOnlyContent": "Basic read-only content",
+    "basicInteractiveContent": "Basic interactive content",
+    "friend": "Friend",
+    "botManagement": "BOT management",
+    "changeUsername": "Change username",
+    "changeAvatar": "Change avatar",
+    "turboTicket": "Turbo ticket",
+    "setAlias": "Set alias",
+    "changeTurboSettings": "Change turbo settings",
+    "authorizeAuthorizer": "Authorize Authorizer",
+    "authorizeTechnician": "Authorize Builder",
+    "warnAndBanUser": "Warn & ban user"
+  }
+}

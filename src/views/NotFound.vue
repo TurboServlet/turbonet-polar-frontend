@@ -1,6 +1,6 @@
 <template>
   <div class="body bg-base-100">
-    <ThemeChanger/>
+    <HeadModule/>
     <div class="content">
       <div class="ascii bg-base-200 rounded-box shadow"><pre>
  ___   ___  ________  ___   ___
@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts" setup>
-import ThemeChanger from "@/components/themeChanger.vue";
+import HeadModule from "@/components/headModule.vue";
 </script>
 
 <style scoped>

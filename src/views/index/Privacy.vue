@@ -1,12 +1,12 @@
 <script setup>
 
-import ThemeChanger from "@/components/themeChanger.vue";
+import HeadModule from "@/components/headModule.vue";
 import Footer from "@/layouts/Footer.vue";
 </script>
 
 <template>
   <div class="max-w-[1000px] m-auto my-20">
-    <themeChanger/>
+    <HeadModule/>
     <div class="card prose max-w-none w-full shadow-2xl bg-base-200 text-wrap break-words overflow-hidden p-8">
       <h1>{{ $t('privacy.title') }}</h1>
       <p>
@@ -14,9 +14,9 @@ import Footer from "@/layouts/Footer.vue";
       </p>
       <p>
         {{ $t('privacy.intro-2.beforeLink') }}
-        <router-link to="/tos">使用条款</router-link>
+        <router-link to="/tos">{{ $t('termsofservice.title') }}</router-link>
         {{ $t('privacy.intro-2.betweenLink') }}
-        <router-link to="/tos">使用条款</router-link>
+        <router-link to="/tos">{{ $t('termsofservice.title') }}</router-link>
         {{ $t('privacy.intro-2.afterLink') }}
       </p>
 
@@ -64,12 +64,12 @@ import Footer from "@/layouts/Footer.vue";
         <li>{{ $t('privacy.disclosure.list.3') }}</li>
         <li>
           {{ $t('privacy.disclosure.list.4.beforeLink') }}
-          <router-link to="/tos">使用条款</router-link>
+          <router-link to="/tos">{{ $t('termsofservice.title') }}</router-link>
           {{ $t('privacy.disclosure.list.4.afterLink') }}
         </li>
         <li>
           {{ $t('privacy.disclosure.list.5.beforeLink') }}
-          <router-link to="/tos">使用条款</router-link>
+          <router-link to="/tos">{{ $t('termsofservice.title') }}</router-link>
           {{ $t('privacy.disclosure.list.5.afterLink') }}
         </li>
       </ol>

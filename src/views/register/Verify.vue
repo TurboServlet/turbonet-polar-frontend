@@ -1,7 +1,7 @@
 <script setup>
 
 import {ref, watchEffect} from "vue";
-import ThemeChanger from "@/components/themeChanger.vue";
+import HeadModule from "@/components/headModule.vue";
 import {useRoute} from "vue-router";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
@@ -50,7 +50,7 @@ watchEffect(async () => {
 </script>
 
 <template>
-  <themeChanger/>
+  <HeadModule/>
   <div class="body flex align-middle">
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-else>

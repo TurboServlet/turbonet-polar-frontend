@@ -29,7 +29,7 @@ const verify = async () => {
 
 const logout = () => {
   clearToken();
-  toast.success(t('indexbutton-js-logout'));
+  toast.success(t('indexButton.jsLogout'));
   isLogin.value = false
 }
 

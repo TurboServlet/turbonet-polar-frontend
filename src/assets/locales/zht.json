@@ -1,0 +1,1072 @@
+{
+  "index": {
+    "title": "一款遊戲的控制面板。"
+  },
+  "indexButton": {
+    "member": "進入控制頁",
+    "guest": "注册或登錄",
+    "jsLogout": "已退出登錄"
+  },
+  "devInfo": {
+    "title": "我們是誰？",
+    "context": {
+      "1": "是在非盈利、非商業的前提下進行創作的。",
+      "2": "在 Coding 路上不斷學習、不斷前行的身影，時時映在我們身上。",
+      "3": "在不畏難、不退縮、勇於創新和敢於行動的精神驅動下，塑造了這个非凡的創作。"
+    },
+    "devContext": {
+      "ctrlcvs": "全棧總開發 / 總設計",
+      "kiwi": "DBA / 解決方案工程師",
+      "404": "手機APP開發",
+      "apple": "提供情緒價値",
+      "taojiu": "接口文檔維護",
+      "yuuluo": "NONE BOT開發",
+      "haochi": "服務器對接",
+      "tenshi": "産品工程 / 交互架構"
+    }
+  },
+  "cooperatorInfo": {
+    "title": "開放，包容",
+    "context": {
+      "1": "我們重視个人開發者、團隊、組織的創意和貢獻。",
+      "2": "我們為開發者提供了齊全的接口文檔，助力他們在技術探索與創新的道路上勇往直前。",
+      "3": "開發者可通過",
+      "4": "與",
+      "5": "了解更多信息，感謝合作夥伴的對接與貢獻，你們的努力成就了今天的非凡旅程。"
+    },
+    "partner": "合作夥伴"
+  },
+  "turboMap": {
+    "title": "妙手生花，創意無限",
+    "context": {
+      "1": "我們勇於創新，不斷追求卓越，各種創意設計與新穎想法是我們執手的利刃，我們已經在以下地區開展了服務。"
+    },
+    "mapSource": "地圖來源 阿裏雲 DataV",
+    "visualMap": {
+      "intensive": "密集",
+      "sparse": "稀疏"
+    },
+    "series": {
+      "name": "Turbo加速盒子安裝機臺數",
+      "regions": {
+        "Beijing": "北京市",
+        "Tianjin": "天津市",
+        "Shanghai": "上海市",
+        "Chongqing": "重慶市",
+        "Hebei": "河北省",
+        "Henan": "河南省",
+        "Yunnan": "雲南省",
+        "Liaoning": "遼寧省",
+        "Heilongjiang": "黑龍江省",
+        "Hunan": "湖南省",
+        "Anhui": "安徽省",
+        "Shandong": "山東省",
+        "Xinjiang": "新疆維吾爾自治區",
+        "Jiangsu": "江蘇省",
+        "Zhejiang": "浙江省",
+        "Jiangxi": "江西省",
+        "Hubei": "湖北省",
+        "Guangxi": "廣西壯族自治區",
+        "Gansu": "甘肅省",
+        "Shan1xi": "山西省",
+        "Neimenggu": "內蒙古自治區",
+        "Shan3xi": "陝西省",
+        "Jilin": "吉林省",
+        "Fujian": "福建省",
+        "Guizhou": "貴州省",
+        "Guangdong": "廣東省",
+        "Qinghai": "靑海省",
+        "Xizang": "西藏自治區",
+        "Sichuan": "四川省",
+        "Ningxia": "寧夏回族自治區",
+        "Hainan": "海南省",
+        "Taiwan": "臺灣省",
+        "Xianggang": "香港特別行政區",
+        "Aomen": "澳門特別行政區",
+        "Nanhaizhudao": "南海諸島"
+      }
+    }
+  },
+  "footer": {
+    "contact": "© TurboServlet 2024。保畱所有權利。網站上顯示的所有商標、標識和服務標記如若侵權，請聯繫我們 {email}。",
+    "privacy": "隱私政策",
+    "tos": "使用條款"
+  },
+  "login": {
+    "title": "歡迎回來！",
+    "fields": {
+      "username": "用戶名",
+      "password": "用戶密碼"
+    },
+    "support": "需要幫助?",
+    "register": "注册",
+    "button": "登錄",
+    "notice": {
+      "1": "登錄或注册完成即代表您同意",
+      "2": "和"
+    }
+  },
+  "termsofservice": {
+    "title": "使用條款",
+    "introduction": {
+      "p1": "使用 TurboServlet 提供的服務之前，您必須接受以下內容。",
+      "p2": "訪問與使用此網站（https://sys-allnet.com）、客戶端以及任何關聯服務（以下統稱“Turbo”）即代表您确認您完全遵守此處列出的條款和條件，且保證您不會將 TurboServlet 提供服務的任何內容（包括本網站與本網站提供的內容）用於任何違法或被條款禁止的目的。",
+      "p3": "在該份條款之外，您還需要确保接受我們的"
+    },
+    "serviceDescription": {
+      "title": "服務描述",
+      "p1": "Turbo 在法律允許的範圍內向用戶提供在綫服務。若用戶未經某公司授權向某地區提供非法的在綫服務，Turbo 不對該行為承擔任何責任。然而，在法律框架內，Turbo 可以協助提供相關數據或其他法律支持。用戶由此行為産生的任何後果，Turbo 槪不負責。",
+      "p2": "Turbo 網頁中提供託管用戶上傳內容的服務，使其他用戶能够訪問這些內容。對於用戶上傳的內容，無論該內容是否被視為令人反感、政治敏感、違法、侵犯知識産權或其他不當內容，TurboNET 具有自主判斷權，幷有權對相關賬號采取封禁等處理措施。然而，Turbo 不對及時清除用戶上傳的違規內容作出任何保證，也不保證用戶擁有發布或分發已上傳內容的合法權利。對於因用戶上傳或分發內容所引發的任何法律後果，TurboNET 槪不承擔責任。"
+    },
+    "modification": {
+      "title": "使用條款的修改",
+      "p1": "Turbo 保畱自由修改使用條款的權利。",
+      "p2": "使用條款以最新版為準。未遵守可能導致您被禁用 Turbo 的服務。"
+    },
+    "serviceModification": {
+      "title": "服務的修改",
+      "p1": "Turbo 保畱修改或終止服務而不向用戶通知的權利。",
+      "p2": "Turbo 在行使修改或終止服務權利時，不對任何用戶或第三方承擔責任。"
+    },
+    "disclaimer": {
+      "title": "免責聲明",
+      "p1": "本文材料均以“現狀”提供。Turbo 不提供任何明示或暗示的保證，且在此聲明幷否認所有其他保證，包括但不限於對適銷性、特定用途適用性或知識産權的非侵權性或其他權利的侵犯的暗示保證或條件。",
+      "p2": "此外，Turbo 不保證或作出任何關於材料使用的準确性、可能結果或可靠性的陳述，或與此類材料相關的其他陳述。",
+      "p3": "最後，Turbo 沒有義務（明示或暗示）為其服務提供任何維護、技術支持或其他支持。"
+    },
+    "liability": {
+      "title": "賠償責任",
+      "p1": "若由於：",
+      "p2": "(i) 您對 Turbo 的使用和訪問；",
+      "p3": "(ii) 您違反這些使用條款的任何條件；",
+      "p4": "(iii) 您侵犯任何第三方權利，包括但不限於任何版權、財産或隱私權；",
+      "p5": "(iv) 您上傳的內容對第三方造成了損害；",
+      "p6": "(v) 其它您應承擔責任的情形。",
+      "p7": "導致了 Turbo 可能面臨損失。您同意主動解決爭端幷作出必要賠償，使 TurboServlet 免受任何索賠、損害、損失或債務以及開支（包括但不限於律師費）等負面影響。",
+      "p8": "此責任將在這些使用條款和您使用 Turbo 之後繼續存在。"
+    },
+    "clientInstallation": {
+      "title": "您對 Turbo 客戶端的安裝與使用",
+      "p1": "Turbo 的運作方式為基於路由器的智能數據中轉與分發、通信增強以及流量優化管理。Turbo 僅允許用戶在經過某公司授權的前提下，出於測試及開發目的進行合法安裝和使用。用戶一旦安裝幷部署或在已經安裝客戶端上遊玩，即視為确認幷同意上述條款具有法律效力。若用戶提供虛假信息或行為導致第三方追究法律責任，Turbo 槪不承擔任何責任。因此，嚴禁用戶在未經某公司授權的情況下，向任何地區提供非法的在綫服務。幷且在法律允許的範圍內，Turbo 可協助第三方提供相關數據或法律支持。"
+    },
+    "siteContent": {
+      "title": "您對 Turbo 網頁內容的使用",
+      "p1": "您應理解以下內容：在使用 Turbo 網頁的過程中，您將會接觸來自各種來源的用戶上傳內容，且 Turbo 對這些用戶上傳內容的準确性、實用性、安全性或知識産權不負責。此外，你理解幷承認，您可能會接觸到不準确、冒犯、淫穢或令人反感的用戶上傳內容，幷且您同意放棄在此方面可能擁有的法律或公平權利或救濟措施，同意在法律允許的最大範圍內，就與您使用該網站相關的所有事項，對 TurboServlet、其所有者/運營者或許可方免責。"
+    },
+    "userContent": {
+      "title": "用戶上傳內容和內容删除",
+      "p1": "您對您自己的用戶上傳內容及其發布或發表的後果負完全責任。關於用戶上傳內容，您确認、聲明或保證：您擁有或具備必要的許可、權利、同意和權限，以便使用幷授權 Turbo 使用一切專利、商標、商業秘密、版權或其他專有權利，以便按照網站和這些使用條款的規定的方式包含和使用所有用戶提交內容。關於用戶提交內容，您同意不會提交受版權保護、受商業秘密保護或受第三方專有權利（包括隱私和公眾形象權）約束的材料，除非您是這些權利的所有者，或者已獲得其合法所有者的許可來發布此材料，幷授權 Turbo 擁有在此授予的所有許可權利。",
+      "p2": "內容上傳在 Turbo 在綫社區不代表 Turbo 對其認可，也不代表 Turbo 認可其中表達的任何觀點、建議或意見。Turbo 明确否認與用戶提交內容相關的任何和所有責任。Turbo 不允許在其網站上進行侵犯版權的活動和侵犯知識産權的行為，如果得到適當的通知表明此類內容或用戶提交內容侵犯了他人的知識産權，Turbo 有權力删除或進一步維權。",
+      "p3": "Turbo 保畱在沒有事先通知的情況下删除內容和用戶提交內容、使用賬號的權利。"
+    },
+    "privacyPolicy": {
+      "title": "隱私保護與信息收集政策",
+      "p1": "參見"
+    },
+    "proprietaryRights": {
+      "title": "內容的專有權利",
+      "p1": "您應承認，Turbo 所提供的內容，包括但不限於文本、軟件、音樂、聲音、照片、視頻、圖形、名稱引用或其他通過服務向用戶提供或用戶訪問的材料（“內容”），受版權、商標、服務標志、專利或其他專有權利和法律的保護；因此，用戶只有在獲得明确授權的情況下才能使用此內容。",
+      "p2": "用戶不得未經法律授權，對內容進行任何可能侵害版權方利益的行為，包括從這些內容中創建衍生作品。Turbo 保畱追責的權利。"
+    },
+    "links": {
+      "title": "鏈接",
+      "p1": "Turbo 可能提供其他網站或資源的鏈接。您可能在電子郵件等處中接收到這些鏈接。",
+      "p2": "您應接受 Turbo 不對這些外部網站或資源的負責，幷且不代表 Turbo 認可其中的內容。Turbo 不對這些網站或資源上或可用的任何內容、廣告、産品或其他材料負責或承擔任何責任。",
+      "p3": "您應同意 Turbo 不會直接或間接地對因使用或依賴這些外部網站或資源上的任何內容、商品或服務而引起或聲稱引起的任何損害或損失負責或承擔任何責任。"
+    },
+    "governingLaw": {
+      "title": "適用法律",
+      "p1": "本內容所涉及條款受中華人民共和國法律管轄幷根據其進行解釋。"
+    },
+    "acknowledgement": {
+      "title": "歸屬",
+      "p1": "本文部分內容基於“osu! 服務條款”和“Terms of Service - Cytoid”，幷已通過 CC-BY-NC 4.0 獲得許可。"
+    }
+  },
+  "privacy": {
+    "title": "隱私政策",
+    "intro-1": "Turbo 為了提供服務，我們不得不經常收集、存儲和傳輸个人信息。我們持續努力使這个過程盡可能透明化。",
+    "intro-2": {
+      "beforeLink": "在使用我們的服務前，您必須确認您已閲讀幷理解 ",
+      "betweenLink": " 和隱私政策，包括我們如何以及為何使用您的信息，且您使用服務的行為均受到 ",
+      "afterLink": " 和隱私政策約束。"
+    },
+    "collect-info": {
+      "title": "我們收集的信息",
+      "play": {
+        "title": "遊玩",
+        "desc": "在您遊玩時，由於緩存的需要，我們會收集幷儲存您的：",
+        "list": {
+          "1": "用戶ID",
+          "2": "遊玩時間",
+          "3": "賬號信息",
+          "4": "遊玩歌曲成績",
+          "5": "賬號流速及其他設置",
+          "6": "賬號背包",
+          "7": "區域完成進度",
+          "8": "集章情況",
+          "9": "遊玩記錄",
+          "10": "上傳日志"
+        },
+        "note": "您的用戶ID永遠不會向任何人可見，上傳日志、集章情況、賬號流速及其他設置將不會被公開，遊玩時間、賬號信息、遊玩歌曲成績、賬號背包、區域完成進度、遊玩記錄會根據你的意願決定可能用於網站內容的更新與展示，以提昇用戶體驗和系統功能。"
+      },
+      "register": {
+        "title": "注册網頁",
+        "desc": "在您注册賬號時，我們將會收集幷儲存您的：",
+        "list": {
+          "1": "用戶ID",
+          "2": "用戶名",
+          "3": "郵箱地址",
+          "4": "密碼（使用 SHA256 SALT 不可逆加密儲存）",
+          "5": "注册時間"
+        },
+        "note": "您的用戶ID永遠不會向任何人可見，只有您的用戶名會被公開。我們不會將您的郵箱地址售賣給第三方。"
+      },
+      "login": {
+        "title": "登錄",
+        "desc": "在您登錄時，我們會收集幷儲存您的：",
+        "list": {
+          "1": "IP 地址"
+        },
+        "note": "您的 IP 永遠不會向任何人可見。"
+      }
+    },
+    "disclosure": {
+      "title": "關於您隱私的披露",
+      "desc": "我們不會在未經您允許的情況下披露您的隱私，但以下內容除外：",
+      "list": {
+        "1": "您的用戶名、注册和登錄時間、遊玩時間、賬號信息、遊玩歌曲成績、遊玩記錄（均可以在網頁選擇是否披露）。",
+        "2": "您明确表達願意披露的信息。",
+        "3": "根據法律的有關規定或行政或司法機構的要求，需要向第三方或者行政、司法機構披露",
+        "4": {
+          "beforeLink": "您出現違反中國有關法律、法規或者 Turbo ",
+          "afterLink": " 或相關規則的情況，需要向第三方披露"
+        },
+        "5": {
+          "beforeLink": "其他為執行 ",
+          "afterLink": " 而需要披露的信息。"
+        }
+      }
+    },
+    "cookies": {
+      "title": "Cookies",
+      "desc": "我們不使用 cookies 來追蹤您的在綫活動。"
+    },
+    "data-security": {
+      "title": "數據安全",
+      "desc": "我們致力於保證您的信息安全，然而任何系統均不可能保證不可被攻擊。即使出現不可抗因素導致 Turbo 被攻擊，我們也會盡全力防止您的信息泄露。"
+    },
+    "policy-update": {
+      "title": "政策更新",
+      "desc": "我們保畱更新此隱私政策的權利。若有更新，我們將會在網站和應用上通知。"
+    }
+  },
+  "notFound": {
+    "title": "啊哦！該頁面被喫掉啦！",
+    "back": "返回到主頁"
+  },
+  "menu": {
+    "panel": "訊息",
+    "turboPermission": "用戶權限",
+    "botManager": "BOT管理",
+    "serverRequests": "服務器請求統計",
+    "arcade": {
+      "title": "機廳相關",
+      "info": "機廳信息",
+      "alias": "機廳簡稱",
+      "networkStatus": "機廳網絡狀態"
+    },
+    "maimai": {
+      "title": "舞萌相關",
+      "photos": "相片",
+      "records": "遊戲記錄"
+    },
+    "ranking": {
+      "title": "排行榜",
+      "dxRatingRanking": "DX RATING排行榜",
+      "achievementRanking": "總分數排行榜"
+    },
+    "turbo": {
+      "title": "加速盒子功能",
+      "changeMaimaiName": "更改舞萌名稱",
+      "changeAvatar": "更改頭像"
+    },
+    "tickets": {
+      "title": "功能票",
+      "currentTickets": "當前持有的功能票",
+      "setTickets": "設置功能票"
+    },
+    "qrCommand": "指令二維碼",
+    "friends": {
+      "title": "NET好友",
+      "friends": "我的好友",
+      "addFriends": "添加好友"
+    }
+  },
+  "error": {
+    "jsError": "驗證失敗，請重新登錄。",
+    "loadingError": "加載失敗",
+    "validateError": "驗證失敗",
+    "enterError": "訪問失敗",
+    "back": "返回主頁",
+    "tokenError": "加載 BotToken 失敗，請重新登錄。",
+    "bodyError": "請求體不全，請補全後重試。"
+  },
+  "panel": {
+    "reason": "原因"
+  },
+  "turboPermission": {
+    "myPermission": "我的權限",
+    "upgradePermission": "用戶提權",
+    "warningAndBan": "警告&封禁",
+    "showTurboPermission": {
+      "permissions": "鑑權功能",
+      "granted": "已授權",
+      "notGranted": "未授權"
+    },
+    "upgradeTurboPermission": {
+      "turboName": "Turbo用戶名",
+      "upgradeLog": "歷史授權管理",
+      "upgrade": "授權",
+      "upgradeNotice": {
+        "1": "請在授予授權之前愼重考慮。您的一切操作都將被記錄，該用戶後續行為所引發的所有後果以及輿論影響將由您負責。我們有權根據",
+        "2": "對您以及該用戶的賬號采取措施。"
+      },
+      "toast": {
+        "success": "授權成功"
+      }
+    },
+    "upgradeDialog": {
+      "title": "歷史授權管理",
+      "noData": {
+        "title": "暫無數據",
+        "content": "你還沒有授權過人呢，快去試試吧！"
+      },
+      "table": {
+        "turboName": "Turbo用戶名",
+        "upgradeAfter": "授權後",
+        "operate": "操作",
+        "cancel": "撤銷"
+      },
+      "toast": {
+        "success": "降級成功"
+      }
+    },
+    "executePage": {
+      "toast": {
+        "reason": "請塡寫理由",
+        "warnSuccess": "成功警告該用戶",
+        "banSuccess": "成功封禁該用戶"
+      },
+      "turboName": "Turbo用戶名",
+      "executeLog": "歷史執行管理",
+      "reason": "理由",
+      "banTime": {
+        "1hr": "1小時",
+        "24hrs": "24小時",
+        "7days": "7天",
+        "30days": "30天",
+        "365days": "365天",
+        "permanent": "永久"
+      },
+      "execute": "執行",
+      "executeNotice": {
+        "1": "請在使用權限之前愼重考慮。您的一切操作都將被記錄，該用戶後續行為所引發的所有後果以及輿論影響將由您負責。TurboServlet 有權根據",
+        "2": "對您采取措施。"
+      }
+    },
+    "executeRecordDialog": {
+      "title": "歷史執行管理",
+      "noData": {
+        "title": "暫無數據",
+        "content": "你沒有使用過任何權限"
+      },
+      "table": {
+        "turboName": "Turbo用戶名",
+        "execute": "執行內容",
+        "operate": "操作",
+        "cancel": "撤銷"
+      },
+      "toast": {
+        "success": "撤銷成功"
+      }
+    }
+  },
+  "executeRecordBadge": {
+    "ban": "封禁",
+    "warning": "警告一次",
+    "unknown": "未知"
+  },
+  "turboPermissionBadge": {
+    "admin": "全權管理員",
+    "builder": "技術實施員",
+    "authorizer": "許可用戶",
+    "user": "標準用戶",
+    "unknown": "未知"
+  },
+  "turboWarningBadge": {
+    "noWarning": "無警告記錄",
+    "warned": "被警告",
+    "times": "次"
+  },
+  "botManager": {
+    "loading": "加載中 ...",
+    "copyToClipboard": "復制到翦貼板",
+    "noData": "你還沒有授權任何BOT呢",
+    "table": {
+      "botName": "BOT名稱",
+      "info": "被調用次數及授權時間",
+      "operate": "操作",
+      "cancel": "撤銷",
+      "times": "次"
+    },
+    "toast": {
+      "copySuccess": "已復制到翦貼板",
+      "unbindSuccess": "取消授權成功"
+    }
+  },
+  "serverRequests": {
+    "title": "服務器請求統計",
+    "contact": {
+      "1": "響應數據的「Z-LIB」壓縮跳過率與請求重試次數可以反應當前網絡情況。",
+      "2": "壓縮跳過率超過「>3%」時，可能會出現網絡不穩定現象。",
+      "3": "請求重試率和失敗率較高時，網絡或服務器可能存在問題。"
+    },
+    "totalRequests": "一小時內總包數",
+    "totalException": "一小時內總異常包數",
+    "totalExceptionRate": "一小時內異常包數占比",
+    "totalZlibSkipped": "Z-LIB壓縮跳過數量",
+    "totalRetry": "嘗試重試數量",
+    "totalPanic": "嘗試失敗數量",
+    "inCache": "緩存內",
+    "unCache": "緩存外",
+    "echarts": {
+      "time": "時間(t)",
+      "delay": "延遲(ms)",
+      "cacheDelay": "緩存內延遲",
+      "whalapDelay": "緩存外延遲"
+    }
+  },
+  "arcadeInfo": {
+    "notice": {
+      "title": "注意",
+      "contact": "機廳信息會隨著你去過更多的Turbo機廳自動增加幷可看哦"
+    },
+    "newArcade": "機廳入庫",
+    "arcadeContact": {
+      "1": "當日內總發送請求",
+      "2": "次。緩存擊中",
+      "3": "次，修復了",
+      "4": "次錯誤，緩存擊中率"
+    },
+    "arcadeFeature": {
+      "CustomName": "自定義名稱",
+      "CustomAvatar": "允許自定義頭像",
+      "TurboTicket": "Turbo功能票"
+    },
+    "enable": "允許",
+    "disable": "不允許",
+    "noData": "沒有您的機廳? 請聯繫管理組對機廳進行入庫與綁定。",
+    "detailDialog": {
+      "title": "機廳詳細信息",
+      "contact": "機廳人數",
+      "total": "共",
+      "status": {
+        "30minutes": "30 分鍾內",
+        "60minutes": "60 分鍾內",
+        "120minutes": "120 分鍾內"
+      },
+      "table": {
+        "username": "遊戲名",
+        "endTime": "下機時間"
+      },
+      "noData": "該機廳還沒有人，快去霸機！"
+    },
+    "newArcadeDialog": {
+      "title": "機廳入庫",
+      "arcadeType": "機廳類型",
+      "arcadeNums": "機廳數量",
+      "arcadeName": "機廳全稱",
+      "arcadeNamePlaceholder": "入庫機廳全稱",
+      "turboKeychip": "第{ n }台 KeyChipID (短)",
+      "2077Keychip": "第{ n }台 KeyChipID (長)",
+      "cancel": "取消",
+      "submit": "機廳入庫",
+      "toast": {
+        "success": "添加機廳成功"
+      }
+    }
+  },
+  "arcadeSettingEnum": {
+    "maskUsername": "遮擋用戶名",
+    "udemaeShowAchievement": "友人對戰顯示完成度",
+    "disableTicket": "禁用 Turbo 功能票",
+    "disableCustomName": "禁用自定義名稱",
+    "disableCustomAvatar": "禁用自定義頭像",
+    "unknown": "未知設置"
+  },
+  "arcadeFunctionType": {
+    "login": "加速盒子機台登入",
+    "kastanjLogin": "加速盒子機台 Kastanj 服務登入",
+    "specialTypeOneLogin": "2077 服務機台登入",
+    "ping": "PING 機台"
+  },
+  "arcadeAlias": {
+    "noData": "暫無簡稱",
+    "notice": {
+      "1": "請在使用權限之前愼重考慮。您的一切操作都將被記錄，您將對行為所引發的所有後果以及輿論影響負責。TurboServlet 有權根據",
+      "2": "對您采取措施。"
+    },
+    "dialog": {
+      "title": "編輯簡稱",
+      "notice": {
+        "title": "注意",
+        "content": "機廳簡稱添加後如需删除請聯繫管理員處理，您的行為將會被記錄，請謹愼操作。"
+      },
+      "placeholder": "新簡稱",
+      "cancel": "取消",
+      "submit": "添加新簡稱",
+      "toast": {
+        "success": "添加簡稱成功"
+      }
+    }
+  },
+  "networkStatus": {
+    "lastBeat": "距離上一次心跳包 {time}",
+    "workingText": {
+      "working": "Turbo 運行中",
+      "warning": "Turbo 網絡異常",
+      "error": "Turbo 已離綫",
+      "unknown": "Turbo 狀態未知"
+    },
+    "longTimeOffline": "請檢查連接狀態，該機器已經很久沒有上綫了",
+    "notSupport": "該機器暫時不支持查詢網絡狀態"
+  },
+  "user": {
+    "htmlBanned": "封禁中",
+    "bannedBadge": "TurboNET封禁",
+    "mySettings": "我的設置",
+    "settingDialog": {
+      "title": "我的設置",
+      "userPage": "查看我的用戶頁",
+      "best35": "查看我的B35",
+      "best15": "查看我的B15",
+      "recentScores": "查看我的最近遊玩記錄",
+      "option": {
+        "everyone": "所有人",
+        "onlyFriends": "僅限好友",
+        "onlyMe": "僅我自己"
+      },
+      "toast": {
+        "success": "調整成功"
+      }
+    },
+    "addFriend": "添加好友",
+    "return": "返回上一頁",
+    "banMessage": "在 {date} 被 {executorName} {banType}封禁{banDuration}，理由：{reason}",
+    "warningMessage": "第 {warningIndex} 次在 {date} 被 {executorName} 警告，理由：{reason}",
+    "banType": {
+      "permanent": "永久",
+      "temporary": "臨時"
+    },
+    "hourSuffix": " 小時",
+    "maiStatistics": {
+      "title": "maimai 統計資料",
+      "serverRanking": "服務器排名",
+      "noData": "60天內出勤數據不足呢，快去出勤吧！",
+      "averageAchievement": "平均完成度",
+      "maxCombo": "最多連擊數",
+      "fullComboCount": "全連歌曲",
+      "AllPerfectCount": "完美歌曲",
+      "totalAchievement": "累計完成分數",
+      "daysAgo": " 天前"
+    },
+    "playActivity": {
+      "title": "遊玩活躍度",
+      "playCount": "出勤次數",
+      "totalPlayTime": "累計遊玩時長",
+      "firstPlay": "發現新大陸",
+      "lastPlay": "上次出勤",
+      "playVersion": "遊戲版本"
+    },
+    "recentScores": {
+      "title": "最近遊玩記錄"
+    },
+    "private": "該用戶設置了權限或數據不足",
+    "notice": {
+      "1": "根據 Creative Commons Public Licenses 4.0,",
+      "2": "該界面參考",
+      "3": "幷",
+      "4": "進行了修改",
+      "5": ", 本頁面開源於"
+    },
+    "toast": {
+      "success": "已發送申請"
+    }
+  },
+  "photos": {
+    "historyPhotos": "歷史相片",
+    "favoritePhotos": "我的收藏",
+    "notice": {
+      "title": "注意",
+      "content": "服務器相片緩存將會在7日後删除，如需保存請添加至收藏或右鍵長按下載。該相片功能僅適用於Turbo加速盒子機台。"
+    },
+    "noData": "你還沒有任何相片呢",
+    "favorite": {
+      "enable": "已收藏",
+      "disable": "收藏"
+    },
+    "toast": {
+      "lastPage": "已經是最後一頁了哦",
+      "firstPage": "已經是第一頁了哦",
+      "removeSuccess": "取消收藏成功",
+      "addSuccess": "收藏成功"
+    },
+    "page": "第 {page} 頁"
+  },
+  "records": {
+    "page": "第 {page} 頁",
+    "newRecord": "新紀錄"
+  },
+  "ranking": {
+    "title": "排行榜",
+    "button": {
+      "global": "全國加速盒子玩家排名",
+      "turbo": "TurboNET注册玩家排名"
+    },
+    "return": "返回上一頁",
+    "pageInfo": {
+      "first": "已經是最後一頁了哦",
+      "last": "已經是第一頁了哦",
+      "exceed": "超過總頁數了哦"
+    },
+    "achievementRanking": {
+      "title": "總分數",
+      "table": {
+        "ranking": "排名",
+        "username": "玩家",
+        "totalAchievement": "總完成分數"
+      }
+    },
+    "dxRatingRanking": {
+      "title": "DX RATING",
+      "table": {
+        "ranking": "排名",
+        "username": "玩家",
+        "dxRating": "DX RATING"
+      }
+    },
+    "musicRanking": {
+      "title": "樂曲排行榜",
+      "table": {
+        "ranking": "排名",
+        "username": "玩家",
+        "achievement": "完成度",
+        "dxScore": "DX分數"
+      }
+    }
+  },
+  "changeMaimaiName": {
+    "title": "更改舞萌名稱",
+    "noPermission": {
+      "title": "注意",
+      "content": "您的權限不足，暫無法使用此功能。"
+    },
+    "notice": "新輸入為全角",
+    "placeholder": "新用戶名",
+    "button": {
+      "submit": "更新用戶名",
+      "toDefault": "使用舞萌用戶名"
+    },
+    "changeNotice": {
+      "1": "請在使用權限之前愼重考慮。您的一切操作都將被記錄，您後續行為所引發的所有後果以及輿論影響將由您負責。TurboServlet 有權根據",
+      "2": "對您采取措施。"
+    },
+    "toast": {
+      "setSuccess": "更新成功",
+      "resetSuccess": "重置成功"
+    }
+  },
+  "changeAvatar": {
+    "title": "更改頭像",
+    "dialogTitle": "上傳頭像",
+    "selectPhoto": "選擇圖片",
+    "noPermission": {
+      "title": "注意",
+      "content": "您的權限不足，暫無法使用此功能。"
+    },
+    "button": {
+      "toDefault": "使用舞萌頭像",
+      "cancel": "取消",
+      "submit": "确定"
+    },
+    "changeNotice": {
+      "1": "請在使用權限之前愼重考慮。您的一切操作都將被記錄，您後續行為所引發的所有後果以及輿論影響將由您負責。TurboServlet 有權根據",
+      "2": "對您采取措施。"
+    },
+    "toast": {
+      "jpgWarning": "請選擇 jpg 格式的圖片",
+      "sizeWarning": "圖片大小不能超過 5MB",
+      "success": "設置成功",
+      "error": "未知的錯誤，請重試",
+      "resetSuccess": "重置成功"
+    }
+  },
+  "currentTickets": {
+    "title": "Turbo功能票",
+    "notice": {
+      "title": "注意",
+      "content": "Turbo功能票優先級高於官方功能票，當Turbo功能票啓用時不能使用官方功能票。"
+    },
+    "turboTicket": {
+      "enable": "Turbo功能票已開啓",
+      "disable": "Turbo功能票未開啓"
+    },
+    "officialTicket": "官方功能票"
+  },
+  "ticketUtils": {
+    "ticketIdToName": {
+      "0": "沒有票",
+      "2": "付費2倍票",
+      "3": "付費3倍票",
+      "4": "付費4倍票",
+      "5": "付費5倍票",
+      "6": "付費6倍票",
+      "10005": "活動5倍票 (類型1)",
+      "10105": "活動5倍票 (類型2)",
+      "10205": "活動5倍票 (類型3)",
+      "11001": "免費1.5倍票",
+      "11002": "免費2倍票",
+      "11003": "免費3倍票",
+      "11005": "免費5倍票",
+      "20010": "免費10倍票 (已失效)",
+      "20020": "免費20倍票 (已失效)",
+      "30001": "特殊2倍票",
+      "unknown": "其他"
+    }
+  },
+  "setTickets": {
+    "title": "設置功能票",
+    "ticketType": {
+      "title": "功能票類型",
+      "paid": "請選擇需要的付費功能票",
+      "event": "請選擇需要的活動功能票",
+      "free": "請選擇需要的免費功能票",
+      "special": "請選擇需要的特殊功能票"
+    },
+    "lock": "鎖定保持1枚",
+    "button": {
+      "submit": "鎖定功能票",
+      "toDefault": "取消鎖定"
+    },
+    "noPermission": {
+      "title": "注意",
+      "content": "您的權限不足，暫無法使用此功能。"
+    },
+    "ticketTypeList": {
+      "paid": "付費類功能票",
+      "event": "活動類功能票",
+      "free": "免費類功能票",
+      "special": "特殊類功能票"
+    },
+    "setNotice": {
+      "1": "請在使用權限之前愼重考慮。您的一切操作都將被記錄，您後續行為所引發的所有後果以及輿論影響將由您負責。TurboServlet 有權根據",
+      "2": "對您采取措施。"
+    },
+    "toast": {
+      "success": "重置成功"
+    }
+  },
+  "qrCommand": {
+    "userQrCommand": "用戶二維碼",
+    "arcadeQrCommand": "機台二維碼",
+    "generateQrCode": "生成二維碼",
+    "arcadeNotice": {
+      "title": "注意",
+      "content": "該部分功能較為高危，您在機台上應用的設置將作用於全部玩家，請謹愼使用。"
+    },
+    "useNotice": {
+      "1": "請在使用權限之前愼重考慮。您的一切操作都將被記錄，您後續行為所引發的所有後果以及輿論影響將由您負責。TurboServlet 有權根據",
+      "2": "對您采取措施。"
+    },
+    "dialog": {
+      "title": "二維碼",
+      "content": {
+        "1": "請將下圖二維碼對準機台掃描處",
+        "2": "該二維碼僅適用於Turbo加速盒子及其他對接機台"
+      },
+      "expireTime": "有效期限截止：{time}"
+    }
+  },
+  "friends": {
+    "setting": "設置",
+    "friendCount": "好友數",
+    "noData": "你還沒有任何好友呢",
+    "dialog": {
+      "title": "好友政策設置",
+      "option": {
+        "title": "當前策略",
+        "value": {
+          "autoAccept": "自動同意申請",
+          "manual": "手動同意申請",
+          "friendsOfFriends": "僅允許有共同好友申請",
+          "nobody": "不允許申請"
+        },
+        "toast": {
+          "success": "調整成功"
+        }
+      }
+    },
+    "friendCard": {
+      "playing": "正在遊玩",
+      "lastPlayTime": "{hour}小時前",
+      "userPage": "用戶主頁",
+      "removeFriend": "删除好友"
+    },
+    "removeFriendDialog": {
+      "content": "你确定要删除 {friend} 的好友嗎？",
+      "notice": "在好友關係中，若任一方删除了對方，該好友在雙方的視角中均將消失。",
+      "cancel": "取消删除",
+      "submit": "确認删除",
+      "toast": {
+        "success": "删除好友成功"
+      }
+    }
+  },
+  "addFriends": {
+    "requestFriend": {
+      "title": "申請好友",
+      "placeholder": "TurboNET用戶名",
+      "requestButton": "申請好友",
+      "notice": "因安全原因不提供搜索用戶的功能，當您點擊申請好友即向對應用戶發送請求。",
+      "toast": {
+        "success": "已發送申請"
+      }
+    },
+    "requestFriendList": {
+      "title": "申請列表",
+      "noData": "你還沒有任何待處理的申請呢",
+      "requestTime": "申請時間: {time}",
+      "button": {
+        "accept": "通過申請",
+        "deny": "拒絶申請"
+      },
+      "toast": {
+        "accept": "已同意好友申請",
+        "deny": "已拒絶好友申請"
+      }
+    }
+  },
+  "register": {
+    "title": "注册您的賬號",
+    "qrHelper": {
+      "title": "獲取方法",
+      "elements": {
+        "1": "打開「舞萌 | 中二」公眾號",
+        "2": "獲取玩家二維碼幷點擊",
+        "3": "長按識別圖中二維碼",
+        "4": "掃描結果復制到網站"
+      }
+    },
+    "step1": {
+      "qrcode": "塡寫舞萌二維碼ID",
+      "notUnderstand": "我不理解",
+      "nextStep": "下一步",
+      "alreadyExist": "已經擁有帳號了?"
+    },
+    "step2": {
+      "toast": {
+        "error": "兩次輸入的密碼不一致"
+      },
+      "subTitle": "塡寫基礎資料",
+      "detail": {
+        "userName": "用戶名",
+        "password": "密碼",
+        "confirmPassword": "确認密碼",
+        "email": "電子郵箱",
+        "qqid": "QQ號"
+      },
+      "redo": "請重新注册",
+      "expiry": "後失效",
+      "submit": "申請注册",
+      "tosDialog": {
+        "1": "提交注册幷注册完成即代表您同意",
+        "2": "使用條款",
+        "3": "和",
+        "4": "隱私政策"
+      }
+    },
+    "step3": {
+      "subTitle": "驗證請求已發送",
+      "content": {
+        "1": "請檢查您的電子郵箱，我們已經向您發送了一封驗證郵件。",
+        "2": "郵件服務不完全可靠，如果您沒有收到郵件，請檢查您的垃圾郵件箱。"
+      }
+    },
+    "verify": {
+      "succeed": "驗證成功",
+      "failed": "驗證失敗",
+      "notice": "已驗證完成，將在三秒後返回至主頁。"
+    }
+  },
+  "support": {
+    "back": "返回",
+    "credentialCard": {
+      "title": "賬號密碼驗證",
+      "subTitle": "該方式適用於您在已知賬號與密碼的情況下做其他的更改。",
+      "validation": "驗證賬號密碼",
+      "detail": {
+        "userName": "用戶名",
+        "userPassword": "用戶密碼"
+      }
+    },
+    "emailCard": {
+      "toast": {
+        "success": "已發送郵件"
+      },
+      "title": "郵箱驗證",
+      "subTitle": "該方式適用於您在已知注册時使用的郵箱的情況下做其他的更改。",
+      "validation": "驗證郵箱",
+      "detail": {
+        "email": "電子郵箱"
+      },
+      "success": "成功！",
+      "notice": "我們已發送新的會話郵件至 {email} ，請在郵箱中打開新界面來進行後續操作。"
+    },
+    "qrCard": {
+      "title": "舞萌二維碼 ID 驗證",
+      "recommend": "推薦方式",
+      "subTitle": "舞萌二維碼 ID 作為您的根本身份憑證，推薦用來驗證您的身份。",
+      "validation": "舞萌二維碼 ID 驗證",
+      "qrField": "塡寫舞萌二維碼ID",
+      "notUnderstand": "我不理解"
+    },
+    "toast": {
+      "error": "快速驗證失敗，請手動驗證身份"
+    },
+    "page": {
+      "accessFailed": "訪問失敗",
+      "title": "支持",
+      "selfService": {
+        "title": "當前自助提供：",
+        "function": "重置密碼、更換郵箱、更改 QQ 賬號、更改 Turbo 用戶名、問題反饋",
+        "notice": {
+          "1": "該支持僅向 TurboNET",
+          "2": "Polar",
+          "3": "會員提供。請先選擇您可以接受的驗證身份方式，以便於 TurboNET Support 為您提供更多服務與支持。如果您有其他的需求，請與管理員聯繫。"
+        }
+      },
+      "or": "或者",
+      "agent": "人工驗證",
+      "exception": "若以上方式您均無法驗證身份，請向管理員提交郵件工單。"
+
+    }
+  },
+  "supportSession": {
+    "choose": "選擇此幫助",
+    "back": "返回",
+    "success": "成功！",
+    "resetEmail": {
+      "toast": {
+        "success": "已發送郵件"
+      },
+      "title": "重置電子郵箱",
+      "submit": "重置電子郵箱",
+      "oldEmail": "當前郵箱：{email}",
+      "details": {
+        "newEmail": "新電子郵箱"
+      },
+      "notice": "我們已發送驗證郵件至您的新郵箱，請查看您的郵件。",
+      "verify": {
+        "succeed": "驗證成功",
+        "failed": "驗證失敗",
+        "notice": "已更改郵箱完成，將在三秒後返回至主頁。"
+      }
+    },
+    "resetPassword": {
+      "toast": {
+        "validError": "兩次密碼不一致，請重新輸入",
+        "success": "重置成功"
+      },
+      "title": "重置密碼",
+      "details": {
+        "newPassword": "新密碼",
+        "confirmPassword": "确認密碼"
+      },
+      "submit": "重置密碼",
+      "notice": "我們已重置您的密碼，請重新登錄。"
+    },
+    "resetQQNumber": {
+      "toast": {
+        "success": "重置成功"
+      },
+      "title": "重置QQ號",
+      "oldQQ": "當前QQ號: {qqNumber}",
+      "details": {
+        "newQQ": "新QQ號"
+      },
+      "submit": "重置QQ號",
+      "notice": "我們已重置您的QQ號，請重新登錄。"
+    },
+    "resetTurboName": {
+      "toast": {
+        "success": "重置成功"
+      },
+      "title": "重置Turbo用戶名",
+      "oldTurboName": "當前用戶名: {turboName}",
+      "details": {
+        "newTurboName": "新用戶名"
+      },
+      "submit": "重置用戶名",
+      "notice": "我們已重置您的用戶名，請重新登錄。"
+    },
+    "toast": {
+      "success": "關閉成功"
+    },
+    "page": {
+      "accessFailed": "訪問失敗",
+      "title": "支持會話",
+      "sessionId": "您的本次會話 ID：{sessionId}",
+      "countDown": "該會話將在 {seconds} 秒後銷毁，請及時完成您所需要的幫助。",
+      "eliminated": "該會話已銷毁，請重新發起會話。",
+      "feedback": {
+        "title": "問題反饋",
+        "body": "若您有任何疑問，請向管理員提交郵件工單。"
+      },
+      "closeSession": {
+        "close": "關閉會話",
+        "subTitle": "當您全部處理完成後，請在此處安全關閉會話",
+        "countdown": "關閉會話 ({seconds} 秒後自動提交)",
+        "eliminated": "該會話已銷毁"
+      }
+
+    }
+  },
+  "captchaSolver": {
+    "fetchError": "獲取驗證碼失敗"
+  },
+  "requestHandler": {
+    "loginError": "刷新Token失敗，請重新登入",
+    "timeoutError": "與服務器連接超時，請檢查網絡連接",
+    "badRequestError": "請求錯誤，請檢查請求參數是否存在或錯誤",
+    "permissionError": "請求被拒絶，您的權限可能不足",
+    "notFoundError": "請求的資源不存在，請檢查請求參數",
+    "internalServerError": "服務器內部錯誤，請稍後再試或聯繫管理員",
+    "bannedError": "該賬號已被封禁，請聯繫管理員",
+    "unknownError": "未知錯誤，請稍後再試"
+  },
+  "permissionUtils": {
+    "basicReadOnlyContent": "基礎只讀內容",
+    "basicInteractiveContent": "基礎交互內容",
+    "friend": "好友功能",
+    "botManagement": "BOT管理",
+    "changeUsername": "更改用戶名",
+    "changeAvatar": "更改頭像",
+    "turboTicket": "鎖定Turbo功能票",
+    "setAlias": "設置機廳簡稱",
+    "changeTurboSettings": "更改盒子機台設置",
+    "authorizeAuthorizer": "授權許可用戶",
+    "authorizeTechnician": "授權技術實施員",
+    "warnAndBanUser": "警告&封禁用戶"
+  }
+}

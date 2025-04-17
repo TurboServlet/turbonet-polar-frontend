@@ -1,12 +1,12 @@
 <script setup>
 
-import ThemeChanger from "@/components/themeChanger.vue";
+import HeadModule from "@/components/headModule.vue";
 import Footer from "@/layouts/Footer.vue";
 </script>
 
 <template>
   <div class="max-w-[1000px] m-auto my-20">
-    <themeChanger/>
+    <HeadModule/>
     <div class="card prose max-w-none w-full shadow-2xl bg-base-200 text-wrap break-words overflow-hidden p-8">
       <h1>{{ $t('termsofservice.title') }}</h1>
 

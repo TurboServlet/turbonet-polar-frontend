@@ -1047,6 +1047,26 @@
   },
   "requestHandler": {
     "loginError": "刷新Token失败，请重新登入",
-    "timeoutError": "与服务器连接超时，请检查网络连接"
+    "timeoutError": "与服务器连接超时，请检查网络连接",
+    "badRequestError": "请求错误，请检查请求参数是否存在或错误",
+    "permissionError": "请求被拒绝，您的权限可能不足",
+    "notFoundError": "请求的资源不存在，请检查请求参数",
+    "internalServerError": "服务器内部错误，请稍后再试或联系管理员",
+    "bannedError": "该账号已被封禁，请联系管理员",
+    "unknownError": "未知错误，请稍后再试"
+  },
+  "permissionUtils": {
+    "basicReadOnlyContent": "基础只读内容",
+    "basicInteractiveContent": "基础交互内容",
+    "friend": "好友功能",
+    "botManagement": "BOT管理",
+    "changeUsername": "更改用户名",
+    "changeAvatar": "更改头像",
+    "turboTicket": "锁定Turbo功能票",
+    "setAlias": "设置机厅简称",
+    "changeTurboSettings": "更改盒子机台设置",
+    "authorizeAuthorizer": "授权许可用户",
+    "authorizeTechnician": "授权技术实施员",
+    "warnAndBanUser": "警告&封禁用户"
   }
 }

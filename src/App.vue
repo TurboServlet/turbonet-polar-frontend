@@ -12,6 +12,7 @@
 <script lang="ts" setup>
 import {onMounted, ref} from "vue";
 import {Toaster, toast} from 'vue-sonner'
+import { useI18n } from 'vue-i18n'
 
 const isHovered = ref(false);
 function handleMouseEnter() {
@@ -23,6 +24,11 @@ function handleMouseLeave() {
 
 onMounted(() => {
   const theme = localStorage.getItem("theme");
+  const language = localStorage.getItem("language");
+  const { locale } = useI18n()
+  if (language) {
+    locale.value = language;
+  }
   if (theme) {
     document.documentElement.setAttribute("data-theme", theme);
   }

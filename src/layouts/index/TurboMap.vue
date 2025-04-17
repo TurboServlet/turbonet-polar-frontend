@@ -65,143 +65,143 @@ let option = ref({
       },
       data: [
         {
-          name: t('turboMap.series.regions.Beijing'),
+          name: "北京市",
           value: 2,
         },
         {
-          name: t('turboMap.series.regions.Tianjin'),
+          name: "天津市",
           value: 0,
         },
         {
-          name: t('turboMap.series.regions.Shanghai'),
+          name: "上海市",
           value: 18,
         },
         {
-          name: t('turboMap.series.regions.Chongqing'),
+          name: "重庆市",
           value: 2,
         },
         {
-          name: t('turboMap.series.regions.Hebei'),
+          name: "河北省",
           value: 1,
         },
         {
-          name: t('turboMap.series.regions.Henan'),
+          name: "河南省",
           value: 9,
         },
         {
-          name: t('turboMap.series.regions.Yunnan'),
+          name: "云南省",
           value: 1,
         },
         {
-          name: t('turboMap.series.regions.Liaoning'),
+          name: "辽宁省",
           value: 5,
         },
         {
-          name: t('turboMap.series.regions.Heilongjiang'),
+          name: "黑龙江省",
           value: 1,
         },
         {
-          name: t('turboMap.series.regions.Hunan'),
+          name: "湖南省",
           value: 0,
         },
         {
-          name: t('turboMap.series.regions.Anhui'),
+          name: "安徽省",
           value: 1,
         },
         {
-          name: t('turboMap.series.regions.Shandong'),
+          name: "山东省",
           value: 7,
         },
         {
-          name: t('turboMap.series.regions.Xinjiang'),
+          name: "新疆维吾尔自治区",
           value: 1,
         },
         {
-          name: t('turboMap.series.regions.Jiangsu'),
+          name: "江苏省",
           value: 6,
         },
         {
-          name: t('turboMap.series.regions.Zhejiang'),
+          name: "浙江省",
           value: 25,
         },
         {
-          name: t('turboMap.series.regions.Jiangxi'),
+          name: "江西省",
           value: 2,
         },
         {
-          name: t('turboMap.series.regions.Hubei'),
+          name: "湖北省",
           value: 0,
         },
         {
-          name: t('turboMap.series.regions.Guangxi'),
+          name: "广西壮族自治区",
           value: 4,
         },
         {
-          name: t('turboMap.series.regions.Gansu'),
+          name: "甘肃省",
           value: 0,
         },
         {
-          name: t('turboMap.series.regions.Shan1xi'),
+          name: "山西省",
           value: 0,
         },
         {
-          name: t('turboMap.series.regions.Neimenggu'),
+          name: "内蒙古自治区",
           value: 2,
         },
         {
-          name: t('turboMap.series.regions.Shan3xi'),
+          name: "陕西省",
           value: 0,
         },
         {
-          name: t('turboMap.series.regions.Jilin'),
+          name: "吉林省",
           value: 0,
         },
         {
-          name: t('turboMap.series.regions.Fujian'),
+          name: "福建省",
           value: 4,
         },
         {
-          name: t('turboMap.series.regions.Guizhou'),
+          name: "贵州省",
           value: 1,
         },
         {
-          name: t('turboMap.series.regions.Guangdong'),
+          name: "广东省",
           value: 10,
         },
         {
-          name: t('turboMap.series.regions.Qinghai'),
+          name: "青海省",
           value: 0,
         },
         {
-          name: t('turboMap.series.regions.Xizang'),
+          name: "西藏自治区",
           value: 0,
         },
         {
-          name: t('turboMap.series.regions.Sichuan'),
+          name: "四川省",
           value: 1,
         },
         {
-          name: t('turboMap.series.regions.Ningxia'),
+          name: "宁夏回族自治区",
           value: 0,
         },
         {
-          name: t('turboMap.series.regions.Hainan'),
+          name: "海南省",
           value: 1,
         },
         {
-          name: t('turboMap.series.regions.Taiwan'),
+          name: "台湾省",
           value: 0,
         },
         {
-          name: t('turboMap.series.regions.Xianggang'),
+          name: "香港特别行政区",
           value: 0,
         },
         {
-          name: t('turboMap.series.regions.Aomen'),
+          name: "澳门特别行政区",
           value: 0,
         },
         {
-          name: t('turboMap.series.regions.Nanhaizhudao'),
+          name: "南海诸岛",
           value: 0,
         }
       ]

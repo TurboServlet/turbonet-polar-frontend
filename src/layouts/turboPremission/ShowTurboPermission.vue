@@ -5,6 +5,7 @@ import {sendGetRequest} from "@/assets/js/RequestHandler.js";
 import TurboPermissionBadge from "@/components/TurboPermissionBadge.vue";
 import TurboWarningBadge from "@/components/TurboWarningBadge.vue";
 import { useI18n } from 'vue-i18n';
+import {PermissionRedirect} from "@/assets/js/PermissionUtils.js";
 
 const { t } = useI18n()
 const isLoading = ref(true);
@@ -92,7 +93,7 @@ onMounted(() => {
     </thead>
     <tbody>
     <tr v-for="permission in responseData">
-      <td>{{ permission.permissionDescription }}</td>
+      <td>{{ PermissionRedirect(permission.permissionDescription) }}</td>
       <td>
         <div class="badge" :class="badgeColor(permission.isGranted)">{{ permission.isGranted ? $t('turboPermission.showTurboPermission.granted') : $t('turboPermission.showTurboPermission.notGranted') }}</div>
       </td>

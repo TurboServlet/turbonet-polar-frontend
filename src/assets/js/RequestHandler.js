@@ -80,7 +80,7 @@ export const sendGetRequest = async (endpoint, flagged = true, times = 0) => {
 
             return {
                 statusCode: statusCode,
-                data: error.response.data.message
+                data: errorMessageRedirect(statusCode)
             };
         });
 }
@@ -132,7 +132,24 @@ export const sendPostRequest = async (endpoint, payload, flagged = true, times =
 
             return {
                 statusCode: statusCode,
-                data: error.response.data.message
+                data: errorMessageRedirect(statusCode)
             };
         });
+}
+
+const errorMessageRedirect = (statusCode) => {
+    switch (statusCode) {
+        case 400:
+            return t('requestHandler.badRequestError') // 400 (illegal data & captcha failed)
+        case 401:
+            return t('requestHandler.loginError') // 401 (token expired or invalid)
+        case 403:
+            return t('requestHandler.permissionError') // 403 (no permission)
+        case 410:
+            return t('requestHandler.bannedError') // 410 (user banned)
+        case 500:
+            return t('requestHandler.internalServerError') // 500 (internal server error)
+        default:
+            return t('requestHandler.unknownError') // unknown error
+    }
 }

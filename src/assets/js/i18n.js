@@ -2,8 +2,9 @@ import { createI18n } from 'vue-i18n'
 import en from '@/assets/locales/en.json'
 import zh from '@/assets/locales/zh.json'
 import zht from '@/assets/locales/zht.json'
+import ja from '@/assets/locales/ja.json'
 
-const messages = { zh, en, zht }
+const messages = { zh, en, zht, ja }
 
 const i18n = createI18n({
     legacy: false,

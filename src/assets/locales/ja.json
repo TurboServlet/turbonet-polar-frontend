@@ -1,0 +1,1067 @@
+{
+  "index": {
+    "title": "ゲームのコントロールパネル。"
+  },
+  "indexButton": {
+    "member": "コントロールページに入る",
+    "guest": "登録またはログイン",
+    "jsLogout": "ログアウトしました"
+  },
+  "devInfo": {
+    "title": "私たちは誰ですか？",
+    "context": {
+      "1": "非営利かつ非商業的な前提で制作されています。",
+      "2": "Codingの道を学び続け、前進し続ける姿が常に私たちに映っています。",
+      "3": "困難を恐れず、退かず、革新と行動を勇気づける精神によって、この非凡な作品が形作られました。"
+    },
+    "devContext": {
+      "ctrlcvs": "フルスタックリード / デザインリード",
+      "kiwi": "DBA / ソリューションエンジニア",
+      "404": "モバイルアプリ開発",
+      "apple": "感情価値の提供",
+      "taojiu": "APIドキュメント保守",
+      "yuuluo": "NONE BOT開発",
+      "haochi": "サーバー連携",
+      "tenshi": "プロダクト工学 / IA"
+    }
+  },
+  "cooperatorInfo": {
+    "title": "オープンで包容的",
+    "context": {
+      "1": "私たちは個人開発者、チーム、組織のクリエイティビティと貢献を重視します。",
+      "2": "開発者向けに充実したAPIドキュメントを提供し、技術探索と革新の道を勇往邁進できるようサポートします。",
+      "3": "開発者は",
+      "4": "と",
+      "5": "を通じて詳しい情報を得ることができます。パートナーの皆様の連携と貢献に感謝します。"
+    },
+    "partner": "パートナー"
+  },
+  "turboMap": {
+    "title": "妙手生花、創造は無限",
+    "context": {
+      "1": "私たちは革新を恐れず、卓越を追求し続けています。アイデアとデザインの剣を手に、以下の地域でサービスを展開しています。"
+    },
+    "mapSource": "地図提供：阿里云 DataV",
+    "visualMap": {
+      "intensive": "密集",
+      "sparse": "疎"
+    },
+    "series": {
+      "name": "Turbo加速箱設置台数",
+      "regions": {
+        "Beijing": "北京市",
+        "Tianjin": "天津市",
+        "Shanghai": "上海市",
+        "Chongqing": "重慶市",
+        "Hebei": "河北省",
+        "Henan": "河南省",
+        "Yunnan": "雲南省",
+        "Liaoning": "遼寧省",
+        "Heilongjiang": "黒竜江省",
+        "Hunan": "湖南省",
+        "Anhui": "安徽省",
+        "Shandong": "山東省",
+        "Xinjiang": "新疆ウイグル自治区",
+        "Jiangsu": "江蘇省",
+        "Zhejiang": "浙江省",
+        "Jiangxi": "江西省",
+        "Hubei": "湖北省",
+        "Guangxi": "広西チワン族自治区",
+        "Gansu": "甘粛省",
+        "Shan1xi": "山西省",
+        "Neimenggu": "内モンゴル自治区",
+        "Shan3xi": "陝西省",
+        "Jilin": "吉林省",
+        "Fujian": "福建省",
+        "Guizhou": "貴州省",
+        "Guangdong": "広東省",
+        "Qinghai": "青海省",
+        "Xizang": "チベット自治区",
+        "Sichuan": "四川省",
+        "Ningxia": "寧夏回族自治区",
+        "Hainan": "海南省",
+        "Taiwan": "台湾省",
+        "Xianggang": "香港特別行政区",
+        "Aomen": "マカオ特別行政区",
+        "Nanhaizhudao": "南シナ海諸島"
+      }
+    }
+  },
+  "footer": {
+    "contact": "© TurboServlet 2024。全著作権所有。サイトに表示されているすべての商標、ロゴ、サービスマークに権利侵害の疑いがある場合は、{email}までご連絡ください。",
+    "privacy": "プライバシーポリシー",
+    "tos": "利用規約"
+  },
+  "login": {
+    "title": "おかえりなさい！",
+    "fields": {
+      "username": "ユーザー名",
+      "password": "パスワード"
+    },
+    "support": "サポート？",
+    "register": "登録",
+    "button": "ログイン",
+    "notice": {
+      "1": "ログインまたは登録することで、以下に同意したものとみなされます：",
+      "2": "および"
+    }
+  },
+  "termsofservice": {
+    "title": "利用規約",
+    "introduction": {
+      "p1": "TurboServletが提供するサービスを利用する前に、以下の事項を承諾してください。",
+      "p2": "このウェブサイト（https://sys-allnet.com）、クライアント、関連サービス（以下まとめて「Turbo」）へのアクセスおよび使用により、本規約を完全に遵守し、TurboServletの提供する内容を違法または禁止目的で使用しないことを保証したものとみなされます。",
+      "p3": "本規約の他に、次のものも承諾する必要があります："
+    },
+    "serviceDescription": {
+      "title": "サービス内容",
+      "p1": "Turboは法律の範囲内でオンラインサービスを提供します。ユーザーが無許可で特定の企業向けに違法なオンラインサービスを提供した場合、TurboServletは一切責任を負いません。ただし、合法的範囲内で関連データや法的支援を提供することができます。",
+      "p2": "Turboのウェブページではユーザーがアップロードしたコンテンツをホストし、他のユーザーがアクセスできます。不適切、政治的に敏感、違法、知的財産権を侵害する可能性のあるコンテンツに対し、TurboServletは独自の判断でアカウント停止などの措置を行う権利を保有しますが、即時削除を保証するものではありません。ユーザーがアップロードまたは配布したコンテンツに起因する法的責任について、TurboServletは一切責任を負いません。"
+    },
+    "modification": {
+      "title": "規約の変更",
+      "p1": "Turboは自由に利用規約を変更する権利を保有します。",
+      "p2": "最新版の規約が適用され、遵守しない場合はサービス停止になることがあります。"
+    },
+    "serviceModification": {
+      "title": "サービスの変更",
+      "p1": "Turboは通知なしにサービスを変更または終了する権利を保有します。",
+      "p2": "サービス変更や終了に伴う責任は一切負いません。"
+    },
+    "disclaimer": {
+      "title": "免責事項",
+      "p1": "本資料は「現状」のまま提供されます。TurboServletは明示・黙示を問わず一切の保証を行わず、商品性、特定目的適合性、知的財産権非侵害などの黙示的保証を否認します。",
+      "p2": "資料の正確性、結果の可能性、信頼性およびその他の陳述についても一切保証しません。",
+      "p3": "また、サービスに対する保守、技術サポートの提供義務はありません。"
+    },
+    "liability": {
+      "title": "責任",
+      "p1": "次の場合にTurboServletに損害が生じた場合：",
+      "p2": "(i) ユーザーによるTurboの使用またはアクセス;",
+      "p3": "(ii) 本規約違反;",
+      "p4": "(iii) 第三者権利侵害;",
+      "p5": "(iv) ユーザーアップロードコンテンツによる第三者への損害;",
+      "p6": "(v) その他ユーザーの責任による行為。",
+      "p7": "ユーザーはTurboServletを保護し、弁護士費用を含む一切の損害、請求、負債および経費を補償するものとします。",
+      "p8": "本規約およびTurboの利用後もこの責任は存続します。"
+    },
+    "clientInstallation": {
+      "title": "Turboクライアントのインストールと使用",
+      "p1": "Turboはルーターを介したインテリジェントなデータ中継・配信、通信強化、トラフィック最適化管理に基づいて動作します。許可された企業のテストおよび開発目的でのみインストール・使用が許可されます。インストール後は本規約に同意したものとみなされ、虚偽情報による第三者からの法的請求についてTurboServletは責任を負いません。"
+    },
+    "siteContent": {
+      "title": "ウェブコンテンツの使用",
+      "p1": "Turboウェブ使用中にユーザー投稿コンテンツに接触する可能性がありますが、その正確性、実用性、安全性、知的財産権についてTurboServletは一切責任を負いません。また不正確、攻撃的、猥褻または不快なコンテンツに接触する可能性がありますが、法的権利を放棄し、最大限の範囲でTurboServletを免責することに同意します。"
+    },
+    "userContent": {
+      "title": "ユーザーコンテンツと削除",
+      "p1": "ユーザーは自己のアップロードコンテンツおよびその結果に責任を負います。必要な許可、権利、同意を得ていることを保証します。第三者の権利を侵害するコンテンツをアップロードしないことに同意し、TurboServletに使用許可を付与します。",
+      "p2": "ユーザー投稿はTurboServletの承認を示すものではありません。権利侵害の通知があればコンテンツを削除する権利を保有します。",
+      "p3": "事前通知なしにコンテンツ削除・アカウント停止が可能です。"
+    },
+    "privacyPolicy": {
+      "title": "プライバシーポリシー",
+      "p1": "参照"
+    },
+    "proprietaryRights": {
+      "title": "コンテンツの所有権",
+      "p1": "提供されるコンテンツ（テキスト、ソフトウェア、音楽、写真、動画、グラフィック、名称など）は著作権、商標、特許その他の権利で保護されています。明示的許可なく使用できません。"
+    },
+    "links": {
+      "title": "リンク",
+      "p1": "外部サイトやリソースへのリンクを提供する場合がありますが、責任は負いません。",
+      "p2": "内容の正確性や可用性について保証せず、依存による損害責任を負いません。"
+    },
+    "governingLaw": {
+      "title": "準拠法",
+      "p1": "本規約は中華人民共和国法に準拠し、解釈されます。"
+    },
+    "acknowledgement": {
+      "title": "帰属",
+      "p1": "一部内容は「osu! 利用規約」「Terms of Service - Cytoid」より CC-BY-NC 4.0 ライセンスで利用しています。"
+    }
+  },
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "intro-1": "サービス提供のため、個人情報を収集・保存・送信する必要があります。透明性を高めるよう努めています。",
+    "intro-2": {
+      "beforeLink": "サービス利用前に",
+      "betweenLink": "およびプライバシーポリシーを読み理解し、その利用が",
+      "afterLink": "およびプライバシーポリシーに拘束されることを承諾してください。"
+    },
+    "collect-info": {
+      "title": "収集情報",
+      "play": {
+        "title": "プレイ",
+        "desc": "プレイ中のキャッシュ要件として以下を収集・保存します：",
+        "list": {
+          "1": "ユーザーID",
+          "2": "プレイ時間",
+          "3": "アカウント情報",
+          "4": "スコア",
+          "5": "データ速度などの設定",
+          "6": "インベントリ",
+          "7": "進行状況",
+          "8": "バッジ取得状況",
+          "9": "プレイ履歴",
+          "10": "ログアップロード"
+        },
+        "note": "ユーザーIDは誰にも表示されず、ログや進行状況などは公開オプションで制御可能です。"
+      },
+      "register": {
+        "title": "登録",
+        "desc": "登録時に以下を収集・保存します：",
+        "list": {
+          "1": "ユーザーID",
+          "2": "ユーザー名",
+          "3": "メールアドレス",
+          "4": "パスワード（SHA256ソルトハッシュ）",
+          "5": "登録日時"
+        },
+        "note": "ユーザーIDは非公開、ユーザー名のみ公開され、メールアドレスは第三者に販売しません。"
+      },
+      "login": {
+        "title": "ログイン",
+        "desc": "ログイン時に以下を収集・保存します：",
+        "list": {
+          "1": "IPアドレス"
+        },
+        "note": "IPアドレスは非公開です。"
+      }
+    },
+    "disclosure": {
+      "title": "情報開示",
+      "desc": "許可なく開示しませんが、以下を除きます：",
+      "list": {
+        "1": "ユーザー名、登録・ログイン時間、プレイ時間、アカウント情報、スコア、履歴（公開オプションあり）。",
+        "2": "ユーザーが明示的に開示を希望する情報。",
+        "3": "法令や行政・司法機関からの要請による開示。",
+        "4": {
+          "beforeLink": "中国法令違反またはTurbo",
+          "afterLink": "関連規則違反がある場合の開示。"
+        },
+        "5": {
+          "beforeLink": "その他法令執行のために必要な場合の開示。",
+          "afterLink": ""
+        }
+      }
+    },
+    "cookies": {
+      "title": "Cookies",
+      "desc": "オンライン行動の追跡にはCookiesを使用しません。"
+    },
+    "data-security": {
+      "title": "データセキュリティ",
+      "desc": "情報保護に努めますが、攻撃リスクはゼロになりません。万一攻撃が発生しても、最大限防御します。"
+    },
+    "policy-update": {
+      "title": "ポリシー更新",
+      "desc": "更新権を保有し、更新時はサイトおよびアプリで通知します。"
+    }
+  },
+  "notFound": {
+    "title": "あれ？ページが見つかりません！",
+    "back": "ホームに戻る"
+  },
+  "menu": {
+    "panel": "メッセージ",
+    "turboPermission": "ユーザー権限",
+    "botManager": "BOT管理",
+    "serverRequests": "サーバーリクエスト統計",
+    "arcade": {
+      "title": "アーケード関連",
+      "info": "アーケード情報",
+      "alias": "アーケード略称",
+      "networkStatus": "ネットワーク状態"
+    },
+    "maimai": {
+      "title": "舞萌関連",
+      "photos": "写真",
+      "records": "プレイ記録"
+    },
+    "ranking": {
+      "title": "ランキング",
+      "dxRatingRanking": "DX RATINGランキング",
+      "achievementRanking": "総スコアランキング"
+    },
+    "turbo": {
+      "title": "加速箱機能",
+      "changeMaimaiName": "舞萌名変更",
+      "changeAvatar": "アバター変更"
+    },
+    "tickets": {
+      "title": "機能チケット",
+      "currentTickets": "現在のチケット",
+      "setTickets": "チケット設定"
+    },
+    "qrCommand": "コマンドQRコード",
+    "friends": {
+      "title": "NETフレンド",
+      "friends": "マイフレンド",
+      "addFriends": "フレンド追加"
+    }
+  },
+  "error": {
+    "jsError": "認証に失敗しました。再度ログインしてください。",
+    "loadingError": "読み込みに失敗しました",
+    "validateError": "検証に失敗しました",
+    "enterError": "アクセスに失敗しました",
+    "back": "ホームに戻る",
+    "tokenError": "BotTokenの読み込みに失敗しました。再度ログインしてください。",
+    "bodyError": "リクエストボディが不完全です。補完して再試行してください。"
+  },
+  "panel": {
+    "reason": "理由"
+  },
+  "turboPermission": {
+    "myPermission": "マイ権限",
+    "upgradePermission": "ユーザー権限昇格",
+    "warningAndBan": "警告＆バン",
+    "showTurboPermission": {
+      "permissions": "権限機能",
+      "granted": "付与済み",
+      "notGranted": "未付与"
+    },
+    "upgradeTurboPermission": {
+      "turboName": "Turboユーザー名",
+      "upgradeLog": "権限履歴管理",
+      "upgrade": "付与",
+      "upgradeNotice": {
+        "1": "付与前に慎重に検討してください。すべての操作は記録され、ユーザーのその後の行動による結果および世論への影響はあなたが責任を負います。",
+        "2": "に基づき、あなたおよび該当ユーザーのアカウントに措置を取る権利を保有します。"
+      },
+      "toast": {
+        "success": "付与成功"
+      }
+    },
+    "upgradeDialog": {
+      "title": "権限履歴管理",
+      "noData": {
+        "title": "データなし",
+        "content": "まだ権限を付与していません。ぜひ試してみてください！"
+      },
+      "table": {
+        "turboName": "Turboユーザー名",
+        "upgradeAfter": "付与後",
+        "operate": "操作",
+        "cancel": "取消"
+      },
+      "toast": {
+        "success": "降格成功"
+      }
+    },
+    "executePage": {
+      "toast": {
+        "reason": "理由を入力してください",
+        "warnSuccess": "警告成功",
+        "banSuccess": "バン成功"
+      },
+      "turboName": "Turboユーザー名",
+      "executeLog": "実行履歴管理",
+      "reason": "理由",
+      "banTime": {
+        "1hr": "1時間",
+        "24hrs": "24時間",
+        "7days": "7日",
+        "30days": "30日",
+        "365days": "365日",
+        "permanent": "永久"
+      },
+      "execute": "実行",
+      "executeNotice": {
+        "1": "実行前に慎重に検討してください。すべての操作は記録され、ユーザーのその後の行動による結果はあなたが責任を負います。",
+        "2": "TurboServletはに基づきあなたに措置を取る権利を保有します。"
+      }
+    },
+    "executeRecordDialog": {
+      "title": "実行履歴管理",
+      "noData": {
+        "title": "データなし",
+        "content": "まだ実行したことがありません"
+      },
+      "table": {
+        "turboName": "Turboユーザー名",
+        "execute": "実行内容",
+        "operate": "操作",
+        "cancel": "取消"
+      },
+      "toast": {
+        "success": "取消成功"
+      }
+    }
+  },
+  "executeRecordBadge": {
+    "ban": "バン",
+    "warning": "1回警告",
+    "unknown": "不明"
+  },
+  "turboPermissionBadge": {
+    "admin": "全権管理者",
+    "builder": "技術実施者",
+    "authorizer": "許可ユーザー",
+    "user": "標準ユーザー",
+    "unknown": "不明"
+  },
+  "turboWarningBadge": {
+    "noWarning": "警告記録なし",
+    "warned": "警告済み",
+    "times": "回"
+  },
+  "botManager": {
+    "loading": "読み込み中…",
+    "copyToClipboard": "クリップボードにコピー",
+    "noData": "まだBOTを認可していません",
+    "table": {
+      "botName": "BOT名",
+      "info": "呼び出し回数と認可時間",
+      "operate": "操作",
+      "cancel": "解除",
+      "times": "回"
+    },
+    "toast": {
+      "copySuccess": "コピー成功",
+      "unbindSuccess": "解除成功"
+    }
+  },
+  "serverRequests": {
+    "title": "サーバーリクエスト統計",
+    "contact": {
+      "1": "「Z-LIB」圧縮スキップ率とリトライ回数はネットワーク状況を反映します。",
+      "2": "圧縮スキップ率が3%以上の場合、ネットワークが不安定な可能性があります。",
+      "3": "リトライ率や失敗率が高い場合、ネットワークまたはサーバーに問題があるかもしれません。"
+    },
+    "totalRequests": "1時間内の総数",
+    "totalException": "1時間内の例外数",
+    "totalExceptionRate": "例外率",
+    "totalZlibSkipped": "Z-LIB圧縮スキップ数",
+    "totalRetry": "リトライ数",
+    "totalPanic": "失敗リトライ数",
+    "inCache": "キャッシュ内",
+    "unCache": "キャッシュ外",
+    "echarts": {
+      "time": "時間(t)",
+      "delay": "遅延(ms)",
+      "cacheDelay": "キャッシュ内遅延",
+      "whalapDelay": "キャッシュ外遅延"
+    }
+  },
+  "arcadeInfo": {
+    "notice": {
+      "title": "注意",
+      "contact": "アーケード情報は訪問数に応じて自動で増えます"
+    },
+    "newArcade": "アーケード登録",
+    "arcadeContact": {
+      "1": "当日の総リクエスト数",
+      "2": "回。キャッシュヒット",
+      "3": "回、",
+      "4": "回のエラーを修復"
+    },
+    "arcadeFeature": {
+      "CustomName": "カスタム名",
+      "CustomAvatar": "カスタムアバター許可",
+      "TurboTicket": "Turbo機能チケット"
+    },
+    "enable": "許可する",
+    "disable": "許可しない",
+    "noData": "アーケードが見つかりませんか？管理チームにお問い合わせください。",
+    "detailDialog": {
+      "title": "アーケード詳細",
+      "contact": "アーケード人数",
+      "total": "合計",
+      "status": {
+        "30minutes": "30分以内",
+        "60minutes": "60分以内",
+        "120minutes": "120分以内"
+      },
+      "table": {
+        "username": "プレイヤー名",
+        "endTime": "終了時間"
+      },
+      "noData": "まだ誰もプレイしていません、どうぞ！"
+    },
+    "newArcadeDialog": {
+      "title": "アーケード登録",
+      "arcadeType": "アーケード種類",
+      "arcadeNums": "アーケード数",
+      "arcadeName": "フル名称",
+      "arcadeNamePlaceholder": "アーケードの正式名称を入力",
+      "turboKeychip": "第{ n }台KeyChipID（短）",
+      "2077Keychip": "第{ n }台KeyChipID（長）",
+      "cancel": "キャンセル",
+      "submit": "登録",
+      "toast": {
+        "success": "登録成功"
+      }
+    }
+  },
+  "arcadeSettingEnum": {
+    "maskUsername": "ユーザー名マスク",
+    "udemaeShowAchievement": "フレンド対戦進捗表示",
+    "disableTicket": "機能チケット無効化",
+    "disableCustomName": "カスタム名無効化",
+    "disableCustomAvatar": "カスタムアバター無効化",
+    "unknown": "不明設定"
+  },
+  "arcadeFunctionType": {
+    "login": "Turboアーケードログイン",
+    "kastanjLogin": "Kastanjサービスログイン",
+    "specialTypeOneLogin": "2077サービスログイン",
+    "ping": "PINGアーケード"
+  },
+  "arcadeAlias": {
+    "noData": "略称なし",
+    "notice": {
+      "1": "使用前に慎重に検討してください。すべての操作は記録され、結果はあなたが責任を負います。",
+      "2": "TurboServletはに基づき措置を取る権利を保有します。"
+    },
+    "dialog": {
+      "title": "略称編集",
+      "notice": {
+        "title": "注意",
+        "content": "略称を追加後、削除するには管理者に連絡してください。操作は記録されます。"
+      },
+      "placeholder": "新しい略称",
+      "cancel": "キャンセル",
+      "submit": "追加",
+      "toast": {
+        "success": "追加成功"
+      }
+    }
+  },
+  "networkStatus": {
+    "lastBeat": "{time}前の最後のハートビート",
+    "workingText": {
+      "working": "Turbo稼働中",
+      "warning": "ネットワーク異常",
+      "error": "オフライン",
+      "unknown": "状態不明"
+    },
+    "longTimeOffline": "接続を確認してください。この端末は長時間オンラインになっていません。",
+    "notSupport": "この機器はネットワーク状態確認非対応です。"
+  },
+  "user": {
+    "htmlBanned": "封禁中",
+    "bannedBadge": "TurboNET封禁",
+    "mySettings": "マイ設定",
+    "settingDialog": {
+      "title": "マイ設定",
+      "userPage": "ユーザーページを見る",
+      "best35": "B35を見る",
+      "best15": "B15を見る",
+      "recentScores": "最近のプレイ履歴を見る",
+      "option": {
+        "everyone": "全員",
+        "onlyFriends": "フレンドのみ",
+        "onlyMe": "自分のみ"
+      },
+      "toast": {
+        "success": "更新成功"
+      }
+    },
+    "addFriend": "フレンド追加",
+    "return": "前のページへ",
+    "banMessage": "{date}に{executorName}によって{banType}{banDuration}に封禁されました。理由：{reason}",
+    "warningMessage": "第{warningIndex}警告：{date}に{executorName}によって。理由：{reason}",
+    "banType": {
+      "permanent": "永久",
+      "temporary": "一時"
+    },
+    "hourSuffix": "時間",
+    "maiStatistics": {
+      "title": "maimai統計",
+      "serverRanking": "サーバーランキング",
+      "noData": "60日以内のデータがありません",
+      "averageAchievement": "平均達成度",
+      "maxCombo": "最高コンボ",
+      "fullComboCount": "フルコン曲数",
+      "AllPerfectCount": "パーフェクト曲数",
+      "totalAchievement": "累計スコア",
+      "daysAgo": "日前"
+    },
+    "playActivity": {
+      "title": "プレイアクティビティ",
+      "playCount": "プレイ回数",
+      "totalPlayTime": "累計プレイ時間",
+      "firstPlay": "初プレイ",
+      "lastPlay": "最終プレイ",
+      "playVersion": "ゲームバージョン"
+    },
+    "recentScores": {
+      "title": "最近のプレイ記録"
+    },
+    "private": "このユーザーは設定またはデータ不足により非公開です",
+    "notice": {
+      "1": "Creative Commons Public Licenses 4.0に基づき、",
+      "2": "本インターフェースは",
+      "3": "を参照し、",
+      "4": "改変しています。"
+    },
+    "toast": {
+      "success": "申請送信成功"
+    }
+  },
+  "photos": {
+    "historyPhotos": "履歴写真",
+    "favoritePhotos": "お気に入り写真",
+    "notice": {
+      "title": "注意",
+      "content": "サーバー写真キャッシュは7日後に削除されます。保存する場合はお気に入りに追加してください。"
+    },
+    "noData": "まだ写真がありません",
+    "favorite": {
+      "enable": "お気に入り追加済み",
+      "disable": "お気に入りに追加"
+    },
+    "toast": {
+      "lastPage": "最後のページです",
+      "firstPage": "最初のページです",
+      "removeSuccess": "解除成功",
+      "addSuccess": "追加成功"
+    },
+    "page": "{page}ページ目"
+  },
+  "records": {
+    "page": "{page}ページ目",
+    "newRecord": "新記録"
+  },
+  "ranking": {
+    "title": "ランキング",
+    "button": {
+      "global": "全国Turbo箱プレイヤーランキング",
+      "turbo": "TurboNET登録プレイヤーランキング"
+    },
+    "return": "前のページへ",
+    "pageInfo": {
+      "first": "最後のページです",
+      "last": "最初のページです",
+      "exceed": "ページ数を超えています"
+    },
+    "achievementRanking": {
+      "title": "総スコアランキング",
+      "table": {
+        "ranking": "順位",
+        "username": "プレイヤー",
+        "totalAchievement": "総スコア"
+      }
+    },
+    "dxRatingRanking": {
+      "title": "DX RATINGランキング",
+      "table": {
+        "ranking": "順位",
+        "username": "プレイヤー",
+        "dxRating": "DX RATING"
+      }
+    },
+    "musicRanking": {
+      "title": "楽曲ランキング",
+      "table": {
+        "ranking": "順位",
+        "username": "プレイヤー",
+        "achievement": "達成度",
+        "dxScore": "DXスコア"
+      }
+    }
+  },
+  "changeMaimaiName": {
+    "title": "舞萌名変更",
+    "noPermission": {
+      "title": "注意",
+      "content": "権限が不足しているため、この機能は使用できません。"
+    },
+    "notice": "新しい入力は全角で入力してください",
+    "placeholder": "新しいユーザー名",
+    "button": {
+      "submit": "更新",
+      "toDefault": "舞萌名に戻す"
+    },
+    "changeNotice": {
+      "1": "使用前に慎重に検討してください。すべての操作が記録され、結果はあなたが責任を負います。",
+      "2": "TurboServletはに基づき措置を取る権利を保有します。"
+    },
+    "toast": {
+      "setSuccess": "更新成功",
+      "resetSuccess": "リセット成功"
+    }
+  },
+  "changeAvatar": {
+    "title": "アバター変更",
+    "dialogTitle": "アバターアップロード",
+    "selectPhoto": "画像選択",
+    "noPermission": {
+      "title": "注意",
+      "content": "権限が不足しているため、この機能は使用できません。"
+    },
+    "button": {
+      "toDefault": "舞萌アバターに戻す",
+      "cancel": "キャンセル",
+      "submit": "確定"
+    },
+    "changeNotice": {
+      "1": "使用前に慎重に検討してください。すべての操作が記録され、結果はあなたが責任を負います。",
+      "2": "TurboServletはに基づき措置を取る権利を保有します。"
+    },
+    "toast": {
+      "jpgWarning": "jpg形式の画像を選択してください",
+      "sizeWarning": "画像サイズは5MB以下にしてください",
+      "success": "設定成功",
+      "error": "不明なエラーが発生しました。再試行してください。",
+      "resetSuccess": "リセット成功"
+    }
+  },
+  "currentTickets": {
+    "title": "Turbo機能チケット",
+    "notice": {
+      "title": "注意",
+      "content": "Turbo機能チケットは公式チケットより優先度が高く、有効時は公式チケットを使用できません。"
+    },
+    "turboTicket": {
+      "enable": "Turbo機能チケット有効",
+      "disable": "Turbo機能チケット無効"
+    },
+    "officialTicket": "公式チケット"
+  },
+  "ticketUtils": {
+    "ticketIdToName": {
+      "0": "チケットなし",
+      "2": "2倍有料チケット",
+      "3": "3倍有料チケット",
+      "4": "4倍有料チケット",
+      "5": "5倍有料チケット",
+      "6": "6倍有料チケット",
+      "10005": "イベント5倍チケット(タイプ1)",
+      "10105": "イベント5倍チケット(タイプ2)",
+      "10205": "イベント5倍チケット(タイプ3)",
+      "11001": "無料1.5倍チケット",
+      "11002": "無料2倍チケット",
+      "11003": "無料3倍チケット",
+      "11005": "無料5倍チケット",
+      "20010": "無料10倍チケット(失効)",
+      "20020": "無料20倍チケット(失効)",
+      "30001": "特別2倍チケット",
+      "unknown": "その他"
+    }
+  },
+  "setTickets": {
+    "title": "チケット設定",
+    "ticketType": {
+      "title": "チケットタイプ",
+      "paid": "有料チケットを選択してください",
+      "event": "イベントチケットを選択してください",
+      "free": "無料チケットを選択してください",
+      "special": "特別チケットを選択してください"
+    },
+    "lock": "1枚をロック",
+    "button": {
+      "submit": "ロック",
+      "toDefault": "ロック解除"
+    },
+    "noPermission": {
+      "title": "注意",
+      "content": "権限が不足しているため、この機能は使用できません。"
+    },
+    "ticketTypeList": {
+      "paid": "有料チケット",
+      "event": "イベントチケット",
+      "free": "無料チケット",
+      "special": "特別チケット"
+    },
+    "setNotice": {
+      "1": "使用前に慎重に検討してください。すべての操作が記録され、結果はあなたが責任を負います。",
+      "2": "TurboServletはに基づき措置を取る権利を保有します。"
+    },
+    "toast": {
+      "success": "リセット成功"
+    }
+  },
+  "qrCommand": {
+    "userQrCommand": "ユーザーQRコード",
+    "arcadeQrCommand": "アーケードQRコード",
+    "generateQrCode": "QRコード生成",
+    "arcadeNotice": {
+      "title": "注意",
+      "content": "危険度が高い機能です。アーケードに適用される設定はすべてのプレイヤーに影響します。慎重に使用してください。"
+    },
+    "useNotice": {
+      "1": "使用前に慎重に検討してください。すべての操作が記録され、結果はあなたが責任を負います。",
+      "2": "TurboServletはに基づき措置を取る権利を保有します。"
+    },
+    "dialog": {
+      "title": "QRコード",
+      "content": {
+        "1": "以下のQRコードをアーケードのスキャン箇所に合わせてください。",
+        "2": "このQRコードはTurbo加速箱および対応機種用です。"
+      },
+      "expireTime": "有効期限：{time}"
+    }
+  },
+  "friends": {
+    "setting": "設定",
+    "friendCount": "フレンド数",
+    "noData": "まだフレンドがいません",
+    "dialog": {
+      "title": "フレンドポリシー設定",
+      "option": {
+        "title": "現在の設定",
+        "value": {
+          "autoAccept": "自動承認",
+          "manual": "手動承認",
+          "friendsOfFriends": "フレンドのフレンドのみ",
+          "nobody": "申し込み不可"
+        },
+        "toast": {
+          "success": "更新成功"
+        }
+      }
+    },
+    "friendCard": {
+      "playing": "プレイ中",
+      "lastPlayTime": "{hour}時間前",
+      "userPage": "ユーザーページ",
+      "removeFriend": "フレンド削除"
+    },
+    "removeFriendDialog": {
+      "content": "{friend}をフレンドから削除してもよろしいですか？",
+      "notice": "一方が削除すると双方から消えます。",
+      "cancel": "キャンセル",
+      "submit": "確認",
+      "toast": {
+        "success": "削除成功"
+      }
+    }
+  },
+  "addFriends": {
+    "requestFriend": {
+      "title": "フレンド申請",
+      "placeholder": "TurboNETユーザー名",
+      "requestButton": "申請する",
+      "notice": "安全上の理由から検索機能はありません。申請を送信すると相手にリクエストが届きます。",
+      "toast": {
+        "success": "申請送信成功"
+      }
+    },
+    "requestFriendList": {
+      "title": "申請リスト",
+      "noData": "未処理の申請はありません",
+      "requestTime": "申請時間: {time}",
+      "button": {
+        "accept": "承認",
+        "deny": "拒否"
+      },
+      "toast": {
+        "accept": "承認成功",
+        "deny": "拒否成功"
+      }
+    }
+  },
+  "register": {
+    "title": "アカウント登録",
+    "qrHelper": {
+      "title": "取得方法",
+      "elements": {
+        "1": "「舞萌 | 中二」公式アカウントを開く",
+        "2": "プレイヤーQRコードを取得",
+        "3": "長押しで認識",
+        "4": "結果をサイトに貼り付け"
+      }
+    },
+    "step1": {
+      "qrcode": "舞萌QRコードIDを入力",
+      "notUnderstand": "不明な場合",
+      "nextStep": "次へ",
+      "alreadyExist": "すでにアカウントがありますか？"
+    },
+    "step2": {
+      "toast": {
+        "error": "パスワードが一致しません"
+      },
+      "subTitle": "基本情報入力",
+      "detail": {
+        "userName": "ユーザー名",
+        "password": "パスワード",
+        "confirmPassword": "パスワード確認",
+        "email": "メールアドレス",
+        "qqid": "QQ番号"
+      },
+      "redo": "再登録してください",
+      "expiry": "有効期限",
+      "submit": "登録申請",
+      "tosDialog": {
+        "1": "登録申請を送信することで、",
+        "2": "利用規約",
+        "3": "および",
+        "4": "プライバシーポリシーに同意したことになります。"
+      }
+    },
+    "step3": {
+      "subTitle": "検証メール送信済み",
+      "content": {
+        "1": "メールをご確認ください。検証メールを送信しました。",
+        "2": "メール未着の場合は迷惑メールフォルダをご確認ください。"
+      }
+    },
+    "verify": {
+      "succeed": "検証成功",
+      "failed": "検証失敗",
+      "notice": "検証完了後、3秒でホームに戻ります。"
+    }
+  },
+  "support": {
+    "back": "戻る",
+    "credentialCard": {
+      "title": "アカウント認証",
+      "subTitle": "既存のアカウント情報での変更に使用します。",
+      "validation": "アカウント認証",
+      "detail": {
+        "userName": "ユーザー名",
+        "userPassword": "パスワード"
+      }
+    },
+    "emailCard": {
+      "toast": {
+        "success": "メール送信成功"
+      },
+      "title": "メール認証",
+      "subTitle": "登録に使用したメールでの認証に使用します。",
+      "validation": "メール認証",
+      "detail": {
+        "email": "メールアドレス"
+      },
+      "success": "成功！",
+      "notice": "新しい会話用メールを{email}に送信しました。開封して続きを行ってください。"
+    },
+    "qrCard": {
+      "title": "舞萌QR ID認証",
+      "recommend": "推奨",
+      "subTitle": "舞萌QRコードは最も確実な認証方法です。",
+      "validation": "QR ID認証",
+      "qrField": "QR IDを入力",
+      "notUnderstand": "不明な場合"
+    },
+    "toast": {
+      "error": "クイック認証に失敗しました。手動で認証してください。"
+    },
+    "page": {
+      "accessFailed": "アクセス失敗",
+      "title": "サポート",
+      "selfService": {
+        "title": "現在利用可能：",
+        "function": "パスワードリセット、メール変更、QQ番号変更、Turboユーザー名変更、フィードバック",
+        "notice": {
+          "1": "本サポートはTurboNET",
+          "2": "Polar",
+          "3": "会員向けです。認証方法を選択してください。"
+        }
+      },
+      "or": "または",
+      "agent": "エージェント認証",
+      "exception": "上記方法が利用できない場合は管理者にお問い合わせください。"
+    }
+  },
+  "supportSession": {
+    "choose": "選択する",
+    "back": "戻る",
+    "success": "成功！",
+    "resetEmail": {
+      "toast": {
+        "success": "メール送信成功"
+      },
+      "title": "メールリセット",
+      "submit": "リセット",
+      "oldEmail": "現在のメール：{email}",
+      "details": {
+        "newEmail": "新メールアドレス"
+      },
+      "notice": "新メールに検証メールを送信しました。ご確認ください。",
+      "verify": {
+        "succeed": "検証成功",
+        "failed": "検証失敗",
+        "notice": "メール変更完了後、3秒でホームに戻ります。"
+      }
+    },
+    "resetPassword": {
+      "toast": {
+        "validError": "パスワードが一致しません",
+        "success": "リセット成功"
+      },
+      "title": "パスワードリセット",
+      "details": {
+        "newPassword": "新パスワード",
+        "confirmPassword": "パスワード確認"
+      },
+      "submit": "リセット",
+      "notice": "パスワードをリセットしました。再度ログインしてください。"
+    },
+    "resetQQNumber": {
+      "toast": {
+        "success": "リセット成功"
+      },
+      "title": "QQ番号リセット",
+      "oldQQ": "現在のQQ番号：{qqNumber}",
+      "details": {
+        "newQQ": "新QQ番号"
+      },
+      "submit": "リセット",
+      "notice": "QQ番号をリセットしました。再度ログインしてください。"
+    },
+    "resetTurboName": {
+      "toast": {
+        "success": "リセット成功"
+      },
+      "title": "Turboユーザー名リセット",
+      "oldTurboName": "現在のユーザー名：{turboName}",
+      "details": {
+        "newTurboName": "新ユーザー名"
+      },
+      "submit": "リセット",
+      "notice": "ユーザー名をリセットしました。再度ログインしてください。"
+    },
+    "toast": {
+      "success": "閉じる成功"
+    },
+    "page": {
+      "accessFailed": "アクセス失敗",
+      "title": "サポートセッション",
+      "sessionId": "セッションID：{sessionId}",
+      "countDown": "このセッションは{seconds}秒後に閉鎖されます。",
+      "eliminated": "セッションが閉鎖されました。再開してください。",
+      "feedback": {
+        "title": "フィードバック",
+        "body": "ご質問は管理者にメールでお問い合わせください。"
+      },
+      "closeSession": {
+        "close": "セッションを閉じる",
+        "subTitle": "完了後に安全に閉じてください。",
+        "countdown": "閉じる（{seconds}秒後自動実行）",
+        "eliminated": "セッションが閉鎖されました"
+      }
+    }
+  },
+  "captchaSolver": {
+    "fetchError": "キャプチャ取得失敗"
+  },
+  "requestHandler": {
+    "loginError": "トークン更新失敗。再ログインしてください。",
+    "timeoutError": "サーバー接続タイムアウト。ネットワークを確認してください。",
+    "badRequestError": "リクエストエラー。パラメータを確認してください。",
+    "permissionError": "リクエスト拒否。権限不足の可能性があります。",
+    "notFoundError": "リソースが見つかりません。パラメータを確認してください。",
+    "internalServerError": "サーバー内部エラー。後ほど再試行するか管理者に問い合わせてください。",
+    "bannedError": "このアカウントは封禁されています。管理者にお問い合わせください。",
+    "unknownError": "不明なエラーが発生しました。後ほど再試行してください。"
+  },
+  "permissionUtils": {
+    "basicReadOnlyContent": "基本読み取り専用",
+    "basicInteractiveContent": "基本対話コンテンツ",
+    "friend": "フレンド機能",
+    "botManagement": "BOT管理",
+    "changeUsername": "ユーザー名変更",
+    "changeAvatar": "アバター変更",
+    "turboTicket": "Turboチケットロック",
+    "setAlias": "アーケード略称設定",
+    "changeTurboSettings": "箱設定変更",
+    "authorizeAuthorizer": "許可ユーザー認可",
+    "authorizeTechnician": "技術実施者認可",
+    "warnAndBanUser": "ユーザー警告＆バン"
+  }
+}

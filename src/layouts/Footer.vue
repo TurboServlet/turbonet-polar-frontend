@@ -11,7 +11,7 @@
         <br/>
         WE DO WHAT SEGA DON'T.
       </p>
-      <p>{{ $t('footer.contact') }}</p>
+      <p>{{ $t('footer.contact', {email: "ctrlcvs@uwu.cat"}) }}</p>
     </aside>
     <nav>
       <div class="grid grid-flow-col gap-4">

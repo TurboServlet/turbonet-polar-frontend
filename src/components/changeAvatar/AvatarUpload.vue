@@ -59,12 +59,14 @@ import {VueCropper} from "vue-cropper";
 import {sendPostRequest} from "@/assets/js/RequestHandler";
 import {toast} from "vue-sonner";
 import {closeDialogModal} from "@/assets/js/DialogManager.js";
+import { useI18n } from 'vue-i18n';
 
 export default defineComponent({
   components: {
     VueCropper,
   },
   setup() {
+    const { t } = useI18n()
     const isSetBtnLoading = ref(false)
     const avatarDialog = ref<HTMLDialogElement | null>(null); // 明确指定类型
     const cropper = ref();
@@ -95,11 +97,11 @@ export default defineComponent({
       const isIMAGE = file.type === "image/jpeg";
       const isLt5M = file.size / 1024 / 1024 < 5;
       if (!isIMAGE) {
-        toast.warning("请选择 jpg 格式的图片");
+        toast.warning(t('changeAvatar.toast.jpgWarning'));
         return false;
       }
       if (!isLt5M) {
-        toast.warning("图片大小不能超过 5MB");
+        toast.warning(t('changeAvatar.toast.sizeWarning'));
         return false;
       }
       let reader = new FileReader();
@@ -124,7 +126,7 @@ export default defineComponent({
             uploadApi(payload)
                 .then((response) => {
               if (response.statusCode === 200) {
-                toast.success('设置成功')
+                toast.success(t('changeAvatar.toast.success'))
                 isSetBtnLoading.value = false
                 closeDialog()
               } else {
@@ -134,7 +136,7 @@ export default defineComponent({
             })
           };
         } else {
-          toast.error("未知的错误，请重试")
+          toast.error(t('changeAvatar.toast.error'))
           isSetBtnLoading.value = false
         }
       });
@@ -161,6 +163,7 @@ export default defineComponent({
       fileInput,
       triggerFileUpload,
       isSetBtnLoading,
+      t
     };
   },
 });

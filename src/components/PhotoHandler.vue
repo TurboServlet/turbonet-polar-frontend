@@ -1,7 +1,9 @@
 <script setup>
 import {ref, defineProps, toRef, onMounted} from 'vue';
 import {sendGetRequest} from "@/assets/js/RequestHandler.js";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false)
 
@@ -28,7 +30,7 @@ const getImage = async () => {
       responseData.value = response.data
     }
   }).catch(() => {
-    return '验证失败，请重新登录。'
+    return t('error.jsError')
   })
 }
 

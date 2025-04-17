@@ -15,18 +15,15 @@ import UserSettingDialog from "@/layouts/user/UserSettingDialog.vue";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
 import {toast} from "vue-sonner";
 import { useI18n } from 'vue-i18n'
-const { t } = useI18n()
 
+const { t } = useI18n()
 const route = useRoute();
 const router = useRouter();
-
 const isLoading = ref(true);
 const isSuccess = ref(false)
 const isMe = ref(false)
 const message = ref('')
-
 const isBanned = ref(false)
-
 const responseData = ref()
 
 const parseMessages = (messageString) => {
@@ -70,11 +67,11 @@ watchEffect(async () => {
       })
     } else {
       isLoading.value = false
-      message.value = '请求体不全，请补全后重试。';
+      message.value = t('error.bodyError');
     }
   } catch (e) {
     isLoading.value = false
-    message.value = '请求体不全，请补全后重试。';
+    message.value = t('error.bodyError');
   }
 });
 
@@ -91,7 +88,7 @@ const addFriend = async () => {
   }
   await sendPostRequest('/web/addFriend', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('已发送申请')
+      toast.success(t('user.toast.success'))
       isFriendBtnLoading.value = false
     } else {
       toast.error(response.data)

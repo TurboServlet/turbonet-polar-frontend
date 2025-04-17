@@ -4,7 +4,9 @@ import ArcadeAliasDialog from "@/layouts/arcadeAlias/ArcadeAliasDialog.vue";
 import {onMounted, ref} from "vue";
 import {sendGetRequest} from "@/assets/js/RequestHandler.js";
 import {ArcadeTypeEnumToString} from "@/assets/js/ArcadeUtils.js";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false);
 const responseData = ref();
@@ -28,7 +30,7 @@ const showArcadeAlias = async () => {
   }).catch(() => {
     isLoading.value = false;
     isSuccess.value = false;
-    responseData.value = '验证失败，请重新登录。';
+    responseData.value = t('error.jsError');
   });
 };
 

@@ -5,18 +5,15 @@ import {onMounted, ref, watch, watchEffect} from "vue";
 import {useRouter} from "vue-router";
 import {diffName, fixIcon, badgeColor} from '@/assets/js/MusicUtils.js'
 import {toast} from "vue-sonner";
+import { useI18n } from 'vue-i18n';
 
-
+const { t } = useI18n()
 const router = useRouter();
-
 const page = ref(1)
-
 const isLoading = ref(true);
 const isSuccess = ref(false)
 const rankingIsLoading = ref(false)
-
 const onlyTurbo = ref(false)
-
 const responseData = ref()
 
 const turboChanger = () => {
@@ -40,13 +37,13 @@ const dxRatingRanking = async () => {
   }).catch(() => {
     rankingIsLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 
 const nextPage = () => {
   if (page.value === responseData.value.totalPages) {
-    toast.warning('已经是最后一页了哦')
+    toast.warning(t('ranking.pageInfo.last'))
     return
   }
   page.value += 1
@@ -55,7 +52,7 @@ const nextPage = () => {
 
 const previousPage = () => {
   if (page.value === 1) {
-    toast.warning('已经是第一页了哦')
+    toast.warning(t('ranking.pageInfo.first'))
     return
   }
   page.value -= 1
@@ -64,7 +61,7 @@ const previousPage = () => {
 
 const addPage = (number) => {
   if (page.value + number > responseData.value.totalPages) {
-    toast.warning('超过总页数了哦')
+    toast.warning(t('ranking.pageInfo.exceed'))
     return
   }
   page.value += number

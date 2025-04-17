@@ -1,12 +1,12 @@
 <script setup>
 
 import {onMounted, onUnmounted, ref, defineProps} from "vue";
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
+import { useI18n } from 'vue-i18n';
 
-
-
+const { t } = useI18n()
 const minutes = ref(9);
 const seconds = ref(30);
 
@@ -61,7 +61,7 @@ const isSubmitted = ref(false)
 
 const register = async () => {
   if (password.value !== confirmPassword.value) {
-    toast.error('两次输入的密码不一致')
+    toast.error(t('register.step2.toast.error'))
     return
   }
   const {token, a} = await executeRecaptcha('register')
@@ -94,53 +94,53 @@ const changeStep = () => {
 <template>
   <div class="body flex align-middle" style="flex-direction: column;">
     <h1 class="font-bold text-3xl">
-      注册您的账号
+      {{ $t('register.title') }}
     </h1>
     <div class="mt-4"></div>
     <label class="form-control w-full max-w-xs">
       <div class="label">
-        <span class="label-text">填写基础资料</span>
+        <span class="label-text">{{ $t('register.step2.subTitle') }}</span>
       </div>
       <label class="input input-bordered flex items-center gap-2">
         <i class="fa-solid fa-user"></i>
-        <input type="text" class="grow" placeholder="用户名" v-model="username" required/>
+        <input type="text" class="grow" :placeholder="$t('register.step2.detail.userName')" v-model="username" required/>
       </label>
     </label>
     <div class="mt-2"></div>
     <label class="input input-bordered flex items-center gap-2 w-full max-w-xs">
       <i class="fa-solid fa-key"></i>
-      <input type="password" class="grow" placeholder="密码" v-model="password" required/>
+      <input type="password" class="grow" :placeholder="$t('register.step2.detail.password')" v-model="password" required/>
     </label>
     <div class="mt-2"></div>
     <label class="input input-bordered flex items-center gap-2 w-full max-w-xs">
       <i class="fa-solid fa-key"></i>
-      <input type="password" class="grow" placeholder="确认密码" v-model="confirmPassword" required/>
+      <input type="password" class="grow" :placeholder="$t('register.step2.detail.confirmPassword')" v-model="confirmPassword" required/>
     </label>
     <div class="mt-2"></div>
     <label class="input input-bordered flex items-center gap-2 w-full max-w-xs">
       <i class="fa-solid fa-at"></i>
-      <input type="email" class="grow" placeholder="电子邮箱" v-model="email" required/>
+      <input type="email" class="grow" :placeholder="$t('register.step2.detail.email')" v-model="email" required/>
     </label>
     <div class="mt-2"></div>
     <label class="input input-bordered flex items-center gap-2 w-full max-w-xs">
       <i class="fa-brands fa-qq"></i>
-      <input type="text" class="grow" placeholder="QQ号" v-model="qqNumber" required/>
+      <input type="text" class="grow" :placeholder="$t('register.step2.detail.qqid')" v-model="qqNumber" required/>
     </label>
     <div class="mt-4"></div>
     <button @click="step2" :disabled="isExpired || step2IsProcessing" class="btn btn-active btn-primary btn-wide indicator">
         <span v-if="isExpired" class="indicator-item badge badge-error">
-          请重新注册
+          {{ $t('register.step2.redo') }}
         </span>
       <span v-else class="indicator-item badge badge-secondary countdown">
         <span :style="`--value: ${minutes}`"></span>
         :
         <span :style="`--value: ${seconds}`"></span>
-        后失效</span>
-      <span v-if="step2IsProcessing" class="loading loading-spinner"/>申请注册
+        {{ $t('register.step2.expiry') }}</span>
+      <span v-if="step2IsProcessing" class="loading loading-spinner"/>{{ $t('register.step2.submit') }}
     </button>
     <div class="mt-3"></div>
     <div class="text-right text-xs opacity-60">
-      提交注册并注册完成即代表您同意 <router-link class="text-primary" target="_blank" to="/tos">使用条款</router-link> 和 <router-link class="text-primary" target="_blank" to="/privacy">隐私政策</router-link>
+      {{ $t('register.step2.tosDialog.1') }} <router-link class="text-primary" target="_blank" to="/tos">{{ $t('register.step2.tosDialog.2') }}</router-link> {{ $t('register.step2.tosDialog.3') }} <router-link class="text-primary" target="_blank" to="/privacy">{{ $t('register.step2.tosDialog.4') }}</router-link>
     </div>
   </div>
 </template>

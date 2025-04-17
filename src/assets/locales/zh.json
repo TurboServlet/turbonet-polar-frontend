@@ -22,7 +22,7 @@
       "taojiu": "接口文档维护",
       "yuuluo": "NONE BOT开发",
       "haochi": "服务器对接",
-      "tenshi": "打黑工的"
+      "tenshi": "产品工程以及交互架构"
     }
   },
   "cooperatorInfo": {
@@ -308,7 +308,9 @@
     "loadingError": "加载失败",
     "validateError": "验证失败",
     "enterError": "访问失败",
-    "back": "返回主页"
+    "back": "返回主页",
+    "tokenError": "加载 BotToken 失败，请重新登录。",
+    "bodyError": "请求体不全，请补全后重试。"
   },
   "panel": {
     "reason": "原因"
@@ -329,6 +331,9 @@
       "upgradeNotice": {
         "1": "请在授予授权之前慎重考虑。您的一切操作都将被记录，该用户后续行为所引发的所有后果以及舆论影响将由您负责。我们有权根据",
         "2": "对您以及该用户的账号采取措施。"
+      },
+      "toast": {
+        "success": "授权成功"
       }
     },
     "upgradeDialog": {
@@ -342,9 +347,17 @@
         "upgradeAfter": "授权后",
         "operate": "操作",
         "cancel": "撤销"
+      },
+      "toast": {
+        "success": "降级成功"
       }
     },
     "executePage": {
+      "toast": {
+        "reason": "请填写理由",
+        "warnSuccess": "成功警告该用户",
+        "banSuccess": "成功封禁该用户"
+      },
       "turboName": "Turbo用户名",
       "executeLog": "历史执行管理",
       "reason": "理由",
@@ -373,6 +386,9 @@
         "execute": "执行内容",
         "operate": "操作",
         "cancel": "撤销"
+      },
+      "toast": {
+        "success": "撤销成功"
       }
     }
   },
@@ -403,6 +419,10 @@
       "operate": "操作",
       "cancel": "撤销",
       "times": "次"
+    },
+    "toast": {
+      "copySuccess": "已复制到剪贴板",
+      "unbindSuccess": "取消授权成功"
     }
   },
   "serverRequests": {
@@ -419,7 +439,13 @@
     "totalRetry": "尝试重试数量",
     "totalPanic": "尝试失败数量",
     "inCache": "缓存内",
-    "unCache": "缓存外"
+    "unCache": "缓存外",
+    "echarts": {
+      "time": "时间(t)",
+      "delay": "延迟(ms)",
+      "cacheDelay": "缓存内延迟",
+      "whalapDelay": "缓存外延迟"
+    }
   },
   "arcadeInfo": {
     "notice": {
@@ -530,6 +556,9 @@
         "everyone": "所有人",
         "onlyFriends": "仅限好友",
         "onlyMe": "仅我自己"
+      },
+      "toast": {
+        "success": "调整成功"
       }
     },
     "addFriend": "添加好友",
@@ -549,7 +578,8 @@
       "maxCombo": "最多连击数",
       "fullComboCount": "全连歌曲",
       "AllPerfectCount": "完美歌曲",
-      "totalAchievement": "累计完成分数"
+      "totalAchievement": "累计完成分数",
+      "daysAgo": " 天前"
     },
     "playActivity": {
       "title": "游玩活跃度",
@@ -569,6 +599,9 @@
       "3": "并",
       "4": "进行了修改",
       "5": ", 本页面开源于"
+    },
+    "toast": {
+      "success": "已发送申请"
     }
   },
   "photos": {
@@ -583,6 +616,12 @@
       "enable": "已收藏",
       "disable": "收藏"
     },
+    "toast": {
+      "lastPage": "已经是最后一页了哦",
+      "firstPage": "已经是第一页了哦",
+      "removeSuccess": "取消收藏成功",
+      "addSuccess": "收藏成功"
+    },
     "page": "第 {page} 页"
   },
   "records": {
@@ -596,6 +635,11 @@
       "turbo": "TurboNET注册玩家排名"
     },
     "return": "返回上一页",
+    "pageInfo": {
+      "first": "已经是最后一页了哦",
+      "last": "已经是第一页了哦",
+      "exceed": "超过总页数了哦"
+    },
     "achievementRanking": {
       "title": "总分数",
       "table": {
@@ -637,6 +681,10 @@
     "changeNotice": {
       "1": "请在使用权限之前慎重考虑。您的一切操作都将被记录，您后续行为所引发的所有后果以及舆论影响将由您负责。TurboServlet 有权根据",
       "2": "对您采取措施。"
+    },
+    "toast": {
+      "setSuccess": "更新成功",
+      "resetSuccess": "重置成功"
     }
   },
   "changeAvatar": {
@@ -655,6 +703,13 @@
     "changeNotice": {
       "1": "请在使用权限之前慎重考虑。您的一切操作都将被记录，您后续行为所引发的所有后果以及舆论影响将由您负责。TurboServlet 有权根据",
       "2": "对您采取措施。"
+    },
+    "toast": {
+      "jpgWarning": "请选择 jpg 格式的图片",
+      "sizeWarning": "图片大小不能超过 5MB",
+      "success": "设置成功",
+      "error": "未知的错误，请重试",
+      "resetSuccess": "重置成功"
     }
   },
   "currentTickets": {
@@ -717,6 +772,9 @@
     "setNotice": {
       "1": "请在使用权限之前慎重考虑。您的一切操作都将被记录，您后续行为所引发的所有后果以及舆论影响将由您负责。TurboServlet 有权根据",
       "2": "对您采取措施。"
+    },
+    "toast": {
+      "success": "重置成功"
     }
   },
   "qrCommand": {
@@ -798,5 +856,197 @@
         "deny": "已拒绝好友申请"
       }
     }
+  },
+  "register": {
+    "title": "注册您的账号",
+    "qrHelper": {
+      "title": "获取方法",
+      "elements": {
+        "1": "打开「舞萌 | 中二」公众号",
+        "2": "获取玩家二维码并点击",
+        "3": "长按识别图中二维码",
+        "4": "扫描结果复制到网站"
+      }
+    },
+    "step1": {
+      "qrcode": "填写舞萌二维码ID",
+      "notUnderstand": "我不理解",
+      "nextStep": "下一步",
+      "alreadyExist": "已经拥有帐号了?"
+    },
+    "step2": {
+      "toast": {
+        "error": "两次输入的密码不一致"
+      },
+      "subTitle": "填写基础资料",
+      "detail": {
+        "userName": "用户名",
+        "password": "密码",
+        "confirmPassword": "确认密码",
+        "email": "电子邮箱",
+        "qqid": "QQ号"
+      },
+      "redo": "请重新注册",
+      "expiry": "后失效",
+      "submit": "申请注册",
+      "tosDialog": {
+        "1": "提交注册并注册完成即代表您同意",
+        "2": "使用条款",
+        "3": "和",
+        "4": "隐私政策"
+      }
+    },
+    "step3": {
+      "subTitle": "验证请求已发送",
+      "content": {
+        "1": "请检查您的电子邮箱，我们已经向您发送了一封验证邮件。",
+        "2": "邮件服务不完全可靠，如果您没有收到邮件，请检查您的垃圾邮件箱。"
+      }
+    },
+    "verify": {
+      "succeed": "验证成功",
+      "failed": "验证失败",
+      "notice": "已验证完成，将在三秒后返回至主页。"
+    }
+  },
+  "support": {
+    "back": "返回",
+    "credentialCard": {
+      "title": "账号密码验证",
+      "subTitle": "该方式适用于您在已知账号与密码的情况下做其他的更改。",
+      "validation": "验证账号密码",
+      "detail": {
+        "userName": "用户名",
+        "userPassword": "用户密码"
+      }
+    },
+    "emailCard": {
+      "toast": {
+        "success": "已发送邮件"
+      },
+      "title": "邮箱验证",
+      "subTitle": "该方式适用于您在已知注册时使用的邮箱的情况下做其他的更改。",
+      "validation": "验证邮箱",
+      "detail": {
+        "email": "电子邮箱"
+      },
+      "success": "成功！",
+      "notice": "我们已发送新的会话邮件至 {email} ，请在邮箱中打开新界面来进行后续操作。"
+    },
+    "qrCard": {
+      "title": "舞萌二维码 ID 验证",
+      "recommend": "推荐方式",
+      "subTitle": "舞萌二维码 ID 作为您的根本身份凭证，推荐用来验证您的身份。",
+      "validation": "舞萌二维码 ID 验证",
+      "qrField": "填写舞萌二维码ID",
+      "notUnderstand": "我不理解"
+    },
+    "toast": {
+      "error": "快速验证失败，请手动验证身份"
+    },
+    "page": {
+      "accessFailed": "访问失败",
+      "title": "支持",
+      "selfService": {
+        "title": "当前自助提供：",
+        "function": "重置密码、更换邮箱、更改 QQ 账号、更改 Turbo 用户名、问题反馈",
+        "notice": {
+          "1": "该支持仅向 TurboNET",
+          "2": "Polar",
+          "3": "会员提供。请先选择您可以接受的验证身份方式，以便于 TurboNET Support 为您提供更多服务与支持。如果您有其他的需求，请与管理员联系。"
+        }
+      },
+      "or": "或者",
+      "agent": "人工验证",
+      "exception": "若以上方式您均无法验证身份，请向管理员提交邮件工单。"
+
+    }
+  },
+  "supportSession": {
+    "choose": "选择此帮助",
+    "back": "返回",
+    "success": "成功！",
+    "resetEmail": {
+      "toast": {
+        "success": "已发送邮件"
+      },
+      "title": "重置电子邮箱",
+      "submit": "重置电子邮箱",
+      "oldEmail": "当前邮箱：{email}",
+      "details": {
+        "newEmail": "新电子邮箱"
+      },
+      "notice": "我们已发送验证邮件至您的新邮箱，请查看您的邮件。",
+      "verify": {
+        "succeed": "验证成功",
+        "failed": "验证失败",
+        "notice": "已更改邮箱完成，将在三秒后返回至主页。"
+      }
+    },
+    "resetPassword": {
+      "toast": {
+        "validError": "两次密码不一致，请重新输入",
+        "success": "重置成功"
+      },
+      "title": "重置密码",
+      "details": {
+        "newPassword": "新密码",
+        "confirmPassword": "确认密码"
+      },
+      "submit": "重置密码",
+      "notice": "我们已重置您的密码，请重新登录。"
+    },
+    "resetQQNumber": {
+      "toast": {
+        "success": "重置成功"
+      },
+      "title": "重置QQ号",
+      "oldQQ": "当前QQ号: {qqNumber}",
+      "details": {
+        "newQQ": "新QQ号"
+      },
+      "submit": "重置QQ号",
+      "notice": "我们已重置您的QQ号，请重新登录。"
+    },
+    "resetTurboName": {
+      "toast": {
+        "success": "重置成功"
+      },
+      "title": "重置Turbo用户名",
+      "oldTurboName": "当前用户名: {turboName}",
+      "details": {
+        "newTurboName": "新用户名"
+      },
+      "submit": "重置用户名",
+      "notice": "我们已重置您的用户名，请重新登录。"
+    },
+    "toast": {
+      "success": "关闭成功"
+    },
+    "page": {
+      "accessFailed": "访问失败",
+      "title": "支持会话",
+      "sessionId": "您的本次会话 ID：{sessionId}",
+      "countDown": "该会话将在 {seconds} 秒后销毁，请及时完成您所需要的帮助。",
+      "eliminated": "该会话已销毁，请重新发起会话。",
+      "feedback": {
+        "title": "问题反馈",
+        "body": "若您有任何疑问，请向管理员提交邮件工单。"
+      },
+      "closeSession": {
+        "close": "关闭会话",
+        "subTitle": "当您全部处理完成后，请在此处安全关闭会话",
+        "countdown": "关闭会话 ({seconds} 秒后自动提交)",
+        "eliminated": "该会话已销毁"
+      }
+
+    }
+  },
+  "captchaSolver": {
+    "fetchError": "获取验证码失败"
+  },
+  "requestHandler": {
+    "loginError": "刷新Token失败，请重新登入",
+    "timeoutError": "与服务器连接超时，请检查网络连接"
   }
 }

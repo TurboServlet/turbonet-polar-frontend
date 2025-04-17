@@ -4,8 +4,10 @@ import {onMounted, ref} from "vue";
 import {sendGetRequest, sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
-const isResetBtnLoading = ref(false)
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
+const isResetBtnLoading = ref(false)
 const isLoading = ref(true)
 const isSuccess = ref(false)
 const responseData = ref()
@@ -24,7 +26,7 @@ const showPermission = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 
@@ -33,7 +35,7 @@ const resetAvatar = async () => {
   const payload = {}
   await sendPostRequest('/web/resetAvatar', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('重置成功')
+      toast.success(t('changeAvatar.toast.resetSuccess'))
       isResetBtnLoading.value = false
     } else {
       toast.error(response.data)

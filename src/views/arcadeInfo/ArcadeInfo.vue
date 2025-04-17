@@ -6,7 +6,9 @@ import {ArcadeSettingEnumToString, ArcadeTypeEnumToString} from "@/assets/js/Arc
 import ArcadeInfoDetailDialog from "@/layouts/arcadeInfo/ArcadeInfoDetailDialog.vue";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
 import NewArcadeDialog from "@/layouts/arcadeInfo/NewArcadeDialog.vue";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false)
 const responseData = ref()
@@ -26,7 +28,7 @@ const showPermission = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 
@@ -43,7 +45,7 @@ const arcadeInfo = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 

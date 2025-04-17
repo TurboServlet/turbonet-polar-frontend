@@ -2,7 +2,7 @@
 import {ref} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
 import {useRouter} from "vue-router";
 
 
@@ -42,12 +42,12 @@ const credentialVerify = async () => {
 <template>
   <form @submit.prevent="credentialVerify" class="bg-base-100 rounded-box p-6">
     <div class="h-full flex flex-col" v-if="!isShowInner">
-      <div class="font-bold text-xl">账号密码验证</div>
+      <div class="font-bold text-xl">{{ $t('support.credentialCard.title') }}</div>
       <div class="mt-2"></div>
-      <div class="text-sm">该方式适用于您在已知账号与密码的情况下做其他的更改。</div>
+      <div class="text-sm">{{ $t('support.credentialCard.subTitle') }}</div>
       <div class="mt-4"></div>
       <div class="flex mt-auto justify-end">
-        <button type="button" @click="changeShow" class="btn btn-primary">验证账号密码</button>
+        <button type="button" @click="changeShow" class="btn btn-primary">{{ $t('support.credentialCard.validation') }}</button>
       </div>
     </div>
     <div class="h-full flex flex-col" v-else>
@@ -56,7 +56,7 @@ const credentialVerify = async () => {
         <input
             type="text"
             class="grow"
-            placeholder="用户名"
+            :placeholder="$t('support.credentialCard.detail.userName')"
             v-model="username"
             autocomplete="current-username"
             required
@@ -70,7 +70,7 @@ const credentialVerify = async () => {
         <input
             type="password"
             class="grow"
-            placeholder="用户密码"
+            :placeholder="$t('support.credentialCard.detail.userPassword')"
             v-model="password"
             autocomplete="current-password"
             required
@@ -79,10 +79,10 @@ const credentialVerify = async () => {
 
       <div class="mt-6"></div>
       <div class="flex mt-auto justify-end gap-4">
-        <button type="button" class="btn btn-error" @click="changeShow">返回</button>
+        <button type="button" class="btn btn-error" @click="changeShow">{{ $t('support.back') }}</button>
         <button :disabled="isBtnLoading" type="submit" class="btn btn-primary">
           <span v-if="isBtnLoading" class="loading loading-spinner"></span>
-          验证账号密码
+          {{ $t('support.credentialCard.validation') }}
         </button>
       </div>
     </div>

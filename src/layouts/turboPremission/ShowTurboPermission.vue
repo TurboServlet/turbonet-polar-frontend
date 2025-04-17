@@ -4,7 +4,9 @@ import {onMounted, ref, toRef} from "vue";
 import {sendGetRequest} from "@/assets/js/RequestHandler.js";
 import TurboPermissionBadge from "@/components/TurboPermissionBadge.vue";
 import TurboWarningBadge from "@/components/TurboWarningBadge.vue";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false)
 
@@ -24,7 +26,7 @@ const showUserPermission = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 

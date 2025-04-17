@@ -4,7 +4,7 @@ import {ref} from "vue";
 import MAIDHelpDialog from "@/layouts/register/MAIDHelpDialog.vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
 import {useRouter} from "vue-router";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
 
@@ -45,37 +45,37 @@ const weChatIDVerify = async () => {
     <form @submit.prevent="weChatIDVerify" class="h-full flex flex-col">
       <div v-if="!isShowInner">
         <div class="flex items-center gap-2 font-bold text-xl">
-          <div>舞萌二维码 ID 验证</div>
+          <div>{{ $t('support.qrCard.title') }}</div>
           <div class="badge badge-primary gap-1.5 font-bold">
-            推荐方式
+            {{ $t('support.qrCard.recommend') }}
           </div>
         </div>
         <div class="mt-2"></div>
-        <div class="text-sm">舞萌二维码 ID 作为您的根本身份凭证，推荐用来验证您的身份。</div>
+        <div class="text-sm">{{ $t('support.qrCard.subTitle') }}</div>
         <div class="mt-4"></div>
         <div class="flex justify-end">
-          <button type="button" class="btn btn-primary" @click="changeShow">舞萌二维码 ID 验证</button>
+          <button type="button" class="btn btn-primary" @click="changeShow">{{ $t('support.qrCard.validation') }}</button>
         </div>
       </div>
       <div v-else>
         <label class="form-control w-full">
           <div class="label">
-            <span class="label-text">填写舞萌二维码ID</span>
+            <span class="label-text">{{ $t('support.qrCard.qrField') }}</span>
           </div>
           <input v-model="weChatID" class="input input-bordered w-full" placeholder="SGWCMAIDxxxxxxxxxxxxxxxxxxx" type="text" required/>
           <div class="label">
             <span class="label-text-alt"></span>
             <span class="label-text-alt" @click="openDialogModal('registerDialog')">
-              <i class="fa-regular fa-circle-question"></i> 我不理解
+              <i class="fa-regular fa-circle-question"></i> {{ $t('support.qrCard.notUnderstand') }}
             </span>
           </div>
         </label>
         <div class="mt-6"></div>
         <div class="flex mt-auto justify-end gap-4">
-          <button type="button" class="btn btn-error" @click="changeShow">返回</button>
+          <button type="button" class="btn btn-error" @click="changeShow">{{ $t('support.back') }}</button>
           <button :disabled="isBtnLoading" type="submit" class="btn btn-primary">
             <span v-if="isBtnLoading" class="loading loading-spinner"></span>
-            舞萌二维码 ID 验证
+            {{ $t('support.qrCard.validation') }}
           </button>
         </div>
       </div>

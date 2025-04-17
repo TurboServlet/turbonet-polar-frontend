@@ -6,6 +6,9 @@ import {ScatterChart} from "echarts/charts";
 import {CanvasRenderer} from "echarts/renderers";
 import {UniversalTransition} from "echarts/features";
 import {sendGetRequest} from "@/assets/js/RequestHandler.js";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n()
 
 echarts.use([
   TitleComponent,
@@ -36,25 +39,25 @@ const option = ref({
   },
   xAxis: {
     type: "time",
-    name: "时间(t)",
+    name: t('serverRequests.echarts.time'),
     min: 0,
     max: 0,
     minInterval: 300001
   },
   yAxis: {
     type: "value",
-    name: "延迟(ms)"
+    name: t('serverRequests.echarts.delay')
   },
   series: [
     {
-      name: "缓存内延迟",
+      name: t('serverRequests.echarts.cacheDelay'),
       type: "scatter",
       data: [],
       smooth: false,
       symbolSize: 8
     },
     {
-      name: "缓存外延迟",
+      name: t('serverRequests.echarts.whalapDelay'),
       type: "scatter",
       data: [],
       smooth: false,
@@ -76,12 +79,12 @@ const serverRequestsEcharts = async () => {
     } else {
       isLoading.value = false
       isSuccess.value = false
-      responseData.data = '验证失败，请重新登录。'
+      responseData.data = t('error.jsError')
     }
   }).catch((e) => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.data = '验证失败，请重新登录。'
+    responseData.data = t('error.jsError')
   })
 }
 

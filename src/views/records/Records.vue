@@ -3,13 +3,13 @@ import RecordCard from "@/layouts/records/RecordCard.vue";
 import {sendGetRequest} from "@/assets/js/RequestHandler.js";
 import {onMounted, ref} from "vue";
 import {toast} from "vue-sonner";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false)
 const responseData = ref()
-
 const recordIsLoading = ref(false)
-
 const page = ref(1)
 
 const records = async () => {
@@ -30,13 +30,13 @@ const records = async () => {
     isLoading.value = false
     isSuccess.value = false
     recordIsLoading.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError');
   })
 }
 
 const nextPage = () => {
   if (page.value === responseData.value.totalPages) {
-    toast.warning('已经是最后一页了哦')
+    toast.warning(t('ranking.pageInfo.last'))
     return
   }
   page.value += 1
@@ -45,7 +45,7 @@ const nextPage = () => {
 
 const previousPage = () => {
   if (page.value === 1) {
-    toast.warning('已经是第一页了哦')
+    toast.warning(t('ranking.pageInfo.first'))
     return
   }
   page.value -= 1

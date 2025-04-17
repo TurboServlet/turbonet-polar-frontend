@@ -2,10 +2,10 @@
 import {ref, toRef} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
+import { useI18n } from 'vue-i18n';
 
-
-
+const { t } = useI18n()
 const isShowInner = ref(false)
 const changeShow = () => {
   isShowInner.value = !isShowInner.value
@@ -42,7 +42,7 @@ const resetTurboName = async () => {
     if (response.statusCode === 200) {
       isBtnLoading.value = false
       isSuccess.value = true
-      toast.success('重置成功')
+      toast.success(t('supportSession.resetTurboName.toast.success'))
     } else {
       toast.error(response.data)
       isBtnLoading.value = false
@@ -56,10 +56,10 @@ const resetTurboName = async () => {
   <div v-if="!isSuccess" class="bg-base-100 rounded-box p-6">
     <div v-if="!isShowInner" class="h-full flex items-center justify-between">
       <div>
-        <div class="font-bold text-xl">重置Turbo用户名</div>
-        <div class="opacity-60">当前用户名: {{ turboName }}</div>
+        <div class="font-bold text-xl">{{ $t('supportSession.resetTurboName.title') }}</div>
+        <div class="opacity-60">{{ $t('supportSession.resetTurboName.oldTurboName') }}</div>
       </div>
-      <button class="btn btn-primary gap-4" @click="changeShow">选择此帮助</button>
+      <button class="btn btn-primary gap-4" @click="changeShow">{{ $t('supportSession.choose') }}</button>
     </div>
     <div v-else class="h-full flex flex-col">
       <label class="input input-bordered flex items-center gap-2">
@@ -67,24 +67,24 @@ const resetTurboName = async () => {
         <input
             type="text"
             class="grow"
-            placeholder="新用户名"
+            :placeholder="$t('supportSession.resetTurboName.details.newTurboName')"
             v-model="newTurboName"
             required/>
       </label>
       <div class="mt-6"></div>
       <div class="flex mt-auto justify-end gap-4">
-        <button class="btn btn-error" @click="changeShow">返回</button>
+        <button class="btn btn-error" @click="changeShow">{{ $t('supportSession.back') }}</button>
         <button :disabled="isBtnLoading" class="btn btn-primary" @click="resetTurboName">
           <span v-if="isBtnLoading" class="loading loading-spinner"></span>
-          重置用户名
+          {{ $t('supportSession.resetTurboName.submit') }}
         </button>
       </div>
     </div>
   </div>
   <div v-else class="bg-base-100 rounded-box p-6 h-full flex flex-col">
-    <div class="font-bold text-xl">成功！</div>
+    <div class="font-bold text-xl">{{ $t('supportSession.success') }}</div>
     <div class="mt-2"></div>
-    <div>我们已重置您的用户名，请重新登录。</div>
+    <div>{{ $t('supportSession.resetTurboName.notice') }}</div>
   </div>
 </template>
 

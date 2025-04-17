@@ -4,7 +4,7 @@ import {onMounted, ref, watch} from "vue";
 import {sendGetRequest, sendPostRequest} from "@/assets/js/RequestHandler.js";
 import TurboPermissionBadge from "@/components/TurboPermissionBadge.vue";
 import {toast} from "vue-sonner";
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
 import {closeDialogModal} from "@/assets/js/DialogManager.js";
 import { useI18n } from 'vue-i18n';
 

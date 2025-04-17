@@ -2,10 +2,10 @@
 import {ref, toRef} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
+import { useI18n } from 'vue-i18n';
 
-
-
+const { t } = useI18n()
 const isShowInner = ref(false)
 const changeShow = () => {
   isShowInner.value = !isShowInner.value
@@ -42,7 +42,7 @@ const resetEmail = async () => {
     if (response.statusCode === 200) {
       isBtnLoading.value = false
       isSuccess.value = true
-      toast.success('已发送邮件')
+      toast.success(t('supportSession.resetEmail.toast.success'))
     } else {
       toast.error(response.data)
       isBtnLoading.value = false
@@ -56,10 +56,10 @@ const resetEmail = async () => {
   <div v-if="!isSuccess" class="bg-base-100 rounded-box p-6">
     <div v-if="!isShowInner" class="h-full flex items-center justify-between">
       <div>
-        <div class="font-bold text-xl">重置电子邮箱</div>
-        <div class="opacity-60">当前邮箱: {{ email }}</div>
+        <div class="font-bold text-xl">{{ $t('supportSession.resetEmail.title') }}</div>
+        <div class="opacity-60">{{ $t('supportSession.resetEmail.oldEmail') }}</div>
       </div>
-      <button class="btn btn-primary gap-4" @click="changeShow">选择此帮助</button>
+      <button class="btn btn-primary gap-4" @click="changeShow">{{ $t('supportSession.choose') }}</button>
     </div>
     <div v-else class="h-full flex flex-col">
       <label class="input input-bordered flex items-center gap-2">
@@ -67,24 +67,24 @@ const resetEmail = async () => {
         <input
             type="text"
             class="grow"
-            placeholder="新电子邮箱"
+            :placeholder="$t('supportSession.resetEmail.details.newEmail')"
             v-model="newEmail"
             required/>
       </label>
       <div class="mt-6"></div>
       <div class="flex mt-auto justify-end gap-4">
-        <button class="btn btn-error" @click="changeShow">返回</button>
+        <button class="btn btn-error" @click="changeShow">{{ $t('supportSession.back') }}</button>
         <button :disabled="isBtnLoading" class="btn btn-primary" @click="resetEmail">
           <span v-if="isBtnLoading" class="loading loading-spinner"></span>
-          重置电子邮箱
+          {{ $t('supportSession.resetEmail.submit') }}
         </button>
       </div>
     </div>
   </div>
   <div v-else class="bg-base-100 rounded-box p-6 h-full flex flex-col">
-    <div class="font-bold text-xl">成功！</div>
+    <div class="font-bold text-xl">{{ $t('supportSession.success') }}</div>
     <div class="mt-2"></div>
-    <div>我们已发送验证邮件至您的新邮箱，请查看您的邮件。</div>
+    <div>{{ $t('supportSession.resetEmail.notice') }}</div>
   </div>
 </template>
 

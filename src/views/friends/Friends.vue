@@ -6,7 +6,9 @@ import {sendGetRequest} from "@/assets/js/RequestHandler.js";
 import SingleFriend from "@/layouts/friends/SingleFriend.vue";
 import FriendSettingDialog from "@/layouts/friends/FriendSettingDialog.vue";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false)
 const page = ref(1)
@@ -27,7 +29,7 @@ const showFriends = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 

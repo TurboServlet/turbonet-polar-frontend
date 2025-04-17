@@ -5,12 +5,11 @@ import UpgradeDialog from "@/layouts/turboPremission/UpgradeDialog.vue";
 import {ref, toRef} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
-
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
+import { useI18n } from 'vue-i18n';
 
-
-
+const { t } = useI18n()
 const turboName = ref('')
 const selectedPermission = ref('AUTHORIZER')
 const isBtnLoading = ref(false)
@@ -35,7 +34,7 @@ const upgradeTurboPermission = async () => {
   }
   await sendPostRequest('/permission/upgradePermission', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('授权成功')
+      toast.success(t('turboPermission.upgradeTurboPermission.toast.success'));
       isBtnLoading.value = false
     } else {
       toast.error(response.data)

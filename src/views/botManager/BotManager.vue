@@ -4,12 +4,12 @@ import TurboPermissionBadge from "@/components/TurboPermissionBadge.vue";
 import {onMounted, ref} from "vue";
 import {sendGetRequest, sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false)
-
 const responseData = ref()
-
 const unbindBtnLoadingStates = ref({});
 
 const getBindList = async () => {
@@ -29,7 +29,7 @@ const getBindList = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 
@@ -41,7 +41,7 @@ const unbind = async (botId) => {
   }
   await sendPostRequest('/bot/unbind', payload, false).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('取消授权成功')
+      toast.success(t('botManager.toast.unbindSuccess'))
       unbindBtnLoadingStates.value[botId] = false
       isSuccess.value = false
       isLoading.value = true
@@ -68,7 +68,7 @@ const showBotToken = async () => {
     }
   }).catch(() => {
     botTokenIsLoading.value = false
-    botToken.value = '加载 BotToken 失败，请重新登录。'
+    botToken.value = t('error.tokenError')
   })
 }
 
@@ -79,7 +79,7 @@ onMounted(() => {
 
 const copyToClipboard = () => {
   navigator.clipboard.writeText(botToken.value).then(() => {
-    toast.success('已复制到剪贴板')
+    toast.success(t('botManager.toast.copySuccess'))
   })
 }
 

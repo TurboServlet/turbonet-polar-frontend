@@ -6,6 +6,10 @@ import {LineChart, MapChart} from "echarts/charts";
 import {CanvasRenderer} from "echarts/renderers";
 import {UniversalTransition} from "echarts/features";
 import {GridComponent, TooltipComponent} from "echarts/components";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n()
+
 echarts.use([
   TooltipComponent,
   GridComponent,
@@ -22,7 +26,7 @@ const dataFormatter = (value) => {
   const pairs = value.split(':');
   pairs.forEach(pair => {
     const [first, second] = pair.split(',');
-    daysAgo.push(String(first + ' 天前'));
+    daysAgo.push(String(first + t('user.maiStatistics.daysAgo')));
     ratings.push(Number(second));
   });
 };

@@ -11,9 +11,10 @@ import ResetTurboNameCard from "@/layouts/supportSession/ResetTurboNameCard.vue"
 import ResetEmailCard from "@/layouts/supportSession/ResetEmailCard.vue";
 import ResetQQNumberCard from "@/layouts/supportSession/ResetQQNumberCard.vue";
 import {toast} from "vue-sonner";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const route = useRoute();
-
 const isLoading = ref(true);
 const isSuccess = ref(false);
 const responseData = ref();
@@ -48,11 +49,11 @@ watchEffect(async () => {
       })
     } else {
       isLoading.value = false
-      responseData.value = '请求体不全，请补全后重试。';
+      responseData.value = t('error.bodyError');
     }
   } catch (e) {
     isLoading.value = false
-    responseData.value = '请求体不全，请补全后重试。';
+    responseData.value = t('error.bodyError');
   }
 })
 
@@ -68,7 +69,7 @@ const closeSession = async () => {
     if (response.statusCode === 200) {
       isBtnLoading.value = false
       isClosed.value = true
-      toast.success('关闭成功')
+      toast.success(t('supportSession.toast.success'))
     } else {
       toast.error(response.data)
       isBtnLoading.value = false
@@ -84,7 +85,7 @@ const closeSession = async () => {
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-if="!isLoading && !isSuccess">
       <h1 class="font-bold text-3xl">
-        <i class="fa-regular fa-circle-xmark"></i> 访问失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('supportSession.page.accessFailed') }}
       </h1>
       <div class="mt-3"></div>
       <p>
@@ -96,12 +97,12 @@ const closeSession = async () => {
   <div v-else class="body-container p-10 rounded-box m-auto max-w-[1000px] bg-base-200">
     <div
         class="font-bold text-4xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text [-webkit-text-fill-color:transparent]">
-      TurboNET 支持会话
+      TurboNET {{ $t('supportSession.page.title') }}
     </div>
     <div class="mt-6"></div>
-    <div class="font-bold text-xl">您的本次会话 ID：{{ sessionId }}</div>
-    <div v-if="!isClosed">该会话将在 {{ seconds }} 秒后销毁，请及时完成您所需要的帮助。</div>
-    <div v-else>该会话已销毁，请重新发起会话。</div>
+    <div class="font-bold text-xl">{{ $t('supportSession.page.sessionId') }}</div>
+    <div v-if="!isClosed">{{ $t('supportSession.page.countDown') }}</div>
+    <div v-else>{{ $t('supportSession.page.eliminated') }}</div>
     <div class="mt-6"></div>
     <div class="flex justify-between flex-col">
       <ResetPasswordCard :session-id="sessionId" v-if="!isClosed"/>
@@ -113,23 +114,23 @@ const closeSession = async () => {
       <ResetQQNumberCard :qq-number="responseData.qqNumber" :session-id="sessionId" v-if="!isClosed"/>
       <div class="mt-4" v-if="!isClosed"></div>
       <div class="bg-base-100 rounded-box p-6">
-        <div class="font-bold text-xl">问题反馈</div>
+        <div class="font-bold text-xl">{{ $t('supportSession.page.feedback.title') }}</div>
         <div class="mt-2"></div>
-        <div class="text-sm">若您有任何疑问，请向管理员提交邮件工单。</div>
+        <div class="text-sm">{{ $t('supportSession.page.feedback.body') }}</div>
         <div class="mt-4"></div>
         <div class="bg-base-300 rounded-box p-4"><i class="fa-regular fa-envelope"></i> ctrlcvs@uwu.cat</div>
       </div>
       <div class="divider"></div>
       <div class="h-full flex items-center flex-col text-center">
         <div>
-          <div class="font-bold text-xl">关闭会话</div>
-          <div class="opacity-60">当您全部处理完成后，请在此处安全关闭会话</div>
+          <div class="font-bold text-xl">{{ $t('supportSession.page.closeSession.close') }}</div>
+          <div class="opacity-60">{{ $t('supportSession.page.closeSession.subTitle') }}</div>
         </div>
         <button v-if="!isClosed" class="btn btn-error gap-4 mt-4" @click="closeSession" :disabled="isBtnLoading">
           <span v-if="isBtnLoading" class="loading loading-spinner"></span>
-          关闭会话 ({{ seconds }} 秒后自动提交)
+          {{ $t('supportSession.page.closeSession.countdown') }}
         </button>
-        <button v-else class="btn btn-neutral gap-4 mt-4" disabled>该会话已销毁</button>
+        <button v-else class="btn btn-neutral gap-4 mt-4" disabled>{{ $t('supportSession.page.closeSession.eliminated') }}</button>
       </div>
     </div>
     <div class="mt-16"></div>

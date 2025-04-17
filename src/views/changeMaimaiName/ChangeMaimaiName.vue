@@ -3,7 +3,9 @@
 import {onMounted, ref} from "vue";
 import {sendGetRequest, sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const username = ref('')
 
 const addSymbol = (symbol) => {
@@ -34,7 +36,7 @@ const showPermission = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 
@@ -66,7 +68,7 @@ const setMaimaiName = async () => {
   }
   await sendPostRequest('/web/setMaimaiName', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('更新成功')
+      toast.success(t('changeMaimaiName.toast.setSuccess'))
       isSetBtnLoading.value = false
     } else {
       toast.error(response.data)
@@ -80,7 +82,7 @@ const resetMaimaiName = async () => {
   const payload = {}
   await sendPostRequest('/web/resetMaimaiName', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('重置成功')
+      toast.success(t('changeMaimaiName.toast.resetSuccess'))
       isResetBtnLoading.value = false
     } else {
       toast.error(response.data)

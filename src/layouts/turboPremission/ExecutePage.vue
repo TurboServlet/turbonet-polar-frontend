@@ -6,12 +6,12 @@ import {ref, toRef} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
 import ExecuteRecordDialog from "@/layouts/turboPremission/ExecuteRecordDialog.vue";
 import ExecuteRecordBadge from "@/components/ExecuteRecordBadge.vue";
+import { useI18n } from 'vue-i18n';
 
-
-
+const { t } = useI18n()
 const turboName = ref('')
 const selectedType = ref('WARNING')
 const isBtnLoading = ref(false)
@@ -38,7 +38,7 @@ const selectedTimeToHour = () => {
 const execute = async () => {
   isBtnLoading.value = true
   if (reason.value === '') {
-    toast.error('请填写理由')
+    toast.error(t('turboPermission.executePage.toast.reason'))
     isBtnLoading.value = false
     return
   }
@@ -52,7 +52,7 @@ const execute = async () => {
     }
     await sendPostRequest('/permission/warnUser', payload, true).then((response) => {
       if (response.statusCode === 200) {
-        toast.success('警告该用户成功')
+        toast.success(t('turboPermission.executePage.toast.warnSuccess'))
         isBtnLoading.value = false
       } else {
         toast.error(response.data)
@@ -71,7 +71,7 @@ const execute = async () => {
     }
     await sendPostRequest('/permission/banUser', payload, true).then((response) => {
       if (response.statusCode === 200) {
-        toast.success('封禁该用户成功')
+        toast.success(t('turboPermission.executePage.toast.banSuccess'))
         isBtnLoading.value = false
       } else {
         toast.error(response.data)

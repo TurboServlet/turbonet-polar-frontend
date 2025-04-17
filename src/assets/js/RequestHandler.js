@@ -1,4 +1,6 @@
 import axios from 'axios';
+import i18n from './i18n.js'
+const { t } = i18n.global
 
 const baseUrl = "https://api.sys-allnet.com"
 
@@ -19,7 +21,7 @@ const tokenRefreshHandler = async (override = false, func = async () => {
         }
     }).catch(error => {
         clearToken();
-        return {statusCode: 401, data: "刷新Token失败，请重新登录"};
+        return {statusCode: 401, data: t('requestHandler.loginError')};
     });
 }
 
@@ -40,7 +42,7 @@ export const sendGetRequest = async (endpoint, flagged = true, times = 0) => {
 
         if (times > 8) {
             clearToken()
-            return {statusCode: 401, data: "刷新Token失效，请重新登入"};
+            return {statusCode: 401, data: t('requestHandler.loginError')};
         }
 
         config = {
@@ -61,7 +63,7 @@ export const sendGetRequest = async (endpoint, flagged = true, times = 0) => {
             if (error.code === "ERR_NETWORK") {
                 return {
                     statusCode: 400,
-                    data: "与服务器连接超时，请检查网络连接"
+                    data: t('requestHandler.timeoutError')
                 };
             }
 
@@ -94,7 +96,7 @@ export const sendPostRequest = async (endpoint, payload, flagged = true, times =
 
         if (times > 8) {
             clearToken()
-            return {statusCode: 401, data: "刷新Token失效，请重新登入"};
+            return {statusCode: 401, data: t('requestHandler.loginError')};
         }
 
         config = {
@@ -115,7 +117,7 @@ export const sendPostRequest = async (endpoint, payload, flagged = true, times =
             if (error.code === "ERR_NETWORK") {
                 return {
                     statusCode: 400,
-                    data: "与服务器连接超时，请检查网络连接"
+                    data: t('requestHandler.timeoutError')
                 };
             }
             let statusCode = error.response.status;

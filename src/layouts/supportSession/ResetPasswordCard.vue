@@ -2,10 +2,10 @@
 import {ref, toRef} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
+import { useI18n } from 'vue-i18n';
 
-
-
+const { t } = useI18n()
 const isShowInner = ref(false)
 const changeShow = () => {
   isShowInner.value = !isShowInner.value
@@ -27,7 +27,7 @@ const sessionId = toRef(props, 'sessionId')
 
 const resetPassword = async () => {
   if (password.value !== passwordConfirm.value) {
-    toast.error('两次密码不一致，请重新输入')
+    toast.error(t('supportSession.resetPassword.toast.validError'))
     return
   }
   isBtnLoading.value = true
@@ -42,7 +42,7 @@ const resetPassword = async () => {
     if (response.statusCode === 200) {
       isBtnLoading.value = false
       isSuccess.value = true
-      toast.success('重置成功')
+      toast.success(t('supportSession.resetPassword.toast.success'))
     } else {
       toast.error(response.data)
       isBtnLoading.value = false
@@ -55,8 +55,8 @@ const resetPassword = async () => {
 <template>
   <div v-if="!isSuccess" class="bg-base-100 rounded-box p-6">
     <div v-if="!isShowInner" class="h-full flex items-center justify-between">
-      <div class="font-bold text-xl">重置密码</div>
-      <button class="btn btn-primary gap-4" @click="changeShow">选择此帮助</button>
+      <div class="font-bold text-xl">{{ $t('supportSession.resetPassword.title') }}</div>
+      <button class="btn btn-primary gap-4" @click="changeShow">{{ $t('supportSession.choose') }}</button>
     </div>
     <div v-else class="h-full flex flex-col">
       <label class="input input-bordered flex items-center gap-2">
@@ -64,7 +64,7 @@ const resetPassword = async () => {
         <input
             type="password"
             class="grow"
-            placeholder="新密码"
+            :placeholder="$t('supportSession.resetPassword.details.newPassword')"
             v-model="password"
             autocomplete="current-password"
             required/>
@@ -75,25 +75,25 @@ const resetPassword = async () => {
         <input
             type="password"
             class="grow"
-            placeholder="确认密码"
+            :placeholder="$t('supportSession.resetPassword.details.confirmPassword')"
             v-model="passwordConfirm"
             autocomplete="current-password"
             required/>
       </label>
       <div class="mt-6"></div>
       <div class="flex mt-auto justify-end gap-4">
-        <button class="btn btn-error" @click="changeShow">返回</button>
+        <button class="btn btn-error" @click="changeShow">{{ $t('supportSession.back') }}</button>
         <button :disabled="isBtnLoading" class="btn btn-primary" @click="resetPassword">
           <span v-if="isBtnLoading" class="loading loading-spinner"></span>
-          重置密码
+          {{ $t('supportSession.resetPassword.submit') }}
         </button>
       </div>
     </div>
   </div>
   <div v-else class="bg-base-100 rounded-box p-6 h-full flex flex-col">
-    <div class="font-bold text-xl">成功！</div>
+    <div class="font-bold text-xl">{{ $t('supportSession.success') }}</div>
     <div class="mt-2"></div>
-    <div>我们已重置您的密码，请重新登录。</div>
+    <div>{{ $t('supportSession.resetPassword.notice') }}</div>
   </div>
 </template>
 

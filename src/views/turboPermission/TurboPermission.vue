@@ -4,7 +4,9 @@ import {sendGetRequest} from "@/assets/js/RequestHandler.js";
 import {onMounted, ref} from "vue";
 import UpgradeTurboPermission from "@/layouts/turboPremission/UpgradeTurboPermission.vue";
 import WarningandBanPage from "@/layouts/turboPremission/ExecutePage.vue";
+import {useI18n} from "vue-i18n";
 
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false)
 const responseData = ref()
@@ -23,7 +25,7 @@ const showUserPermission = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 

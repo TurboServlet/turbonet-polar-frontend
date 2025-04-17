@@ -4,9 +4,11 @@ import {onMounted, ref} from "vue";
 import {sendGetRequest, sendPostRequest} from "@/assets/js/RequestHandler.js";
 import TurboPermissionBadge from "@/components/TurboPermissionBadge.vue";
 import {toast} from "vue-sonner";
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
 import {closeDialogModal} from "@/assets/js/DialogManager.js";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false);
 const downgradeStates = ref({});
@@ -31,7 +33,7 @@ const upgradeTurboPermissionList = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 
@@ -45,7 +47,7 @@ const downgradePermission = async (turboName) => {
   }
   await sendPostRequest('/permission/downgradePermission', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('降级成功')
+      toast.success(t('turboPermission.upgradeDialog.toast.success'))
       downgradeStates.value[turboName].btnLoading = false
       upgradeTurboPermissionList()
     } else {

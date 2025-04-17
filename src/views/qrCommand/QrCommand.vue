@@ -5,7 +5,9 @@ import {sendGetRequest} from "@/assets/js/RequestHandler.js";
 import ArcadeQrCommand from "@/layouts/qrCommand/ArcadeQrCommand.vue";
 import QrCommandDialog from "@/layouts/qrCommand/QrCommandDialog.vue";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false)
 const isShowArcadeSetting = ref(false)
@@ -25,7 +27,7 @@ const showQrCommandList = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 

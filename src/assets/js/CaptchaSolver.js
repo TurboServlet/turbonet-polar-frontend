@@ -1,6 +1,7 @@
 import { ref } from "vue";
 import { sendGetRequest } from "@/assets/js/RequestHandler.js";
-
+import i18n from './i18n.js'
+const { t } = i18n.global
 const factorWorker = new Worker(new URL("./factor.worker.js", import.meta.url));
 
 export const executeRecaptcha = async () => {
@@ -17,7 +18,7 @@ export const executeRecaptcha = async () => {
         .catch(() => {});
 
     if (!isSuccess.value) {
-        throw new Error("获取验证码失败");
+        throw new Error(t('captchaSolver.fetchError'));
     }
 
     const { n, e, c, token } = responseData.value;

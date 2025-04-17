@@ -6,10 +6,10 @@ import TurboPermissionBadge from "@/components/TurboPermissionBadge.vue";
 import ExecuteRecordBadge from "@/components/ExecuteRecordBadge.vue";
 import {closeDialogModal} from "@/assets/js/DialogManager.js";
 import {toast} from "vue-sonner";
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
+import { useI18n } from 'vue-i18n';
 
-
-
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false)
 const responseData = ref()
@@ -32,7 +32,7 @@ const executeRecordList = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 
@@ -46,7 +46,7 @@ const forgiveUser = async (recordId) => {
   }
   await sendPostRequest('/permission/forgiveUser', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('撤销成功')
+      toast.success(t('turboPermission.executeRecordDialog.toast.success'))
       forgiveStates.value[recordId].btnLoading = false
       executeRecordList()
     } else {

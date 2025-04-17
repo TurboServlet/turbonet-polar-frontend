@@ -2,10 +2,10 @@
 import {ref} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
+import { useI18n } from 'vue-i18n';
 
-
-
+const { t } = useI18n()
 const isShowInner = ref(false)
 const changeShow = () => {
   isShowInner.value = !isShowInner.value
@@ -27,7 +27,7 @@ const emailSendVerify = async () => {
     if (response.statusCode === 200) {
       isBtnLoading.value = false
       isSuccess.value = true
-      toast.success('已发送邮件')
+      toast.success(t('support.emailCard.toast.success'))
     } else {
       toast.error(response.data)
       isBtnLoading.value = false
@@ -41,34 +41,34 @@ const emailSendVerify = async () => {
   <div v-if="!isSuccess" class="bg-base-100 rounded-box p-6">
     <form @submit.prevent="emailSendVerify" class="h-full flex flex-col">
       <div v-if="!isShowInner">
-        <div class="font-bold text-xl">邮箱验证</div>
+        <div class="font-bold text-xl">{{ $t('support.emailCard.title') }}</div>
         <div class="mt-2"></div>
-        <div class="text-sm">该方式适用于您在已知注册时使用的邮箱的情况下做其他的更改。</div>
+        <div class="text-sm">{{ $t('support.emailCard.subTitle') }}</div>
         <div class="mt-4"></div>
         <div class="flex mt-auto justify-end gap-4">
-          <button type="button" class="btn btn-primary" @click="changeShow">验证邮箱</button>
+          <button type="button" class="btn btn-primary" @click="changeShow">{{ $t('support.emailCard.validation') }}</button>
         </div>
       </div>
       <div v-else>
         <label class="input input-bordered flex items-center gap-2 w-full">
           <i class="fa-solid fa-at"></i>
-          <input v-model="email" class="grow" placeholder="电子邮箱" required type="email"/>
+          <input v-model="email" class="grow" :placeholder="$t('support.emailCard.detail.email')" required type="email"/>
         </label>
         <div class="mt-6"></div>
         <div class="flex mt-auto justify-end gap-4">
-          <button type="button" class="btn btn-error" @click="changeShow">返回</button>
+          <button type="button" class="btn btn-error" @click="changeShow">{{ $t('support.back') }}</button>
           <button :disabled="isBtnLoading" type="submit" class="btn btn-primary">
             <span v-if="isBtnLoading" class="loading loading-spinner"></span>
-            验证邮箱
+            {{ $t('support.emailCard.validation') }}
           </button>
         </div>
       </div>
     </form>
   </div>
   <div v-else class="bg-base-100 rounded-box p-6 h-full flex flex-col">
-    <div class="font-bold text-xl">成功！</div>
+    <div class="font-bold text-xl">{{ $t('support.emailCard.success') }}</div>
     <div class="mt-2"></div>
-    <div>我们已发送新的会话邮件至 {{ email }} ，请在邮箱中打开新界面来进行后续操作。</div>
+    <div>{{ $t('support.emailCard.notice') }}</div>
   </div>
 </template>
 

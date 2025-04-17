@@ -1,7 +1,7 @@
 <script setup>
 import {ref} from 'vue'
 import {toast} from "vue-sonner";
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {closeDialogModal} from "@/assets/js/DialogManager.js";
 import {useRouter} from "vue-router";

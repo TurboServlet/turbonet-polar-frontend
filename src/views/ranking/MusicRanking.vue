@@ -5,24 +5,19 @@ import {ref, watch, watchEffect} from "vue";
 import {useRoute, useRouter} from "vue-router";
 import {diffName, fixIcon, badgeColor} from '@/assets/js/MusicUtils.js'
 import {toast} from "vue-sonner";
-
+import { useI18n } from 'vue-i18n';
 
 const route = useRoute();
-
 const router = useRouter();
-
 const page = ref(1)
-
 const isLoading = ref(true);
 const isSuccess = ref(false)
-
 const rankingIsLoading = ref(true)
 const rankingIsSuccess = ref(false)
 const musicIsLoading = ref(true)
 const musicIsSuccess = ref(false)
-
 const onlyTurbo = ref(false)
-
+const { t } = useI18n()
 const responseData = ref()
 const musicData = ref()
 const musicId = ref(null)
@@ -53,7 +48,7 @@ watchEffect(async () => {
       }).catch(() => {
         rankingIsLoading.value = false
         rankingIsSuccess.value = false
-        responseData.value = '验证失败，请重新登录。'
+        responseData.value = t('error.jsError')
       })
       await sendGetRequest(`/data/music?musicId=${musicId.value}&musicDiff=${diff.value}`, true).then((response) => {
         if (response.statusCode === 200) {
@@ -68,15 +63,15 @@ watchEffect(async () => {
       }).catch(() => {
         musicIsLoading.value = false
         musicIsSuccess.value = false
-        responseData.value = '验证失败，请重新登录。'
+        responseData.value = t('error.jsError')
       })
     } else {
       isLoading.value = false
-      responseData.value = '请求体不全，请补全后重试。';
+      responseData.value = t('error.bodyError');
     }
   } catch (e) {
     isLoading.value = false
-    responseData.value = '请求体不全，请补全后重试。';
+    responseData.value = t('error.bodyError');
   }
 });
 
@@ -95,7 +90,7 @@ const musicRanking = async () => {
   }).catch(() => {
     rankingIsLoading.value = false
     rankingIsSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 
@@ -113,7 +108,7 @@ watch([rankingIsLoading, musicIsLoading], () => {
 
 const nextPage = () => {
   if (page.value === responseData.value.totalPages) {
-    toast.warning('已经是最后一页了哦')
+    toast.warning(t('ranking.pageInfo.last'))
     return
   }
   page.value += 1
@@ -122,7 +117,7 @@ const nextPage = () => {
 
 const previousPage = () => {
   if (page.value === 1) {
-    toast.warning('已经是第一页了哦')
+    toast.warning(t('ranking.pageInfo.first'))
     return
   }
   page.value -= 1
@@ -131,7 +126,7 @@ const previousPage = () => {
 
 const addPage = (number) => {
   if (page.value + number > responseData.value.totalPages) {
-    toast.warning('超过总页数了哦')
+    toast.warning(t('ranking.pageInfo.exceed'))
     return
   }
   page.value += number

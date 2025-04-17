@@ -77,131 +77,131 @@ let option = ref({
           value: 18,
         },
         {
-          name: "重庆市",
+          name: t('turboMap.series.regions.Chongqing'),
           value: 2,
         },
         {
-          name: "河北省",
+          name: t('turboMap.series.regions.Hebei'),
           value: 1,
         },
         {
-          name: "河南省",
+          name: t('turboMap.series.regions.Henan'),
           value: 9,
         },
         {
-          name: "云南省",
+          name: t('turboMap.series.regions.Yunnan'),
           value: 1,
         },
         {
-          name: "辽宁省",
+          name: t('turboMap.series.regions.Liaoning'),
           value: 5,
         },
         {
-          name: "黑龙江省",
+          name: t('turboMap.series.regions.Heilongjiang'),
           value: 1,
         },
         {
-          name: "湖南省",
+          name: t('turboMap.series.regions.Hunan'),
           value: 0,
         },
         {
-          name: "安徽省",
+          name: t('turboMap.series.regions.Anhui'),
           value: 1,
         },
         {
-          name: "山东省",
+          name: t('turboMap.series.regions.Shandong'),
           value: 7,
         },
         {
-          name: "新疆维吾尔自治区",
+          name: t('turboMap.series.regions.Xinjiang'),
           value: 1,
         },
         {
-          name: "江苏省",
+          name: t('turboMap.series.regions.Jiangsu'),
           value: 6,
         },
         {
-          name: "浙江省",
+          name: t('turboMap.series.regions.Zhejiang'),
           value: 25,
         },
         {
-          name: "江西省",
+          name: t('turboMap.series.regions.Jiangxi'),
           value: 2,
         },
         {
-          name: "湖北省",
+          name: t('turboMap.series.regions.Hubei'),
           value: 0,
         },
         {
-          name: "广西壮族自治区",
+          name: t('turboMap.series.regions.Guangxi'),
           value: 4,
         },
         {
-          name: "甘肃省",
+          name: t('turboMap.series.regions.Gansu'),
           value: 0,
         },
         {
-          name: "山西省",
+          name: t('turboMap.series.regions.Shan1xi'),
           value: 0,
         },
         {
-          name: "内蒙古自治区",
+          name: t('turboMap.series.regions.Neimenggu'),
           value: 2,
         },
         {
-          name: "陕西省",
+          name: t('turboMap.series.regions.Shan3xi'),
           value: 0,
         },
         {
-          name: "吉林省",
+          name: t('turboMap.series.regions.Jilin'),
           value: 0,
         },
         {
-          name: "福建省",
+          name: t('turboMap.series.regions.Fujian'),
           value: 4,
         },
         {
-          name: "贵州省",
+          name: t('turboMap.series.regions.Guizhou'),
           value: 1,
         },
         {
-          name: "广东省",
+          name: t('turboMap.series.regions.Guangdong'),
           value: 10,
         },
         {
-          name: "青海省",
+          name: t('turboMap.series.regions.Qinghai'),
           value: 0,
         },
         {
-          name: "西藏自治区",
+          name: t('turboMap.series.regions.Xizang'),
           value: 0,
         },
         {
-          name: "四川省",
+          name: t('turboMap.series.regions.Sichuan'),
           value: 1,
         },
         {
-          name: "宁夏回族自治区",
+          name: t('turboMap.series.regions.Ningxia'),
           value: 0,
         },
         {
-          name: "海南省",
+          name: t('turboMap.series.regions.Hainan'),
           value: 1,
         },
         {
-          name: "台湾省",
+          name: t('turboMap.series.regions.Taiwan'),
           value: 0,
         },
         {
-          name: "香港特别行政区",
+          name: t('turboMap.series.regions.Xianggang'),
           value: 0,
         },
         {
-          name: "澳门特别行政区",
+          name: t('turboMap.series.regions.Aomen'),
           value: 0,
         },
         {
-          name: "南海诸岛",
+          name: t('turboMap.series.regions.Nanhaizhudao'),
           value: 0,
         }
       ]

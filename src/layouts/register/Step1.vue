@@ -2,7 +2,7 @@
 import {ref} from "vue";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
 import {openDialogModal} from "@/assets/js/DialogManager.js";
 
 
@@ -48,27 +48,27 @@ const changeStep = () => {
 <template>
   <div class="body flex align-middle" style="flex-direction: column;">
     <h1 class="font-bold text-3xl">
-      注册您的账号
+      {{ $t('register.title') }}
     </h1>
     <div class="mt-2"></div>
     <label class="form-control w-full max-w-xs">
       <div class="label">
-        <span class="label-text">填写舞萌二维码ID</span>
+        <span class="label-text">{{ $t('register.step1.qrcode') }}</span>
       </div>
       <input type="text" placeholder="SGWCMAIDxxxxxxxxxxxxxxxxxxx" v-model="weChatID"
              class="input input-bordered w-full max-w-xs"/>
       <div class="label">
         <span class="label-text-alt"></span>
-        <span class="label-text-alt" @click="openDialogModal('registerDialog')"><i class="fa-regular fa-circle-question"></i> 我不理解</span>
+        <span class="label-text-alt" @click="openDialogModal('registerDialog')"><i class="fa-regular fa-circle-question"></i> {{ $t('register.step1.notUnderstand') }}</span>
       </div>
     </label>
     <div class="mt-2"></div>
     <button @click="step1()" :disabled="step1IsProcessing" class="btn btn-active btn-primary btn-wide"><span
-        v-if="step1IsProcessing" class="loading loading-spinner"/>下一步
+        v-if="step1IsProcessing" class="loading loading-spinner"/>{{ $t('register.step1.nextStep') }}
     </button>
     <div class="mt-3"></div>
     <div class="text-right text-xs opacity-60">
-      已经拥有帐号了?
+      {{ $t('register.step1.alreadyExist') }}
       <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
     </div>
   </div>

@@ -22,7 +22,7 @@ const showNetworkStatus = async () => {
       responseData.value = response.data
     }
   }).catch(() => {
-    return '验证失败，请重新登录。'
+    return t('error.jsError')
   })
 }
 

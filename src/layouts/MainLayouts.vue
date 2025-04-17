@@ -4,7 +4,9 @@ import Header from "@/layouts/Header.vue";
 import Menu from "@/layouts/Menu.vue";
 import {onMounted, ref} from "vue";
 import {sendGetRequest} from "@/assets/js/RequestHandler.js";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const turboName = ref('')
 
 const isLoading = ref(true);
@@ -26,7 +28,7 @@ const verify = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    message.value = '验证失败，请重新登录。'
+    message.value = t('error.jsError')
   })
 }
 

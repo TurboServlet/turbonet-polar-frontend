@@ -5,7 +5,9 @@ import ThemeChanger from "@/components/themeChanger.vue";
 import {useRoute} from "vue-router";
 import {sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false)
 
@@ -37,11 +39,11 @@ watchEffect(async () => {
         })
     } else {
       isLoading.value = false
-      message.value = '请求体不全，请补全后重试。';
+      message.value = t('error.bodyError');
     }
   } catch (e) {
     isLoading.value = false
-    message.value = '请求体不全，请补全后重试。';
+    message.value = t('error.bodyError');
   }
 });
 
@@ -53,14 +55,14 @@ watchEffect(async () => {
     <span v-if="isLoading" class="loading loading-spinner size-8"/>
     <div v-else>
           <h1 class="font-bold text-3xl"  v-if="isSuccess">
-      <i class="fa-regular fa-circle-check"></i> 验证成功
+      <i class="fa-regular fa-circle-check"></i> {{ $t('register.verify.succeed') }}
     </h1>
       <h1 class="font-bold text-3xl" v-else>
-        <i class="fa-regular fa-circle-xmark"></i> 验证失败
+        <i class="fa-regular fa-circle-xmark"></i> {{ $t('register.verify.failed') }}
       </h1>
     <div class="mt-3"></div>
     <p v-if="isSuccess">
-      已验证完成，将在三秒后返回至主页。 <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
+      {{ $t('register.verify.notice') }} <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>
     </p>
     <p v-else>
       {{ message }} <router-link class="text-primary" to="/">{{ $t('error.back') }}</router-link>

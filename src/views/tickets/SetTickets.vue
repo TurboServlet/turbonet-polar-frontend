@@ -4,8 +4,8 @@ import {onMounted, ref, watch} from "vue";
 import {sendGetRequest, sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {toast} from "vue-sonner";
 import {useI18n} from "vue-i18n";
-const { t } = useI18n()
 
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false)
 const responseData = ref()
@@ -24,7 +24,7 @@ const showPermission = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 
@@ -36,7 +36,7 @@ const resetTickets = async () => {
   const payload = {}
   await sendPostRequest('/web/resetTickets', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('重置成功')
+      toast.success(t('setTickets.toast.success'))
       isResetBtnLoading.value = false
     } else {
       toast.error(response.data)
@@ -52,7 +52,7 @@ const setTickets = async () => {
   }
   await sendPostRequest('/web/setTickets', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('设置成功')
+      toast.success(t('setTickets.toast.success'))
       isSetBtnLoading.value = false
     } else {
       toast.error(response.data)

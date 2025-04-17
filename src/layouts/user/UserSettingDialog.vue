@@ -4,9 +4,11 @@ import {onMounted, ref, watch} from "vue";
 import {sendGetRequest, sendPostRequest} from "@/assets/js/RequestHandler.js";
 import TurboPermissionBadge from "@/components/TurboPermissionBadge.vue";
 import {toast} from "vue-sonner";
-import {executeRecaptcha} from "@/assets/js/CaptchaSovler.js";
+import {executeRecaptcha} from "@/assets/js/CaptchaSolver.js";
 import {closeDialogModal} from "@/assets/js/DialogManager.js";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false);
 const responseData = ref()
@@ -25,7 +27,7 @@ const showUserSettings = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 
@@ -36,7 +38,7 @@ const setUserSettings = async (policyName) => {
   }
   await sendPostRequest('/web/setUserSettings', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('调整成功')
+      toast.success(t('user.settingDialog.toast.success'))
     } else {
       toast.error(response.data)
     }

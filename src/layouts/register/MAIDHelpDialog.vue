@@ -22,12 +22,12 @@ import {closeDialogModal} from "@/assets/js/DialogManager.js";
         <div class="divider divider-horizontal horizontal"></div>
         <div class="divider vertical"></div>
         <div class="text">
-          <h3 class="text-lg font-bold">获取方法</h3>
+          <h3 class="text-lg font-bold">{{ $t('register.qrHelper.title') }}</h3>
           <p>
-            - 打开「舞萌 | 中二」公众号<br>
-            - 获取玩家二维码并点击<br>
-            - 长按识别图中二维码<br>
-            - 扫描结果复制到网站
+            - {{ $t('register.qrHelper.elements.1') }}<br>
+            - {{ $t('register.qrHelper.elements.2') }}<br>
+            - {{ $t('register.qrHelper.elements.3') }}<br>
+            - {{ $t('register.qrHelper.elements.4') }}
           </p>
         </div>
       </div>

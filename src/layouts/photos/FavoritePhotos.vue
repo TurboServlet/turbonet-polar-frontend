@@ -4,7 +4,9 @@ import {sendGetRequest, sendPostRequest} from "@/assets/js/RequestHandler.js";
 import {onMounted, ref} from "vue";
 import PhotoHandler from "@/components/PhotoHandler.vue";
 import {toast} from "vue-sonner";
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false)
 const responseData = ref()
@@ -26,13 +28,13 @@ const getFavoritePhotos = async () => {
   }).catch(() => {
     isLoading.value = false
     isSuccess.value = false
-    responseData.value = '验证失败，请重新登录。'
+    responseData.value = t('error.jsError')
   })
 }
 
 const nextPage = () => {
   if (page.value === responseData.value.totalPages) {
-    toast.warning('已经是最后一页了哦')
+    toast.warning(t('photos.toast.lastPage'))
     return
   }
   page.value += 1
@@ -41,7 +43,7 @@ const nextPage = () => {
 
 const previousPage = () => {
   if (page.value === 1) {
-    toast.warning('已经是第一页了哦')
+    toast.warning(t('photos.toast.firstPage'))
     return
   }
   page.value -= 1
@@ -56,7 +58,7 @@ const removeFavorite = async (photoId) => {
   }
   await sendPostRequest('/web/removeFavorite', payload, true).then((response) => {
     if (response.statusCode === 200) {
-      toast.success('取消收藏成功')
+      toast.success(t('photos.toast.removeSuccess'))
       getFavoritePhotos()
     } else {
       toast.error(response.data)

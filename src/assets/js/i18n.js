@@ -4,7 +4,7 @@ import zh from '@/assets/locales/zh.json'
 import zht from '@/assets/locales/zht.json'
 import ja from '@/assets/locales/ja.json'
 import ko from '@/assets/locales/ko.json'
-import ru from '@/assets/locales/ar.json'
+import ar from '@/assets/locales/ar.json'
 
 const messages = { zh, en, zht, ja, ko, ar }
 

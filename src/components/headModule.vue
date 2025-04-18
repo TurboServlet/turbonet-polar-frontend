@@ -75,7 +75,7 @@ const changeLang = (lang) => {
             </button>
           </li>
           <li>
-            <button @click="changeLang('ru')" :class="{ 'menu-active': locale === 'ar' }">
+            <button @click="changeLang('ar')" :class="{ 'menu-active': locale === 'ar' }">
               <span class="pe-4 font-mono text-[.5625rem] font-bold tracking-[0.09375rem] opacity-40">AR</span>
               <span class="font-[sans-serif]">اللغة العربية</span>
             </button>

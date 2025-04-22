@@ -1,0 +1,1054 @@
+{
+    "index": {
+        "title": "欢迎来到喵星控制面板喵~（ฅ^•ω•^ฅ）"
+    },
+    "indexButton": {
+        "member": "戳这里进入控制页喵~ฅ'ω'ฅ",
+        "guest": "快来注册或登录喵~(=ↀωↀ=)",
+        "jsLogout": "已经安全退出登录喵~ヾ(･ω･*)"
+    },
+    "devInfo": {
+        "title": "我们是谁喵？ฅ(≈>ω<≈)ฅ",
+        "context": {
+            "1": "是抱着毛线球玩耍的非盈利小猫咪喵~ฅ(´-ω-`)ฅ",
+            "2": "代码森林里蹦蹦跳跳的喵星人工程师哦~(=^･ω･^=)",
+            "3": "用小鱼干动力和好奇心堆出来的神奇魔法盒子喵！(ฅ•.•ฅ)ﻌ"
+        },
+        "devContext": {
+            "ctrlcvs": "全能铲屎官/总设计师喵~ฅ^•ﻌ•^ฅ",
+            "kiwi": "数据库魔法使喵~(=｀ω´=)",
+            "404": "移动APP专家喵~ฅ(⌯͒• ɪ •⌯͒)ฅ",
+            "apple": "提供喵呜能量补给哦~ฅ( ̳• ·̫ • ̳)ﾉ♡",
+            "taojiu": "接口文档护理师喵~ฅ(´･ω･`)",
+            "yuuluo": "NONE BOT驯兽师喵~ฅ(≚ᄌ≚)",
+            "haochi": "服务器接线小能手喵~ฅ( ̳• ◡ • ̳)ฅ",
+            "tenshi": "交互魔法架构师喵~ฅ( ˘ω˘ )ฅ"
+        }
+    },
+    "cooperatorInfo": {
+        "title": "敞开肉球欢迎喵~ฅ(^◕ᴥ◕^)ฅ",
+        "context": {
+            "1": "超喜欢开发者大大的创意小鱼干喵~ฅ(≧∇≦)ฅ",
+            "2": "准备了超全的接口文档魔法书喵~(=^･ｪ･^=))ﾉ彡☆",
+            "3": "可以通过",
+            "4": "和",
+            "5": "了解更多喵~感谢一起玩毛线球的伙伴们喵！(ฅ•ω•ฅ)♡"
+        },
+        "partner": "猫猫伙伴喵~ฅ(´・ω・｀)ฅ"
+    },
+    "turboMap": {
+        "title": "妙爪生花喵~创意无限大爆炸ฅ(≈◕‿◕≈)ฅ",
+        "context": {
+            "1": "用猫薄荷能量点亮了这些地区喵~ฅ(≚ᄌ≚)◞✨"
+        },
+        "mapSource": "地图来自云朵上的喵星人DataVฅ(=´∇｀=)",
+        "visualMap": {
+            "intensive": "毛茸茸密集区喵~ฅ(>ω<)ฅ",
+            "sparse": "空旷打滚区喵~ฅ(=´ｪ`=)"
+        },
+        "series": {
+            "name": "Turbo魔法盒子分布图喵~ฅ(´⊙ω⊙`)",
+            "regions": {
+                "Beijing": "京喵",
+                "Tianjin": "津喵",
+                "Shanghai": "沪喵",
+                "Chongqing": "渝喵",
+                "Hebei": "冀喵",
+                "Henan": "豫喵",
+                "Yunnan": "滇喵",
+                "Liaoning": "辽喵",
+                "Heilongjiang": "黑喵",
+                "Hunan": "湘喵",
+                "Anhui": "皖喵",
+                "Shandong": "鲁喵",
+                "Xinjiang": "新喵",
+                "Jiangsu": "苏喵",
+                "Zhejiang": "浙喵",
+                "Jiangxi": "赣喵",
+                "Hubei": "鄂喵",
+                "Guangxi": "桂喵",
+                "Gansu": "陇喵",
+                "Shan1xi": "晋喵",
+                "Neimenggu": "蒙喵",
+                "Shan3xi": "秦喵",
+                "Jilin": "吉喵",
+                "Fujian": "闽喵",
+                "Guizhou": "黔喵",
+                "Guangdong": "粤喵",
+                "Qinghai": "青喵",
+                "Xizang": "藏喵",
+                "Sichuan": "蜀喵",
+                "Ningxia": "宁喵",
+                "Hainan": "琼喵",
+                "Taiwan": "台喵",
+                "Xianggang": "港喵",
+                "Aomen": "澳喵",
+                "Nanhaizhudao": "诸喵"
+            }
+        }
+    },
+    "footer": {
+        "contact": "© 喵爪伺服 2024。保留所有小鱼干~侵权请联系喵~{email}ฅ(=´・ω・｀=)",
+        "privacy": "隐私条约喵~ฅ(･ᆺ･)ﾉ",
+        "tos": "使用守则喵~ฅ(=´∇｀=)"
+    },
+    "login": {
+        "title": "欢迎回家喵~ฅ(=^‥^=)ﾉ",
+        "fields": {
+            "username": "喵星人名ฅ(>ω<)ฅ",
+            "password": "小鱼干密码ฅ(=ↀωↀ=)"
+        },
+        "support": "需要蹭蹭喵？ฅ(>ω<)ฅ",
+        "register": "注册新爪印ฅ(^▽^)",
+        "button": "啪嗒登录喵~ฅ(=^‥^=)ﾉ",
+        "notice": {
+            "1": "登录即代表同意被",
+            "2": "和"
+        }
+    },
+    "termsofservice": {
+        "title": "使用条款喵~ฅ(･ᆺ･)ﾉ",
+        "introduction": {
+            "p1": "使用喵伺服前需要先签下肉球同意书喵~ฅ(^•ω•^ฅ)",
+            "p2": "访问本喵窝（https://sys-allnet.com）即表示您同意遵守《撸猫守则》ฅ(=ↀωↀ=) 严禁将小鱼干用于非法捕猎哦！",
+            "p3": "除此之外还要乖乖遵守我们的"
+        },
+        "serviceDescription": {
+            "title": "服务说明喵~ฅ(=´∇｀=)",
+            "p1": "喵伺服在法律允许的范围内向您提供在线服务喵~ฅ(^•ω•^ฅ) 若用户未经授权偷偷运输非法小鱼干，喵星概不负责喵！但会协助猫警叔叔处理ฅ(≧ω≦)ฅ",
+            "p2": "用户上传的猫片/小鱼干等内容，若被判定为违规ฅ(≚ᄌ≚) 管理员会挥舞喵爪封禁账号喵~但不保证及时清理所有猫砂盆哦ฅ(=´ｪ`=)"
+        },
+        "modification": {
+            "title": "条款修改权喵~ฅ(=^‥^=)ﾉ",
+            "p1": "我们保留随时更新《撸猫守则》的权利喵~ฅ(≧∇≦)ฅ",
+            "p2": "请以最新版猫薄荷条款为准喵！违反会被暂停小鱼干供应哦ฅ(>ω<)ฅ"
+        },
+        "serviceModification": {
+            "title": "服务调整喵~ฅ(=ↀωↀ=)",
+            "p1": "喵伺服可能随时调整猫爬架设施，不一定会通知喵ฅ(^◕ᴥ◕^)ฅ",
+            "p2": "因此造成的毛线球丢失，本喵概不负责喵~ฅ(･ᆺ･)ﾉ"
+        },
+        "disclaimer": {
+            "title": "免责声明喵~ฅ(≚ᄌ≚)",
+            "p1": "所有服务都是「现状提供」的喵~ฅ(･ᆺ･)ﾉ 不保证猫薄荷永久有效哦！",
+            "p2": "不保证小鱼干的新鲜度和猫爬架的稳定性喵ฅ(=´ｪ`=)",
+            "p3": "也没有义务提供24小时梳毛服务喵ฅ(>ω<)ฅ"
+        },
+        "liability": {
+            "title": "小鱼干赔偿责任喵~ฅ(=´⊙ω⊙`)",
+            "p1": "如果发生以下捣蛋行为：",
+            "p2": "(ฅ´•ω•`)ฅ 乱玩喵伺服导致猫窝崩溃；",
+            "p3": "(=´･ω･`=) 违反《撸猫守则》的任何条款；",
+            "p4": "ฅ(≚ᄌ≚) 偷吃其他喵星人的小鱼干（包括版权、财产等）；",
+            "p5": "(=´ｪ`=) 上传的猫片弄脏别人的毛毯；",
+            "p6": "(ฅ´ᆺ`ฅ) 其他需要负责的调皮行为",
+            "p7": "如果因您打翻牛奶导致损失，要赔偿十倍小鱼干喵！ฅ(>﹏<)ฅ",
+            "p8": "这个责任会一直跟着您直到猫生结束喵ฅ(=ↀωↀ=)"
+        },
+        "clientInstallation": {
+            "title": "客户端使用守则喵~ฅ(=^‥^=)ﾉ",
+            "p1": "Turbo 魔法盒子只能在获得喵星签证的情况下安装客户端喵！ฅ(≧∇≦)ฅ 偷偷安装的话会被没收小鱼干储备喵~在法律允许范围内会协助猫警调查ฅ(･ᆺ･)ﾉ"
+        },
+        "siteContent": {
+            "title": "网页小鱼干使用守则喵~ฅ(=ↀωↀ=)",
+            "p1": "在喵窝玩耍时可能会看到其他喵星人上传的奇怪猫片/小鱼干ฅ(´⊙ω⊙`) 本喵不保证这些内容的：\n1. 新鲜度（可能过期）\n2. 可玩性（可能无聊）\n3. 安全性（可能有猫草过敏）\n如果被奇怪内容吓到炸毛，同意放弃索赔小鱼干的权利喵ฅ(>ω<)ฅ"
+        },
+        "userContent": {
+            "title": "猫片&小鱼干上传指南ฅ(^•ω•^ฅ)",
+            "p1": "您要对上传的每张猫片/每条小鱼干负全责喵！必须保证：\nฅ(≧∇≦)ฅ 拥有小鱼干的所有权\nฅ(=´∇｀=) 获得猫妈妈的拍摄许可\nฅ(≚ᄌ≚) 不包含其他喵的隐私（比如没梳毛的丑照）",
+            "p2": "上传内容不代表本喵认可喵~ฅ(=´ｪ`=)\n发现偷窃小鱼干行为时：\n1. 用喵爪举报侵权内容\n2. 管理员会在72小时内处理（猫的响应速度）\n3. 严重者关进没有猫薄荷的笼子",
+            "p3": "本喵保留随时没收可疑小鱼干的权利ฅ(>ω<)ฅ 不需要提前通知喵！"
+        },
+        "privacyPolicy": {
+            "title": "喵喵隐私守护条约ฅ(･ᆺ･)ﾉ",
+            "p1": "请竖起耳朵仔细阅读以下内容喵~ฅ(=^‥^=)ﾉ"
+        },
+        "proprietaryRights": {
+            "title": "小鱼干所有权声明ฅ(≚ᄌ≚)",
+            "p1": "所有小鱼干（包括文字/喵喵叫/猫片等）都受喵星法律保护ฅ(^•ω•^ฅ) 必须获得铲屎官授权才能享用喵！",
+            "p2": "禁止把本喵的小鱼干重新烹饪后出售ฅ(>ω<)ฅ 违者罚没全年猫薄荷供应喵~"
+        },
+        "links": {
+            "title": "外部猫窝链接须知ฅ(=´ｪ`=)",
+            "p1": "可能会推荐其他猫窝的链接ฅ(≧ω≦)ฅ 这些是通过喵式雷达发现的",
+            "p2": "本喵不担保其他猫窝的小鱼干质量喵！ฅ(･ᆺ･)ﾉ 踩到雷概不负责~",
+            "p3": "如果因为乱逛其他猫窝导致损失ฅ(>﹏<)ฅ 本喵不会赔偿罐头的喵！"
+        },
+        "governingLaw": {
+            "title": "喵星基本法ฅ(=^◕ᴥ◕^=)",
+            "p1": "所有条款最终解释权归喵星最高法院ฅ(≚ᄌ≚) 以《猫薄荷管理法》第9条为准喵~"
+        },
+        "acknowledgement": {
+            "title": "喵星法典来源声明ฅ(≚ᄌ≚)",
+            "p1": "部分条款参考自《osu!撸猫条款》和《Cytoid肉球守则》ฅ(=^‥^=)ﾉ 已通过CC-BY-NC 4.0 喵呜协议授权使用~"
+        }
+    },
+    "privacy": {
+        "title": "肉球隐私条约喵~ฅ(･ᆺ･)ﾉ",
+        "intro-1": "为了经营猫窝ฅ(=´∇｀=) 需要收集这些小鱼干数据喵：\n1. 喵星通行证信息\n2. 巡视领地记录\n3. 猫薄荷使用习惯\n我们会用透明猫砂盆存放这些数据喵~",
+        "intro-2": {
+            "beforeLink": "使用喵爪按爪印前ฅ(>ω<)ฅ 请确认已阅读并理解",
+            "betweenLink": "《撸猫守则》",
+            "afterLink": "和《肉球隐私条约》喵~"
+        },
+        "collect-info": {
+            "title": "我们收集的小鱼干ฅ(=ↀωↀ=)",
+            "play": {
+                "title": "喵爪活动记录",
+                "desc": "玩耍时会留下这些喵爪印ฅ(^•ω•^ฅ)：",
+                "list": {
+                    "1": "喵牌号（唯一身份标识）",
+                    "2": "巡视领地时间",
+                    "3": "小鱼干账户资料",
+                    "4": "猫爬架征服成绩",
+                    "5": "尾巴摆动频率设置",
+                    "6": "珍藏的小鱼干库存",
+                    "7": "猫薄荷园区探索进度",
+                    "8": "肉球印章收集情况",
+                    "9": "每日跑酷路线",
+                    "10": "喵喵日志（错误报告用）"
+                },
+                "note": "您的喵牌号会藏在最安全的猫窝里ฅ(･ᆺ･)ﾉ 跑酷路线和尾巴设置只有管理员能看到喵~其他数据会根据您的选择展示在荣誉墙上哦ฅ(=^‥^=)ﾉ"
+            },
+            "register": {
+                "title": "喵星人登记处ฅ(=^‥^=)ﾉ",
+                "desc": "申请成为正式喵民时需要留下这些爪印喵~ฅ(^•ω•^ฅ)",
+                "list": {
+                    "1": "🐾 喵牌号（唯一身份标识）",
+                    "2": "🎀 喵星艺名",
+                    "3": "📮 小鱼干信箱地址",
+                    "4": "🔒 暗号（使用喵式魔法加密）",
+                    "5": "⏰ 入籍时间"
+                },
+                "note": "您的喵牌号会藏在最安全的猫窝里ฅ(･ᆺ･)ﾉ 只有艺名会展示在荣誉墙喵~绝对不会把信箱地址卖给猫贩子！"
+            },
+            "login": {
+                "title": "肉球认证喵~ฅ(=ↀωↀ=)",
+                "desc": "每次按爪印登录时会记录：",
+                "list": {
+                    "1": "📍 喵爪GPS定位"
+                },
+                "note": "定位信息只有管理员能查看喵ฅ(=´∇｀=)"
+            }
+        },
+        "disclosure": {
+            "title": "小鱼干信息披露守则ฅ(≚ᄌ≚)",
+            "desc": "正常情况下绝对不会泄露您的藏食地点ฅ(>ω<)ฅ 除非：",
+            "list": {
+                "1": "🎪 您的喵星艺名/巡视时间/战绩等（可在设置中自由选择展示）",
+                "2": "🎁 您主动分享的猫片和小鱼干",
+                "3": "👮♂️ 猫警叔叔带着搜查令来喵~",
+                "4": {
+                    "beforeLink": "🍂 违反《撸猫守则》",
+                    "afterLink": "被关进反省室的情况"
+                },
+                "5": {
+                    "beforeLink": "🐾 其他需要亮出肉球",
+                    "afterLink": "的特殊时刻"
+                }
+            }
+        },
+        "cookies": {
+            "title": "小鱼干饼干ฅ(=´ｪ`=)",
+            "desc": "我们不会偷偷在您电脑藏饼干喵！ฅ(^◕ᴥ◕^)ฅ"
+        },
+        "data-security": {
+            "title": "猫窝安保系统ฅ(≧ω≦)ฅ",
+            "desc": "虽然不能100%防住隔壁二哈的突袭ฅ(>﹏<)ฅ 但我们会用九条命守护您的小鱼干！"
+        },
+        "policy-update": {
+            "title": "猫薄荷条款更新ฅ(=ↀωↀ=)",
+            "desc": "可能随时更新《藏食指南》喵~ฅ(^•ω•^ฅ) 会在公告板提前三天贴出告示喵！"
+        }
+    },
+    "notFound": {
+        "title": "喵呀！页面被当成猫抓板啦ฅ(≧∇≦)ฅ",
+        "back": "快溜回主猫窝~ฅ(^▽^)"
+    },
+    "menu": {
+        "panel": "喵讯中心ฅ(=ↀωↀ=)",
+        "turboPermission": "喵爪权限管理",
+        "botManager": "喵型机器人饲育员",
+        "serverRequests": "服务器小鱼干统计",
+        "arcade": {
+            "title": "游戏机厅喵~ฅ(≧ω≦)",
+            "info": "机厅小鱼干档案",
+            "alias": "喵窝简称",
+            "networkStatus": "喵网心跳检测"
+        },
+        "maimai": {
+            "title": "舞萌喵乐园",
+            "photos": "喵片收藏",
+            "records": "捕猎日志"
+        },
+        "ranking": {
+            "title": "喵星荣誉榜",
+            "dxRatingRanking": "DX喵力值排行",
+            "achievementRanking": "总小鱼干榜"
+        },
+        "turbo": {
+            "title": "喵薄荷加速器",
+            "changeMaimaiName": "修改喵星艺名",
+            "changeAvatar": "更换喵头像"
+        },
+        "tickets": {
+            "title": "小鱼干券",
+            "currentTickets": "当前猫薄荷券",
+            "setTickets": "设置捕猎倍率"
+        },
+        "qrCommand": "喵令符生成",
+        "friends": {
+            "title": "喵友圈",
+            "friends": "我的喵伙伴",
+            "addFriends": "发送喵爪邀请"
+        }
+    },
+    "error": {
+        "jsError": "肉球认证失败喵~ฅ(>﹏<)ฅ",
+        "loadingError": "毛线球卡住啦",
+        "validateError": "小鱼干校验失败",
+        "enterError": "猫洞被堵住啦",
+        "back": "溜回主猫窝",
+        "tokenError": "喵令牌失效ฅ(´⊙ω⊙`)",
+        "bodyError": "小鱼干没带全喵！"
+    },
+    "panel": {
+        "reason": "捣蛋原因"
+    },
+    "turboPermission": {
+        "myPermission": "本喵的权限",
+        "upgradePermission": "发放喵令牌",
+        "warningAndBan": "喵爪制裁",
+        "showTurboPermission": {
+            "permissions": "喵式认证",
+            "granted": "已盖爪印",
+            "notGranted": "待投喂小鱼干"
+        },
+        "upgradeTurboPermission": {
+            "turboName": "喵星居民证号",
+            "upgradeLog": "喵令牌发放记录",
+            "upgrade": "盖上喵爪印章",
+            "upgradeNotice": {
+                "1": "发放前请三思喵ฅ(･ᆺ･)ﾉ 后续捣蛋行为要你负责铲屎哦！",
+                "2": "《喵星法典》第233条适用"
+            },
+            "toast": {
+                "success": "成功发放猫薄荷权限ฅ(=^‥^=)ﾉ"
+            }
+        },
+        "upgradeDialog": {
+            "title": "喵令牌管理簿",
+            "noData": {
+                "title": "空空如也",
+                "content": "快去发展喵信徒吧ฅ(≧ω≦)ฅ"
+            },
+            "table": {
+                "turboName": "喵民ID",
+                "upgradeAfter": "授予权限",
+                "operate": "撸猫操作",
+                "cancel": "收回小鱼干"
+            },
+            "toast": {
+                "success": "成功回收喵令牌ฅ(=´∇｀=)"
+            }
+        },
+        "executePage": {
+            "toast": {
+                "reason": "请填写捣蛋理由喵~",
+                "warnSuccess": "成功轻拍肉球提醒ฅ(=ↀωↀ=)",
+                "banSuccess": "关进反省室成功喵！"
+            },
+            "turboName": "目标喵民ID",
+            "executeLog": "制裁记录簿",
+            "reason": "小鱼干犯罪理由",
+            "banTime": {
+                "1hr": "1小时（面壁思过）",
+                "24hrs": "24小时（断猫薄荷）",
+                "7days": "7天（没收逗猫棒）",
+                "30days": "30天（禁止捕猎）",
+                "365days": "365天（流放汪星）",
+                "permanent": "永久（关黑猫笼）"
+            },
+            "execute": "执行制裁",
+            "executeNotice": {
+                "1": "挥舞喵爪前请确认ฅ(≚ᄌ≚)",
+                "2": "《喵星宪法》支持本操作"
+            }
+        }
+    },
+    "executeRecordBadge": {
+        "ban": "关猫笼",
+        "warning": "拍爪警告",
+        "unknown": "神秘喵事件"
+    },
+    "turboPermissionBadge": {
+        "admin": "🐾 喵星总督",
+        "builder": "🔧 喵匠大师",
+        "authorizer": "🎩 喵薄荷大亨",
+        "user": "🐱 普通喵民",
+        "unknown": "❓ 神秘访客"
+    },
+    "turboWarningBadge": {
+        "noWarning": "✨ 无不良记录",
+        "warned": "⚠️ 被拍爪",
+        "times": "次"
+    },
+    "botManager": {
+        "loading": "正在抓毛线球...",
+        "copyToClipboard": "复制到喵爪板",
+        "noData": "还没有驯服任何机器人喵~",
+        "table": {
+            "botName": "🤖 机器人昵称",
+            "info": "📅 激活时间 & 🎯 使用次数",
+            "operate": "🐾 操作",
+            "cancel": "✂️ 剪断连接",
+            "times": "次"
+        },
+        "toast": {
+            "copySuccess": "已存入喵爪剪贴板ฅ(=^‥^=)ﾉ",
+            "unbindSuccess": "成功解除契约喵~"
+        }
+    },
+    "serverRequests": {
+        "title": "服务器请求统计喵~ฅ(=ↀωↀ=)",
+        "contact": {
+            "1": "「Z-LIB」压缩跳过率与请求重试次数能反映猫网状态喵~ฅ(>ω<)ฅ",
+            "2": "跳过率超过「>3%」时，猫爪可能打滑喵！ฅ(=´ｪ`=)",
+            "3": "重试率和失败率太高的话，可能是猫窝漏雨了喵ฅ(≧∇≦)ฅ"
+        },
+        "totalRequests": "一小时内总啃小鱼干次数",
+        "totalException": "一小时内翻倒牛奶次数",
+        "totalExceptionRate": "翻奶率（百分比）",
+        "totalZlibSkipped": "跳过压缩的猫薄荷包数",
+        "totalRetry": "尾巴打结重试次数",
+        "totalPanic": "彻底炸毛失败次数",
+        "inCache": "猫砂盆缓存命中",
+        "unCache": "毛线球缓存未命中",
+        "echarts": {
+            "time": "时间轴（猫步单位）",
+            "delay": "延迟（喵秒）",
+            "cacheDelay": "猫砂盆延迟",
+            "whalapDelay": "毛线球延迟"
+        }
+    },
+    "arcadeInfo": {
+        "notice": {
+            "title": "注意喵！ฅ(･ᆺ･)ﾉ",
+            "contact": "多蹭蹭Turbo机台就能解锁新机厅信息喵~ฅ(=^‥^=)ﾉ"
+        },
+        "newArcade": "新机厅入库喵~",
+        "arcadeContact": {
+            "1": "今日总发送猫薄荷请求",
+            "2": "次。缓存击中",
+            "3": "次，修复了",
+            "4": "次猫爪错误，缓存击中率"
+        },
+        "arcadeFeature": {
+            "CustomName": "自定义喵名贴纸",
+            "CustomAvatar": "允许换喵头像",
+            "TurboTicket": "Turbo小鱼干券"
+        },
+        "enable": "允许喵~ฅ(=ↀωↀ=)",
+        "disable": "禁止喵！ฅ(>﹏<)ฅ",
+        "noData": "找不到你的机厅喵？快联系铲屎官绑定喵~",
+        "detailDialog": {
+            "title": "机厅详情喵~ฅ(=´∇｀=)",
+            "contact": "当前在线喵民数",
+            "total": "共",
+            "status": {
+                "30minutes": "30分钟内有猫爪印",
+                "60minutes": "60分钟内有猫毛",
+                "120minutes": "120分钟前残留小鱼干味"
+            },
+            "table": {
+                "username": "喵星艺名",
+                "endTime": "收爪时间"
+            },
+            "noData": "这里空空如也，快来当第一只霸机喵ฅ(≧ω≦)ฅ"
+        },
+        "newArcadeDialog": {
+            "title": "新机厅入库喵~",
+            "arcadeType": "机厅类型（用肉球选）",
+            "arcadeNums": "猫爬架数量",
+            "arcadeName": "机厅全称（要带喵~）",
+            "arcadeNamePlaceholder": "比如「喵星人快乐屋」ฅ^•ω•^ฅ",
+            "turboKeychip": "第{ n }台 KeyChipID (短喵码)",
+            "2077Keychip": "第{ n }台 KeyChipID (长喵吗)",
+            "cancel": "取消入库喵~",
+            "submit": "新机厅入库喵~",
+            "toast": {
+                "success": "盖上肉球印章ฅ(=^‥^=)ﾉ"
+            }
+        }
+    },
+    "arcadeSettingEnum": {
+        "maskUsername": "用猫爪挡住名字喵~ฅ(･ᆺ･)ﾉ",
+        "udemaeShowAchievement": "显示友人对战小鱼干数量",
+        "disableTicket": "禁用Turbo小鱼干券喵ฅ(>ω<)ฅ",
+        "disableCustomName": "禁止换喵名贴纸",
+        "disableCustomAvatar": "禁止换喵头像",
+        "unknown": "神秘未知设置喵~ฅ(´⊙ω⊙`)"
+    },
+    "arcadeFunctionType": {
+        "login": "用肉球登录Turbo机台ฅ(=ↀωↀ=)",
+        "kastanjLogin": "Kastanj服务专属猫洞",
+        "specialTypeOneLogin": "2077未来猫洞登录",
+        "ping": "检测猫网心跳包喵~"
+    },
+    "arcadeAlias": {
+        "noData": "还没有专属简称喵~快去蹭蹭机台！",
+        "notice": {
+            "1": "挥舞喵爪前请三思喵ฅ(≚ᄌ≚) 捣蛋记录会刻在猫爬架上！",
+            "2": "《喵星法典》支持管理员没收你的小鱼干~"
+        },
+        "dialog": {
+            "title": "编辑机厅简称喵~",
+            "notice": {
+                "title": "注意喵！ฅ(･ᆺ･)ﾉ",
+                "content": "简称一旦添加只能用九条命修改喵ฅ(=´ｪ`=)"
+            },
+            "placeholder": "比如「喵喵乐园」~",
+            "cancel": "溜走取消喵~",
+            "submit": "按下肉球确认ฅ(=^‥^=)ﾉ",
+            "toast": {
+                "success": "简称刻上猫爪板啦喵！"
+            }
+        }
+    },
+    "networkStatus": {
+        "lastBeat": "距离上一次心跳肉球包 {time}喵~ฅ(=´･ω･`=)",
+        "workingText": {
+            "working": "Turbo 正在打呼噜喵~ฅ(=^‥^=)ﾉ",
+            "warning": "Turbo 被毛线球缠住啦ฅ(>﹏<)ฅ",
+            "error": "Turbo 钻进纸箱失踪了喵！",
+            "unknown": "Turbo 在玩捉迷藏喵~ฅ(≧∇≦)ฅ"
+        },
+        "longTimeOffline": "这台机器已经三天没舔毛了，快检查猫薄荷网络喵！",
+        "notSupport": "这台机器没有安装喵爪探测器ฅ(･ᆺ･)ﾉ"
+    },
+    "user": {
+        "htmlBanned": "被关进猫笼子啦",
+        "bannedBadge": "❌ 小鱼干禁止令",
+        "mySettings": "我的猫砂盆设置",
+        "settingDialog": {
+            "title": "我的猫砂盆设置",
+            "userPage": "查看我的荣誉墙喵~",
+            "best35": "查看最肥美的35条鱼",
+            "best15": "查看最新鲜的15颗猫薄荷",
+            "recentScores": "最近抓老鼠战绩",
+            "option": {
+                "everyone": "所有猫猫",
+                "onlyFriends": "仅喵友圈",
+                "onlyMe": "只给自己看喵~"
+            },
+            "toast": {
+                "success": "猫爪设置生效啦ฅ(=ↀωↀ=)"
+            }
+        },
+        "addFriend": "发送蹭蹭邀请",
+        "return": "溜回上一页喵~",
+        "banMessage": "在 {date} 被 {executorName} 用{banType}猫笼关住{banDuration}，理由：{reason}ฅ(>ω<)ฅ",
+        "warningMessage": "第 {warningIndex} 次在 {date} 被 {executorName} 拍爪警告，理由：{reason}ฅ(=´ｪ`=)",
+        "banType": {
+            "permanent": "永久没收猫爬架",
+            "temporary": "暂时断粮"
+        },
+        "hourSuffix": "小时（猫生计时）",
+        "maiStatistics": {
+            "title": "统计小鱼干",
+            "serverRanking": "服务器排名",
+            "noData": "60天没出门捕猎啦，快去机厅蹭爪印喵~",
+            "averageAchievement": "平均捕猎成功率",
+            "maxCombo": "最长尾巴连击",
+            "fullComboCount": "完美滚毛线球次数",
+            "AllPerfectCount": "顶级捕猎大师认证",
+            "totalAchievement": "累计获得小鱼干",
+            "daysAgo": "天前（以猫砂盆计时）"
+        },
+        "playActivity": {
+            "title": "喵爪活跃度",
+            "playCount": "出勤蹭机次数",
+            "totalPlayTime": "累计打盹时长",
+            "firstPlay": "第一次遇见毛线球",
+            "lastPlay": "上次偷吃小鱼干",
+            "playVersion": "猫薄荷版本"
+        },
+        "recentScores": {
+            "title": "最新捕猎记录"
+        },
+        "private": "这位喵星人把毛毯藏起来啦ฅ(･ᆺ･)ﾉ",
+        "notice": {
+            "1": "根据《喵星公共许可证》第4.0条,",
+            "2": "这个猫爬架参考了",
+            "3": "并",
+            "4": "用肉球改良过",
+            "5": "源码藏在"
+        },
+        "toast": {
+            "success": "邀请函已寄出喵~ฅ(=^‥^=)ﾉ"
+        }
+    },
+    "photos": {
+        "historyPhotos": "历史丑照",
+        "favoritePhotos": "珍藏猫片",
+        "notice": {
+            "title": "注意喵！ฅ(･ᆺ･)ﾉ",
+            "content": "服务器相册七天后会自动清理喵！快把炸毛丑照存进保险箱~ฅ(=ↀωↀ=)"
+        },
+        "noData": "你的相册只有空气喵~快去拍点萌照！",
+        "favorite": {
+            "enable": "已存入保险箱",
+            "disable": "用肉球收藏"
+        },
+        "toast": {
+            "lastPage": "翻到猫粮盆底啦",
+            "firstPage": "这是第一片猫薄荷叶",
+            "removeSuccess": "从保险箱踢出成功",
+            "addSuccess": "成功藏进猫窝深处喵~"
+        },
+        "page": "第 {page} 页"
+    },
+    "records": {
+        "page": "第 {page} 页",
+        "newRecord": "新勋章获得喵~\""
+    },
+    "ranking": {
+        "title": "喵爪排行榜",
+        "button": {
+            "global": "全国喵爪排行榜",
+            "turbo": "TurboNET认证捕猎大师"
+        },
+        "return": "溜回上一页喵~",
+        "pageInfo": {
+            "first": "已经是最后一根逗猫棒了",
+            "last": "退回到第一块猫抓板",
+            "exceed": "超过猫生可承受页数了喵！"
+        },
+        "achievementRanking": {
+            "title": "总小鱼干储备",
+            "table": {
+                "ranking": "肉球印章数",
+                "username": "喵民",
+                "totalAchievement": "累计囤粮数"
+            }
+        },
+        "dxRatingRanking": {
+            "title": "捕猎等级",
+            "table": {
+                "ranking": "尾巴翘起度",
+                "username": "喵民",
+                "dxRating": "狩猎大师评级"
+            }
+        },
+        "musicRanking": {
+            "title": "最佳踩奶曲目",
+            "table": {
+                "ranking": "肉球舒适度",
+                "username": "喵民",
+                "achievement": "踩奶精准度",
+                "dxScore": "DX踩奶分数"
+            }
+        }
+    },
+    "changeMaimaiName": {
+        "title": "更换喵名贴纸",
+        "noPermission": {
+            "title": "注意喵！ฅ(･ᆺ･)ﾉ",
+            "content": "您的肉球权限不够高喵~"
+        },
+        "notice": "新名字为全角猫爪印喵~",
+        "placeholder": "新喵星艺名（比如「喵喵拳大师」）",
+        "button": {
+            "submit": "盖上肉球确认ฅ(=^‥^=)ﾉ",
+            "toDefault": "恢复官方喵名"
+        },
+        "changeNotice": {
+            "1": "挥舞喵爪前请三思喵ฅ(≚ᄌ≚) 捣蛋记录会刻在猫爬架上！",
+            "2": "《喵星法典》支持管理员没收你的小鱼干~"
+        },
+        "toast": {
+            "setSuccess": "新名字刻上荣誉墙啦喵！",
+            "resetSuccess": "恢复原始喵名成功啦喵！"
+        }
+    },
+    "changeAvatar": {
+        "title": "更换喵头像",
+        "dialogTitle": "上传新喵片",
+        "selectPhoto": "用肉球选择图片",
+        "noPermission": {
+            "title": "注意喵！ฅ(･ᆺ･)ﾉ",
+            "content": "您的肉球权限不够高喵~"
+        },
+        "button": {
+            "toDefault": "用官方喵片",
+            "cancel": "取消入库喵~",
+            "submit": "按下肉球确认"
+        },
+        "changeNotice": {
+            "1": "挥舞喵爪前请三思喵ฅ(≚ᄌ≚) 捣蛋记录会刻在猫爬架上！",
+            "2": "《喵星法典》支持管理员没收你的小鱼干~"
+        },
+        "toast": {
+            "jpgWarning": "只接受.jpg格式的猫薄荷图喵！",
+            "sizeWarning": "图片太大啦！超过5MB小鱼干会撑坏喵~",
+            "success": "让全喵星看到啦ฅ(=ↀωↀ=)",
+            "error": "毛线球卡住了，请再试一次喵！",
+            "resetSuccess": "恢复原始喵名成功啦喵！"
+        }
+    },
+    "currentTickets": {
+        "title": "Turbo小鱼干券",
+        "notice": {
+            "title": "注意喵！ฅ(･ᆺ･)ﾉ",
+            "content": "Turbo小鱼干券优先级最高喵！启用时会覆盖官方小鱼干券ฅ(=´･ω･`=)"
+        },
+        "turboTicket": {
+            "enable": "🐟 小鱼干加速中",
+            "disable": "🕸️ 蜘蛛网覆盖中"
+        },
+        "officialTicket": "官方小鱼干券（已冻结）"
+    },
+    "ticketUtils": {
+        "ticketIdToName": {
+            "0": "空爪子喵~",
+            "2": "付费2倍小鱼干券",
+            "3": "付费3倍猫薄荷券",
+            "4": "付费4倍毛线球券",
+            "5": "付费5倍打滚券",
+            "6": "付费6倍呼噜券",
+            "10005": "庆典5倍券（限定鱼味）",
+            "10105": "庆典5倍券（限定薄荷味）",
+            "10205": "庆典5倍券（限定纸箱味）",
+            "11001": "免费1.5倍蹭蹭券",
+            "11002": "免费2倍踩奶券",
+            "11003": "免费3倍翻滚券",
+            "11005": "免费5倍逗猫棒券",
+            "20010": "过期10倍券（长蘑菇了）",
+            "20020": "过期20倍券（被老鼠啃过）",
+            "30001": "神秘双倍券（来自喵星）",
+            "unknown": "未知肉球券ฅ(´⊙ω⊙`)"
+        }
+    },
+    "setTickets": {
+        "title": "设置小鱼干加速器",
+        "ticketType": {
+            "title": "选择小鱼干口味",
+            "paid": "请选择付费小鱼干套餐",
+            "event": "请选择节日限定猫薄荷",
+            "free": "请选择免费蹭蹭券",
+            "special": "请选择神秘肉球礼包"
+        },
+        "lock": "用九条命锁定一枚",
+        "button": {
+            "submit": "盖上肉球封印",
+            "toDefault": "解除小鱼干封印"
+        },
+        "noPermission": {
+            "title": "注意喵！ฅ(･ᆺ･)ﾉ",
+            "content": "您的肉球权限不够高喵~"
+        },
+        "ticketTypeList": {
+            "paid": "金币小鱼干套餐",
+            "event": "节日限定猫薄荷",
+            "free": "免费蹭蹭套餐",
+            "special": "神秘肉球盲盒"
+        },
+        "setNotice": {
+            "1": "挥舞喵爪前请三思喵ฅ(≚ᄌ≚) 捣蛋记录会刻在猫爬架上！",
+            "2": "《喵星法典》支持管理员没收你的小鱼干~"
+        },
+        "toast": {
+            "success": "恢复原始喵名成功啦喵！"
+        }
+    },
+    "qrCommand": {
+        "userQrCommand": "喵民身份二维码",
+        "arcadeQrCommand": "机台肉球识别码",
+        "generateQrCode": "生成喵爪纹",
+        "arcadeNotice": {
+            "title": "注意喵！ฅ(･ᆺ･)ﾉ",
+            "content": "高危警告喵！ฅ(>﹏<)ฅ"
+        },
+        "useNotice": {
+            "1": "挥舞喵爪前请三思喵ฅ(≚ᄌ≚) 捣蛋记录会刻在猫爬架上！",
+            "2": "《喵星法典》支持管理员没收你的小鱼干~"
+        },
+        "dialog": {
+            "title": "肉球识别码",
+            "content": {
+                "1": "请用机台扫描处闻这个二维码喵~",
+                "2": "仅限Turbo加速盒子和友好喵星机台"
+            },
+            "expireTime": "小鱼干保鲜期至：{time}"
+        }
+    },
+    "friends": {
+        "setting": "喵友圈规则",
+        "friendCount": "蹭蹭伙伴数",
+        "noData": "你的好友列表只有空气喵~",
+        "dialog": {
+            "title": "设置蹭蹭策略",
+            "option": {
+                "title": "当前蹭蹭规则",
+                "value": {
+                    "autoAccept": "自动收留流浪喵",
+                    "manual": "用肉球亲自审核",
+                    "friendsOfFriends": "只接受共同喵友",
+                    "nobody": "闭关修炼喵功"
+                },
+                "toast": {
+                    "success": "猫爪设置生效啦ฅ(=ↀωↀ=)"
+                }
+            }
+        },
+        "friendCard": {
+            "playing": "正在抓老鼠",
+            "lastPlayTime": "{hour}小时前（以猫砂盆计时）",
+            "userPage": "查看荣誉墙",
+            "removeFriend": "踢出喵友圈"
+        },
+        "removeFriendDialog": {
+            "content": "确定要把 {friend} 踢出喵友圈吗？ฅ(=´･ω･`=)",
+            "notice": "被踢出的喵会在全宇宙消失，包括他的小鱼干！",
+            "cancel": "收回猫爪",
+            "submit": "永久断粮",
+            "toast": {
+                "success": "成功踢出喵友圈ฅ(>ω<)ฅ"
+            }
+        }
+    },
+    "addFriends": {
+        "requestFriend": {
+            "title": "发送蹭蹭邀请",
+            "placeholder": "输入喵星身份证号",
+            "requestButton": "发送蹭蹭邀请",
+            "notice": "为了保护隐私，不能搜索其他喵喵哦~",
+            "toast": {
+                "success": "邀请函已寄出喵~ฅ(=^‥^=)ﾉ"
+            }
+        },
+        "requestFriendList": {
+            "title": "待处理蹭蹭请求ฅ(=ↀωↀ=)",
+            "noData": "没有喵星人想和你玩毛线球呢~ฅ(´-ω-`)",
+            "requestTime": "申请时间: {time}（以猫砂盆计时）",
+            "button": {
+                "accept": "🐾 通过喵友认证",
+                "deny": "🚫 扔进垃圾桶"
+            },
+            "toast": {
+                "accept": "新喵友加入捕猎小队喵！ฅ(=^‥^=)ﾉ",
+                "deny": "把请求踢出了银河系喵~ฅ(>ω<)ฅ"
+            }
+        }
+    },
+    "register": {
+        "title": "注册成为喵星公民ฅ(=ↀωↀ=)",
+        "qrHelper": {
+            "title": "获取喵爪纹方法",
+            "elements": {
+                "1": "打开「舞萌 | 中二」喵喵号",
+                "2": "获取玩家喵爪纹并轻拍",
+                "3": "长按识别肉球纹",
+                "4": "把扫描结果叼到猫窝里"
+            }
+        },
+        "step1": {
+            "qrcode": "填写喵爪纹ID",
+            "notUnderstand": "看不懂两脚兽文字喵ฅ(･ᆺ･)ﾉ",
+            "nextStep": "跳上下一页猫爬架",
+            "alreadyExist": "已经是喵星公民了喵？"
+        },
+        "step2": {
+            "toast": {
+                "error": "两次输入的小鱼干暗号不一致喵！"
+            },
+            "subTitle": "填写喵星户籍档案",
+            "detail": {
+                "userName": "喵星人名ฅ(>ω<)ฅ",
+                "password": "小鱼干保险箱密码",
+                "confirmPassword": "再舔一次肉球确认",
+                "email": "喵邮箱地址",
+                "qqid": "QQ爪印编号"
+            },
+            "redo": "重新登记喵籍",
+            "expiry": "后失效（以打盹时间为准）",
+            "submit": "盖上肉球提交申请",
+            "tosDialog": {
+                "1": "提交肉球即代表同意被",
+                "2": "使用守则喵~ฅ(=´∇｀=)",
+                "3": "和",
+                "4": "隐私条约喵~ฅ(･ᆺ･)ﾉ"
+            }
+        },
+        "step3": {
+            "subTitle": "验证请求已寄出喵~",
+            "content": {
+                "1": "请检查你的喵邮箱，我们寄出了一封带猫薄荷香味的验证信ฅ(=ↀωↀ=)",
+                "2": "如果没收到，可能被当成垃圾小鱼干处理了喵~"
+            }
+        },
+        "verify": {
+            "succeed": "喵籍认证成功ฅ(=^‥^=)ﾉ",
+            "failed": "验证失败（可能舔了假肉球）",
+            "notice": "三秒后自动跳回主猫窝喵~"
+        }
+    },
+    "support": {
+        "back": "溜回上一页",
+        "credentialCard": {
+            "title": "肉球身份认证",
+            "subTitle": "适用于记得自己小鱼干密码的喵民ฅ(=´∇｀=)",
+            "validation": "舔肉球验证身份",
+            "detail": {
+                "userName": "喵星人名ฅ(>ω<)ฅ",
+                "userPassword": "小鱼干密码ฅ(=ↀωↀ=)"
+            }
+        },
+        "emailCard": {
+            "toast": {
+                "success": "喵邮件已寄出ฅ(=ↀωↀ=)"
+            },
+            "title": "喵邮箱验证",
+            "subTitle": "记得注册时用的喵邮箱就能改设置喵~",
+            "validation": "喵邮箱（比如meow@cat.com）",
+            "detail": {
+                "email": "喵邮箱地址"
+            },
+            "success": "成功！",
+            "notice": "我们向{email}发送了带小鱼干附件的邮件喵~"
+        },
+        "qrCard": {
+            "title": "舞萌喵爪纹认证",
+            "recommend": "⭐推荐方式",
+            "subTitle": "喵爪纹是你最根本的肉球凭证喵！",
+            "validation": "舞萌喵爪纹认证",
+            "qrField": "填写喵爪纹ID",
+            "notUnderstand": "看不懂两脚兽文字喵ฅ(･ᆺ･)ﾉ"
+        },
+        "toast": {
+            "error": "快速认证失败，请用肉球手动验证"
+        },
+        "page": {
+            "accessFailed": "猫洞被堵住啦",
+            "title": "喵星支援中心",
+            "selfService": {
+                "title": "当前自助服务：",
+                "function": "重置小鱼干密码、更换喵邮箱、修改QQ爪印、更换Turbo喵名、反馈猫砂盆问题",
+                "notice": {
+                    "1": "本服务仅向",
+                    "2": "Polar",
+                    "3": "星级喵民开放ฅ(=ↀωↀ=) 请先完成肉球认证~"
+                }
+            },
+            "or": "或者",
+            "agent": "找两脚兽铲屎官",
+            "exception": "如果所有方式都失败，请往管理员猫砂盆投递小鱼干求助信"
+        }
+    },
+    "supportSession": {
+        "choose": "选择这条小鱼干",
+        "back": "溜回上一页",
+        "success": "成功！",
+        "resetEmail": {
+            "toast": {
+                "success": "喵邮件已寄出ฅ(=ↀωↀ=)"
+            },
+            "title": "更换喵邮箱",
+            "submit": "更换喵邮箱",
+            "oldEmail": "当前喵邮箱：{email}",
+            "details": {
+                "newEmail": "新喵邮箱"
+            },
+            "notice": "请在新邮箱找到我们寄出的带猫薄荷标记的邮件~",
+            "verify": {
+                "succeed": "喵籍认证成功ฅ(=^‥^=)ﾉ",
+                "failed": "验证失败（可能舔了假肉球）",
+                "notice": "已成功更改喵邮箱，三秒后自动跳回主猫爬架"
+            }
+        },
+        "resetPassword": {
+            "toast": {
+                "validError": "两次输入不一致，请用肉球重新输入",
+                "success": "恢复原始喵名成功啦喵！"
+            },
+            "title": "重置保险箱密码",
+            "details": {
+                "newPassword": "新保险箱密码",
+                "confirmPassword": "再舔一次肉球确认"
+            },
+            "submit": "重置保险箱密码",
+            "notice": "已重置您的保险箱密码，请重新登录。"
+        },
+        "resetQQNumber": {
+            "toast": {
+                "success": "恢复原始喵名成功啦喵！"
+            },
+            "title": "更换QQ爪印🐾",
+            "oldQQ": "当前爪印: {qqNumber}（已用肉球盖章）",
+            "details": {
+                "newQQ": "新QQ爪印（请用肉球输入）"
+            },
+            "submit": "更换QQ爪印🐾",
+            "notice": "我们已重置您的QQ号，请重新登录。"
+        },
+        "resetTurboName": {
+            "toast": {
+                "success": "恢复原始喵名成功啦喵！"
+            },
+            "title": "重置喵星身份证",
+            "oldTurboName": "当前艺名: {turboName}（刻在猫爬架上）",
+            "details": {
+                "newTurboName": "新喵星艺名（比如「喵喵拳大师」）"
+            },
+            "submit": "新艺名（比如「毛线球征服者」）",
+            "notice": "已重置您的喵星身份证，请重新登录。"
+        },
+        "toast": {
+            "success": "关闭成功"
+        },
+        "page": {
+            "accessFailed": "猫洞被堵住啦",
+            "title": "支持会话",
+            "sessionId": "本次会话ID：{sessionId}（用小鱼干记好）",
+            "countDown": "会话将在{seconds}秒后自动埋进猫砂ฅ(=´･ω･`=)",
+            "eliminated": "会话已被老鼠偷走啦！",
+            "feedback": {
+                "title": "炸毛投诉箱",
+                "body": "有问题请往猫窝管理员投递带小鱼干的求救信"
+            },
+            "closeSession": {
+                "close": "合上纸箱盖",
+                "subTitle": "处理完记得用肉球安全封印",
+                "countdown": "自动封印倒计时（{seconds}秒）",
+                "eliminated": "纸箱已经被回收喵~"
+            }
+        }
+    },
+    "captchaSolver": {
+        "fetchError": "捕获验证小鱼干失败ฅ(>﹏<)ฅ"
+    },
+    "requestHandler": {
+        "loginError": "喵令牌过期了，请重新舔肉球登录",
+        "timeoutError": "与喵星服务器断联，检查猫薄荷路由器",
+        "badRequestError": "请求的小鱼干发霉了喵！",
+        "permissionError": "\"需要「高级捕猎执照」才能操作ฅ(･ᆺ･)ﾉ",
+        "notFoundError": "找不到这个猫抓板位置喵~",
+        "internalServerError": "服务器被毛线球缠住了ฅ(=´ｪ`=)",
+        "bannedError": "账号被关进没有猫薄荷的牢笼了！",
+        "unknownError": "未知错误（可能被外星喵干扰）"
+    },
+    "permissionUtils": {
+        "basicReadOnlyContent": "基础只读猫砂盆",
+        "basicInteractiveContent": "基础逗猫棒权限",
+        "friend": "喵友圈管理",
+        "botManagement": "喵型机器人铲屎官",
+        "changeUsername": "更换荣誉墙喵名",
+        "changeAvatar": "更换喵头像",
+        "turboTicket": "锁定超速小鱼干券",
+        "setAlias": "设置机厅爱称",
+        "changeTurboSettings": "调整猫爬架参数",
+        "authorizeAuthorizer": "颁发喵薄荷许可证",
+        "authorizeTechnician": "授予喵匠大师认证",
+        "warnAndBanUser": "拍爪警告 & 关禁闭猫笼"
+    }
+}

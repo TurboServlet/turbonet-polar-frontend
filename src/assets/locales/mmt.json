@@ -98,7 +98,7 @@
             "username": "喵星人名ฅ(>ω<)ฅ",
             "password": "小鱼干密码ฅ(=ↀωↀ=)"
         },
-        "support": "需要蹭蹭喵？ฅ(>ω<)ฅ",
+        "support": "喵？ฅ(>ω<)ฅ",
         "register": "注册新爪印ฅ(^▽^)",
         "button": "啪嗒登录喵~ฅ(=^‥^=)ﾉ",
         "notice": {
@@ -416,8 +416,8 @@
             "2": "跳过率超过「>3%」时，猫爪可能打滑喵！ฅ(=´ｪ`=)",
             "3": "重试率和失败率太高的话，可能是猫窝漏雨了喵ฅ(≧∇≦)ฅ"
         },
-        "totalRequests": "一小时内总啃小鱼干次数",
-        "totalException": "一小时内翻倒牛奶次数",
+        "totalRequests": "一小时啃小鱼干次数",
+        "totalException": "一小时翻倒牛奶次数",
         "totalExceptionRate": "翻奶率（百分比）",
         "totalZlibSkipped": "跳过压缩的猫薄荷包数",
         "totalRetry": "尾巴打结重试次数",

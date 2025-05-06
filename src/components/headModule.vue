@@ -69,6 +69,12 @@ const changeLang = (lang) => {
           </button>
         </li>
           <li>
+            <button @click="changeLang('jp')" :class="{ 'menu-active': locale === 'j怕' }">
+              <span class="pe-4 font-mono text-[.5625rem] font-bold tracking-[0.09375rem] opacity-40">JP</span>
+              <span class="font-[sans-serif]">ジャパニーズ</span>
+            </button>
+          </li>
+          <li>
             <button @click="changeLang('ko')" :class="{ 'menu-active': locale === 'ko' }">
               <span class="pe-4 font-mono text-[.5625rem] font-bold tracking-[0.09375rem] opacity-40">KO</span>
               <span class="font-[sans-serif]">한국어</span>

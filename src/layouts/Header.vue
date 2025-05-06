@@ -32,7 +32,7 @@ const haveList = toRef(props, 'haveList')
         </svg>
       </label>
     </div>
-    <div class="flex-1">
+    <div class="hidden sm:flex flex-1">
       <a class="btn btn-ghost text-xl">TurboNET <span style="color: oklch(var(--p))">Polar <i
           class="fa-solid fa-meteor"></i></span></a>
     </div>

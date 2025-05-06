@@ -160,7 +160,7 @@ const turboName = toRef(props, 'turboName')
 <style scoped>
 
 .menu-height {
-  height: calc(100vh - 64px - 35px);
+  height: calc(100vh - 64px - 10px);
   overflow-y: auto;
   scrollbar-width: none;
   flex-wrap: unset;

@@ -76,7 +76,7 @@ onMounted(() => {
 
 .main-container {
   flex: 1;
-  height: calc(100vh - 64px - 35px);
+  height: calc(100vh - 64px - 10px);
   padding: 10px 20px 10px 20px;
   scrollbar-width: none;
   overflow: auto;

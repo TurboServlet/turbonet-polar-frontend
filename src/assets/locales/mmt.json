@@ -110,7 +110,7 @@
         "title": "使用条款喵~ฅ(･ᆺ･)ﾉ",
         "introduction": {
             "p1": "使用喵伺服前需要先签下肉球同意书喵~ฅ(^•ω•^ฅ)",
-            "p2": "访问本喵窝（https://sys-allnet.com）即表示您同意遵守《撸猫守则》ฅ(=ↀωↀ=) 严禁将小鱼干用于非法捕猎哦！",
+            "p2": "访问本喵窝（https://turbo.sys-allnet.com）即表示您同意遵守《撸猫守则》ฅ(=ↀωↀ=) 严禁将小鱼干用于非法捕猎哦！",
             "p3": "除此之外还要乖乖遵守我们的"
         },
         "serviceDescription": {
@@ -367,11 +367,11 @@
                 "7days": "7天（没收逗猫棒）",
                 "30days": "30天（禁止捕猎）",
                 "365days": "365天（流放汪星）",
-                "permanent": "永久（关黑猫笼）"
+                "permanent": "永久（关小黑笼）"
             },
-            "execute": "执行制裁",
+            "execute": "执行爱猫",
             "executeNotice": {
-                "1": "挥舞喵爪前请确认ฅ(≚ᄌ≚)",
+                "1": "挥爱猫前请确认ฅ(≚ᄌ≚)",
                 "2": "《喵星宪法》支持本操作"
             }
         }
@@ -995,7 +995,7 @@
             "toast": {
                 "success": "恢复原始喵名成功啦喵！"
             },
-            "title": "重置喵星身份证",
+            "title": "重置咱喵身份证",
             "oldTurboName": "当前艺名: {turboName}（刻在猫爬架上）",
             "details": {
                 "newTurboName": "新喵星艺名（比如「喵喵拳大师」）"
@@ -1045,10 +1045,10 @@
         "changeUsername": "更换荣誉墙喵名",
         "changeAvatar": "更换喵头像",
         "turboTicket": "锁定超速小鱼干券",
-        "setAlias": "设置机厅爱称",
+        "setAlias": "设置喵园爱称",
         "changeTurboSettings": "调整猫爬架参数",
         "authorizeAuthorizer": "颁发喵薄荷许可证",
         "authorizeTechnician": "授予喵匠大师认证",
-        "warnAndBanUser": "拍爪警告 & 关禁闭猫笼"
+        "warnAndBanUser": "拍爪警告 & 爱猫TV"
     }
 }

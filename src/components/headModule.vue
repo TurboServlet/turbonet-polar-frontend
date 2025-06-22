@@ -83,7 +83,7 @@ const changeLang = (lang) => {
           <li>
             <button @click="changeLang('mmt')" :class="{ 'menu-active': locale === 'mmt' }">
               <span class="pe-4 font-mono text-[.5625rem] font-bold tracking-[0.09375rem] opacity-40">MM</span>
-              <span class="font-[sans-serif]">猫猫头</span>
+              <span class="font-[sans-serif]">猫猫体</span>
             </button>
           </li>
         </ul>

@@ -1,7 +1,7 @@
 <script setup xmlns="http://www.w3.org/1999/html">
 import TurboWarningBadge from "@/components/TurboWarningBadge.vue";
 import TurboPermissionBadge from "@/components/TurboPermissionBadge.vue";
-import {onMounted, ref} from "vue";
+import {computed, onMounted, ref, watch} from "vue";
 import {sendGetRequest} from "@/assets/js/RequestHandler.js";
 import SingleFriend from "@/layouts/friends/SingleFriend.vue";
 import FriendSettingDialog from "@/layouts/friends/FriendSettingDialog.vue";
@@ -11,31 +11,67 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n()
 const isLoading = ref(true);
 const isSuccess = ref(false)
+const isLoadingFriends = ref(true)
+const isLoadingRivals = ref(true)
+const isSuccessFriends = ref(false)
+const isSuccessRivals = ref(false)
 const page = ref(1)
 
 const responseData = ref('')
+const rivals = ref({
+  turboNameList: []
+})
 
 const showFriends = async () => {
   await sendGetRequest('/web/showFriends?page=' + page.value, true).then((response) => {
     if (response.statusCode === 200) {
-      isLoading.value = false
-      isSuccess.value = true
+      isLoadingFriends.value = false
+      isSuccessFriends.value = true
       responseData.value = response.data
     } else {
-      isLoading.value = false
-      isSuccess.value = false
+      isLoadingFriends.value = false
+      isSuccessFriends.value = false
       responseData.value = response.data
     }
   }).catch(() => {
-    isLoading.value = false
-    isSuccess.value = false
+    isLoadingFriends.value = false
+    isSuccessFriends.value = false
+    responseData.value = t('error.jsError')
+  })
+}
+
+const showRival = async () => {
+  await sendGetRequest('/web/showRival', true).then((response) => {
+    if (response.statusCode === 200) {
+      isLoadingRivals.value = false
+      isSuccessRivals.value = true
+      rivals.value = response.data
+    } else {
+      isLoadingRivals.value = false
+      isSuccessRivals.value = false
+      responseData.value = response.data
+    }
+  }).catch(() => {
+    isLoadingRivals.value = false
+    isSuccessRivals.value = false
     responseData.value = t('error.jsError')
   })
 }
 
 onMounted(() => {
   showFriends()
+  showRival()
 })
+
+watch(
+    [isLoadingFriends, isLoadingRivals],
+    ([friendsLoading, rivalsLoading]) => {
+      if (!friendsLoading && !rivalsLoading) {
+        isLoading.value = false
+        isSuccess.value = isSuccessFriends.value && isSuccessRivals.value
+      }
+    }
+)
 
 const friendSetting = () => {
   openDialogModal('friendSettingDialog')
@@ -81,7 +117,7 @@ const friendSetting = () => {
     <div class="text-center my-10" v-if="responseData.totalElements === 0">
       {{ $t('friends.noData') }}
     </div>
-    <SingleFriend :friends="responseData.content"/>
+    <SingleFriend :friends="responseData.content" :rivals="rivals"/>
   </div>
   <FriendSettingDialog/>
 </template>

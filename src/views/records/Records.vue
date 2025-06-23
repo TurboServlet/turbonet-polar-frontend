@@ -76,8 +76,8 @@ onMounted(() => {
     <div class="breadcrumbs text-sm">
       <ul>
         <i class="fa-solid fa-link"></i>&nbsp;&nbsp;
-        <li>{{ $t('menu.maimai') }}</li>
-        <li>{{ $t('menu.records') }}</li>
+        <li>{{ $t('menu.maimai.title') }}</li>
+        <li>{{ $t('menu.maimai.records') }}</li>
       </ul>
     </div>
     <div class="mt-2"/>

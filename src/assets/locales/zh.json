@@ -821,7 +821,8 @@
       "playing": "正在游玩",
       "lastPlayTime": "{hour}小时前",
       "userPage": "用户主页",
-      "removeFriend": "删除好友"
+      "removeFriend": "删除好友",
+      "rival": "对战好友"
     },
     "removeFriendDialog": {
       "content": "你确定要删除 {friend} 的好友吗？",
@@ -831,6 +832,11 @@
       "toast": {
         "success": "删除好友成功"
       }
+    },
+    "rivalDialog": {
+      "content": "对战好友即为您的好友完成度的对比，在每首乐曲的左下角显示的玩家。",
+      "success": "已添加对战好友",
+      "remove": "已移除对战好友"
     }
   },
   "addFriends": {

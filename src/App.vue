@@ -39,8 +39,6 @@ onMounted(() => {
 html, body, #app {
   font-family: ubuntu, system-ui;
   transition: background-color .5s;
-  position: fixed;
-  overflow: hidden;
   height: 100%;
   width: 100%;
   padding: 0;

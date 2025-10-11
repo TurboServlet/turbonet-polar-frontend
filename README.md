@@ -4,7 +4,7 @@ This project is the frontend part of MaiTurbo Polar, built with Vue 3 and Vite. 
 
 ## Attribution
 
-This project is owned by the TurboServlet project group. © TurboServlet 2024. All rights reserved.  
+This project is owned by the TurboServlet project group. © TurboServlet 2025. All rights reserved.  
 For any displayed content, logos, or service marks that may infringe rights, please contact us at ctrlcvs@uwu.cat.
 
 ## Tech Stack

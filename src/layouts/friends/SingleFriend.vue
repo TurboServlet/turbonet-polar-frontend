@@ -75,7 +75,7 @@ const toggleRival = async (name) => {
   }
   // ➜ 新增关注
   else {
-    if (list.length >= 4) {
+    if (list.length >= 3) {
       toast.error(t('friends.rivalDialog.limit'))   // 需要在 i18n 文件里加对应键
     } else {
       const ok = await addRival(name)
@@ -119,7 +119,7 @@ const toggleRival = async (name) => {
             type="checkbox"
             class="checkbox checkbox-sm"
             :checked="rivals.turboNameList.includes(friend.turboName)"
-            :disabled="rivals.turboNameList.length >= 4
+            :disabled="rivals.turboNameList.length >= 3
                  && !rivals.turboNameList.includes(friend.turboName)"
             @change="toggleRival(friend.turboName)"
         />

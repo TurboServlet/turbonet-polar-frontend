@@ -5,7 +5,7 @@
 <template>
   <footer class="footer footer-center bg-primary text-primary-content p-10">
     <aside>
-      <img src="/img/logo.png" style="width: 60px" load="async">
+      <img src="/img/logo.png" style="width: 120px" load="async">
       <p class="font-bold">
         TurboServlet
         <br/>

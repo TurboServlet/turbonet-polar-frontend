@@ -88,7 +88,7 @@
     }
   },
   "footer": {
-    "contact": "© TurboServlet 2024。保畱所有權利。網站上顯示的所有商標、標識和服務標記如若侵權，請聯繫我們 {email}。",
+    "contact": "© TurboServlet 2025。保畱所有權利。網站上顯示的所有商標、標識和服務標記如若侵權，請聯繫我們 {email}。",
     "privacy": "隱私政策",
     "tos": "使用條款"
   },
@@ -110,7 +110,7 @@
     "title": "使用條款",
     "introduction": {
       "p1": "使用 TurboServlet 提供的服務之前，您必須接受以下內容。",
-      "p2": "訪問與使用此網站（https://sys-allnet.com）、客戶端以及任何關聯服務（以下統稱“Turbo”）即代表您确認您完全遵守此處列出的條款和條件，且保證您不會將 TurboServlet 提供服務的任何內容（包括本網站與本網站提供的內容）用於任何違法或被條款禁止的目的。",
+      "p2": "訪問與使用此網站（https://turbo.sys-allnet.com）、客戶端以及任何關聯服務（以下統稱“Turbo”）即代表您确認您完全遵守此處列出的條款和條件，且保證您不會將 TurboServlet 提供服務的任何內容（包括本網站與本網站提供的內容）用於任何違法或被條款禁止的目的。",
       "p3": "在該份條款之外，您還需要确保接受我們的"
     },
     "serviceDescription": {
@@ -959,7 +959,6 @@
       "or": "或者",
       "agent": "人工驗證",
       "exception": "若以上方式您均無法驗證身份，請向管理員提交郵件工單。"
-
     }
   },
   "supportSession": {
@@ -1039,7 +1038,6 @@
         "countdown": "關閉會話 ({seconds} 秒後自動提交)",
         "eliminated": "該會話已銷毁"
       }
-
     }
   },
   "captchaSolver": {

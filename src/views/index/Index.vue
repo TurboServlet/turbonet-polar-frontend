@@ -11,6 +11,14 @@ import Login from "@/views/index/Login.vue";
 
 const isCoverHidden = ref(false);
 
+const videoPlayer = ref(null);
+
+onMounted(() => {
+  if (videoPlayer.value) {
+    videoPlayer.value.volume = 0.08;
+  }
+});
+
 const coverChanger = () => {
   isCoverHidden.value = !isCoverHidden.value;
 }
@@ -33,6 +41,7 @@ const randomVideoLink = computed(() => {
     <section class="header shadow-2xl mb-16">
       <div class="video-wrapper">
         <video
+            ref="videoPlayer"
             :src="randomVideoLink"
             autoplay
             :muted="!isCoverHidden"

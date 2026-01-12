@@ -32,7 +32,7 @@ function scrollToRight() {
 </script>
 
 <template>
-  <div class="card home-self-intro shadow-2xl"><br>
+  <div class="card bg-base-100 home-self-intro shadow-2xl"><br>
     <div class="card-title home-intro-title mb-1">{{ $t('devInfo.title') }}</div>
     <div class="card-body home-intro-content">TurboNET
       <span class="font-bold" style="color: oklch(var(--p))">Polar <i class="fa-solid fa-meteor"></i></span>

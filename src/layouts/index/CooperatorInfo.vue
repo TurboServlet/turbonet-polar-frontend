@@ -32,7 +32,7 @@ function scrollToRight() {
 </script>
 
 <template>
-  <div class="card home-self-intro shadow-2xl"><br>
+  <div class="card bg-base-100 home-self-intro shadow-2xl"><br>
     <div class="card-title home-intro-title mb-1">{{ $t('cooperatorInfo.title') }}</div>
     <div class="card-body home-intro-content">
       {{ $t('cooperatorInfo.context.1') }}<br>

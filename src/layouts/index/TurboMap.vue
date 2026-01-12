@@ -66,23 +66,23 @@ let option = ref({
       data: [
         {
           name: "北京市",
-          value: 2,
+          value: 6,
         },
         {
           name: "天津市",
-          value: 0,
+          value: 1,
         },
         {
           name: "上海市",
-          value: 18,
+          value: 29,
         },
         {
           name: "重庆市",
-          value: 2,
+          value: 3,
         },
         {
           name: "河北省",
-          value: 1,
+          value: 2,
         },
         {
           name: "河南省",
@@ -90,7 +90,7 @@ let option = ref({
         },
         {
           name: "云南省",
-          value: 1,
+          value: 2,
         },
         {
           name: "辽宁省",
@@ -98,15 +98,15 @@ let option = ref({
         },
         {
           name: "黑龙江省",
-          value: 1,
+          value: 5,
         },
         {
           name: "湖南省",
-          value: 0,
+          value: 2,
         },
         {
           name: "安徽省",
-          value: 1,
+          value: 3,
         },
         {
           name: "山东省",
@@ -122,15 +122,15 @@ let option = ref({
         },
         {
           name: "浙江省",
-          value: 25,
+          value: 31,
         },
         {
           name: "江西省",
-          value: 2,
+          value: 3,
         },
         {
           name: "湖北省",
-          value: 0,
+          value: 4,
         },
         {
           name: "广西壮族自治区",
@@ -138,27 +138,27 @@ let option = ref({
         },
         {
           name: "甘肃省",
-          value: 0,
+          value: 3,
         },
         {
           name: "山西省",
-          value: 0,
+          value: 4,
         },
         {
           name: "内蒙古自治区",
-          value: 2,
+          value: 7,
         },
         {
           name: "陕西省",
-          value: 0,
+          value: 1,
         },
         {
           name: "吉林省",
-          value: 0,
+          value: 2,
         },
         {
           name: "福建省",
-          value: 4,
+          value: 6,
         },
         {
           name: "贵州省",
@@ -166,11 +166,11 @@ let option = ref({
         },
         {
           name: "广东省",
-          value: 10,
+          value: 20,
         },
         {
           name: "青海省",
-          value: 0,
+          value: 1,
         },
         {
           name: "西藏自治区",
@@ -178,7 +178,7 @@ let option = ref({
         },
         {
           name: "四川省",
-          value: 1,
+          value: 6,
         },
         {
           name: "宁夏回族自治区",
@@ -186,7 +186,7 @@ let option = ref({
         },
         {
           name: "海南省",
-          value: 1,
+          value: 4,
         },
         {
           name: "台湾省",
@@ -237,7 +237,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="card home-product-intro shadow-2xl"><br>
+  <div class="card bg-base-100 home-product-intro shadow-2xl"><br>
     <div class="card-title product-intro-title">{{ $t('turboMap.title') }}</div>
     <div class="card-body product-intro-content">
       {{ $t('turboMap.context.1') }}

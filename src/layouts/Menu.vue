@@ -102,9 +102,9 @@ const turboName = toRef(props, 'turboName')
               <li>
                 <router-link to="/changeMaimaiName"><i class="fa-solid fa-pen-to-square"></i> {{ $t('menu.turbo.changeMaimaiName') }}</router-link>
               </li>
-              <li>
-                <router-link to="/changeAvatar"><i class="fa-regular fa-id-card"></i> {{ $t('menu.turbo.changeAvatar') }}</router-link>
-              </li>
+<!--              <li>-->
+<!--                <router-link to="/changeAvatar"><i class="fa-regular fa-id-card"></i> {{ $t('menu.turbo.changeAvatar') }}</router-link>-->
+<!--              </li>-->
               <li>
                 <details open>
                   <summary><i class="fa-solid fa-ticket"></i> {{ $t('menu.tickets.title') }}</summary>

@@ -420,6 +420,8 @@
         "totalException": "一小时翻倒牛奶次数",
         "totalExceptionRate": "翻奶率（百分比）",
         "totalZlibSkipped": "跳过压缩的猫薄荷包数",
+        "totalServerNoCookie": "服务器无小饼干数",
+        "totalClientMissCookie": "客户端缺失小饼干数",
         "totalRetry": "尾巴打结重试次数",
         "totalPanic": "彻底炸毛失败次数",
         "inCache": "猫砂盆缓存命中",

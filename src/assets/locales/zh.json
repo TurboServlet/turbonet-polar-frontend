@@ -436,6 +436,8 @@
     "totalException": "一小时内总异常包数",
     "totalExceptionRate": "一小时内异常包数占比",
     "totalZlibSkipped": "Z-LIB压缩跳过数量",
+    "totalServerNoCookie": "服务器无Cookie数",
+    "totalClientMissCookie": "客户端丢失Cookie数",
     "totalRetry": "尝试重试数量",
     "totalPanic": "尝试失败数量",
     "inCache": "缓存内",

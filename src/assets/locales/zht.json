@@ -21,7 +21,7 @@
       "apple": "提供情緒價値",
       "taojiu": "接口文檔維護",
       "yuuluo": "NONE BOT開發",
-      "haochi": "服務器對接",
+      "haochi": "伺服器對接",
       "tenshi": "産品工程 / 交互架構"
     }
   },
@@ -269,7 +269,7 @@
     "panel": "訊息",
     "turboPermission": "用戶權限",
     "botManager": "BOT管理",
-    "serverRequests": "服務器請求統計",
+    "serverRequests": "伺服器請求統計",
     "arcade": {
       "title": "機廳相關",
       "info": "機廳信息",
@@ -426,16 +426,18 @@
     }
   },
   "serverRequests": {
-    "title": "服務器請求統計",
+    "title": "伺服器請求統計",
     "contact": {
       "1": "響應數據的「Z-LIB」壓縮跳過率與請求重試次數可以反應當前網絡情況。",
       "2": "壓縮跳過率超過「>3%」時，可能會出現網絡不穩定現象。",
-      "3": "請求重試率和失敗率較高時，網絡或服務器可能存在問題。"
+      "3": "請求重試率和失敗率較高時，網絡或伺服器可能存在問題。"
     },
     "totalRequests": "一小時內總包數",
     "totalException": "一小時內總異常包數",
     "totalExceptionRate": "一小時內異常包數占比",
     "totalZlibSkipped": "Z-LIB壓縮跳過數量",
+    "totalServerNoCookie": "伺服器無Cookie數量",
+    "totalClientMissCookie": "客戶端缺失Cookie數量",
     "totalRetry": "嘗試重試數量",
     "totalPanic": "嘗試失敗數量",
     "inCache": "緩存內",
@@ -572,7 +574,7 @@
     "hourSuffix": " 小時",
     "maiStatistics": {
       "title": "maimai 統計資料",
-      "serverRanking": "服務器排名",
+      "serverRanking": "伺服器排名",
       "noData": "60天內出勤數據不足呢，快去出勤吧！",
       "averageAchievement": "平均完成度",
       "maxCombo": "最多連擊數",
@@ -609,7 +611,7 @@
     "favoritePhotos": "我的收藏",
     "notice": {
       "title": "注意",
-      "content": "服務器相片緩存將會在7日後删除，如需保存請添加至收藏或右鍵長按下載。該相片功能僅適用於Turbo加速盒子機台。"
+      "content": "伺服器相片緩存將會在7日後删除，如需保存請添加至收藏或右鍵長按下載。該相片功能僅適用於Turbo加速盒子機台。"
     },
     "noData": "你還沒有任何相片呢",
     "favorite": {
@@ -1045,11 +1047,11 @@
   },
   "requestHandler": {
     "loginError": "刷新Token失敗，請重新登入",
-    "timeoutError": "與服務器連接超時，請檢查網絡連接",
+    "timeoutError": "與伺服器連接超時，請檢查網絡連接",
     "badRequestError": "請求錯誤，請檢查請求參數是否存在或錯誤",
     "permissionError": "請求被拒絶，您的權限可能不足",
     "notFoundError": "請求的資源不存在，請檢查請求參數",
-    "internalServerError": "服務器內部錯誤，請稍後再試或聯繫管理員",
+    "internalServerError": "伺服器內部錯誤，請稍後再試或聯繫管理員",
     "bannedError": "該賬號已被封禁，請聯繫管理員",
     "unknownError": "未知錯誤，請稍後再試"
   },

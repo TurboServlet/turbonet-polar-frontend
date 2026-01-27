@@ -437,6 +437,8 @@
     "totalZlibSkipped": "Z-LIB skipped count",
     "totalRetry": "Retry attempts",
     "totalPanic": "Failed attempts",
+    "totalServerNoCookie": "No cookie count",
+    "totalClientMissCookie": "Miss cookie count",
     "inCache": "In Cache",
     "unCache": "Out of Cache",
     "echarts": {

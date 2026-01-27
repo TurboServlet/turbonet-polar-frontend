@@ -385,6 +385,8 @@
     "totalException": "トータルエクセプションズ",
     "totalExceptionRate": "トータルエクセプションズレート",
     "totalZlibSkipped": "Z-LIBスキップカウント",
+    "totalServerNoCookie": "サーバーノークッキーカウント",
+    "totalClientMissCookie": "クライアントミスクッキーカウント",
     "totalRetry": "リトライアテンプツ",
     "totalPanic": "フェイルドアテンプツ",
     "inCache": "イン",

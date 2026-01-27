@@ -106,6 +106,42 @@ onMounted(() => {
         </div>
 
         <div class="stat">
+          <div class="stat-title">{{ $t('serverRequests.totalServerNoCookie') }}</div>
+          <div class="stat-value">{{ responseData.serverNoCookieRequestsCount.toLocaleString() }}</div>
+          <div :class="{
+      'text-success': responseData.serverNoCookieRequestsRateThanBefore > 0,
+      'text-error': responseData.serverNoCookieRequestsRateThanBefore < 0
+    }" class="stat-desc">
+            <span v-if="responseData.serverNoCookieRequestsRateThanBefore > 0">↗︎</span>
+            <span v-else-if="responseData.serverNoCookieRequestsRateThanBefore === 0">→︎</span>
+            <span v-else>↘︎</span>
+
+            {{ (responseData.serverNoCookieRequestsCount - responseData.serverNoCookieRequestsBefore).toLocaleString() }} ({{
+              responseData.serverNoCookieRequestsRateThanBefore.toFixed(0)
+            }}%)
+          </div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-title">{{ $t('serverRequests.totalClientMissCookie') }}</div>
+          <div class="stat-value">{{ responseData.clientMissCookieRequestsCount.toLocaleString() }}</div>
+          <div :class="{
+      'text-success': responseData.clientMissCookieRequestsRateThanBefore > 0,
+      'text-error': responseData.clientMissCookieRequestsRateThanBefore < 0
+    }" class="stat-desc">
+            <span v-if="responseData.clientMissCookieRequestsRateThanBefore > 0">↗︎</span>
+            <span v-else-if="responseData.clientMissCookieRequestsRateThanBefore === 0">→︎</span>
+            <span v-else>↘︎</span>
+
+            {{ (responseData.clientMissCookieRequestsCount - responseData.clientMissCookieRequestsBefore).toLocaleString() }} ({{
+              responseData.clientMissCookieRequestsRateThanBefore.toFixed(0)
+            }}%)
+          </div>
+        </div>
+      </div>
+
+      <div class="stats stats-vertical mt-2 lg:stats-horizontal lg:w-full border-2 border-base-200">
+        <div class="stat">
           <div class="stat-title">{{ $t('serverRequests.totalRetry') }}</div>
           <div class="stat-value">{{ responseData.retryRequestsCount.toLocaleString() }}</div>
           <div :class="{

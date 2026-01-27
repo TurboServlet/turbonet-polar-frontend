@@ -436,6 +436,8 @@
     "totalException": "1시간 내 전체 예외 패킷 수",
     "totalExceptionRate": "1시간 내 예외 패킷 비율",
     "totalZlibSkipped": "Z-LIB 압축 스킵 횟수",
+    "totalServerNoCookie": "서버 미스 쿠키 수",
+    "totalClientMissCookie": "클라이언트 미스 쿠키 수",
     "totalRetry": "재시도 횟수",
     "totalPanic": "실패 횟수",
     "inCache": "캐시 내부",

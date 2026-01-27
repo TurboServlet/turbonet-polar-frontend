@@ -434,6 +434,8 @@
     "totalException": "1時間内の例外数",
     "totalExceptionRate": "例外率",
     "totalZlibSkipped": "Z-LIB圧縮スキップ数",
+    "totalServerNoCookie": "サーバーノークッキー数",
+    "totalClientMissCookie": "クライアントミスクッキー数",
     "totalRetry": "リトライ数",
     "totalPanic": "失敗リトライ数",
     "inCache": "キャッシュ内",

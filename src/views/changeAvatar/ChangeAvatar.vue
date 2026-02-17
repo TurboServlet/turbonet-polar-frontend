@@ -81,6 +81,13 @@ onMounted(() => {
         <div class="text-xs">{{ $t('changeAvatar.noPermission.content') }}</div>
       </div>
     </div>
+    <div role="alert" v-else class="alert shadow-lg alert-warning">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <div>
+        <h3 class="font-bold">{{ $t('changeAvatar.notWorking.title') }}</h3>
+        <div class="text-xs">{{ $t('changeAvatar.notWorking.content') }}</div>
+      </div>
+    </div>
     <div class="mt-2"/>
     <div class="hero hero-content text-center">
       <div>

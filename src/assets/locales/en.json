@@ -295,6 +295,11 @@
       "currentTickets": "Owned Tickets",
       "setTickets": "Set Tickets"
     },
+    "upload": {
+      "title": "Score Tracker Upload",
+      "divingFishUpload": "Upload to Diving Fish",
+      "lxnsUpload": "Upload to LXNS"
+    },
     "qrCommand": "Command QR Code",
     "friends": {
       "title": "NET Friends",
@@ -705,6 +710,10 @@
       "1": "Please consider carefully before using this permission. All your actions will be recorded, and you will be responsible for any consequences and public opinion impact caused by your future behavior. Based on",
       "2": "TurboServlet reserves the right to take action."
     },
+    "notWorking": {
+      "title": "Notice",
+      "content": "This feature is currently unavailable on this machine. If it cannot be fixed, it may be removed in the future."
+    },
     "toast": {
       "jpgWarning": "Please select a JPG image",
       "sizeWarning": "Image size must not exceed 5MB",
@@ -776,6 +785,44 @@
     },
     "toast": {
       "success": "Reset successful"
+    }
+  },
+  "achievementUpload": {
+    "title": "Token Binding",
+    "placeholder": "Score Import Token",
+    "button": {
+      "submit": "Link",
+      "delete": "Unlink"
+    },
+    "recordTime": "Imported at:",
+    "uploadNotice": {
+      "1": "Please consider carefully before use. All your operations will be logged, and you are solely responsible for all consequences and public impact arising from your subsequent actions. TurboServlet reserves the right to take action against you based on ",
+      "2": "."
+    },
+    "noData": "No data uploaded yet~",
+    "table": {
+      "updateTime": "Upload Time",
+      "dataSource": "Data Source",
+      "status": "Status"
+    },
+    "warning": {
+      "title": "Notice",
+      "divingContent": "This service is provided by a third party (www.diving-fish.com). TurboServlet assumes no responsibility for this service. Please use with caution.",
+      "lxnsContent": "This service is provided by a third party (maimai.lxns.net). TurboServlet assumes no responsibility for this service. Please use with caution."
+    },
+    "toast": {
+      "success": "Linked successfully",
+      "deleteSuccess": "Unlinked successfully"
+    },
+    "badge": {
+      "ok": "Success",
+      "error": "Failed",
+      "unknown": "Unknown"
+    },
+    "dataSource": {
+      "musicDetail": "All Songs",
+      "userAll": "New Record",
+      "unknown": "Unknown Source"
     }
   },
   "qrCommand": {

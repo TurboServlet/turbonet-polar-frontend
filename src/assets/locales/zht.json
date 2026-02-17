@@ -296,6 +296,11 @@
       "currentTickets": "當前持有的功能票",
       "setTickets": "設置功能票"
     },
+    "upload": {
+      "title": "查分器上傳",
+      "divingFishUpload": "水魚查分器上傳",
+      "lxnsUpload": "落雪查分器上傳"
+    },
     "qrCommand": "指令二維碼",
     "friends": {
       "title": "NET好友",
@@ -706,6 +711,10 @@
       "1": "請在使用權限之前愼重考慮。您的一切操作都將被記錄，您後續行為所引發的所有後果以及輿論影響將由您負責。TurboServlet 有權根據",
       "2": "對您采取措施。"
     },
+    "notWorking": {
+      "title": "注意",
+      "content": "該功能暫時無法作用於機台，若無法修復，在未來可能會被移除。"
+    },
     "toast": {
       "jpgWarning": "請選擇 jpg 格式的圖片",
       "sizeWarning": "圖片大小不能超過 5MB",
@@ -777,6 +786,44 @@
     },
     "toast": {
       "success": "重置成功"
+    }
+  },
+  "achievementUpload": {
+    "title": "上傳密鑰綁定",
+    "placeholder": "成績匯入 Token",
+    "button": {
+      "submit": "綁定",
+      "delete": "解除綁定"
+    },
+    "recordTime": "Token 匯入時間:",
+    "uploadNotice": {
+      "1": "請在使用之前慎重考慮。您的一切操作都將被記錄，您後續行為所引發的所有後果以及輿論影響將由您負責。TurboServlet 有權根據",
+      "2": "對您採取措施。"
+    },
+    "noData": "你還沒有上傳過數據哦~",
+    "table": {
+      "updateTime": "上傳時間",
+      "dataSource": "數據源",
+      "status": "狀態"
+    },
+    "warning": {
+      "title": "注意",
+      "divingContent": "該服務由第三方提供（www.diving-fish.com），TurboServlet 對該服務不承擔任何責任，請謹慎使用。",
+      "lxnsContent": "該服務由第三方提供（maimai.lxns.net），TurboServlet 對該服務不承擔任何責任，請謹慎使用。"
+    },
+    "toast": {
+      "success": "綁定成功",
+      "deleteSuccess": "解綁成功"
+    },
+    "badge": {
+      "ok": "成功",
+      "error": "失敗",
+      "unknown": "未知"
+    },
+    "dataSource": {
+      "musicDetail": "全部樂曲",
+      "userAll": "新紀錄",
+      "unknown": "未知數據源"
     }
   },
   "qrCommand": {

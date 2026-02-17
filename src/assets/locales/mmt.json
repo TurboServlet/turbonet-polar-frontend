@@ -296,6 +296,11 @@
             "currentTickets": "当前猫薄荷券",
             "setTickets": "设置捕猎倍率"
         },
+        "upload": {
+            "title": "把成绩交出去喵",
+            "divingFishUpload": "给水鱼送成绩喵",
+            "lxnsUpload": "给落雪送成绩喵"
+        },
         "qrCommand": "喵令符生成",
         "friends": {
             "title": "喵友圈",
@@ -690,6 +695,10 @@
             "1": "挥舞喵爪前请三思喵ฅ(≚ᄌ≚) 捣蛋记录会刻在猫爬架上！",
             "2": "《喵星法典》支持管理员没收你的小鱼干~"
         },
+        "notWorking": {
+            "title": "注意喵！",
+            "content": "喵呜……这个功能现在在机台上闹脾气没法工作喵。要是修不好的话，以后可能就见不到它了喵……主人要原谅它喵～"
+        },
         "toast": {
             "jpgWarning": "只接受.jpg格式的猫薄荷图喵！",
             "sizeWarning": "图片太大啦！超过5MB小鱼干会撑坏喵~",
@@ -761,6 +770,44 @@
         },
         "toast": {
             "success": "喵喵，咕噜咕噜~"
+        }
+    },
+    "achievementUpload": {
+        "title": "要把秘钥绑在一起喵！",
+        "placeholder": "把成绩 Token 交给我喵~",
+        "button": {
+            "submit": "贴贴（绑定）",
+            "delete": "分开喵（解绑）"
+        },
+        "recordTime": "Token 传过来的时间：",
+        "uploadNotice": {
+            "1": "主人要认真想清楚喵……要是做了坏事，所有的后果都要主人自己承担喵！TurboServlet 会盯着主人的喵，还会根据",
+            "2": "来惩罚不乖的主人哦。"
+        },
+        "noData": "空荡荡的，主人还没给人家看过数据喵~",
+        "table": {
+            "updateTime": "上交时间",
+            "dataSource": "数据哪里来的喵",
+            "status": "现在的样子"
+        },
+        "warning": {
+            "title": "喵喵注意！",
+            "divingContent": "这个是外面那些野猫（www.diving-fish.com）提供的喵，TurboServlet 才不会帮它们负责呢，主人用的时候要小心点喵！",
+            "lxnsContent": "这个是外面那些野猫（maimai.lxns.net）提供的喵，TurboServlet 才不会帮它们负责呢，主人用的时候要小心点喵！"
+        },
+        "toast": {
+            "success": "成功贴在一起了喵！",
+            "deleteSuccess": "呜呜，已经解开了喵……"
+        },
+        "badge": {
+            "ok": "搞定喵！",
+            "error": "搞砸了喵",
+            "unknown": "喵喵迷惑"
+        },
+        "dataSource": {
+            "musicDetail": "好多好多的歌",
+            "userAll": "亮闪闪的新纪录",
+            "unknown": "不知道哪来的数据喵"
         }
     },
     "qrCommand": {

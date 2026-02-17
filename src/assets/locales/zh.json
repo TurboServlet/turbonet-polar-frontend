@@ -296,6 +296,11 @@
       "currentTickets": "当前持有的功能票",
       "setTickets": "设置功能票"
     },
+    "upload": {
+      "title": "查分器上传",
+        "divingFishUpload": "水鱼查分器上传",
+        "lxnsUpload": "落雪查分器上传"
+    },
     "qrCommand": "指令二维码",
     "friends": {
       "title": "NET好友",
@@ -697,6 +702,10 @@
       "title": "注意",
       "content": "您的权限不足，暂无法使用此功能。"
     },
+    "notWorking": {
+        "title": "注意",
+        "content": "该功能暂时无法作用于机台，若无法修复，在未来可能会被移除。"
+    },
     "button": {
       "toDefault": "使用舞萌头像",
       "cancel": "取消",
@@ -777,6 +786,44 @@
     },
     "toast": {
       "success": "重置成功"
+    }
+  },
+  "achievementUpload": {
+    "title": "上传密钥绑定",
+    "placeholder": "成绩导入 Token",
+    "button": {
+      "submit": "绑定",
+      "delete": "解除绑定"
+    },
+    "recordTime": "Token 导入时间:",
+    "uploadNotice": {
+      "1": "请在使用之前慎重考虑。您的一切操作都将被记录，您后续行为所引发的所有后果以及舆论影响将由您负责。TurboServlet 有权根据",
+      "2": "对您采取措施。"
+    },
+    "noData": "你还没有上传过数据哦~",
+    "table": {
+      "updateTime": "上传时间",
+      "dataSource": "数据源",
+      "status": "状态"
+    },
+    "warning": {
+      "title": "注意",
+      "divingContent": "该服务由第三方提供（www.diving-fish.com），TurboServlet 对该服务不承担任何责任，请谨慎使用。",
+      "lxnsContent": "该服务由第三方提供（maimai.lxns.net），TurboServlet 对该服务不承担任何责任，请谨慎使用。"
+    },
+    "toast": {
+      "success": "绑定成功",
+      "deleteSuccess": "解绑成功"
+    },
+    "badge": {
+        "ok": "成功",
+        "error": "失败",
+        "unknown": "未知"
+    },
+    "dataSource": {
+      "musicDetail": "全部乐曲",
+      "userAll": "新纪录",
+      "unknown": "未知数据源"
     }
   },
   "qrCommand": {

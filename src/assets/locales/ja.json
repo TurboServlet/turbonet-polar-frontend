@@ -294,6 +294,11 @@
       "currentTickets": "現在のチケット",
       "setTickets": "チケット設定"
     },
+    "upload": {
+      "title": "スコアツールへのアップロード",
+      "divingFishUpload": "Diving Fish へのアップロード",
+      "lxnsUpload": "LXNS へのアップロード"
+    },
     "qrCommand": "コマンドQRコード",
     "friends": {
       "title": "NETフレンド",
@@ -703,6 +708,10 @@
       "1": "使用前に慎重に検討してください。すべての操作が記録され、結果はあなたが責任を負います。",
       "2": "TurboServletはに基づき措置を取る権利を保有します。"
     },
+    "notWorking": {
+      "title": "注意",
+      "content": "本機能は現在、筐体ではご利用いただけません。修正が困難な場合、将来的に削除される可能性があります。"
+    },
     "toast": {
       "jpgWarning": "jpg形式の画像を選択してください",
       "sizeWarning": "画像サイズは5MB以下にしてください",
@@ -774,6 +783,44 @@
     },
     "toast": {
       "success": "リセット成功"
+    }
+  },
+  "achievementUpload": {
+    "title": "アップロード連携",
+    "placeholder": "スコアインポート用トークン",
+    "button": {
+      "submit": "連携",
+      "delete": "連携解除"
+    },
+    "recordTime": "トークン導入日時:",
+    "uploadNotice": {
+      "1": "ご利用の前に必ずお読みください。すべての操作はログに記録され、今後の行為によって生じるあらゆる結果および影響については、利用者が全責任を負うものとします。TurboServletは",
+      "2": "に基づき、適切な措置を講じる権利を有します。"
+    },
+    "noData": "アップロードされたデータはまだありません〜",
+    "table": {
+      "updateTime": "アップロード日時",
+      "dataSource": "データソース",
+      "status": "ステータス"
+    },
+    "warning": {
+      "title": "注意",
+      "divingContent": "このサービスはサードパーティ（www.diving-fish.com）によって提供されています。TurboServletは本サービスについて一切の責任を負いません。十分注意してご利用ください。",
+      "lxnsContent": "このサービス是サードパーティ（maimai.lxns.net）によって提供されています。TurboServletは本サービスについて一切の責任を负いません。十分注意してご利用ください。"
+    },
+    "toast": {
+      "success": "連携に成功しました",
+      "deleteSuccess": "連携を解除しました"
+    },
+    "badge": {
+      "ok": "成功",
+      "error": "失敗",
+      "unknown": "不明"
+    },
+    "dataSource": {
+      "musicDetail": "全楽曲",
+      "userAll": "新記録",
+      "unknown": "不明なソース"
     }
   },
   "qrCommand": {

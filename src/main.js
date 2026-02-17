@@ -35,6 +35,8 @@ import ResetEmailVerify from "@/views/support/ResetEmailVerify.vue";
 import NotFound from "@/views/NotFound.vue";
 import QrCommand from "@/views/qrCommand/QrCommand.vue";
 import ArcadeAlias from "@/views/arcadeAlias/ArcadeAlias.vue";
+import DivingFishUpload from "@/views/AchievementUpload/DivingFishUpload.vue";
+import LXNSUpload from "@/views/AchievementUpload/LXNSUpload.vue";
 
 const routes = [
     {path: '/', component: Index, name: '主页'},
@@ -70,6 +72,8 @@ const routes = [
             {path: '/addFriends', name: '添加好友', component: AddFriends},
             {path: '/networkStatus', name: '机厅网络状态', component: NetworkStatus},
             {path: '/serverRequests', name: '服务器请求统计', component: ServerRequests},
+            {path: '/DivingFishUpload', name: '水鱼查分器上传', component: DivingFishUpload},
+            {path: '/LxnsUpload', name: '落雪查分器上传', component: LXNSUpload}
         ]
     }
 ]

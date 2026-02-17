@@ -102,9 +102,9 @@ const turboName = toRef(props, 'turboName')
               <li>
                 <router-link to="/changeMaimaiName"><i class="fa-solid fa-pen-to-square"></i> {{ $t('menu.turbo.changeMaimaiName') }}</router-link>
               </li>
-<!--              <li>-->
-<!--                <router-link to="/changeAvatar"><i class="fa-regular fa-id-card"></i> {{ $t('menu.turbo.changeAvatar') }}</router-link>-->
-<!--              </li>-->
+              <li>
+                <router-link to="/changeAvatar"><i class="fa-regular fa-id-card"></i> {{ $t('menu.turbo.changeAvatar') }}</router-link>
+              </li>
               <li>
                 <details open>
                   <summary><i class="fa-solid fa-ticket"></i> {{ $t('menu.tickets.title') }}</summary>
@@ -121,19 +121,19 @@ const turboName = toRef(props, 'turboName')
               <li>
                 <router-link to="/qrCommand"><i class="fa-solid fa-qrcode"></i> {{ $t('menu.qrCommand') }}</router-link>
               </li>
-              <!--              <li>-->
-              <!--                <details open>-->
-              <!--                  <summary><i class="fa-solid fa-upload"></i> 查分器上传</summary>-->
-              <!--                  <ul>-->
-              <!--                    <li>-->
-              <!--                      <router-link to="/DivingFishUpload">水鱼查分器上传</router-link>-->
-              <!--                    </li>-->
-              <!--                    <li>-->
-              <!--                      <router-link to="/LxnsUpload">落雪查分器上传</router-link>-->
-              <!--                    </li>-->
-              <!--                  </ul>-->
-              <!--                </details>-->
-              <!--              </li>-->
+                            <li>
+                              <details open>
+                                <summary><i class="fa-solid fa-upload"></i> {{ $t('menu.upload.title') }}</summary>
+                                <ul>
+                                  <li>
+                                    <router-link to="/DivingFishUpload">{{ $t('menu.upload.divingFishUpload') }}</router-link>
+                                  </li>
+                                  <li>
+                                    <router-link to="/LxnsUpload">{{ $t('menu.upload.lxnsUpload') }}</router-link>
+                                  </li>
+                                </ul>
+                              </details>
+                            </li>
             </ul>
           </details>
         </li>

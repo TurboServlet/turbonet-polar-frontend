@@ -13,10 +13,6 @@ const submit = (functionType, setting) => {
 <template>
   <div class="flex flex-col">
     <div class="flex mb-4 p-4 bg-base-200 rounded-box shadow items-center justify-between max-sm:flex-col max-sm:gap-4">
-      <div class="font-bold">{{ ArcadeFunctionTypeStringToEnum('LOGIN') }}</div>
-      <button @click="submit('LOGIN', 'NONE')" class="btn btn-sm btn-primary"><i class="fa-solid fa-qrcode"></i> {{ $t('qrCommand.generateQrCode') }}</button>
-    </div>
-    <div class="flex mb-4 p-4 bg-base-200 rounded-box shadow items-center justify-between max-sm:flex-col max-sm:gap-4">
       <div class="font-bold">{{ ArcadeFunctionTypeStringToEnum('KASTANJ_LOGIN') }}</div>
       <button @click="submit('KASTANJ_LOGIN', 'NONE')" class="btn btn-sm btn-primary"><i class="fa-solid fa-qrcode"></i> {{ $t('qrCommand.generateQrCode') }}</button>
     </div>
